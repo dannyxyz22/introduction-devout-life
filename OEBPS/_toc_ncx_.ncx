@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="GoogleId" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>Introduction to the Devout Life</text>
+  </docTitle>
+  <docAuthor>
+    <text>St Francis De Sales</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="content-0011" playOrder="1">
+      <navLabel>
+        <text>Front Cover</text>
+      </navLabel>
+      <content src="content/content-0011.xml" />
+    </navPoint>
+    <navPoint id="content-0012" playOrder="2">
+      <navLabel>
+        <text>I</text>
+      </navLabel>
+      <content src="content/content-0012.xml" />
+    </navPoint>
+    <navPoint id="content-0013" playOrder="3">
+      <navLabel>
+        <text>Ii</text>
+      </navLabel>
+      <content src="content/content-0013.xml" />
+    </navPoint>
+    <navPoint id="content-0017" playOrder="4">
+      <navLabel>
+        <text>Iii</text>
+      </navLabel>
+      <content src="content/content-0017.xml" />
+    </navPoint>
+    <navPoint id="content-0022" playOrder="5">
+      <navLabel>
+        <text>Iv</text>
+      </navLabel>
+      <content src="content/content-0022.xml" />
+    </navPoint>
+    <navPoint id="content-0025" playOrder="6">
+      <navLabel>
+        <text>V</text>
+      </navLabel>
+      <content src="content/content-0025.xml" />
+    </navPoint>
+    <navPoint id="content-0026" playOrder="7">
+      <navLabel>
+        <text>About this Book - From Google</text>
+      </navLabel>
+      <content src="content/content-0026.xml" />
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Introduction to the Devout Life</title>
+<style type="text/css">
+.fakecover {
+  margin:0;
+  padding:0;
+  border:none;
+  height:100%;
+  width:100%;
+  background:black;
+  text-align: center;
+  font-weight: normal;
+  font-family: Georgia,"Times New Roman",Serif;
+}
+.cover {
+  color: black;
+  margin: 0px;
+  padding:100px 0px 100px 0px;
+  background:white;
+}
+.title {
+  font-size: 35px;
+  padding: 25px 5px 40px 5px;
+}
+.author {
+  padding: 40px 5px 25px 5px;
+  font-size: 25px;
+}
+.notice {
+  padding: 80px 5px 10px 5px;
+  font-size: 18px;
+  color: white;
+}
+.top {
+  height:120px;
+}
+.bottom {
+  height:120px;
+}
+.flow {
+  margin: 0;
+  font-size: 1em;
+}
+.flow .pagebreak {
+  page-break-before: always;
+}
+.flow p {
+  text-align: left;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.flow .gstxt_sup {
+  font-size: 75%;
+  position: relative;
+  bottom: 0.5em;
+}
+.flow .gstxt_sub {
+  font-size: 75%;
+  position: relative;
+  top: 0.3em;
+}
+.flow .gstxt_hlt {
+  background-color: yellow;
+}
+.flow div.gtxt_inset_box {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 1em 1em 1em 1em;
+  border: 1px black solid;
+}
+.flow div.gtxt_footnote {
+  padding: 0 0.5em 0 0.5em;
+  border: 1px black dotted;
+}
+.flow .gstxt_underline {
+  text-decoration: underline;
+}
+.flow .gtxt_heading {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 150%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.flow .gtxt_h1_heading {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+}
+.flow .gtxt_h2_heading {
+  font-size: 110%;
+  font-weight: bold;
+}
+.flow .gtxt_h3_heading {
+  font-weight: bold;
+}
+.flow .gtxt_lineated {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+}
+.flow .gtxt_lineated_code {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+.flow .gtxt_quote {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow .gtxt_list_entry {
+  margin-left: 2ex;
+  text-indent: -2ex;
+}
+.flow .gimg_graphic {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow .gimg_table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.flow {
+  font-family: serif;
+}
+.flow span,p {
+  font-family: inherit;
+}
+
+</style></head>
+<body>
+<div class="fakecover">
+<div class="top"></div>
+<div class="cover">
+<div class="title">Introduction to the Devout Life</div>
+<div class="author">St Francis De Sales</div>
+</div>
+<div class="bottom">
+<div class="notice">Google™ Book Search</div>
+</div>
+</div>
+<div class="pagebreak"></div>
+<!-- Content from Google Book Search, generated at 1747794743500100 -->
+<div class="flow" style="">
+<a class="page full_page_image" id="GBS.PP1"></a>
+<img alt="Image for page 0" src="../data/content-0001.jpg" style="max-width:100%; max-height:100%"/></div>
+<div class="pagebreak"></div>
+<div style="margin:4em;"> </div>
+<div style="margin:4em;text-align:justify;"><p>
+This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online. See the back of the book for detailed information.
+</p></div>
+<div class="pagebreak"></div>
+<!-- Content from Google Book Search, generated at 1747794744401780 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PP2"></a>
+<img alt="Image for page 1" src="../data/content-0002.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794745397734 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PP3"></a>
+<img alt="Image for page 2" src="../data/content-0003.jpg" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794745749046 -->
+<div class="flow" style="">
+</div>
+<!-- Content from Google Book Search, generated at 1747794745996537 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR1"></a>
+<img alt="Image for page 4" src="../data/content-0004.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794746970454 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR2"></a>
+<img alt="Image for page 5" src="../data/content-0005.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794747251280 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR3"></a>
+<div class="gtxt_body" id="block.6.0.0.box.258.304.483.41.q.101" style="margin-bottom: 1.5em;">
+<a id="GBS.PR3.w.0.0.0"></a><p class="gtxt_body" id="para.6.0.0.box.258.304.483.41.q.101" style="font-size:105%;text-indent:1em;">DEDICATORY PRAYER.</p>
+</div>
+<div class="gtxt_body" id="block.6.1.0.box.119.474.762.671.q.101">
+<a id="GBS.PR3.w.1.0.0"></a><p class="gtxt_body" id="para.6.1.0.box.119.474.762.671.q.101" style="font-size:101%;">O SWEET JESUS, my Lord, my Saviour, and my God, behold me here prostrate before thy majesty, devoting and consecrating this book to thy glory; give life to its words by thy blessing, that those souls for which I have written it, may receive from it the sacred inspirations which I desire for them. And particularly that of imploring for me thy immense mercy; to the end that, whilst showing others the way of devotion in this world, I may not myself be eternally rejected and confounded in the other; but that, with them, I may for ever sing, as a canticle of triumph, the words which, with my whole heart I pronounce, in testimony of my fidelity amidst the dangers of this mortal life: LIVE JESUS, LIVE JESUS; yea, <span style="font-style:italic;">Lord </span>Jesus, live and reign in our hearts for ever and ever. Amen.</p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794747415020 -->
+<div class="flow" style="">
+</div>
+<!-- Content from Google Book Search, generated at 1747794747598314 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR5"></a>
+<div class="gtxt_body" id="block.8.0.0.box.335.416.246.37.q.101" style="margin-bottom: 1.5em;">
+<a id="GBS.PR5.w.0.0.0"></a><p class="gtxt_body" id="para.8.0.0.box.335.416.246.37.q.101" style="font-size:103%;text-align:center;">PREFACE OF St. Francis de Sales.</p>
+</div>
+<div class="gtxt_body" id="block.8.1.0.box.430.514.38.17.q.101" style="margin-bottom: 1.5em;">
+<a id="GBS.PR5.w.1.0.0"></a>
+</div>
+<div class="gtxt_body" id="block.8.2.0.box.224.586.446.54.q.101" style="margin-bottom: 1.5em;">
+<a id="GBS.PR5.w.2.0.0"></a>
+</div>
+<div class="gtxt_body" id="block.8.3.0.box.93.761.716.82.q.101" style="margin-bottom: 1.5em;">
+<a id="GBS.PR5.w.3.0.0"></a><p class="gtxt_body" id="para.8.3.0.box.93.761.716.82.q.101" style="font-size:103%;">Dear reader, I pray you to read this Preface for your satisfaction and for mine.</p>
+</div>
+<div class="gtxt_body" id="block.8.4.0.box.75.896.759.442.q.101">
+<a id="GBS.PR5.w.4.0.0"></a><p class="gtxt_body" id="para.8.4.0.box.75.896.759.442.q.101" style="font-size:102%;">THE bouquet-maker, Glycera, was so skilful in diversifying the arrangement and mixture of the flowers which she used, that with the same flowers she made a great variety of bouquets: so much so that the painter, Pansias, failed when he endea. voured to copy so great a diversity, for he could not change his painting so many ways as Glycera did her bouquets. Thus the Holy Ghost disposes anl arranges with such variety the instructions regarding devotion which He gives by the tongues<a id="GBS.PR6.w.1.0.0"></a><span class="gtxt_body" id="para.9.1.0.box.93.180.758.530.q.101">
+and pens of his servants, that, although the doctrine is always one and the same, the discourses which are held on it are, nevertheless, very different, according to the various methods in which they are composed. I certainly cannot, neither do I wish, nor ought I to write in this Introduction but what has been written by our predecessors on this subject. They are the same flowers which I present to you, my reader; but the bouquet which I have formed from them will be different from theirs, on account of the difference of the method of making it.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794747756370 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR6"></a>
+<div class="gtxt_body" id="block.9.1.0.box.93.180.766.1159.q.101">
+<a id="GBS.PR6.w.1.1.0"></a><p class="gtxt_body" id="para.9.1.1.box.101.719.758.620.q.101" style="font-size:102%;text-indent:1em;">Almost all those who have hitherto treated <span style="font-style:italic;">of </span><span style="font-style:italic;">devotion </span>have had the instruction of persons wholly retired from the world in view, or have taught a kind of devotion leading to this absolute retirement: whereas my intention is to instruct such as live in towns, in households, or in courts, and who, by their condition, are obliged to lead, as to the exterior, an ordinary life, and who frequently, under the pretext of a pretended impossibility, will not even think of undertaking a <span style="font-style:italic;">devout </span><span style="font-style:italic;">life</span>, believing, that as no animal dares to taste the seed of the herb called <span style="font-style:italic;">Palma </span><span style="font-style:italic;">Christi</span>, so no man ought to aspire to the palm of Christian piety so long as he lives in the turmoil of worldly affairs. Now,<a id="GBS.PR7.w.1.0.0"></a><span class="gtxt_body" id="para.10.1.0.box.87.177.762.848.q.101">
+to such persons I shall make it appear that, as the mother-of-pearl oyster lives in the sea without taking in a drop of salt-water; and as, near the Chelidonian islands, springs of fresh water may be found in the midst of the sea; and as the firefly moves through the flames without singeing its wings; even so, a vigorous and resolute soul may live in the world without being infected by any of its contaminations, may discover sweet springs of piety amidst its bitter waters, and may fly through the flames of earthly concupiscences without burning the wings of the holy desires of a devout life. This, it is true, is a difficult task, and therefore I could wish that many would endeavour to accomplish it with more ardour than has been hitherto used; and I, weak as I am, shall endeavour by this treatise to contribute some kind of help to those who, with a generous heart, undertake so worthy an enterprise.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794747915545 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR7"></a>
+<div class="gtxt_body" id="block.10.1.0.box.87.177.766.1165.q.101">
+<a id="GBS.PR7.w.1.1.0"></a><p class="gtxt_body" id="para.10.1.1.box.97.1033.756.309.q.101" style="font-size:103%;text-indent:1em;">Yet it was neither by my own choice nor inclination that this Introduction now appears in public. A truly honourable and virtuous soul, having some time since received of God the grace of aspiring to a devout life, desired my particular assistance for that purpose; and I, being in many ways obliged to her, and having long before dis<a id="GBS.PR8.w.1.0.0"></a><span class="gtxt_body" id="para.11.1.0.box.86.166.754.488.q.101">covered in her a warm disposition for this design, and, having conducted her through all the exercises suitable to her desires and condition, I left her certain instructions, in writing, to make use of, and she afterwards communicated those to a great, learned, and devout religious man; who, believing that many might profit from their perusal, earnestly requested me to publish them. I readily acquiesced, from a conviction that his judgment was superior to mine, and because his friendship had great power over my will.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794748079501 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR8"></a>
+<div class="gtxt_body" id="block.11.1.0.box.86.166.759.1164.q.101">
+<a id="GBS.PR8.w.1.1.0"></a><p class="gtxt_body" id="para.11.1.1.box.89.661.756.490.q.101" style="font-size:103%;text-indent:1em;">Now that the whole may be more profitable and agreeable, I have revised and arranged it into a kind of method, adding several advices and instructions which appeared suited to my intention. But all this I have done, having scarcely any leisure; for which reason you will find nothing in this treatise exact or in order, but only a heap of good admonitions, delivered in plain and intelligible words, without my having bestowed as much as a thought on the ornaments of language, having business of more consequence on my hands.</p>
+<a id="GBS.PR8.w.1.2.0"></a><p class="gtxt_body" id="para.11.1.2.box.99.1157.744.173.q.101" style="font-size:103%;text-indent:1em;">I address my discourse to Philothea, because, desiring to reduce what I at first had written for one only, to the common advantage of many souls, I make use of a name applicable to all such as<a id="GBS.PR9.w.1.0.0"></a><span class="gtxt_body" id="para.12.1.0.box.71.166.773.1169.q.101">
+aspire to devotion; for the Greek word, Philothen, signifies a soul loving, or in love with, God. Regarding, then, throughout this work, a soul which, by the desire of devotion, aspires to the love of God, I have divided it into five parts. In the <span style="font-style:italic;">first</span>, I endeavour, by remonstrances and exercises, to convert the simple desire of Philothea into an absolute resolution, which she at last makes, by a firm protestation, after her general confession, followed by the most Holy Communion; in which, giving herself up to her Saviour, she happily enters into his holy love. Then, in the <span style="font-style:italic;">second </span>part, I try to lead her farther on; I show her the two great means whereby she may unite herself more and more to his Divine Majesty, viz., the use of the sacraments, whereby God comes to us, and holy prayer, by which He attracts us to Himself In the <span style="font-style:italic;">third</span>, I show her how she ought to exercise herself in the virtues most proper for her advance-ment; not stopping, except at some particular advices, which she could hardly have received elsewhere, or discovered herself. In the fourth <span style="font-style:italic;">part</span>, I expose some of the ambushes of her enemies to her view, showing her how she may escape them, and proceed forward in her laudable undertaking. In the <span style="font-style:italic;">fifth</span>, <span style="font-style:italic;">and </span><span style="font-style:italic;">last</span>, I make her retire a</span><a id="GBS.PR10.w.1.0.0"></a><span class="gtxt_body" id="para.13.1.0.box.107.167.753.127.q.101">
+little to refresh herself, recover breath, and repair her strength, that she may afterwards more happily gain ground, and advance in a devout life.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794748255620 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR9"></a>
+<div class="gtxt_body" id="block.12.1.0.box.71.166.773.1169.q.101">
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794748522144 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR10"></a>
+<div class="gtxt_body" id="block.13.1.0.box.107.167.761.1161.q.101">
+<a id="GBS.PR10.w.1.1.0"></a><p class="gtxt_body" id="para.13.1.1.box.109.301.759.1027.q.101" style="font-size:103%;text-indent:1em;">In this capricious age I foresee that many will say: "It belongs only to religious to give particular directions concerning piety, since they have more leisure than a bishop can have, who is charged with a diocese so heavy as mine is; that such an undertaking too much distracts the understanding, which should be employed in affairs of importance." But I say to thee, dear reader, with the great St. Denis, that it belongs principally to bishops to conduct souls to perfection, since their order is as supreme among men as that of the seraphim is among the angels; so that their leisure cannot be better employed. The ancient bishops and fathers of the Church, it must be granted, were at least as careful of their charge as we are; yet they did not decline to superintend the particular conduct of several souls who had recourse to their assistance, as appears by their epistles; in this they imitated the apostles, who, amidst the general harvest of the world, picked up certain remarkable ears of corn with a special and particular affection. Who is ignorant that Timothy, Titus, Philemon, Onesimus, St. Thecla,<a id="GBS.PR11.w.1.0.0"></a><span class="gtxt_body" id="para.14.1.0.box.80.166.761.306.q.101">
+and Appia, were the dear pupils of the great St. Paul; as St. Mark and St. Petronilla were of St. Peter?-St. Petronilla, I say, who, as Baronius and Galonius learnedly prove, was not St. Peter's real, but only his spiritual daughter. And does not St. John write one of his canonical epistles to the devout Lady Electa?</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794748683092 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR11"></a>
+<div class="gtxt_body" id="block.14.1.0.box.80.166.761.306.q.101" style="margin-bottom: 1.5em;">
+</div>
+<div class="gtxt_body" id="block.14.2.0.box.86.478.766.847.q.101">
+<a id="GBS.PR11.w.2.0.0"></a><p class="gtxt_body" id="para.14.2.0.box.86.478.766.847.q.101" style="font-size:103%;text-indent:1em;">It is painful, I confess, to direct souls in particular; but it is a pain that gives comfort, like that which is felt by the labourers in the harvest and vintage; who are never better pleased than when they have most to do, and when their burdens are the heaviest. It is a labour which refreshes and revives the heart, by the sweet de lights it brings to those that are engaged therein; as the cinnamon does to those that carry it through Arabia Felix. It is said that when the tigress finds one of her whelps, which the huntsman leaves in her way to amuse her, whilst he carries off the rest of the litter, she loads herself with it, be it ever so big, and yet does not feel herself more heavy, but rather lighter in the course she makes to leave it safe in her den, natural love making her burden more easy: how much more willingly, then, will a fatherly heart take charge of a soul in which he has found a desire for holy perfection; carrying it<a id="GBS.PR12.w.1.0.0"></a><span class="gtxt_body" id="para.15.1.0.box.80.164.758.262.q.101">
+in his bosom as a mother does her little child, without being oppressed by so beloved a burden ! But this must be indeed a fatherly heart; and therefore the apostles, and apostolic men, call their disciples not only their children, but still, more <span style="font-style:italic;">tenderly</span>, their <span style="font-style:italic;">little </span>children.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794749020391 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR12"></a>
+<div class="gtxt_body" id="block.15.1.0.box.80.164.759.1159.q.101">
+<a id="GBS.PR12.w.1.1.0"></a><p class="gtxt_body" id="para.15.1.1.box.86.433.753.890.q.101" style="font-size:102%;text-indent:1em;">It is true, dear reader, that I here write of a devout life, without being myself devout-yet certainly not without a desire of becoming so, and that it is this affection towards it which encourages me to instruct thee. For as a great and learned man has said: "To study is a good way to learn; to hear, is a still better; but to teach, is the best of all." "It often happens," said St. Augustin, writing to the devout Florentina, "that the office of distributing gives us the merit of receiving; and that the office of teaching serves as a foundation for learning." Alexander caused the picture of the fair Campaspé to be drawn by the hand of the celebrated Apelles, who, being forced to look upon her for a considerable time together, as fast as he drew her features in his picture the love of them became insensibly imprinted in his heart, which, coming to the knowledge of Alexander, he, taking pity on him, gave her to him in marriage, depriving himself, for his sake, of the<a id="GBS.PR13.w.1.0.0"></a><span class="gtxt_body" id="para.16.1.0.box.92.169.756.173.q.101">
+woman whom he loved the most in the world: in which action, saith Pliny, he showed the great ness of his mind, as much as he could have by the most signal victory.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794749172710 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR13"></a>
+<div class="gtxt_body" id="block.16.1.0.box.92.169.756.1162.q.101">
+<a id="GBS.PR13.w.1.1.0"></a><p class="gtxt_body" id="para.16.1.1.box.92.349.756.982.q.101" style="font-size:103%;text-indent:1em;">Now I am of opinion, beloved reader, that it is the will of God that I, being a bishop, should paint upon the hearts of his people, not only <span style="font-style:italic;">common </span><span style="font-style:italic;">virtues</span>, but also his most dear and <span style="font-style:italic;">well</span><span style="font-style:italic;">-</span><span style="font-style:italic;">beloved </span><span style="font-style:italic;">de</span>votion. And I willingly undertake the office, as well in obedience to Him, and to discharge my duty, as with the hope that by engraving it on the minds of others, my own may become holily enamoured with its beauty. Now, if ever the Divine Majesty shall see me passionately in love with it, He will give it to me in an eternal marriage. The fair and chaste Rebecca, watering Isaac's camels, was destined to be his wife, and received, on his part, golden ear-rings and bracelets. Thus do I flatter myself, through the infinite goodness of God, that, in conducting his dear sheep to the wholesome waters of devotion, He will make my soul his spouse, putting in my ears the golden words of his holy love, and on my arms the strength to practise good works, in which consists the essence of true devotion; which I humbly beseech his Majesty to grant to me and to all the<a id="GBS.PR14.w.1.0.0"></a><span class="gtxt_body" id="para.17.1.0.box.78.166.764.127.q.101">
+children of his Church, to which I for ever submit my writings, my actions, my words, my thoughts, and my inclinations.</span></p>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794749343763 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PR14"></a>
+<div class="gtxt_body" id="block.17.1.0.box.78.166.764.127.q.101" style="margin-bottom: 1.5em;">
+</div>
+<div class="gtxt_body" id="block.17.2.0.box.99.338.361.64.q.101">
+<a id="GBS.PR14.w.2.0.0"></a><p class="gtxt_body" id="para.17.2.0.box.99.338.287.30.q.101">At Annecy, this day ofSt.Mary <span style="font-style:italic;">Magdalen</span>, 1609.</p>
+<a id="GBS.PR14.w.2.1.0"></a>
+</div>
+</div>
+<!-- Content from Google Book Search, generated at 1747794749494743 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR15"></a>
+<img alt="Image for page 18" src="../data/content-0006.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794749697033 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR16"></a>
+<img alt="Image for page 19" src="../data/content-0007.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794749899268 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR17"></a>
+<img alt="Image for page 20" src="../data/content-0008.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794750125947 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR18"></a>
+<img alt="Image for page 21" src="../data/content-0009.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794750302949 -->
+<div class="flow" style="">
+<div class="pagebreak"></div>
+<a class="page full_page_image" id="GBS.PR19"></a>
+<img alt="Image for page 22" src="../data/content-0010.png" style="max-width:100%; max-height:100%"/></div>
+<!-- Content from Google Book Search, generated at 1747794750460090 -->
+<div class="flow" style="">
+<a class="page full_page_skipped" id="GBS.PR20"></a>
+</div>
+<!-- Content from Google Book Search, generated at 1747794750594482 -->
+<div class="flow" style="">
+<a class="page" id="GBS.PA1"></a>
+<div class="gtxt_body" id="block.24.0.0.box.140.172.637.55.q.101" style="margin-bottom: 1.5em;">
+<a id="GBS.PA1.w.0.0.0"></a><p class="gtxt_body" id="para.24.0.0.box.140.172.637.55.q.101" style="font-size:113%;text-indent:1em;">Introduction to the Devout Life.</p>
+</div>
+</div>
+</body></html>
