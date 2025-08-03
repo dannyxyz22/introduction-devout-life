@@ -31,6 +31,18 @@ python gerar_epub_atualizado.py
 - Estrutura EPUB padrão
 - Navegação NCX
 - Metadados adequados
+- **Página de licença CC0 incluída automaticamente**
+
+### `verify_epub.py`
+Verifica a estrutura e integridade dos arquivos EPUB gerados.
+
+**Uso:**
+```bash
+python verify_epub.py
+```
+
+**Entrada:** Arquivos EPUB em `../../output/`
+**Saída:** Relatório de verificação da estrutura
 
 ## Estrutura de Dados
 

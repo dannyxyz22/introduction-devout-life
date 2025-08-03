@@ -8,11 +8,14 @@
 - ✅ Aplicação React em `webapp/`
 - ✅ Sistema de tradução operacional
 - ✅ Geração de EPUB implementada
+- ✅ **Páginas de título adicionadas aos EPUBs**
+- ✅ **Licença Creative Commons CC0 integrada**
 
 ### 📂 **Arquivos Verificados**
 - ✅ JSON Inglês: 582.6 KB
 - ✅ JSON Português: 587.4 KB  
-- ✅ EPUB Inglês: 0.27 MB (118 capítulos)
+- ✅ EPUB Inglês: 285 KB (118 capítulos + título + licença)
+- ✅ EPUB Português: 292 KB (118 capítulos + título + licença)
 - ✅ EPUB Português: 0.28 MB (118 capítulos)
 - ✅ DOCX para tradução: 0.21 MB
 
@@ -116,6 +119,7 @@ git push -u origin main
 - EPUB padrão com estrutura completa
 - Navegação NCX funcional
 - Metadados adequados por idioma
+- **Página de licença CC0 incluída**
 
 ### ✅ **Interface Web**
 - Aplicação React responsiva

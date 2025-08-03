@@ -12,6 +12,7 @@ from datetime import datetime
 from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+import html
 
 def prettify_xml(elem):
     """Formata XML de forma legível"""
@@ -91,7 +92,7 @@ def create_opf_file(book_data, output_dir, lang='en'):
     # Informações do livro
     if lang == 'pt':
         title = SubElement(metadata, 'dc:title')
-        title.text = "Introdução à Vida Devota"
+        title.text = "Filotéia - Introdução à Vida Devota"
         language = SubElement(metadata, 'dc:language')
         language.text = "pt-BR"
         identifier_text = "devout-life-pt-br"
@@ -124,6 +125,18 @@ def create_opf_file(book_data, output_dir, lang='en'):
               href="toc.ncx",
               attrib={'media-type': 'application/x-dtbncx+xml'})
     
+    # Página de licença
+    SubElement(manifest, 'item',
+              id="license",
+              href="license.xhtml",
+              attrib={'media-type': 'application/xhtml+xml'})
+    
+    # Página de título
+    SubElement(manifest, 'item',
+              id="title-page",
+              href="title_page.xhtml",
+              attrib={'media-type': 'application/xhtml+xml'})
+    
     # Arquivos de conteúdo
     file_counter = 1
     file_list = []
@@ -143,8 +156,15 @@ def create_opf_file(book_data, output_dir, lang='en'):
     # Spine (ordem de leitura)
     spine = SubElement(package, 'spine', toc="ncx")
     
+    # Adicionar página de título primeiro
+    SubElement(spine, 'itemref', idref="title-page")
+    
+    # Depois todos os capítulos
     for file_id, _ in file_list:
         SubElement(spine, 'itemref', idref=file_id)
+    
+    # Adicionar página de licença no final
+    SubElement(spine, 'itemref', idref="license")
     
     return prettify_xml(package), file_list
 
@@ -175,6 +195,22 @@ def create_ncx_file(book_data, lang='en'):
     nav_map = SubElement(ncx, 'navMap')
     
     play_order = 1
+    
+    # Adicionar página de título no índice (primeiro item)
+    title_nav = SubElement(nav_map, 'navPoint', 
+                          id="title-page",
+                          playOrder=str(play_order))
+    
+    title_label = SubElement(title_nav, 'navLabel')
+    title_text = SubElement(title_label, 'text')
+    if lang == 'pt':
+        title_text.text = "Página de Título"
+    else:
+        title_text.text = "Title Page"
+    
+    SubElement(title_nav, 'content', src="title_page.xhtml")
+    
+    play_order += 1
     
     for part_idx, part in enumerate(book_data):
         part_title = part.get('part_title', f'Part {part_idx + 1}')
@@ -209,6 +245,20 @@ def create_ncx_file(book_data, lang='en'):
             SubElement(chapter_nav, 'content', src=chapter_file)
             
             play_order += 1
+    
+    # Adicionar página de licença no final do índice
+    license_nav = SubElement(nav_map, 'navPoint', 
+                            id="license-page",
+                            playOrder=str(play_order))
+    
+    license_label = SubElement(license_nav, 'navLabel')
+    license_text = SubElement(license_label, 'text')
+    if lang == 'pt':
+        license_text.text = "Licença"
+    else:
+        license_text.text = "License"
+    
+    SubElement(license_nav, 'content', src="license.xhtml")
     
     return prettify_xml(ncx)
 
@@ -269,7 +319,32 @@ def generate_epub(json_file, output_epub, lang='en'):
         with open(os.path.join(temp_dir, 'OEBPS', 'toc.ncx'), 'w', encoding='utf-8') as f:
             f.write(ncx_content)
         
-        # 5. Cria arquivos XHTML para cada capítulo
+        # 5. Copia arquivo de licença
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        license_source = os.path.join(script_dir, 'license.xhtml')
+        license_dest = os.path.join(temp_dir, 'OEBPS', 'license.xhtml')
+        
+        if os.path.exists(license_source):
+            shutil.copy2(license_source, license_dest)
+            print(f"   📄 Licença adicionada: license.xhtml")
+        else:
+            print(f"   ⚠️ Arquivo de licença não encontrado: {license_source}")
+        
+        # 6. Copia arquivo de página de título
+        if lang == 'pt':
+            title_source = os.path.join(script_dir, 'title_page_pt.xhtml')
+        else:
+            title_source = os.path.join(script_dir, 'title_page_en.xhtml')
+        
+        title_dest = os.path.join(temp_dir, 'OEBPS', 'title_page.xhtml')
+        
+        if os.path.exists(title_source):
+            shutil.copy2(title_source, title_dest)
+            print(f"   📖 Página de título adicionada: title_page.xhtml")
+        else:
+            print(f"   ⚠️ Arquivo de página de título não encontrado: {title_source}")
+        
+        # 7. Cria arquivos XHTML para cada capítulo
         file_counter = 1
         chapters_created = 0
         
@@ -288,7 +363,7 @@ def generate_epub(json_file, output_epub, lang='en'):
         
         print(f"   📝 Capítulos criados: {chapters_created}")
         
-        # 6. Cria arquivo EPUB (ZIP)
+        # 8. Cria arquivo EPUB (ZIP)
         if os.path.exists(output_epub):
             os.remove(output_epub)
         
@@ -306,7 +381,7 @@ def generate_epub(json_file, output_epub, lang='en'):
                     arcname = os.path.relpath(file_path, temp_dir)
                     epub.write(file_path, arcname)
         
-        # 7. Limpa diretório temporário
+        # 8. Limpa diretório temporário
         shutil.rmtree(temp_dir)
         
         # Verifica arquivo criado
@@ -375,7 +450,7 @@ def main():
         generate_epub(available_files['en'], output_file, 'en')
         
     elif choice == '2' and 'pt' in available_files:
-        output_file = 'Introducao_a_Vida_Devota_PT.epub'
+        output_file = 'Filotéia - Introdução à vida devota pt-BR.epub'
         generate_epub(available_files['pt'], output_file, 'pt')
         
     elif choice == '3':
@@ -386,7 +461,7 @@ def main():
                 success_count += 1
         
         if 'pt' in available_files:
-            if generate_epub(available_files['pt'], 'Introducao_a_Vida_Devota_PT.epub', 'pt'):
+            if generate_epub(available_files['pt'], 'Filotéia - Introdução à vida devota pt-BR.epub', 'pt'):
                 success_count += 1
         
         print(f"\n🎉 {success_count} arquivo(s) EPUB gerado(s) com sucesso!")
