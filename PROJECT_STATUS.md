@@ -9,15 +9,17 @@
 - ✅ Sistema de tradução operacional
 - ✅ Geração de EPUB implementada
 - ✅ **Páginas de título adicionadas aos EPUBs**
+- ✅ **Oração Dedicatória de São Francisco de Sales incluída**
+- ✅ **Prefácio de São Francisco de Sales incluído** 
 - ✅ **Licença Creative Commons CC0 integrada**
+- ✅ **Sistema de tradução unificado** (versões PT geradas via DOCX→Google Translate)
 
 ### 📂 **Arquivos Verificados**
 - ✅ JSON Inglês: 582.6 KB
 - ✅ JSON Português: 587.4 KB  
-- ✅ EPUB Inglês: 285 KB (118 capítulos + título + licença)
-- ✅ EPUB Português: 292 KB (118 capítulos + título + licença)
-- ✅ EPUB Português: 0.28 MB (118 capítulos)
-- ✅ DOCX para tradução: 0.21 MB
+- ✅ EPUB Inglês: 285 KB (118 capítulos + título + oração + prefácio + licença)
+- ✅ EPUB Português: 292 KB (118 capítulos + título + oração + prefácio + licença)
+- ✅ DOCX para tradução: 0.21 MB (inclui prefácio e oração dedicatória)
 
 ## 🚀 **Como Usar o Projeto**
 

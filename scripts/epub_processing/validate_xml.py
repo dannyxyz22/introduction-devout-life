@@ -37,7 +37,9 @@ def validate_epub(epub_path):
                 'OEBPS/content.opf',
                 'OEBPS/toc.ncx', 
                 'OEBPS/license.xhtml',
-                'OEBPS/title_page.xhtml'
+                'OEBPS/title_page.xhtml',
+                'OEBPS/dedicatory_prayer.xhtml',
+                'OEBPS/preface.xhtml'
             ]
             
             # Adicionar capítulos

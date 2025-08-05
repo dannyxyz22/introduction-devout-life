@@ -137,6 +137,18 @@ def create_opf_file(book_data, output_dir, lang='en'):
               href="title_page.xhtml",
               attrib={'media-type': 'application/xhtml+xml'})
     
+    # Oração Dedicatória
+    SubElement(manifest, 'item',
+              id="dedicatory-prayer",
+              href="dedicatory_prayer.xhtml",
+              attrib={'media-type': 'application/xhtml+xml'})
+    
+    # Prefácio
+    SubElement(manifest, 'item',
+              id="preface",
+              href="preface.xhtml",
+              attrib={'media-type': 'application/xhtml+xml'})
+    
     # Arquivos de conteúdo
     file_counter = 1
     file_list = []
@@ -158,6 +170,12 @@ def create_opf_file(book_data, output_dir, lang='en'):
     
     # Adicionar página de título primeiro
     SubElement(spine, 'itemref', idref="title-page")
+    
+    # Adicionar oração dedicatória
+    SubElement(spine, 'itemref', idref="dedicatory-prayer")
+    
+    # Adicionar prefácio
+    SubElement(spine, 'itemref', idref="preface")
     
     # Depois todos os capítulos
     for file_id, _ in file_list:
@@ -209,6 +227,38 @@ def create_ncx_file(book_data, lang='en'):
         title_text.text = "Title Page"
     
     SubElement(title_nav, 'content', src="title_page.xhtml")
+    
+    play_order += 1
+    
+    # Adicionar oração dedicatória no índice
+    prayer_nav = SubElement(nav_map, 'navPoint', 
+                           id="dedicatory-prayer",
+                           playOrder=str(play_order))
+    
+    prayer_label = SubElement(prayer_nav, 'navLabel')
+    prayer_text = SubElement(prayer_label, 'text')
+    if lang == 'pt':
+        prayer_text.text = "Oração Dedicatória"
+    else:
+        prayer_text.text = "Dedicatory Prayer"
+    
+    SubElement(prayer_nav, 'content', src="dedicatory_prayer.xhtml")
+    
+    play_order += 1
+    
+    # Adicionar prefácio no índice
+    preface_nav = SubElement(nav_map, 'navPoint', 
+                            id="preface",
+                            playOrder=str(play_order))
+    
+    preface_label = SubElement(preface_nav, 'navLabel')
+    preface_text = SubElement(preface_label, 'text')
+    if lang == 'pt':
+        preface_text.text = "Prefácio"
+    else:
+        preface_text.text = "Preface"
+    
+    SubElement(preface_nav, 'content', src="preface.xhtml")
     
     play_order += 1
     
@@ -332,7 +382,7 @@ def generate_epub(json_file, output_epub, lang='en'):
         
         # 6. Copia arquivo de página de título
         if lang == 'pt':
-            title_source = os.path.join(script_dir, 'title_page_pt.xhtml')
+            title_source = os.path.join(script_dir, 'title_page_en.xhtml')  # Usar versão inglesa como base
         else:
             title_source = os.path.join(script_dir, 'title_page_en.xhtml')
         
@@ -344,7 +394,35 @@ def generate_epub(json_file, output_epub, lang='en'):
         else:
             print(f"   ⚠️ Arquivo de página de título não encontrado: {title_source}")
         
-        # 7. Cria arquivos XHTML para cada capítulo
+        # 7. Copia arquivo de oração dedicatória
+        if lang == 'pt':
+            prayer_source = os.path.join(script_dir, 'dedicatory_prayer_en.xhtml')  # Usar versão inglesa como base
+        else:
+            prayer_source = os.path.join(script_dir, 'dedicatory_prayer_en.xhtml')
+        
+        prayer_dest = os.path.join(temp_dir, 'OEBPS', 'dedicatory_prayer.xhtml')
+        
+        if os.path.exists(prayer_source):
+            shutil.copy2(prayer_source, prayer_dest)
+            print(f"   🙏 Oração dedicatória adicionada: dedicatory_prayer.xhtml")
+        else:
+            print(f"   ⚠️ Arquivo de oração dedicatória não encontrado: {prayer_source}")
+        
+        # 8. Copia arquivo de prefácio
+        if lang == 'pt':
+            preface_source = os.path.join(script_dir, 'preface_en.xhtml')  # Usar versão inglesa como base
+        else:
+            preface_source = os.path.join(script_dir, 'preface_en.xhtml')
+        
+        preface_dest = os.path.join(temp_dir, 'OEBPS', 'preface.xhtml')
+        
+        if os.path.exists(preface_source):
+            shutil.copy2(preface_source, preface_dest)
+            print(f"   📄 Prefácio adicionado: preface.xhtml")
+        else:
+            print(f"   ⚠️ Arquivo de prefácio não encontrado: {preface_source}")
+        
+        # 9. Cria arquivos XHTML para cada capítulo
         file_counter = 1
         chapters_created = 0
         
@@ -363,7 +441,7 @@ def generate_epub(json_file, output_epub, lang='en'):
         
         print(f"   📝 Capítulos criados: {chapters_created}")
         
-        # 8. Cria arquivo EPUB (ZIP)
+        # 10. Cria arquivo EPUB (ZIP)
         if os.path.exists(output_epub):
             os.remove(output_epub)
         
@@ -381,7 +459,7 @@ def generate_epub(json_file, output_epub, lang='en'):
                     arcname = os.path.relpath(file_path, temp_dir)
                     epub.write(file_path, arcname)
         
-        # 8. Limpa diretório temporário
+        # 11. Limpa diretório temporário
         shutil.rmtree(temp_dir)
         
         # Verifica arquivo criado
