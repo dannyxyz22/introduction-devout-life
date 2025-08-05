@@ -116,6 +116,10 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
     date = SubElement(metadata, 'dc:date')
     date.text = datetime.now().strftime('%Y-%m-%d')
     
+    # Metadados da capa (apenas para português)
+    if lang == 'pt':
+        meta_cover = SubElement(metadata, 'meta', name="cover", content="cover-image")
+    
     # Manifest (lista de arquivos)
     manifest = SubElement(package, 'manifest')
     
@@ -136,6 +140,13 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
               id="title-page",
               href="title_page.xhtml",
               attrib={'media-type': 'application/xhtml+xml'})
+    
+    # Imagem da capa (apenas para português)
+    if lang == 'pt':
+        SubElement(manifest, 'item',
+                  id="cover-image",
+                  href="cover.png",
+                  attrib={'media-type': 'image/png'})
     
     # Oração Dedicatória (só se não estiver no JSON)
     if not has_prayer_in_json:
@@ -415,6 +426,19 @@ def generate_epub(json_file, output_epub, lang='en'):
             print(f"   📖 Página de título adicionada: title_page.xhtml")
         else:
             print(f"   ⚠️ Arquivo de página de título não encontrado: {title_source}")
+        
+        # 6.5. Copia arquivo de capa (apenas para português)
+        if lang == 'pt':
+            # Localizar o arquivo de capa
+            covers_dir = os.path.join(os.path.dirname(os.path.dirname(script_dir)), 'covers')
+            cover_source = os.path.join(covers_dir, 'cover_pt-BR.png')
+            cover_dest = os.path.join(temp_dir, 'OEBPS', 'cover.png')
+            
+            if os.path.exists(cover_source):
+                shutil.copy2(cover_source, cover_dest)
+                print(f"   🖼️ Capa adicionada: cover.png")
+            else:
+                print(f"   ⚠️ Arquivo de capa não encontrado: {cover_source}")
         
         # 7. Copia arquivo de oração dedicatória (apenas se não estiver no JSON)
         if not has_prayer_in_json:
