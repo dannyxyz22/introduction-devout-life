@@ -15,11 +15,20 @@
 - ✅ **Sistema de tradução unificado** (versões PT geradas via DOCX→Google Translate)
 
 ### 📂 **Arquivos Verificados**
-- ✅ JSON Inglês: 582.6 KB
-- ✅ JSON Português: 587.4 KB  
-- ✅ EPUB Inglês: 285 KB (118 capítulos + título + oração + prefácio + licença)
-- ✅ EPUB Português: 292 KB (118 capítulos + título + oração + prefácio + licença)
-- ✅ DOCX para tradução: 0.21 MB (inclui prefácio e oração dedicatória)
+- ✅ JSON Inglês: 587.8 KB (**ATUALIZADO** com oração dedicatória e prefácio)
+- ✅ JSON Português: 590.9 KB (**ATUALIZADO** com oração dedicatória e prefácio)  
+- ✅ EPUB Inglês: 287.7 KB (122 capítulos: título→oração→prefácio→118 capítulos→licença)
+- ✅ EPUB Português: 294.5 KB (**CORRIGIDO** - agora 100% em português, incluindo título, oração e prefácio)
+- ✅ **DOCX para tradução**: 0.22 MB (**COMPLETO** com prefácio e oração dedicatória)
+
+### 🔧 **MELHORIAS RECENTES** 
+- ✅ **Problema Crítico Resolvido**: EPUB português agora usa arquivos XHTML traduzidos 100%
+- ✅ **Arquivos XHTML Criados**: `title_page_pt-BR.xhtml`, `dedicatory_prayer_pt-BR.xhtml`, `preface_pt-BR.xhtml`
+- ✅ **Gerador EPUB Corrigido**: Detecta idioma e usa arquivos corretos para cada versão
+- ✅ **Consistência Total**: DOCX, JSON e EPUB agora contêm exatamente o mesmo conteúdo em seus respectivos idiomas
+- ✅ **Estrutura Completa**: Título → Oração Dedicatória → Prefácio → 118 Capítulos → Licença CC0
+- ✅ **Funções Reutilizáveis**: Implementado princípio DRY com `extract_text_from_xhtml()` e `add_xhtml_content_to_docx()`
+- ✅ **120 Capítulos Totais**: Incluindo todo o conteúdo introdutório devidamente traduzido
 
 ## 🚀 **Como Usar o Projeto**
 
