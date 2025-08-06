@@ -92,9 +92,11 @@ def main():
         print(f"7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → EPUBs)")
         print(f"8. ℹ️  Mostrar status do projeto")
         print(f"9. 🚀 Iniciar aplicação web")
-        print(f"10. ❌ Sair")
+        print(f"10. 📊 Comparar contagem de caracteres dos EPUBs")
+        print(f"11. 🔍 Analisar conteúdo adicionado nas versões geradas")
+        print(f"12. ❌ Sair")
         
-        choice = input(f"\nEscolha uma opção (1-10): ").strip()
+        choice = input(f"\nEscolha uma opção (1-12): ").strip()
         
         if choice == '1':
             # Prioriza o novo processador com word_count automático
@@ -213,11 +215,25 @@ def main():
                 print(f"❌ Pasta webapp não encontrada!")
                 
         elif choice == '10':
-            print(f"\n👋 Até logo!")
+            print(f"\n� EXECUTANDO COMPARAÇÃO DE CARACTERES DOS EPUBs...")
+            if os.path.exists('compare_epub_text.py'):
+                run_script('compare_epub_text.py', "Comparação de contagem de caracteres")
+            else:
+                print("❌ Script compare_epub_text.py não encontrado!")
+                
+        elif choice == '11':
+            print(f"\n🔍 EXECUTANDO ANÁLISE DE CONTEÚDO ADICIONADO...")
+            if os.path.exists('analyze_added_content.py'):
+                run_script('analyze_added_content.py', "Análise de conteúdo adicionado")
+            else:
+                print("❌ Script analyze_added_content.py não encontrado!")
+                
+        elif choice == '12':
+            print(f"\n�👋 Até logo!")
             break
             
         else:
-            print(f"❌ Opção inválida! Escolha um número de 1 a 10.")
+            print(f"❌ Opção inválida! Escolha um número de 1 a 12.")
 
 if __name__ == "__main__":
     main()
