@@ -55,6 +55,7 @@ def main():
     scripts = {
         'epub_process': os.path.join('scripts', 'epub_processing', 'process_epub.py'),
         'epub_process_new': os.path.join('scripts', 'epub_processing', 'epub_to_json_processor.py'),
+        'reorganize_json': 'reorganize_final.py',
         'epub_generate': os.path.join('scripts', 'epub_processing', 'gerar_epub_atualizado.py'),
         'ocr_fix': os.path.join('scripts', 'ocr_fixes', 'fix_ocr_manual.py'),
         'docx_clean': os.path.join('scripts', 'translation', 'tradutor_docx_clean.py'),
@@ -83,16 +84,17 @@ def main():
     while True:
         print(f"\n📋 MENU PRINCIPAL:")
         print(f"1. 📖 Processar EPUB → JSON (com word_count automático)")
-        print(f"2. 🔧 Corrigir OCR no JSON inglês")
-        print(f"3. 📄 Gerar DOCX para tradução")
-        print(f"4. 🌐 Reconstruir JSON português (após tradução)")
-        print(f"5. 📚 Gerar EPUBs atualizados")
-        print(f"6. 🔄 Pipeline completo (OCR → DOCX → EPUBs)")
-        print(f"7. ℹ️  Mostrar status do projeto")
-        print(f"8. 🚀 Iniciar aplicação web")
-        print(f"9. ❌ Sair")
+        print(f"2. � Reorganizar JSON baseado no summary.csv")
+        print(f"3. �🔧 Corrigir OCR no JSON inglês")
+        print(f"4. 📄 Gerar DOCX para tradução")
+        print(f"5. 🌐 Reconstruir JSON português (após tradução)")
+        print(f"6. 📚 Gerar EPUBs atualizados")
+        print(f"7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → EPUBs)")
+        print(f"8. ℹ️  Mostrar status do projeto")
+        print(f"9. 🚀 Iniciar aplicação web")
+        print(f"10. ❌ Sair")
         
-        choice = input(f"\nEscolha uma opção (1-9): ").strip()
+        choice = input(f"\nEscolha uma opção (1-10): ").strip()
         
         if choice == '1':
             # Prioriza o novo processador com word_count automático
@@ -105,55 +107,71 @@ def main():
                 print("❌ Nenhum script de processamento encontrado!")
                 
         elif choice == '2':
+            if 'reorganize_json' not in missing_scripts:
+                run_script(scripts['reorganize_json'], "Reorganização do JSON baseado no summary.csv")
+            else:
+                print("❌ Script de reorganização não encontrado!")
+                
+        elif choice == '3':
             if 'ocr_fix' not in missing_scripts:
                 run_script(scripts['ocr_fix'], "Correção de OCR")
             else:
                 print("❌ Script de correção de OCR não encontrado!")
                 
-        elif choice == '3':
+        elif choice == '4':
             if 'docx_clean' not in missing_scripts:
                 run_script(scripts['docx_clean'], "Geração de DOCX para tradução")
             else:
                 print("❌ Script de geração de DOCX não encontrado!")
                 
-        elif choice == '4':
+        elif choice == '5':
             if 'json_reconstruct' not in missing_scripts:
                 run_script(scripts['json_reconstruct'], "Reconstrução de JSON português")
             else:
                 print("❌ Script de reconstrução não encontrado!")
                 
-        elif choice == '5':
+        elif choice == '6':
             if 'epub_generate' not in missing_scripts:
                 run_script(scripts['epub_generate'], "Geração de EPUBs")
             else:
                 print("❌ Script de geração de EPUB não encontrado!")
                 
-        elif choice == '6':
+        elif choice == '7':
             print(f"\n🔄 EXECUTANDO PIPELINE COMPLETO...")
             success = True
             
-            # 1. Corrigir OCR
-            if 'ocr_fix' not in missing_scripts:
+            # 1. Processar EPUB
+            if 'epub_process_new' not in missing_scripts:
+                success = run_script(scripts['epub_process_new'], "Processamento de EPUB") and success
+            elif 'epub_process' not in missing_scripts and success:
+                success = run_script(scripts['epub_process'], "Processamento de EPUB (versão antiga)") and success
+            
+            # 2. Reorganizar JSON
+            if 'reorganize_json' not in missing_scripts and success:
+                success = run_script(scripts['reorganize_json'], "Reorganização do JSON") and success
+            
+            # 3. Corrigir OCR
+            if 'ocr_fix' not in missing_scripts and success:
                 success = run_script(scripts['ocr_fix'], "Correção de OCR") and success
             
-            # 2. Gerar DOCX
+            # 4. Gerar DOCX
             if 'docx_clean' not in missing_scripts and success:
                 success = run_script(scripts['docx_clean'], "Geração de DOCX") and success
             
-            # 3. Gerar EPUBs (se JSON português existir)
+            # 5. Gerar EPUBs (se JSON português existir)
             if 'epub_generate' not in missing_scripts and success:
                 if os.path.exists(data_files['json_pt']):
                     run_script(scripts['epub_generate'], "Geração de EPUBs")
                 else:
                     print(f"\n⚠️  JSON português não encontrado.")
-                    print(f"   Execute a tradução no Google Translate e depois a reconstrução (opção 4).")
+                    print(f"   Execute a tradução no Google Translate e depois a reconstrução (opção 5).")
             
             if success:
                 print(f"\n🎉 PIPELINE CONCLUÍDO!")
             else:
                 print(f"\n❌ Pipeline interrompido devido a erros.")
                 
-        elif choice == '7':
+        elif choice == '8':
             print(f"\n📊 STATUS DO PROJETO:")
             print("=" * 30)
             
@@ -180,7 +198,7 @@ def main():
             docx_files = [f for f in os.listdir('.') if f.endswith('.docx')]
             print(f"📄 Arquivos DOCX: {len(docx_files)}")
             
-        elif choice == '8':
+        elif choice == '9':
             webapp_dir = os.path.join('webapp')
             if os.path.exists(webapp_dir):
                 print(f"\n🚀 Iniciando aplicação web...")
@@ -194,12 +212,12 @@ def main():
             else:
                 print(f"❌ Pasta webapp não encontrada!")
                 
-        elif choice == '9':
+        elif choice == '10':
             print(f"\n👋 Até logo!")
             break
             
         else:
-            print(f"❌ Opção inválida! Escolha um número de 1 a 9.")
+            print(f"❌ Opção inválida! Escolha um número de 1 a 10.")
 
 if __name__ == "__main__":
     main()
