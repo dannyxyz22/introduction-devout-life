@@ -364,17 +364,29 @@ def generate_epub(json_file, output_epub, lang='en'):
     has_prayer_in_json = False
     has_preface_in_json = False
     
-    if len(book_data) > 0:
-        first_part = book_data[0].get('part_title', '').upper()
-        if 'ORAÇÃO' in first_part or 'DEDICATÓRIA' in first_part or 'DEDICATORY' in first_part or 'PRAYER' in first_part:
-            has_prayer_in_json = True
-            print(f"   ✅ Oração dedicatória detectada no JSON")
-    
-    if len(book_data) > 1:
-        second_part = book_data[1].get('part_title', '').upper()
-        if 'PREFÁCIO' in second_part or 'PREFACE' in second_part:
-            has_preface_in_json = True
-            print(f"   ✅ Prefácio detectado no JSON")
+    # Verifica se há oração dedicatória no conteúdo
+    for part_idx, part in enumerate(book_data):
+        for chap_idx, chapter in enumerate(part.get('chapters', [])):
+            for cont_idx, content_item in enumerate(chapter.get('content', [])):
+                content_text = content_item.get('content', '').upper()
+                
+                if ('ORAÇÃO' in content_text and 'DEDICATÓRIA' in content_text) or \
+                   ('DEDICATORY' in content_text and 'PRAYER' in content_text):
+                    has_prayer_in_json = True
+                    print(f"   ✅ Oração dedicatória detectada no JSON")
+                    
+                if ('PREFÁCIO' in content_text) or ('PREFACE' in content_text):
+                    # Certifica que não é apenas menção do prefácio em outro contexto
+                    if len(content_text.strip()) < 200:  # Se for uma linha curta, provavelmente é um título
+                        has_preface_in_json = True
+                        print(f"   ✅ Prefácio detectado no JSON")
+                        
+                if has_prayer_in_json and has_preface_in_json:
+                    break
+            if has_prayer_in_json and has_preface_in_json:
+                break
+        if has_prayer_in_json and has_preface_in_json:
+            break
     
     # Diretório temporário
     temp_dir = f"temp_epub_{lang}"

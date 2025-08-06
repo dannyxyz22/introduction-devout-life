@@ -1,0 +1,2182 @@
+<?xml version="1.0" ?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="devout-life"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Introdução à Vida Devota</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="title-page" playOrder="1">
+      <navLabel>
+        <text>Página de Título</text>
+      </navLabel>
+      <content src="title_page.xhtml"/>
+    </navPoint>
+    <navPoint id="dedicatory-prayer" playOrder="2">
+      <navLabel>
+        <text>Oração Dedicatória</text>
+      </navLabel>
+      <content src="dedicatory_prayer.xhtml"/>
+    </navPoint>
+    <navPoint id="preface" playOrder="3">
+      <navLabel>
+        <text>Prefácio</text>
+      </navLabel>
+      <content src="preface.xhtml"/>
+    </navPoint>
+    <navPoint id="part-1" playOrder="4">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-001.xhtml"/>
+      <navPoint id="chapter-4" playOrder="4">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-001.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-2" playOrder="5">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-002.xhtml"/>
+      <navPoint id="chapter-5" playOrder="5">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-002.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-6" playOrder="6">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-003.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-7" playOrder="7">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-004.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-8" playOrder="8">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-005.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-9" playOrder="9">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-006.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-10" playOrder="10">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-007.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-11" playOrder="11">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-008.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-12" playOrder="12">
+        <navLabel>
+          <text>CAPÍTULO IV. 
+
+
+A necessidade de um Guia para nos conduzir no caminho da Devoção. 
+O jovem Tobias, ao ser ordenado a ir a Rages, respondeu: "Não conheço o caminho." "Vai, então", respondeu seu pai, "e procura alguém que te guie." Digo o mesmo a ti, Filoteia; se queres, com sinceridade, caminhar em direção à devoção, procura um bom homem que te guie e te conduza: este é o conselho dos conselhos. Ainda que procures, diz o devoto Ávila, nunca encontrarás tão seguramente a vontade de Deus como por meio desta humilde obediência, tão recomendada e praticada pelos antigos santos. A bem-aventurada Madre Teresa, vendo a Senhora Catarina de Córdoba realizar tão grandes penitências, desejou muito imitá-la, contra o conselho de seu confessor, que a havia proibido. Ela foi muito tentada a desobedecer nesse aspecto; mas Deus lhe disse: "Filha, tu estás em um caminho bom e seguro; tu estimas muito as suas penitências; mas eu valorizo mais a tua obediência." E por isso ela tão altamente estimava esta virtude, que além da obediência devida aos seus superiores, fez um voto especial a um homem de excelente perfeição, obrigando-se a seguir sua orientação e conduta, o que a consolou infinitamente, assim como muitas almas devotas antes e depois dela, que, pela mais completa resignação a Deus, submeteram sua vontade à de seus servos, o que Santa Catarina de Sena tanto aplaude em seus diálogos. A devota princesa, Santa Isabel, submeteu-se com exemplar obediência a Conrado. E um dos 
+conselhos dados pelo grande São Luís ao seu filho, pouco antes de sua morte, foi este: "Confessa-te frequentemente, escolhe um confessor capaz e honesto que te possa instruir a fazer as coisas que são necessárias."</text>
+        </navLabel>
+        <content src="text/chapter-009.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-13" playOrder="13">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-010.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-14" playOrder="14">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-011.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-15" playOrder="15">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-012.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-16" playOrder="16">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-013.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-17" playOrder="17">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-014.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-18" playOrder="18">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-015.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-19" playOrder="19">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-016.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-20" playOrder="20">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-017.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-21" playOrder="21">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-018.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-22" playOrder="22">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-019.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-23" playOrder="23">
+        <navLabel>
+          <text>CAPÍTULO IX. 
+Primeira Meditação. - A Criação. 
+
+
+PREPARAÇÃO. 
+
+
+1. Coloque-se na presença de Deus. 2. Implore a Ele que o inspire. 
+
+
+CONSIDERAÇÕES. 
+
+
+1. Considere que, não muitos anos atrás, você ainda não estava no mundo e que seu ser era um mero nada. Onde estávamos, ó minha alma, naquele tempo? - o mundo havia durado tantas eras e, no entanto, nós não existíamos. 
+2. Deus o formou do nada, para fazer de você o que você é: puramente de sua própria bondade, não tendo necessidade alguma de você. 
+3. Considere o ser que Deus lhe deu, pois é o mais elevado no mundo visível, capaz de vida eterna e de estar perfeitamente unido à sua Divina Majestade. 
+AFEIÇÕES E RESOLUÇÕES. 
+1. Humilhe-se extremamente na presença de Deus, dizendo em seu coração com o salmista: Ó Senhor, sou aos seus olhos como um mero nada, e como você pensou em mim para me criar? Ai de mim! Minha alma, tu estavas perdida naquele nada antigo, e ainda estarias lá se Deus não te tivesse tirado de lá: e o que poderias ter feito permanecendo lá? 
+2. Dá graças a Deus: Ó meu grande e bom Criador, como sou grato a Ti, já que Tu te dignaste fazer-me do nada, e por Tua grande misericórdia fazer-me o que sou. O que posso fazer para bendizer teu santo nome como devo, e para render as devidas graças à tua inestimável bondade? 
+3. Confunde-te: Mas, ai! meu Criador, em vez de me unir a Ti, por amor e serviço,</text>
+        </navLabel>
+        <content src="text/chapter-020.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-24" playOrder="24">
+        <navLabel>
+          <text>CAPÍTULO IX. 
+Primeira Meditação. - A Criação.</text>
+        </navLabel>
+        <content src="text/chapter-021.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-25" playOrder="25">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-022.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-26" playOrder="26">
+        <navLabel>
+          <text>CAPÍTULO X. 
+
+
+Segunda Meditação. Sobre o fim para o qual fomos 
+
+
+criados. 
+
+
+PREPARAÇÃO. 
+1. Coloque-se diante de Deus. 2. Implore a Ele que o inspire. 
+CONSIDERAÇÕES. 
+
+
+1. Deus não nos colocou neste mundo para qualquer necessidade que Ele tenha de nós, que somos totalmente inúteis para Ele, mas apenas para exercer sua bondade em nós, dando-nos sua graça e glória. E para esse fim, Ele nos enriqueceu com um entendimento para conhecê-Lo, com uma memória para estarmos atentos a Ele, uma vontade para amá-Lo, uma imaginação para representar a nós mesmos seus benefícios, olhos para contemplar suas obras maravilhosas, uma língua para louvá-Lo, e assim por diante de nossas outras faculdades. 
+2. Sendo criados e colocados no mundo com essa intenção, todas as ações contrárias a ela devem ser evitadas e rejeitadas; e aquelas que não conduzem a esse fim devem ser desprezadas como vãs e supérfluas. 
+3. Considera a miséria dos mundanos que nunca pensam nisso, mas vivem como se acreditassem ter sido criados apenas para construir casas, plantar árvores, acumular riquezas e loucuras semelhantes! 
+AFEIÇÕES E RESOLUÇÕES. 
+1. Confunde-te, censurando a tua alma pela sua miséria e por teres esquecido estas verdades: Ai! dirás, como empreguei os meus pensamentos, ó Deus, se não os coloquei em Ti? Do que me lembrei quando te esqueci? O que amei, quando não te amei? Ai! Eu deveria ter-me nutrido da verdade, e fartei-me.</text>
+        </navLabel>
+        <content src="text/chapter-023.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-27" playOrder="27">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-024.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-28" playOrder="28">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-025.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-29" playOrder="29">
+        <navLabel>
+          <text>CAPÍTULO XI. 
+
+
+Terceira Meditação. Sobre os Benefícios de Deus. 
+
+
+PREPARAÇÃO. 
+
+
+1. Coloque-se na presença de Deus. 2. Implore a Ele que o inspire. 
+
+
+CONSIDERAÇÕES. 
+
+
+1. Considere as vantagens corporais que Deus 
+lhe deu: que corpo perfeito e que meios para mantê-lo; que saúde e recreações lícitas para entretê-lo; que amigos e assistências. Mas considere tudo isso com respeito a muitas outras pessoas, muito mais dignas do que você, que são destituídas de todas essas bênçãos: algumas defeituosas em seus corpos, saúde e membros; outras abandonadas às ferroadas de reprovações, desprezo e desonra; outras oprimidas pela pobreza, e Deus não permitiu que você se tornasse tão miserável. 
+2. Considere os dons da mente: Quantos há no mundo estúpidos, frenéticos e loucos - e por que você não é um deles? Deus o favoreceu. Quantos há que foram criados em hábitos grosseiros e extrema ignorância? E pela providência de Deus você foi educado bem e honrosamente. 
+3. Considere as graças espirituais: você é um filho da Igreja Católica. Deus lhe ensinou a conhecê-Lo desde a sua juventude. Quantas vezes Ele lhe deu seus sacramentos? Quantas inspirações, iluminações interiores e repreensões de consciência para sua emenda? Quantas vezes Ele perdoou suas faltas? Quantas vezes Ele o livrou das ocasiões de perder sua alma, às quais você está exposto? E não lhe foram dados, durante anos, lazer e oportunidade de promover o bem de sua alma? Considere em particular quão bom e gracioso Deus tem sido para você.</text>
+        </navLabel>
+        <content src="text/chapter-026.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-30" playOrder="30">
+        <navLabel>
+          <text>CAPÍTULO XI.</text>
+        </navLabel>
+        <content src="text/chapter-027.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-31" playOrder="31">
+        <navLabel>
+          <text>CAPÍTULO XI.</text>
+        </navLabel>
+        <content src="text/chapter-028.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-32" playOrder="32">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-029.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-33" playOrder="33">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-030.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-34" playOrder="34">
+        <navLabel>
+          <text>CAPÍTULO XIII. 
+Quinta Meditação.-Sobre a Morte.</text>
+        </navLabel>
+        <content src="text/chapter-031.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-35" playOrder="35">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-032.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-36" playOrder="36">
+        <navLabel>
+          <text>CAPÍTULO XIV. 
+Sexta Meditação. Sobre o Julgamento.</text>
+        </navLabel>
+        <content src="text/chapter-033.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-37" playOrder="37">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-034.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-38" playOrder="38">
+        <navLabel>
+          <text>CAPÍTULO XV. 
+Sétima Meditação.---Sobre o Inferno.</text>
+        </navLabel>
+        <content src="text/chapter-035.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-39" playOrder="39">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-036.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-40" playOrder="40">
+        <navLabel>
+          <text>CAPÍTULO XVI. 
+Oitava Meditação. —Sobre o Céu.</text>
+        </navLabel>
+        <content src="text/chapter-037.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-41" playOrder="41">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-038.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-42" playOrder="42">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-039.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-43" playOrder="43">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-040.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-44" playOrder="44">
+        <navLabel>
+          <text>CAPÍTULO XVIII.</text>
+        </navLabel>
+        <content src="text/chapter-041.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-45" playOrder="45">
+        <navLabel>
+          <text>CAPÍTULO XVIII.</text>
+        </navLabel>
+        <content src="text/chapter-042.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-46" playOrder="46">
+        <navLabel>
+          <text>CAPÍTULO XIX. 
+Como fazer uma Confissão Geral. 
+1. Eis aqui, Filoteia, as meditações mais necessárias para o nosso propósito, as quais, uma vez feitas, prossiga corajosamente, com espírito de humildade, para fazer a sua confissão geral; mas, eu lhe imploro,</text>
+        </navLabel>
+        <content src="text/chapter-043.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-47" playOrder="47">
+        <navLabel>
+          <text>CAPÍTULO XIX.</text>
+        </navLabel>
+        <content src="text/chapter-044.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-48" playOrder="48">
+        <navLabel>
+          <text>CAPÍTULO XX.</text>
+        </navLabel>
+        <content src="text/chapter-045.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-49" playOrder="49">
+        <navLabel>
+          <text>CAPÍTULO XX.</text>
+        </navLabel>
+        <content src="text/chapter-046.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-50" playOrder="50">
+        <navLabel>
+          <text>CAPÍTULO XXI.</text>
+        </navLabel>
+        <content src="text/chapter-047.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-51" playOrder="51">
+        <navLabel>
+          <text>CAPÍTULO XXI.</text>
+        </navLabel>
+        <content src="text/chapter-048.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-52" playOrder="52">
+        <navLabel>
+          <text>CAPÍTULO XXII.</text>
+        </navLabel>
+        <content src="text/chapter-049.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-53" playOrder="53">
+        <navLabel>
+          <text>CAPÍTULO XXII.</text>
+        </navLabel>
+        <content src="text/chapter-050.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-54" playOrder="54">
+        <navLabel>
+          <text>CAPÍTULO XXIII.</text>
+        </navLabel>
+        <content src="text/chapter-051.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-55" playOrder="55">
+        <navLabel>
+          <text>CAPÍTULO XXIII.</text>
+        </navLabel>
+        <content src="text/chapter-052.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-56" playOrder="56">
+        <navLabel>
+          <text>CAPÍTULO XXIV. 
+
+
+Devemos purificar-nos de nossas imperfeições naturais 
+
+
+. 
+
+
+Temos, além disso, Filoteia, certas inclinações naturais que, por não procederem de nossos pecados particulares, não são propriamente pecados, nem mortais nem veniais, mas são chamadas de imperfeições, e seus atos são chamados de faltas ou omissões. Por exemplo, Santa Paula, como relata São Jerônimo, tinha uma grande tendência natural à dor e à tristeza; de modo que, com a morte de seus filhos e marido, ela correu o risco de morrer de tristeza; esta era uma grande imperfeição, mas não um pecado, visto que ela o tinha contra sua vontade. 
+Há alguns naturalmente alegres, outros mal-humorados; alguns aborrecidos por receberem conselhos, outros inclinados à indignação e à ira; outros a afeições humanas: e, em suma, há poucas pessoas em quem algumas dessas imperfeições não possam ser observadas. Ora, embora sejam, por assim dizer, comuns e naturais a todos, contudo, por cuidado e afeições contrárias, podem ser corrigidos e moderados, e podemos até purificar e libertar nossas almas deles. E eu te digo, Filoteia, devemos fazê-lo. Os homens conseguiram transformar a amendoeira amarga em doce, perfurando-a perto da raiz, para que saísse o suco; e por que não podemos nós libertar nossas inclinações perversas e nos tornarmos melhores? Não há natureza tão boa que não possa ser corrompida por costumes viciosos; nem tão perversa que não possa, primeiro pela graça de Deus, e depois pela devida diligência, ser reduzida e superada. 
+Portanto, darei agora a você as instruções e proporei os exercícios pelos quais você poderá purgar sua alma de afeições perigosas aos pecados veniais, e proteger também sua consciência, cada vez mais, contra todo pecado mortal. Que Deus lhe dê a graça de praticá-los bem!</text>
+        </navLabel>
+        <content src="text/chapter-053.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-57" playOrder="57">
+        <navLabel>
+          <text>CAPÍTULO XXIV.</text>
+        </navLabel>
+        <content src="text/chapter-054.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-58" playOrder="58">
+        <navLabel>
+          <text>CAPÍTULO XXIV.</text>
+        </navLabel>
+        <content src="text/chapter-055.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-3" playOrder="59">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-056.xhtml"/>
+      <navPoint id="chapter-59" playOrder="59">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-056.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-60" playOrder="60">
+        <navLabel>
+          <text>CAPÍTULO I. 
+A Necessidade da Oração.</text>
+        </navLabel>
+        <content src="text/chapter-057.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-61" playOrder="61">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-058.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-62" playOrder="62">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-059.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-63" playOrder="63">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-060.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-64" playOrder="64">
+        <navLabel>
+          <text>CAPÍTULO III. 
+
+
+Invocação, o segundo ponto da Preparação. Sentindo que estás na presença de Deus, prostra-te com a mais profunda reverência, reconhecendo-te indigno de comparecer diante de tão soberana Majestade; contudo, sabendo que a sua bondade assim o deseja, implora humildemente a graça de servi-Lo e adorá-Lo nesta meditação. Para este fim, podes usar estas curtas e inflamadas palavras de Davi: "Não me lances, ó Deus, da tua face, e não retires de mim o teu santo espírito. Faze resplandecer o teu rosto sobre o teu servo, e contemplarei as maravilhas da tua lei. Dá-me entendimento, e buscarei a tua lei, e a guardarei de todo o meu coração. Sou teu servo; dá-me entendimento." (Sl 117). Também seria aconselhável invocar o teu anjo da guarda, bem como os santos que tiveram alguma participação nos mistérios sobre os quais meditas; Como, por exemplo, ao meditar sobre a morte de Nosso Senhor, você pode invocar Nossa Senhora, São João, Santa Maria Madalena e outros santos, implorando que os afetos e emoções interiores que eles conceberam naquele momento sejam comunicados a você. Também, ao meditar sobre sua própria morte, você pode invocar seu bom anjo, que então estará presente com você, implorando-lhe que o inspire com considerações adequadas; e assim por diante de outros mistérios. 
+
+
+CAPÍTULO IV. 
+
+
+O terceiro ponto da Preparação, que consiste na proposição do Mistério. 
+Depois desses dois pontos gerais da meditação, resta um terceiro, não comum a todos os tipos de meditação, que alguns chamam de arranjo do 
+lugar ou representação interior. Isso consiste em representar à sua imaginação todo o mistério sobre o qual você deseja meditar, como se ele realmente tivesse ocorrido em sua presença. Por exemplo, se você deseja meditar sobre a crucificação de Nosso Senhor, imagine-se no Monte Calvário, e que você lá contempla e ouve tudo o que foi feito ou dito no momento da paixão de Nosso Senhor; Ou, o que será igualmente pertinente, imagine que eles estão crucificando nosso Salvador no mesmo lugar onde você está, da maneira descrita pelos santos evangelistas. A mesma regra deve ser observada quando você medita sobre a morte, ou o inferno, ou qualquer mistério em que objetos visíveis e sensíveis façam parte do assunto; mas quanto a outros mistérios, como, por exemplo, os que se relacionam com a grandeza de Deus, a excelência da virtude, o fim para o qual fomos criados, etc., como são coisas invisíveis, não devemos pensar em fazer uso da imaginação; podemos, é verdade, usar alguma similitude ou comparação para nos auxiliar na consideração deles, mas isso traz alguma dificuldade: portanto, pretendo instruí-lo de uma maneira tão simples e fácil que seu espírito não se canse com o estudo de invenções. Por esses meios, limitamos nosso espírito ao mistério que pretendemos meditar, para que ele não divague de um lado para o outro, assim como prendemos um pássaro em uma gaiola ou amarramos um falcão pela guia para que ele possa descansar na mão.</text>
+        </navLabel>
+        <content src="text/chapter-061.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-65" playOrder="65">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-062.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-66" playOrder="66">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-063.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-67" playOrder="67">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-064.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-68" playOrder="68">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-065.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-69" playOrder="69">
+        <navLabel>
+          <text>CAPÍTULO V. 
+
+
+Das Considerações: a segunda parte da Meditação. Após o exercício da imaginação, segue-se a meditação, ou o trabalho do entendimento, que consiste em nada mais do que formular uma ou mais considerações a fim de elevar nossas afeições a Deus e às coisas celestiais. Portanto, parece que a meditação não deve ser confundida com nenhum daqueles pensamentos estudiosos ou reflexões sérias que não têm como objeto o amor a Deus ou nosso bem-estar espiritual, e que exigem aprendizado e conhecimento para serem discutidos. Tendo, então, como já disse, confinado seu espírito dentro dos limites do assunto sobre o qual deseja meditar, comece a formular considerações sobre ele, de acordo com os modelos que lhe apresentei nas meditações anteriores; e se você saborear os frutos, ou qualquer um deles, pare sem prosseguir, como as abelhas, que nunca abandonam a flor enquanto podem sugar dela o mel; mas se, após a tentativa, você não obtiver sucesso de acordo com seus desejos, prossiga para outra consideração com a mente calma e tranquila, sem pressa ou fadiga. 
+
+
+CAPÍTULO VI. 
+
+
+Afetos e Resoluções: a terceira parte da Meditação. 
+A meditação produz emoções piedosas na vontade, ou parte afetiva de nossa alma, tais como o amor a Deus e ao próximo; o desejo da glória celestial e eterna; o zelo pela salvação das almas; a imitação da vida de Nosso Senhor; a compaixão, a admiração, a alegria; o temor do desagrado de Deus; do julgamento e do inferno; o ódio ao pecado; a confiança na bondade e misericórdia 
+de Deus; e a sincera tristeza pelos pecados de nossa vida passada. Nesses afetos, seu espírito deve se estender o máximo possível, e se você deseja se auxiliar com livros de devoção, leia o prefácio do primeiro volume das Meditações de Dom André Capigha, Capiglia, onde ele mostra a maneira de se exercitar nessa prática, como o Padre Arias faz mais amplamente na segunda parte de seu tratado sobre a oração.</text>
+        </navLabel>
+        <content src="text/chapter-066.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-70" playOrder="70">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-067.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-71" playOrder="71">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-068.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-72" playOrder="72">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-069.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-73" playOrder="73">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-070.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-74" playOrder="74">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-071.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-75" playOrder="75">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-072.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-76" playOrder="76">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-073.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-77" playOrder="77">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-074.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-78" playOrder="78">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-075.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-79" playOrder="79">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-076.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-80" playOrder="80">
+        <navLabel>
+          <text>CAPÍTULO X. 
+Sobre o Exercício Matinal. 
+
+
+Além da oração mental e vocal, existem outros tipos, que são, por assim dizer, deslizes e ramificações da oração principal: a primeira é a oração matinal, destinada a ser uma preparação geral para todas as ações do dia, e pode ser feita da seguinte 
+
+
+maneira: 
+
+
+1. Adore a Deus profundamente e retribua-Lhe gratidão por tê-lo preservado dos perigos da noite passada; e se, durante o curso dela, você cometeu algum pecado, implore seu perdão. 
+2. Considere que o dia presente lhe é dado para que possa ganhar o dia futuro da eternidade: faça uma firme resolução, portanto, de empregá-lo bem, e com essa intenção.</text>
+        </navLabel>
+        <content src="text/chapter-077.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-81" playOrder="81">
+        <navLabel>
+          <text>CAPÍTULO X. 
+Sobre o exercício matinal.</text>
+        </navLabel>
+        <content src="text/chapter-078.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-82" playOrder="82">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-079.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-83" playOrder="83">
+        <navLabel>
+          <text>CAPÍTULO XI.</text>
+        </navLabel>
+        <content src="text/chapter-080.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-84" playOrder="84">
+        <navLabel>
+          <text>CAPÍTULO XI.</text>
+        </navLabel>
+        <content src="text/chapter-081.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-85" playOrder="85">
+        <navLabel>
+          <text>CAPÍTULO XII. 
+Recolhimento espiritual.</text>
+        </navLabel>
+        <content src="text/chapter-082.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-86" playOrder="86">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-083.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-87" playOrder="87">
+        <navLabel>
+          <text>CAPÍTULO XIII. 
+
+
+Aspirações, orações jaculatórias e bons pensamentos. 
+Retiramo-nos para Deus porque aspiramos a Ele; e aspiramos a Ele para que possamos nos retirar para Ele: de modo que a aspiração a Deus e o retiro espiritual para Ele são o apoio mútuo um do outro, e ambos procedem da mesma fonte, a saber, de pensamentos devotos e piedosos. Aspira, pois, frequentemente a Deus, Filoteia, por breves mas ardentes dardos do teu coração; admira a sua beleza, invoca o seu auxílio; lança-te em espírito aos pés da cruz; adora a sua bondade; conversa com Ele frequentemente sobre os negócios da tua salvação; entrega a tua alma a Ele mil vezes por dia; contempla a sua clemência e a sua doçura; estende a tua mão a Ele como uma criança faz ao seu pai, para que Ele te conduza; coloca-O no teu seio como um delicioso ramalhete; planta-O na tua alma como um estandarte; e move teu coração mil vezes para acender e excitar dentro de ti uma afeição apaixonada e terna por teu Divino Esposo. A prática da jaculatória foi fortemente recomendada pelo grande Santo Agostinho à devota Senhora Proba. Nossa spírita Filoteia, habituando-se assim privadamente à companhia e familiaridade de Deus, será completamente perfumada com suas perfeições. Ora, não há dificuldade neste exercício, pois não é incompatível com nossas ocupações, sem qualquer inconveniente, visto que, nessas aspirações espirituais e interiores, fazemos apenas breves desvios, que, em vez de nos impedir, antes nos ajudam na busca do que buscamos. O peregrino, embora pare para tomar um pouco de vinho para fortalecer o coração e refrescar a boca, não atrasa sua jornada ao fazê-lo, mas adquire forças para terminá-la com mais facilidade e rapidez, descansando apenas para poder depois prosseguir com maior rapidez.</text>
+        </navLabel>
+        <content src="text/chapter-084.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-88" playOrder="88">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-085.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-89" playOrder="89">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-086.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-90" playOrder="90">
+        <navLabel>
+          <text>CAPÍTULO XIV. 
+
+
+A Santíssima Missa e como devemos ouvi-la. Até agora, nada disse sobre o santíssimo, sagrado e augusto sacrifício e sacramento do Altar, o sol dos exercícios espirituais, o centro da religião cristã, o coração da devoção e a alma da piedade; um mistério tão inefável que encerra em si aquele abismo da caridade divina de onde Deus se comunica realmente a nós; e, de maneira especial, enche nossas almas com graças e favores espirituais. 
+Quando a oração, Filoteia, se une a este sacrifício divino, torna-se tão eficaz que faz a alma transbordar, por assim dizer, de consolações celestiais. Aqui ela reclina-se sobre seu Bem-Amado, que a enche de tanta doçura espiritual que ela se assemelha, como se diz nos Cânticos, a uma coluna de fumaça proveniente de um fogo de madeira aromática, de mirra e incenso, e de todos os perfumes mais requintados. 
+Esforça-te, pois, por assistir à Missa todos os dias, para que, juntamente com o sacerdote, possas oferecer o santo sacrifício do teu Redentor a Deus, seu Pai, por ti e por toda a Igreja. Os anjos, diz São João Crisóstomo, sempre comparecem em grande número para honrar este adorável mistério; e nós, associando-nos a eles, tendo uma só e mesma intenção, não podemos deixar de receber muitas influências favoráveis de uma sociedade tão santa. Os coros da Igreja triunfante e os da Igreja militante unem-se a Nosso Senhor nesta ação divina, para que com Ele, nEle e por Ele, possam ganhar o coração de Deus Pai e fazer da sua misericórdia toda a nossa. Oh! que felicidade!</text>
+        </navLabel>
+        <content src="text/chapter-087.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-91" playOrder="91">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-088.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-92" playOrder="92">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-089.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-93" playOrder="93">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-090.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-94" playOrder="94">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-091.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-95" playOrder="95">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-092.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-96" playOrder="96">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-093.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-97" playOrder="97">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-094.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-98" playOrder="98">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-095.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-99" playOrder="99">
+        <navLabel>
+          <text>CAPÍTULO XVIII. 
+Como devemos receber as inspirações. 
+Por inspirações entendem-se todas as atrações da graça, os bons movimentos de nossos corações, as reprovações e os remorsos de consciência, as luzes e as concepções que Deus excita em nós, presenteando nossas almas com suas bênçãos, por meio de seu cuidado e amor paternos, a fim de despertar, estimular, impelir e atrair-nos à prática de todas as virtudes, ao amor celestial, às boas 
+resoluções e, em uma palavra, a tudo o que pode nos ajudar em nosso caminho para a felicidade eterna. É isso que o Esposo dos Cânticos chama, em linguagem misteriosa, batendo à porta e falando ao coração de sua Esposa, despertando-a quando ela dorme, chamando-a quando ela está ausente, convidando-a a colher frutos e flores em seu jardim, a cantar e fazer sua doce voz soar em seus ouvidos.</text>
+        </navLabel>
+        <content src="text/chapter-096.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-100" playOrder="100">
+        <navLabel>
+          <text>CAPÍTULO XVIII.</text>
+        </navLabel>
+        <content src="text/chapter-097.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-101" playOrder="101">
+        <navLabel>
+          <text>CAPÍTULO XIX. 
+Da Santa Confissão.</text>
+        </navLabel>
+        <content src="text/chapter-098.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-102" playOrder="102">
+        <navLabel>
+          <text>CAPÍTULO XIX.</text>
+        </navLabel>
+        <content src="text/chapter-099.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-103" playOrder="103">
+        <navLabel>
+          <text>CAPÍTULO XX. 
+Da comunhão frequente.</text>
+        </navLabel>
+        <content src="text/chapter-100.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-104" playOrder="104">
+        <navLabel>
+          <text>CAPÍTULO XX.</text>
+        </navLabel>
+        <content src="text/chapter-101.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-105" playOrder="105">
+        <navLabel>
+          <text>CAPÍTULO XXI. 
+Como devemos comungar. 
+Prepara-te para a Sagrada Comunhão na noite anterior, com muitas exclamações de amor, recolhendo-te mais cedo, para que possas levantar-te mais cedo pela manhã. Se acordares durante a noite, santifica o teu coração e a tua boca com algumas aspirações devotas, a fim de preparares a tua alma para a recepção do seu esposo, que, estando acordado enquanto dormias, te prepara mil graças e favores, se de tua parte estiveres disposto a recebê-los. De manhã,</text>
+        </navLabel>
+        <content src="text/chapter-102.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-106" playOrder="106">
+        <navLabel>
+          <text>CAPÍTULO XXI.</text>
+        </navLabel>
+        <content src="text/chapter-103.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-4" playOrder="107">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-104.xhtml"/>
+      <navPoint id="chapter-107" playOrder="107">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-104.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-108" playOrder="108">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-105.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-109" playOrder="109">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-106.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-110" playOrder="110">
+        <navLabel>
+          <text>CAPÍTULO II. 
+
+
+Continuação do discurso anterior sobre a escolha das virtudes. 
+Os jovens iniciantes na devoção, diz Santo Agostinho, cometem certas faltas que, segundo o rigor das leis da perfeição, são censuráveis e, no entanto, louváveis, por causa da prefiguração que dão da futura excelência na piedade, à qual servem como disposição. Esse temor baixo e servil que gera escrúpulos excessivos nas almas dos novos convertidos de um curso de pecado é louvável nos iniciantes, e um certo presságio de uma futura pureza de consciência; mas o mesmo temor seria censurável naqueles que estão muito avançados e em cujo coração deveria reinar o amor, que, por graus imperceptíveis, afasta esse temor servil. 
+São Bernardo, no início, era cheio de rigor para com aqueles que se colocavam sob sua direção; ele lhes dizia que deveriam deixar o corpo para trás e vir a ele apenas com o espírito. Ao ouvir suas confissões, repreendeu severamente suas faltas mais triviais e os incitou à perfeição com tanta veemência que, em vez de fazê-los avançar, os fez recuar; pois desanimaram ao se verem tão seriamente pressionados a uma subida tão íngreme e alta. Observe, Filoteia, foi um zelo ardente pela pureza perfeita que induziu este grande santo a adotar essa maneira de proceder. Esse zelo do santo era uma grande virtude, mas uma virtude, ainda assim, repreensível; da qual o próprio Deus, em uma santa visão, o tornou consciente, derramando ao mesmo tempo em sua alma um espírito tão adequado, amável e terno, que, sendo totalmente transformado, ele se arrependeu de seu antigo rigor e severidade, e tornou-se tão gracioso e condescendente para com todos a ponto de se fazer tudo para todos, para que pudesse ganhar a todos. Português São Jerônimo 
+Naving relatou como sua querida filha, Santa Paula, não era apenas excessiva, mas obstinada, no exercício da mortificação corporal, a tal ponto que ela não cederia ao conselho contrário de Epifânio, seu bispo; e além disso, que ela se deixou levar por uma tristeza tão excessiva pela morte de seu marido e filhos, a ponto de estar ela mesma frequentemente em perigo de morte, conclui longamente com estas palavras: "Alguns dirão que, em vez de escrever os louvores desta santa mulher, eu culpo suas imperfeições e falhas; mas eu chamo Jesus como testemunha, a quem ela serviu, e a quem eu desejo servir, que eu não me afasto da verdade, nem de um lado nem de outro, mas registro sinceramente o que se relaciona a ela, como um cristão deve fazer de outro; isto é, eu escrevo sua história, não seu panegírico; e que seus vícios teriam sido virtudes em muitos outros:" querendo dizer que as falhas e defeitos de Santa Paula teriam sido virtudes estimadas em uma alma menos perfeita; e que há ações consideradas imperfeições nos perfeitos, que seriam consideradas grandes perfeições naqueles que são imperfeitos.</text>
+        </navLabel>
+        <content src="text/chapter-107.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-111" playOrder="111">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-108.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-112" playOrder="112">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-109.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-113" playOrder="113">
+        <navLabel>
+          <text>CAPÍTULO III. Da Paciência. 
+
+
+"É necessária a paciência, para que, fazendo a vontade de Deus, alcanceis a promessa" (Hb 10,36). Se o próprio nosso Salvador declarou: "Na vossa paciência possuireis as vossas almas" (Lc 21,19), não deveria ser a grande felicidade do homem, Filoteia, possuir a sua alma? E quanto mais perfeita for a nossa paciência, mais absolutamente a possuímos. Lembremo-nos frequentemente de que, assim como o nosso Senhor nos salvou pelo sofrimento paciente, nós também devemos...</text>
+        </navLabel>
+        <content src="text/chapter-110.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-114" playOrder="114">
+        <navLabel>
+          <text>CAPÍTULO III. Da Paciência.</text>
+        </navLabel>
+        <content src="text/chapter-111.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-115" playOrder="115">
+        <navLabel>
+          <text>CAPÍTULO III. Da Paciência.</text>
+        </navLabel>
+        <content src="text/chapter-112.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-116" playOrder="116">
+        <navLabel>
+          <text>CAPÍTULO IV. 
+Humildade Exterior.</text>
+        </navLabel>
+        <content src="text/chapter-113.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-117" playOrder="117">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-114.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-118" playOrder="118">
+        <navLabel>
+          <text>CAPÍTULO V. 
+Humildade Interna.</text>
+        </navLabel>
+        <content src="text/chapter-115.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-119" playOrder="119">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-116.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-120" playOrder="120">
+        <navLabel>
+          <text>CAPÍTULO VI. 
+
+
+A humildade nos torna semelhantes à nossa própria abjeção. 
+Continuo, e te digo, Filoteia, que em tudo e por tudo deves amar a tua própria abjeção. Mas tu me perguntarás: o que é amar a tua própria abjeção? Em latim, abjeção significa humildade, e humildade significa abjeção; de modo que quando Nossa Senhora, em seu cântico sagrado, diz que todas as gerações a chamarão bem-aventurada, porque Nosso Senhor considerou a humildade de sua serva, o que ela quer dizer é que Nosso Senhor graciosamente olhou para baixo em sua abjeção e baixeza, a fim de acumular suas graças e favores sobre ela. No entanto, há uma diferença entre a virtude da humildade e a nossa abjeção, pois nossa abjeção é a baixeza, a 
+baixeza e a baixeza que estão em nós sem que tenhamos consciência disso; ao passo que a virtude da humildade é um conhecimento verdadeiro e um reconhecimento voluntário de nossa abjeção. Ora, o ponto principal desta humildade consiste em estarmos dispostos, não apenas a reconhecer nossa abjeção, mas a amá-la e deleitar-nos nela; e isso, não por falta de coragem e generosidade, mas para a maior exaltação da Divina Majestade, e para que possamos ter o nosso próximo em maior estima do que a nós mesmos. A isto vos exorto; e para que me possais compreender melhor, digo-vos que, entre os males que sofremos, alguns são abjetos e outros honrosos; muitos podem facilmente acomodar-se aos males que são honrosos, mas quase ninguém aos que são abjetos. Vês um velho eremita devoto coberto de trapos e tremendo de frio; todos honram as suas roupas esfarrapadas e compadecem-se dos seus sofrimentos; mas se um pobre comerciante ou um cavalheiro se encontra numa condição semelhante, o mundo despreza-o e zomba dele; e assim vês que a sua pobreza é abjeta. Um homem religioso recebe uma repreensão severa de seu superior, ou um filho de seu pai com mansidão, e todos chamam isso de mortificação, obediência e sabedoria; mas se um cavalheiro ou uma dama sofresse o mesmo de outro, mesmo que fosse por amor a Deus, isso seria chamado de covardia e falta de espírito. Eis, então, outro mal que é abjeto. Um tem uma úlcera no braço, outro no rosto; o primeiro tem apenas a doença, mas o outro, juntamente com a doença, tem desprezo, desgraça e abjeção. Digo, então, que não devemos apenas amar o mal, que é a função da paciência, mas também abraçar a abjeção em virtude da humildade. Há, além disso, virtudes que são abjetas e virtudes que são honrosas. Paciência, mansidão, simplicidade e até mesmo a própria humildade são 
+virtudes que os mundanos consideram mesquinhas e abjetas; enquanto, ao contrário, têm a prudência, a fortaleza e a liberalidade na mais alta estima. Há também ações de uma mesma virtude, algumas das quais são desprezadas e outras honradas; dar esmola e perdoar injúrias são ambos atos de caridade; contudo, o primeiro é honrado, enquanto o segundo é desprezado aos olhos do mundo. Uma jovem ou um cavalheiro que se recusa a participar das desordens de uma companhia frívola, ou a falar, brincar, dançar, beber ou se vestir como os demais, incorre em seu desprezo e censura, e sua modéstia é chamada de intolerância e afetação. Amar isso é amar nossa própria abjeção.</text>
+        </navLabel>
+        <content src="text/chapter-117.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-121" playOrder="121">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-118.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-122" playOrder="122">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-119.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-123" playOrder="123">
+        <navLabel>
+          <text>CAPÍTULO VII. 
+
+
+Como devemos preservar nosso bom nome na prática 
+
+
+da humildade. 
+
+
+Louvor, honra e glória não são dados aos homens por todo grau de virtude, mas por uma excelência de virtude; pois pelo louvor nos esforçamos para persuadir os outros a estimar a excelência daqueles a quem louvamos; pela honra testemunhamos que nós mesmos os estimamos; e a glória, em minha opinião, nada mais é do que um certo brilho de reputação que surge da concorrência de louvor e honra; de modo que honra e louvor são como pedras preciosas, de uma coleção da qual procede a glória, como um certo esmalte. Ora, a humildade, proibindo-nos de ter qualquer estima por nossa própria excelência, ou de nos considerarmos dignos de sermos preferidos aos outros, consequentemente não pode permitir que busquemos louvor, honra ou glória, que são devidos apenas à excelência; Contudo, consente ao conselho do sábio, que nos admoesta a zelar pelo nosso bom nome (Eclesiastes 41, 15), porque um bom nome é uma estima, não pela excelência, mas pela honestidade 
+e integridade de vida comuns, que a humildade não nos proíbe de reconhecer em nós mesmos, nem, por consequência, de desejar a sua reputação. É verdade que a humildade desprezaria um bom nome se a caridade não precisasse dele; mas porque é um dos fundamentos da sociedade humana, e porque sem ele não somos apenas inúteis, mas prejudiciais ao público, por causa do escândalo que receberia — a caridade exige e a humildade consente que o desejemos e o preservemos cuidadosamente.</text>
+        </navLabel>
+        <content src="text/chapter-120.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-124" playOrder="124">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-121.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-125" playOrder="125">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-122.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-126" playOrder="126">
+        <navLabel>
+          <text>CAPÍTULO VIII. 
+
+
+Da mansidão para com o próximo e dos remédios contra a ira. 
+O santo crisma, que por tradição apostólica usamos na Igreja de Deus para confirmações e consagrações, é composto de óleo de oliveira misturado com bálsamo, que, entre outras coisas, representam para nós as duas virtudes favoritas e muito amadas que brilharam na sagrada pessoa de nosso Senhor, e que Ele nos recomendou vigorosamente; pois por elas nosso coração deve ser de maneira particular consagrado ao seu serviço e dedicado à sua imitação. "Aprendei de mim", diz ele, "que sou manso e humilde de coração" (Mt 12,29). A humildade nos aperfeiçoa em relação a Deus, e a mansidão em relação ao próximo. O bálsamo que, como já observei 
+antes, sempre se funde com todas as outras bebidas, representa a humildade; E o azeite de oliveiras, que sempre flutua acima, representa a mansidão e a doçura, que superam todas as coisas e se destacam entre as virtudes, como sendo a flor da caridade, que, segundo São Bernardo, está em sua perfeição quando não é apenas paciente, mas também mansa e suave. Mas tome cuidado, Filoteia, para que este crisma místico, composto de mansidão e humildade, esteja dentro de seu coração: pois é um dos grandes artifícios do inimigo fazer com que muitos se enganem com as expressões e aparências exteriores dessas virtudes, os quais, não examinando cuidadosamente suas afeições interiores, se consideram humildes e mansos, quando, na realidade, não há virtudes às quais tenham menos pretensões; e isso pode ser facilmente descoberto, pois, apesar de toda a sua cerimoniosa mansidão e humildade, à menor palavra áspera ou menor injúria, eles se envaidecem com arrogância incomparável.</text>
+        </navLabel>
+        <content src="text/chapter-123.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-127" playOrder="127">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-124.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-128" playOrder="128">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-125.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-129" playOrder="129">
+        <navLabel>
+          <text>CAPÍTULO IX. 
+Da Mansidão para Conosco. 
+Um dos melhores exercícios de mansidão que podemos praticar é aquele cujo tema está dentro de nós mesmos: nunca nos afligirmos com nossas imperfeições; pois, embora a razão exija que nos arrependamos quando cometemos uma falta, devemos nos abster daquele desprazer amargo, sombrio, rancoroso e apaixonado pelo qual muitos são grandemente culpados, que, dominados pela ira, se enfurecem por terem se enfurecido e se afligem por se verem afligidos, pois assim mantêm seus corações perpetuamente imersos em paixão; e embora pareça que a segunda ira destruiu a 
+primeira, ela serve, no entanto, para abrir caminho para uma nova ira na primeira ocasião que se apresentar. Além disso, essa ira e aflição contra nós mesmos tendem ao orgulho e não fluem de nenhuma outra fonte senão o amor-próprio, que se perturba e se inquieta quando nos vemos imperfeitos. Devemos, então, nos descontentar com nossas faltas, mas de maneira tranquila, estável e firme; Pois, assim como um juiz pune os malfeitores muito melhor quando é guiado em suas sentenças pela razão e procede com um espírito tranquilo do que quando age com violência e paixão (porque, julgando com paixão, não pune as faltas como elas são, mas como ele mesmo é), assim nos corrigimos muito melhor por um arrependimento calmo e firme do que por aquele que é áspero, precipitado e apaixonado; pois o arrependimento exercido com violência não procede de acordo com a qualidade de nossas faltas, mas de acordo com nossas inclinações. Por exemplo, aquele que pratica a castidade se irritará além de todos os limites à menor falta que cometer contra essa virtude e, por outro lado, não pensará em nada de uma grave detração da qual tenha sido culpado; enquanto aquele que odeia a detração se atormenta por um leve murmúrio dela e não leva em conta uma grave falta cometida contra a castidade; e o mesmo acontece com os outros. Ora, tudo isso não brota de outra fonte senão que, no julgamento de suas consciências, esses homens não são guiados pela razão, mas pela paixão.</text>
+        </navLabel>
+        <content src="text/chapter-126.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-130" playOrder="130">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-127.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-131" playOrder="131">
+        <navLabel>
+          <text>CAPÍTULO X. 
+
+
+Devemos tratar de nossos assuntos com diligência, mas sem entusiasmo ou solicitude. 
+O cuidado e a diligência com que devemos cuidar de nossos assuntos nunca devem ser confundidos com ansiedade e solicitude. Os anjos zelam por nossa salvação e a buscam com diligência, mas nunca são agitados por ansiedade ou solicitude; pois o cuidado e a diligência resultam naturalmente de sua caridade, ao passo que a solicitude e a ansiedade são totalmente incompatíveis com sua felicidade; porque a primeira pode ser acompanhada por um estado de espírito calmo e tranquilo, ao passo que a segunda nunca. 
+Sê cuidadosa e atenta, pois, Filoteia, a todos os assuntos que Deus confiou aos teus cuidados, pois tal disposição em ti é agradável à vontade de Sua Divina Majestade, sem que teu cuidado e atenção degenerem em inquietação e ansiedade; não te preocupes com eles, pois o excesso de solicitude perturba a razão e o julgamento, e nos impede de fazer corretamente aquilo por cuja execução estamos tão ansiosos e ansiosos. 
+Quando nosso Senhor repreendeu Marta, Ele disse: "Marta, Marta, tu és solícita e estás perturbada com muitas coisas!" Você deve observar aqui que ela não teria ficado perturbada se tivesse sido apenas diligente; mas estando muito preocupada e inquieta, ela se apressou e se perturbou, e por isso recebeu essa repreensão de nosso Senhor.</text>
+        </navLabel>
+        <content src="text/chapter-128.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-132" playOrder="132">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-129.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-133" playOrder="133">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-130.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-134" playOrder="134">
+        <navLabel>
+          <text>CAPÍTULO XI. Obediência. 
+
+
+Somente a caridade pode nos levar à perfeição, mas a obediência, a castidade e a pobreza são os três principais meios para alcançá-la. A obediência consagra nosso coração, a castidade, nosso corpo, e a pobreza, nossos meios para o amor e serviço a Deus. Esses três ramos da cruz espiritual se fundamentam em um quarto, a saber, a humildade. Nada direi dessas três virtudes quando são solenemente votadas, 
+porque este assunto diz respeito apenas às ordens religiosas; nem mesmo quando são simplesmente votadas; pois, embora um voto possa acrescentar muitas graças e méritos às virtudes, para nos tornar perfeitos, não é necessário que os votos sejam feitos, desde que sejam observados. Pois, embora sendo votados, e especialmente solenemente, eles colocam o homem em estado de perfeição; contudo, para chegar à própria perfeição, eles devem ser observados, havendo uma diferença muito grande entre o estado de perfeição e a perfeição em si; visto que todos os bispos e religiosos estão em estado de perfeição; E, no entanto, infelizmente, nem todos chegaram à perfeição, como é evidente demais. Esforcemo-nos, pois, Filoteia, por praticar bem essas virtudes, cada uma segundo sua vocação; pois, embora não nos levem à perfeição, nos tornarão perfeitos; e, de fato, todos são obrigados a praticá-las, embora nem todos da mesma maneira.</text>
+        </navLabel>
+        <content src="text/chapter-131.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-135" playOrder="135">
+        <navLabel>
+          <text>CAPÍTULO XI. Obediência.</text>
+        </navLabel>
+        <content src="text/chapter-132.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-136" playOrder="136">
+        <navLabel>
+          <text>CAPÍTULO XI. Obediência.</text>
+        </navLabel>
+        <content src="text/chapter-133.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-137" playOrder="137">
+        <navLabel>
+          <text>CAPÍTULO XII. 
+A Necessidade da Castidade.</text>
+        </navLabel>
+        <content src="text/chapter-134.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-138" playOrder="138">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-135.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-139" playOrder="139">
+        <navLabel>
+          <text>CAPÍTULO XIII. 
+Como preservar a castidade. 
+
+
+Mantém sempre sobre ti uma grande guarda, a fim de afastar prontamente tudo o que possa levar à impureza; pois é um mal que se desenvolve em graus imperceptíveis, fraco no início, mas de progressão muito rápida. Em suma, é mais fácil fugir dele do que curá-lo. 
+A castidade é um tesouro que, segundo São Paulo, "guardamos em vasos frágeis; e na verdade, tem muito da fragilidade daqueles vasos que se quebram ao bater uns nos outros". A água mais fresca, quando tentamos preservá-la num vaso, perde rapidamente o seu frescor se algum animal a tocar. Nunca te permitas, Filoteia, praticar e preservar-te dessas liberdades externas, igualmente contrárias à modéstia cristã e ao respeito que te deves; pois, embora se possa preservar um coração absolutamente casto apesar de ações que surgem mais da falta de reflexão do que da malícia, e que não são habitualmente praticadas, no entanto, a castidade recebe delas sempre algum dano lamentável. Compreendeis bem que não falo aqui do que virtualmente arruína a castidade. 
+A castidade tem sua origem no coração, e sua prática exterior consiste em regular e purificar os sentidos; é por isso que se perde por meio de todos os sentidos externos, bem como pelos pensamentos da mente e pelos desejos do coração. Assim, toda sensação que nos permitimos em relação a um objeto imodesto, ou com espírito de imodéstia, é 
+realmente um ato impuro, e o Apóstolo recomendou aos primeiros cristãos que nem sequer mencionassem o vício entre eles. As abelhas não só não tocam um corpo em estado de putrefação, como também fogem do mau cheiro que ele exala. Observai, peço-vos, o que a Sagrada Escritura nos diz da Esposa dos Cânticos. Tudo é misterioso neles. Mirra destila de suas mãos, e sabeis que esse licor preserva da corrupção; seus lábios são contornados por uma fita vermelha, e isso nos ensina que a modéstia cora diante das palavras, mesmo quando são um pouco indecentes; Seus olhos são comparados aos olhos da pomba, por sua pureza; ela usa brincos de ouro, e esse metal também é símbolo de pureza; seu nariz é comparado a um cedro do Líbano, cujo odor é requintado e sua madeira incorruptível. O que tudo isso significa? Que a alma deve ser, em todos os seus sentidos, devota, casta, aberta, pura e honrada.</text>
+        </navLabel>
+        <content src="text/chapter-136.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-140" playOrder="140">
+        <navLabel>
+          <text>CAPÍTULO XIII. 
+Como preservar a castidade.</text>
+        </navLabel>
+        <content src="text/chapter-137.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-141" playOrder="141">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-138.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-142" playOrder="142">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-139.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-143" playOrder="143">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-140.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-144" playOrder="144">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-141.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-145" playOrder="145">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-142.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-146" playOrder="146">
+        <navLabel>
+          <text>CAPÍTULO XVI. 
+
+
+Como praticar a Riqueza de Espírito na Pobreza Real. 
+Mas se és realmente pobre, Filoteia, sê também, pelo amor de Deus, realmente pobre de espírito; faz da necessidade uma virtude e valoriza esta preciosa joia da pobreza com a alta taxa que ela merece; seu brilho não é descoberto neste mundo e, no entanto, é extremamente rica e bela. 
+Sê paciente; estás em boa companhia; o próprio Nosso Senhor, sua Santíssima Mãe, os Apóstolos e inúmeros santos, tanto homens quanto mulheres, foram pobres, e mesmo quando poderiam ter sido ricos, desprezaram sê-lo. Quantas grandes personagens houve que, apesar das contradições do mundo, foram em busca da santa pobreza em claustros e hospitais, e que se esforçaram incansavelmente para encontrá-la! Testemunha Santo Aleixo, Santa Paula, São Paulino, Santa Ângela e tantos outros; e eis, Filoteia, esta santa pobreza mais graciosa em teu próprio alojamento; você a encontrou sem se dar ao trabalho de procurá-la; abrace-a, então, como a querida amiga de Jesus Cristo, que nasceu, viveu e morreu na pobreza: a pobreza foi sua enfermeira durante todo o curso de sua vida. 
+Sua pobreza, Filoteia, desfruta de dois grandes privilégios, por meio dos quais você pode aumentar consideravelmente seus méritos. O primeiro é que ela não veio a você por sua escolha, mas pela vontade de Deus, que a fez pobre sem qualquer concurso de sua própria vontade. Ora, aquilo que recebemos inteiramente da vontade de Deus é sempre muito agradável a Ele, desde que o recebamos de bom coração e por amor à sua santa vontade: onde há menos do nosso, há mais do de Deus; a 
+aceitação simples e pura da vontade de Deus torna nossas ofertas extremamente puras.</text>
+        </navLabel>
+        <content src="text/chapter-143.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-147" playOrder="147">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-144.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-148" playOrder="148">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-145.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-149" playOrder="149">
+        <navLabel>
+          <text>CAPÍTULO XVII. 
+
+
+Amizade: e, primeiro, sobre o que é 
+
+
+mau e frívolo. 
+
+
+O amor ocupa o primeiro lugar entre as várias paixões da alma; é o soberano de todas as emoções do coração e dirige todo o resto para ele, e nos torna objetos de seu amor. Tome cuidado, então, Filoteia, para não nutrir nenhum amor maligno, pois se o fizer, logo se tornará má. Ora, a amizade é o amor mais perigoso de todos; porque outros amores podem ser sem comunicação, mas a amizade, sendo inteiramente baseada nela, dificilmente podemos ter amizade íntima por qualquer pessoa sem compartilhar de suas qualidades. 
+Nem todo amor é amizade; pois quando se ama sem ser novamente amado, então há amor, mas não amizade; porque amizade é intercomunicação de amor; portanto, onde o amor não é mútuo, não pode haver amizade. Nem basta que seja mútuo; as partes que se amam devem, além disso, saber de sua afeição mútua; pois, se não a sabem, têm amor, mas não amizade. Deve também haver algum tipo de comunicação entre elas, de modo a formar a base da amizade. Ora, conforme a diversidade das comunicações, a amizade também difere, e as comunicações são diferentes conforme a variedade das coisas boas que comunicam entre si; se são falsas e vãs, a amizade também é falsa e vã; se são verdadeiras, a amizade também é verdadeira; e quanto mais excelentes forem os bens, mais excelente também é a amizade. Pois, assim como o mel é o melhor que é colhido das flores mais requintadas, assim também é a amizade que se baseia na comunicação mais requintada. E assim como há mel em Heracleia, que é venenoso e enlouquece quem o come, porque é colhido de plantas venenosas que abundam naquela região; da mesma forma, a amizade baseada em comunicações falsas e viciosas também é falsa e viciosa.</text>
+        </navLabel>
+        <content src="text/chapter-146.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-150" playOrder="150">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-147.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-151" playOrder="151">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-148.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-152" playOrder="152">
+        <navLabel>
+          <text>CAPÍTULO XVIII. 
+Amizade Sensual. 
+
+
+Quando essas amizades tolas são mantidas entre pessoas de sexos diferentes, sem intenção de casamento, sendo apenas fantasmas de amizade, elas não merecem o nome de amizade verdadeira ou amor verdadeiro em razão de sua excessiva vaidade e imperfeição. Ora, por meio dessas afeições, os corações de homens e mulheres são capturados e enredados uns nos outros em afeições vãs e tolas, fundadas nessas comunicações frívolas e complacências miseráveis, das quais acabei de falar. 
+E embora esses amores perigosos, comumente falando, terminem em pura imoralidade, esse não é o primeiro desígnio ou intenção das pessoas entre as quais são mantidos, caso contrário, não seriam meramente amizades sensuais, mas impureza absoluta. Às vezes, até mesmo muitos anos se passam antes que algo diretamente contrário à castidade aconteça entre eles, enquanto se contentam em dar aos seus corações os prazeres dos desejos, siglıs e vaidades tolas semelhantes. 
+Alguns não têm outro desígnio senão satisfazer um desejo natural de afeição; e estes não consideram nada na escolha dos objetos de seu amor, exceto seu próprio gosto e instinto; de modo que, no primeiro encontro com uma pessoa agradável, sem examinar seu interior ou comportamento, eles começam esta comunicação afetuosa</text>
+        </navLabel>
+        <content src="text/chapter-149.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-153" playOrder="153">
+        <navLabel>
+          <text>CAPÍTULO XVIII. 
+Amizade sensual.</text>
+        </navLabel>
+        <content src="text/chapter-150.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-154" playOrder="154">
+        <navLabel>
+          <text>CAPÍTULO XVIII.</text>
+        </navLabel>
+        <content src="text/chapter-151.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-155" playOrder="155">
+        <navLabel>
+          <text>CAPÍTULO XIX. 
+Verdadeira Amizade. 
+
+
+Amai a todos, Filoteia, com grande amor à caridade, mas não tenhais amizade senão com aqueles que vos comunicam as coisas da virtude; e quanto mais requintadas forem as virtudes, que serão o assunto das vossas comunicações, mais perfeita será também a vossa amizade. Se esta comunicação for nas ciências, a amizade é certamente muito louvável, mas ainda mais se for nas virtudes morais — na prudência, na discrição, na fortaleza e na justiça. Mas se a vossa comunicação recíproca se referir à caridade, à devoção e à perfeição cristã, quão preciosa será a amizade! Será excelente porque vem de Deus, excelente porque durará eternamente em Deus. Oh, como é bom amar na terra como se ama no céu, aprender a estimar-se mutuamente neste mundo como o faremos eternamente no outro. 
+Não falo aqui daquele simples amor de caridade que devemos ter por todos os homens, mas daquela amizade espiritual pela qual duas, três ou mais almas comunicam uma à outra sua devoção e afeições espirituais, e se tornam um só espírito. Tais almas felizes podem cantar com razão: "Vede quão bom e suave é que os irmãos vivam em união" (Sl 131, 1); pois o delicioso bálsamo da devoção destila de um coração para outro por uma participação tão contínua, que se pode dizer que Deus derramou sobre esta amizade a sua bênção e a sua vida eterna. Considero todas as outras amizades como meras sombras em comparação com esta, e que os seus laços são apenas correntes de vidro ou de azeviche em comparação com aquele laço da santa devoção que é mais precioso do que o ouro.</text>
+        </navLabel>
+        <content src="text/chapter-152.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-156" playOrder="156">
+        <navLabel>
+          <text>CAPÍTULO XIX. 
+Verdadeira Amizade.</text>
+        </navLabel>
+        <content src="text/chapter-153.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-157" playOrder="157">
+        <navLabel>
+          <text>CAPÍTULO XIX.</text>
+        </navLabel>
+        <content src="text/chapter-154.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-158" playOrder="158">
+        <navLabel>
+          <text>CAPÍTULO XX. 
+
+
+A diferença entre amizades verdadeiras e vãs. 
+Observe, Filoteia, esta importante advertência. Assim como o mel venenoso de Heracleia é tão semelhante ao outro que é saudável, que há grande perigo de confundir um com o outro, ou de tomá-los misturados (pois a bondade de um não pode destruir o veneno do outro), assim deve ficar em guarda quem não se deixa enganar em amizades, particularmente quando contraídas entre pessoas de sexos diferentes, sob qualquer pretexto. O demônio frequentemente efetua uma mudança naqueles que amam: eles começam com o amor virtuoso, que, se não for acompanhado pela máxima discrição, começará a se misturar com o amor sensual e, depois, com o amor carnal; Sim, há até perigo no amor espiritual, se não estivermos extremamente vigilantes: embora neste seja mais difícil de ser enganado, porque sua pureza e brancura tornam mais aparentes as manchas e nódoas que Satanás procura misturar a ele, e, portanto, quando ele o toma em mãos, o faz com mais astúcia e se esforça para introduzir impurezas em graus quase imperceptíveis. 
+Você pode distinguir a amizade mundana daquela que é santa e virtuosa, assim como o mel venenoso de Heracleia é conhecido do outro; pois, assim como o mel de Heracleia é mais doce à língua do que o mel comum, por causa do suco da beladona mortal que lhe dá doçura adicional, a amizade mundana normalmente produz uma grande profusão de palavras doces, expressões apaixonadas, juntamente com admiração pela beleza, comportamento e outras qualidades sensuais, enquanto a amizade santa fala uma linguagem simples e sincera, e não recomenda nada além da virtude e da graça de Deus, os únicos fundamentos pelos quais 
+ela subsiste. Assim como o mel de Heráclito, quando engolido, causa vertigem, assim a falsa amizade gera uma vertigem na mente, que faz as pessoas cambalearem na castidade e na devoção, levando-as a olhares e carícias afetados e imodestos, suspiros desmedidos e queixas ridículas de não serem amadas; a um comportamento estudado e sedutor, a galanteios, a beijos e outras familiaridades, sinais certos e inquestionáveis da iminente ruína da castidade. Mas a santa amizade não tem olhares que não sejam simples e modestos, nem carícias que não sejam puras e sinceras, nem suspiros que não sejam pelo céu, nem familiaridades que não sejam espirituais, nem queixas que não sejam marcas infalíveis de pureza quando Deus não é amado. Assim como o mel de Heráclito é incômodo à vista, assim esta amizade mundana ofusca o julgamento a tal ponto que aqueles que estão infectados por ela pensam que fazem bem quando fazem mal, e acreditam em suas desculpas e pretextos por duas razões: temem a luz e amam a escuridão. Mas a amizade santa é clarividente e nunca se esconde, mas aparece de bom grado diante dos bons. Em suma, o mel de Heráclito deixa um grande amargor na boca; assim, as falsas amizades se transformam em palavras e exigências lascivas e carnais; ou, em caso de recusa, em injúrias, calúnias, imposturas, tristeza, confusão e ciúmes, que muitas vezes terminam em pura loucura. Mas a amizade casta é sempre igualmente honesta, civilizada e amável, e nunca se transforma senão numa união de espíritos mais perfeita e pura, uma imagem viva da amizade abençoada que existe no céu.</text>
+        </navLabel>
+        <content src="text/chapter-155.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-159" playOrder="159">
+        <navLabel>
+          <text>CAPÍTULO XX.</text>
+        </navLabel>
+        <content src="text/chapter-156.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-160" playOrder="160">
+        <navLabel>
+          <text>CAPÍTULO XX.</text>
+        </navLabel>
+        <content src="text/chapter-157.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-161" playOrder="161">
+        <navLabel>
+          <text>CAPÍTULO XXI.</text>
+        </navLabel>
+        <content src="text/chapter-158.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-162" playOrder="162">
+        <navLabel>
+          <text>CAPÍTULO XXI.</text>
+        </navLabel>
+        <content src="text/chapter-159.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-163" playOrder="163">
+        <navLabel>
+          <text>CAPÍTULO XXII. 
+Mais Conselhos sobre Amizade. 
+Tenho outro conselho importante para lhe dar sobre este assunto. A amizade requer muita comunicação entre amigos, caso contrário, não pode crescer nem subsistir. Por isso, muitas vezes acontece que,</text>
+        </navLabel>
+        <content src="text/chapter-160.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-164" playOrder="164">
+        <navLabel>
+          <text>CAPÍTULO XXII. 
+Mais Conselhos sobre Amizade. 
+Tenho outro conselho importante para lhe dar sobre este assunto. A amizade requer muita comunicação entre amigos, caso contrário, não pode crescer nem subsistir. Por isso, muitas vezes acontece que,</text>
+        </navLabel>
+        <content src="text/chapter-161.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-165" playOrder="165">
+        <navLabel>
+          <text>CAPÍTULO XXII.</text>
+        </navLabel>
+        <content src="text/chapter-162.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-166" playOrder="166">
+        <navLabel>
+          <text>CAPÍTULO XXIII. 
+O Exercício da Mortificação Exterior. 
+Antigos escritores sobre agricultura e assuntos rurais nos dizem que se qualquer palavra for escrita em uma amêndoa sadia, e ela for novamente colocada na casca e plantada, todos os frutos da árvore que dela brotar terão a mesma palavra gravada. De minha parte, Filoteia, eu jamais aprovaria o método daqueles que, para reformar um homem, começam pelo seu exterior, como seus gestos, suas vestes ou seus cabelos. Pelo contrário, penso que devemos começar pelo seu interior: "Convertei-vos a mim de todo o vosso coração" (Joel, ii). "Filho, dá-me o vosso coração" (Provérbios xxiii). Pois sendo o coração a fonte genuína de nossas ações, nossas obras serão sempre tais como o nosso coração é. O Divino Esposo convida a alma: "Põe-me como selo sobre o teu coração, como selo sobre o teu braço" (Cântico dos Cânticos, v). Sim, verdadeiramente; pois todo aquele que tem Jesus Cristo em seu coração O mostrará rapidamente em todas as suas ações exteriores. Desejo, portanto, querida Filoteia, acima de tudo gravar em seu coração este lema sagrado: "Viva Jesus", estando certo de que sua vida, que procede do coração, como uma amendoeira de uma amendoeira, produzirá posteriormente as mesmas palavras de salvação escritas em todas as suas ações; pois, assim como este doce Jesus vive em seu coração, Ele também viverá em seu exterior, em seus olhos, em sua boca, em suas mãos e até mesmo nos cabelos de sua cabeça; para que você possa dizer com São Paulo: "Eu vivo, não, não eu, mas Cristo vive em mim". Em uma palavra, aquele que ganhou o coração ganhou o homem inteiro; mas mesmo este coração, pelo qual começaríamos, precisa ser instruído sobre como deve moldar seu comportamento exterior, para que os homens não apenas possam contemplar nele a santa devoção, mas também a sabedoria e a discrição; por esta razão, imploro sua séria atenção às seguintes breves admoestações:</text>
+        </navLabel>
+        <content src="text/chapter-163.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-167" playOrder="167">
+        <navLabel>
+          <text>CAPÍTULO XXIII.</text>
+        </navLabel>
+        <content src="text/chapter-164.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-168" playOrder="168">
+        <navLabel>
+          <text>CAPÍTULO XXIV. 
+Conversação e Solidão. 
+
+
+Buscar e evitar a conversação são dois extremos censuráveis na devoção daqueles que vivem no mundo, que é o que estamos tratando agora. Evitar toda conversa que tenha sabor de desdém e desprezo pelo próximo; e gostar dela é sinal de preguiça e ociosidade. Devemos amar o próximo como a nós mesmos e, para demonstrar que o amamos, não devemos fugir de sua companhia; e para testemunhar que nos amamos, devemos ficar conosco mesmos, quando estivermos sozinhos. "Pense primeiro em si mesmo", diz São Bernardo, "e depois nos outros". Se, portanto, nada o pressiona a sair para receber visitas, ou a receber visitas em casa, fique em si mesmo e entretenha-se com seu próprio coração; mas se visitas o visitam, ou qualquer causa justa o convida para a companhia, vá, em nome de Deus, Filoteia, e veja o seu próximo com um coração benevolente e um olhar bondoso. 
+Chamamos de más aquelas conversas que são conduzidas</text>
+        </navLabel>
+        <content src="text/chapter-165.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-169" playOrder="169">
+        <navLabel>
+          <text>CAPÍTULO XXIV. 
+Conversação e Solidão.</text>
+        </navLabel>
+        <content src="text/chapter-166.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-170" playOrder="170">
+        <navLabel>
+          <text>CAPÍTULO XXIV.</text>
+        </navLabel>
+        <content src="text/chapter-167.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-171" playOrder="171">
+        <navLabel>
+          <text>CAPÍTULO XXV. 
+Decência no vestuário.</text>
+        </navLabel>
+        <content src="text/chapter-168.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-172" playOrder="172">
+        <navLabel>
+          <text>CAPÍTULO XXV.</text>
+        </navLabel>
+        <content src="text/chapter-169.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-173" playOrder="173">
+        <navLabel>
+          <text>CAPÍTULO XXVI.</text>
+        </navLabel>
+        <content src="text/chapter-170.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-174" playOrder="174">
+        <navLabel>
+          <text>CAPÍTULO XXVI.</text>
+        </navLabel>
+        <content src="text/chapter-171.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-175" playOrder="175">
+        <navLabel>
+          <text>CAPÍTULO XXVII. 
+
+
+Modéstia nas palavras e respeito 
+
+
+às pessoas. 
+
+
+
+
+"Se alguém não peca com palavras, é um homem perfeito (Tiago, iii. 2). Tenha cuidado, portanto, para nunca deixar escapar uma palavra indecente: pois, embora você não a diga com má intenção, ela pode ser prejudicial para aqueles que a ouvem. Uma palavra má que cai em um coração fraco se espalha como uma gota de óleo caindo sobre o linho: não, às vezes se apodera do coração de tal maneira que o enche com mil pensamentos impuros e tentações de pecar, pois assim como o veneno do corpo entra pela boca, o veneno da alma entra pelo ouvido, e a língua que o profere é assassina. Pois, embora talvez o veneno que ele derramou não tenha surtido efeito, porque encontrou as almas dos ouvintes protegidas com algum preservativo, ainda assim a malícia estava na língua para causar-lhes a morte. Que ninguém, portanto, me diga que não tem tal pensamento; pois nosso Senhor, o sondador dos corações, disse: "A boca fala do que há em abundância no coração." Mas se não tivermos maus pensamentos, Em tais ocasiões, porém, o inimigo, que é de opinião contrária, sempre se serve secretamente de palavras imodestas para penetrar a alma de alguém. Assim como aqueles que comeram a erva angélica têm hálitos sempre doces e agradáveis, aqueles que têm honestidade e castidade, que é uma virtude angélica, em seus corações, têm suas palavras sempre puras, modestas e castas. Quanto às coisas indecentes e obscenas, o Apóstolo não as permite sequer serem nomeadas entre nós, assegurando-nos: "Nada corrompe tanto os bons costumes quanto o discurso perverso". Quando palavras imodestas são proferidas sob disfarce, de forma astuta e astuta, tornam-se infinitamente</text>
+        </navLabel>
+        <content src="text/chapter-172.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-176" playOrder="176">
+        <navLabel>
+          <text>CAPÍTULO XXVII.</text>
+        </navLabel>
+        <content src="text/chapter-173.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-177" playOrder="177">
+        <navLabel>
+          <text>CAPÍTULO XXVII.</text>
+        </navLabel>
+        <content src="text/chapter-174.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-178" playOrder="178">
+        <navLabel>
+          <text>CAPÍTULO XXVIII. 
+Julgamentos precipitados. 
+
+
+"Não julgueis, e não sereis julgados", diz o Salvador de nossas almas; "não condeneis, e não sereis condenados" (Lucas 6:37). "Não", diz o santo apóstolo, "julgai antes do tempo, até que venha o Senhor, o qual não só trará à luz as coisas ocultas das trevas, como também manifestará os desígnios dos corações" (2 Coríntios 4:5). Oh, quão desagradáveis são os julgamentos precipitados a Deus! Os julgamentos dos filhos dos homens são precipitados, porque eles não são juízes uns dos outros e, portanto, usurpam para si o ofício de nosso Senhor. São precipitados, porque a principal malícia do pecado depende da intenção do coração, que é um segredo impenetrável para nós. Não são apenas precipitados, mas também impertinentes, porque a cada um basta julgar a si mesmo, sem se encarregar de julgar o próximo. Para que não sejamos julgados no futuro, é igualmente necessário abster-nos de julgar os outros e ter o cuidado de nos julgar. Pois, assim como nosso Senhor proíbe uma coisa, o apóstolo Paulo 
+junta-se à outra, dizendo que "se nos julgarmos a nós mesmos, não seremos julgados". Mas, ó bom Deus, fazemos exatamente o contrário; pois, ao julgarmos o próximo em todas as ocasiões, fazemos o que é proibido; e, ao não nos julgarmos, negligenciamos a prática daquilo que nos é estritamente ordenado.</text>
+        </navLabel>
+        <content src="text/chapter-175.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-179" playOrder="179">
+        <navLabel>
+          <text>CAPÍTULO XXVIII. 
+Julgamentos precipitados.</text>
+        </navLabel>
+        <content src="text/chapter-176.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-180" playOrder="180">
+        <navLabel>
+          <text>CAPÍTULO XXVIII.</text>
+        </navLabel>
+        <content src="text/chapter-177.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-181" playOrder="181">
+        <navLabel>
+          <text>CAPÍTULO XXIX. Da Detração.</text>
+        </navLabel>
+        <content src="text/chapter-178.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-182" playOrder="182">
+        <navLabel>
+          <text>CAPÍTULO XXIX. Da Detração.</text>
+        </navLabel>
+        <content src="text/chapter-179.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-183" playOrder="183">
+        <navLabel>
+          <text>CAPÍTULO XXX. 
+Outros conselhos sobre o discurso. 
+Que sua fala seja mansa, franca, aberta e sincera, sem a menor mistura de equívoco, artifício ou dissimulação; pois, embora não seja aconselhável dizer tudo o que é verdade, nunca é permitido falar contra a verdade. Acostume-se, portanto, a nunca mentir deliberadamente, seja como desculpa ou de outra forma; lembrando-se sempre de que Deus é o Deus da verdade. Se você mentir sem querer, não deixe de corrigi-la na hora com alguma explicação ou reparação: uma desculpa honesta sempre tem mais graça e força para nos manter inofensivos do que uma mentira. 
+Embora às vezes se possa disfarçar prudentemente a verdade com algum artifício de palavras, isso nunca deve ser feito senão quando a glória e o serviço de Deus manifestamente o exigirem; em qualquer outro caso, tais artifícios são perigosos. "O teu Espírito Santo não tem nada a ver com os enganosos." (Sab. i.) Nenhum artifício é tão bom e desejável quanto a franqueza: a prudência ou o artifício mundanos pertencem aos filhos do mundo, mas os filhos de Deus andam retamente e seus corações são impecáveis. "Aquele que anda sinceramente", diz o sábio, "anda com confiança" (Pv. 10,9). Mentira, falsidade e dissimulação são sempre sinais de um espírito fraco e mesquinho. Santo Agostinho disse, no Quarto Livro de suas Confissões: "Que sua alma e a de seu amigo</text>
+        </navLabel>
+        <content src="text/chapter-180.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-184" playOrder="184">
+        <navLabel>
+          <text>CAPÍTULO XXX.</text>
+        </navLabel>
+        <content src="text/chapter-181.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-185" playOrder="185">
+        <navLabel>
+          <text>CAPÍTULO XXXI. 
+
+
+Passatempos e Recreações: e primeiro, daqueles que 
+são lícitos e louváveis. 
+Às vezes, é necessário relaxar nossas mentes, bem como nossos corpos, por meio de algum tipo de recreação. São João Evangelista, como relata Cassiano, divertindo-se um dia com uma perdiz na mão, foi questionado por um caçador: Como um homem como ele podia gastar seu tempo de maneira tão inútil? São João lhe disse: Por que você não carrega seu arco sempre curvado? Porque, respondeu o caçador, se ele estivesse sempre curvado, temo que perderia a elasticidade e se tornaria inútil. Não se surpreenda, então, respondeu o apóstolo, que eu às vezes renunciasse um pouco à minha aplicação rigorosa e atenção de espírito a fim de desfrutar de um pouco de recreação, para que depois eu possa me empregar mais fervorosamente na contemplação divina. É sem dúvida um vício ser tão rigoroso e austero a ponto de não estar disposto a ter qualquer recreação para nós mesmos, nem a permitir aos outros. 
+Tomar ar, caminhar, entreter-nos com conversas alegres e amigáveis, tocar instrumentos musicais, cantar ou caçar são recreações tão inocentes que, para um uso adequado delas, basta a prudência comum, que dá a cada coisa a devida ordem, tempo, lugar e medida. Aqueles jogos em que o ganho serve como recompensa pela destreza e indústria do corpo ou</text>
+        </navLabel>
+        <content src="text/chapter-182.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-186" playOrder="186">
+        <navLabel>
+          <text>CAPÍTULO XXXI.</text>
+        </navLabel>
+        <content src="text/chapter-183.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-187" playOrder="187">
+        <navLabel>
+          <text>CAPÍTULO XXXI.</text>
+        </navLabel>
+        <content src="text/chapter-184.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-5" playOrder="188">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-185.xhtml"/>
+      <navPoint id="chapter-188" playOrder="188">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-185.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-189" playOrder="189">
+        <navLabel>
+          <text>CAPÍTULO XXXII.</text>
+        </navLabel>
+        <content src="text/chapter-186.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-190" playOrder="190">
+        <navLabel>
+          <text>CAPÍTULO XXXII.</text>
+        </navLabel>
+        <content src="text/chapter-187.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-191" playOrder="191">
+        <navLabel>
+          <text>CAPÍTULO XXXIII. 
+Bailes e passatempos lícitos, mas perigosos. 
+
+
+Embora bailes e danças sejam recreações indiferentes por natureza, de acordo com a maneira comum como são conduzidos, preponderam muito para o lado do mal e, consequentemente, são extremamente perigosos. Sendo geralmente realizados à noite, não é de se surpreender que diversas circunstâncias viciosas sejam facilmente admitidas, visto que o assunto é, por si só, tão suscetível ao mal. Os amantes dessas diversões, por ficarem acordados até tarde da noite, impedem-se de cumprir seu dever para com Deus na manhã do dia seguinte. Não é, então, uma espécie de loucura transformar o dia em noite, a luz em escuridão e as boas obras em tolices criminosas? Todos se esforçam para ver quem levará mais vaidade ao baile; e a vaidade é tão congênita, tanto para os maus afetos quanto para as familiaridades perigosas, que ambas são facilmente engendradas pela dança. 
+Tenho a mesma opinião sobre a dança, Filoteia, que os médicos têm sobre os cogumelos, que os melhores deles, na opinião deles, não servem para nada; Então eu lhe digo que os bailes mais bem preparados não servem para nada. Se, no entanto, você precisar comer cogumelos, certifique-se de que estejam bem cozidos. Se, em algumas ocasiões que você não pode evitar, você precisar ir a um baile, certifique-se de que sua dança seja devidamente protegida. Mas você me perguntará como ela deve ser protegida? Eu respondo: por modéstia, dignidade e boa intenção. Coma cogumelos com moderação e raramente, dizem os médicos, pois, por mais bem cozidos que sejam, a quantidade os torna venenosos; dance pouco e muito raramente, eu digo, para não correr o risco de contrair uma afecção por eles.</text>
+        </navLabel>
+        <content src="text/chapter-188.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-192" playOrder="192">
+        <navLabel>
+          <text>CAPÍTULO XXXIII. 
+Bailes e passatempos lícitos, mas perigosos.</text>
+        </navLabel>
+        <content src="text/chapter-189.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-193" playOrder="193">
+        <navLabel>
+          <text>CAPÍTULO XXXIII.</text>
+        </navLabel>
+        <content src="text/chapter-190.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-194" playOrder="194">
+        <navLabel>
+          <text>CAPÍTULO XXXIV. 
+Em que ocasiões podemos brincar ou dançar. 
+Para que brincar e dançar sejam lícitos, devemos usá-los como forma de recreação, sem ter qualquer afeição por eles; podemos usá-los por um curto período, mas não até que estejamos cansados ou entorpecidos por eles; e devemos usá-los raramente, para que não transformemos a recreação em ocupação. Mas em que ocasiões podemos brincar e dançar legalmente? Ocasiões lícitas para jogos inocentes são frequentes, enquanto aquelas para jogos de azar são raras, por serem mais censuráveis e perigosas; portanto, em uma palavra, dance e brinque conforme sua própria prudência e discrição o orientarem a atender aos pedidos da companhia em que estiver; pois a condescendência, como um ramo da caridade, torna boas as coisas indiferentes e até mesmo as perigosas permissíveis; ela até mesmo remove o dano daquelas coisas que são, em certa medida, más; e, portanto, jogos de azar, que de outra forma seriam repreensíveis, não o são, se os usarmos às vezes por justa condescendência.</text>
+        </navLabel>
+        <content src="text/chapter-191.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-195" playOrder="195">
+        <navLabel>
+          <text>CAPÍTULO XXXIV.</text>
+        </navLabel>
+        <content src="text/chapter-192.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-196" playOrder="196">
+        <navLabel>
+          <text>CAPÍTULO XXXV.</text>
+        </navLabel>
+        <content src="text/chapter-193.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-197" playOrder="197">
+        <navLabel>
+          <text>CAPÍTULO XXXV.</text>
+        </navLabel>
+        <content src="text/chapter-194.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-198" playOrder="198">
+        <navLabel>
+          <text>CAPÍTULO XXXVI. 
+Como manter a mente justa e razoável. 
+É a razão que nos torna homens, e, no entanto, é raro encontrar homens verdadeiramente razoáveis, porque o amor-próprio nos desvia dos caminhos da razão, levando-nos insensivelmente a mil pequenas, porém perigosas, injustiças e parcialidades, que, como as raposinhas mencionadas nos Cânticos, destroem as videiras; pois, por serem pequenas, não as notamos; mas, por serem numerosas, não deixam de nos ferir muito. 
+Não são injustas e irracionais as coisas de que estou prestes a falar? Condenamos</text>
+        </navLabel>
+        <content src="text/chapter-195.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-199" playOrder="199">
+        <navLabel>
+          <text>CAPÍTULO XXXVI.</text>
+        </navLabel>
+        <content src="text/chapter-196.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-200" playOrder="200">
+        <navLabel>
+          <text>CAPÍTULO XXXVII. 
+
+
+Desejos. 
+
+
+Todos sabem que somos obrigados a nos abster dos desejos de coisas viciosas, pois até mesmo o desejo do mal é em si criminoso; mas eu te digo, Filoteia, não te preocupes com bailes, peças teatrais ou diversões semelhantes, nem cobices honrarias e cargos, nem visões e êxtases, pois há muito perigo e engano em tais vaidades. Não desejes o que está longe, nem o que não pode acontecer por muito tempo, como muitos fazem, que por isso cansam e distraem seus corações inutilmente. Se um jovem deseja sinceramente ser estabelecido em algum cargo antes do tempo devido, de que lhe adianta toda a sua ansiedade? Se uma mulher casada deseja ser freira, para que serve? Se eu desejo comprar os bens do meu vizinho antes que ele esteja disposto a vendê-los, não é perda de tempo alimentar tal desejo? Se, estando doente, desejo pregar, celebrar a missa, visitar os doentes e praticar os exercícios dos sãos, não são todos esses desejos vãos, visto que está fora do meu poder colocá-los em prática? Entretanto, esses desejos inúteis ocupam o lugar das virtudes da paciência, resignação, mortificação, obediência e mansidão sob sofrimentos, que são as que Deus quer que eu pratique naquele momento. Não posso, de forma alguma, aprovar que as pessoas desejem se divertir em qualquer outro tipo de vida além daquela em que já estão engajadas; nem em quaisquer exercícios incompatíveis com suas condições atuais; pois isso distrai o coração e o torna inadequado para suas ocupações necessárias. Se desejo praticar a solidão de um cartuxo, perco meu tempo;</text>
+        </navLabel>
+        <content src="text/chapter-197.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-201" playOrder="201">
+        <navLabel>
+          <text>CAPÍTULO XXXVII.</text>
+        </navLabel>
+        <content src="text/chapter-198.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-202" playOrder="202">
+        <navLabel>
+          <text>CAPÍTULO XXXVII.</text>
+        </navLabel>
+        <content src="text/chapter-199.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-203" playOrder="203">
+        <navLabel>
+          <text>CAPÍTULO XXXVIII. 
+Instruções para os Casados. 
+"O Matrimônio é um grande sacramento, mas eu falo em Cristo e na Igreja." (Ef 5,32). É honroso para todos, em todos e por todos: isto é, em todas as suas partes, para todos; porque até as virgens devem honrá-lo com humildade; em todos, porque é igualmente santo nos ricos e nos pobres; por todos, porque sua origem, seu fim, suas vantagens, sua forma e sua matéria são todos santos. É o viveiro do cristianismo, que supre a terra com almas frutíferas, para completar o número dos eleitos no céu; em suma, a conservação do casamento é da mais alta importância para a 
+comunidade, pois é a origem e a fonte de todas as suas correntes.</text>
+        </navLabel>
+        <content src="text/chapter-200.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-204" playOrder="204">
+        <navLabel>
+          <text>CAPÍTULO XXXVIII.</text>
+        </navLabel>
+        <content src="text/chapter-201.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-205" playOrder="205">
+        <navLabel>
+          <text>CAPÍTULO XXXIX. 
+Instruções para viúvas.</text>
+        </navLabel>
+        <content src="text/chapter-202.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-206" playOrder="206">
+        <navLabel>
+          <text>CAPÍTULO XXXIX.</text>
+        </navLabel>
+        <content src="text/chapter-203.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-207" playOrder="207">
+        <navLabel>
+          <text>CAPÍTULO XL. 
+Uma palavra às virgens.</text>
+        </navLabel>
+        <content src="text/chapter-204.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-208" playOrder="208">
+        <navLabel>
+          <text>CAPÍTULO XL.</text>
+        </navLabel>
+        <content src="text/chapter-205.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-6" playOrder="209">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-206.xhtml"/>
+      <navPoint id="chapter-209" playOrder="209">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-206.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-210" playOrder="210">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-207.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-211" playOrder="211">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-208.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-212" playOrder="212">
+        <navLabel>
+          <text>CAPÍTULO II. 
+Devemos ter sempre coragem. 
+A luz, embora bela e encantadora aos nossos olhos, ainda assim nos ofusca depois de muito tempo na escuridão. Antes de nos familiarizarmos com os habitantes de qualquer país, por mais corteses e gentis que sejam, nos encontramos um tanto estranhos entre eles. Pode acontecer, Filoteia, que esta despedida geral que você deu às loucuras e vaidades do mundo possa causar em sua mente algumas impressões de tristeza e desânimo. Se for esse o caso, tenha um pouco de paciência, eu lhe imploro, pois isso não dará em nada. É apenas uma pequena estranheza, ocasionada pela novidade; quando ela passar, você sentirá dez mil consolações. 
+Talvez seja doloroso para você, a princípio, renunciar àquele louvor que suas vaidades extorquiram dos mundanos tolos; mas por causa disso você perderia a glória eterna com a qual Deus certamente o recompensará? As diversões e passatempos vãos nos quais até agora empregaste o teu tempo voltarão a apresentar-se para seduzir 
+o teu coração e fazê-lo voltar-se para eles; mas decidirás renunciar à felicidade eterna por tais tolices enganosas? Acredita-me, se perseverares, receberás rapidamente consolações tão deliciosas e agradáveis que te obrigarão a confessar que o mundo não tem nada além de fel em comparação com este mel, e que um dia de devoção é preferível a mil anos gastos em todos os prazeres que ele pode proporcionar.</text>
+        </navLabel>
+        <content src="text/chapter-209.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-213" playOrder="213">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-210.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-214" playOrder="214">
+        <navLabel>
+          <text>CAPÍTULO III. 
+
+
+A natureza das tentações e a diferença entre sentir a tentação e consentir 
+
+
+com ela. 
+
+
+Imagine, Filoteia, uma jovem princesa extremamente amada por seu esposo, e que um homem perverso, a fim de corromper sua fidelidade, envia um mensageiro infame para negociar com ela a respeito de seu desígnio: primeiro, o mensageiro propõe a intenção de seu senhor; segundo, a princesa fica satisfeita ou descontente com a proposta; terceiro, ela consente ou recusa. É da mesma maneira que Satanás, o mundo e a carne, vendo uma alma desposada com o Filho de Deus, enviam-lhe tentações e sugestões pelas quais: 1. o pecado lhe é proposto; 2. ela fica satisfeita ou descontente com a proposta; 3. ela consente ou recusa. Estes são os três passos que levam à iniquidade: tentação, deleite e consentimento. Mas, embora essas três coisas não sejam tão manifestamente discernidas em todos os outros tipos de pecados, elas são, no entanto, palpavelmente vistas em grandes pecados. 
+Embora a tentação de qualquer pecado perdurasse durante a vida, jamais nos tornaria desagradáveis à Divina Majestade, desde que não nos agradasse e não conseguíssemos; a razão é que não agimos, mas sofremos na tentação, e como nisso não temos prazer, não podemos incorrer em qualquer culpa. São Paulo sofreu por muito tempo as tentações da carne, e, no entanto, longe de ser desagradável a Deus por isso, pelo contrário, Deus foi glorificado por causa delas. A bem-aventurada Ângela de Foligny sentiu tentações tão cruéis da carne que nos comove quando as relata. São Francisco 
+e São Bento também sofreram tentações tão violentas que obrigaram um a lançar-se nu nos espinhos e o outro na neve, a fim de combatê-las, e, no entanto, não perderam nada do favor de Deus, mas aumentaram muito em graça.</text>
+        </navLabel>
+        <content src="text/chapter-211.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-215" playOrder="215">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-212.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-216" playOrder="216">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-213.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-217" playOrder="217">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-214.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-218" playOrder="218">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-215.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-219" playOrder="219">
+        <navLabel>
+          <text>CAPÍTULO V. 
+
+
+Um encorajamento para uma alma que está sob tentação Esses assaltos violentos e tentações extraordinárias, Filoteia, só são permitidos por Deus contra aquelas almas que Ele deseja elevar ao mais alto grau de amor divino, mas isso não significa que elas o alcançarão depois, pois muitas vezes aconteceu que aqueles que foram constantes sob esses assaltos, por falta de correspondência fiel com o favor divino, foram depois vencidos por tentações muito pequenas. Digo-te isto para que, se no futuro fores assaltado por grandes tentações, saibas que Deus te confere um favor extraordinário, quando Ele assim declara sua vontade de te fazer grande aos seus olhos; e que, no entanto, deves ser sempre humilde e temeroso, não podendo assegurar-te de que podes vencer pequenas tentações, mesmo depois de teres vencido as grandes, por nenhum outro meio senão pela constante fidelidade à sua Divina Majestade. 
+Portanto, qualquer que seja a tentação que possa vir a assaltá-lo, ou com qualquer deleite que ela possa ser acompanhada, enquanto você recusar seu consentimento, não apenas à tentação, mas também ao deleite, não se dê ao trabalho, pois Deus não se ofende. Assim como, quando um homem está tão debilitado a ponto de não mostrar nenhum sinal de vida, as pessoas colocam as mãos em seu coração e, se sentem a menor palpitação, julgam que ele ainda está vivo e que, pela aplicação de algum restaurador, ele pode recuperar suas forças e sentidos; assim às vezes acontece que, pela violência de uma tentação, nossa alma parece ter caído em um ataque, de modo a não ter mais vida ou movimento espiritual; mas se quisermos saber como ela está, coloquemos a mão em nosso coração e 
+consideremos se ele e nossa vontade ainda retêm alguma palpitação da vida espiritual, isto é, se cumpriram seu dever ao se recusarem a consentir e ceder à tentação e ao deleite; enquanto esse movimento permanecer, podemos estar certos de que a caridade, a vida da alma, permanece em nós, e que Jesus Cristo, nosso Salvador, embora oculto, está presente; assim, por meio do exercício contínuo da oração, dos sacramentos e da confiança em Deus, retornaremos novamente a uma vida espiritual forte, sólida e saudável.</text>
+        </navLabel>
+        <content src="text/chapter-216.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-220" playOrder="220">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-217.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-221" playOrder="221">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-218.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-222" playOrder="222">
+        <navLabel>
+          <text>CAPÍTULO VI. 
+
+
+Como a tentação e o deleite podem se tornar pecaminosos. 
+A princesa de quem falamos antes não pôde impedir a proposta que lhe foi feita, porque, como se presumia, foi feita contra sua vontade; mas se, ao contrário, tivesse dado o mínimo incentivo ou demonstrado disposição para conceder seu amor àquele que a cortejava, sem dúvida teria sido culpada aos olhos de Deus e, por mais que dissimulasse, certamente mereceria tanto a blasfêmia quanto o castigo. Assim, às vezes acontece que a própria tentação nos envolve em pecado, porque nós mesmos somos a causa dele. Por exemplo: sei que quando jogo caio facilmente em paixão violenta e blasfêmia, e que jogar me serve como uma tentação para esses pecados; peco, portanto, sempre que jogo, e sou responsável por todas as tentações que possam me sobrevir. Da mesma forma, se eu sei que certas conversas me exporão ao perigo de cair em pecado, e ainda assim participo delas voluntariamente, sou sem dúvida culpado por todas as tentações que posso encontrar nessas ocasiões.</text>
+        </navLabel>
+        <content src="text/chapter-219.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-223" playOrder="223">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-220.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-224" playOrder="224">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-221.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-225" playOrder="225">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-222.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-226" playOrder="226">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-223.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-227" playOrder="227">
+        <navLabel>
+          <text>CAPÍTULO VIII. 
+Devemos resistir às pequenas tentações. 
+Embora devamos lutar contra as grandes tentações com uma coragem invencível, e a vitória que obtivermos sobre elas possa ser extremamente vantajosa, pode acontecer, no entanto, que ganhemos mais lutando bravamente contra as pequenas; pois, assim como as grandes tentações excedem em qualidade, as pequenas excedem em quantidade, razão pela qual a vitória sobre elas pode ser comparável à sobre as maiores. Lobos e ursos são, sem dúvida, mais perigosos do que moscas, mas os primeiros não nos dão tanto trabalho nem exercitam nossa paciência tanto quanto os últimos. É fácil abster-se de assassinato, mas é extremamente difícil conter todas as nossas pequenas explosões de paixão, cujas ocasiões se apresentam a cada momento. É muito fácil para um homem ou uma mulher abster-se do adultério, mas difícil abster-se de olhares, de dar ou receber favores de amor, ou de falar ou ouvir palavras lisonjeiras. É fácil não admitir, visível ou exteriormente, um rival para o marido ou a esposa, mas fácil fazê-lo no coração; é fácil não roubar 
+os bens de outro homem, mas difícil não cobiçá-los; é fácil não dar falso testemunho em julgamento, mas difícil nunca mentir; é fácil não se embriagar, mas difícil manter-se perfeitamente sóbrio; fácil evitar desejar a morte de outro homem, difícil não desejar o que lhe seja inconveniente; fácil abster-se de difamá-lo, difícil não desprezá-lo. Em suma, essas tentações menores de raiva, suspeita, ciúme, inveja, amor vão, leviandade, vaidade, insinceridade, afetação, astúcia e pensamentos impuros atacam continuamente até mesmo aqueles que são os mais devotos e resolutos. Devemos, portanto, preparar-nos diligentemente, minha querida Filoteia, para esta guerra, e ter a certeza de que, por tantas vitórias que obtivermos sobre esses inimigos menores, tantas pedras preciosas serão colocadas na coroa da glória que Deus está preparando para nós no céu. Portanto, digo que, além de estarmos sempre prontos para lutar corajosamente contra as grandes tentações, devemos também defender-nos constante e diligentemente contra aquelas que parecem fracas e triviais.</text>
+        </navLabel>
+        <content src="text/chapter-224.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-228" playOrder="228">
+        <navLabel>
+          <text>CAPÍTULO VIII. 
+Devemos resistir às pequenas tentações. 
+Embora devamos lutar contra as grandes tentações com uma coragem invencível, e a vitória que obtivermos sobre elas possa ser extremamente vantajosa, pode acontecer, no entanto, que ganhemos mais lutando bravamente contra as pequenas; pois, assim como as grandes tentações excedem em qualidade, as pequenas excedem em quantidade, razão pela qual a vitória sobre elas pode ser comparável à sobre as maiores. Lobos e ursos são, sem dúvida, mais perigosos do que moscas, mas os primeiros não nos dão tanto trabalho nem exercitam nossa paciência tanto quanto os últimos. É fácil abster-se de assassinato, mas é extremamente difícil conter todas as nossas pequenas explosões de paixão, cujas ocasiões se apresentam a cada momento. É muito fácil para um homem ou uma mulher abster-se do adultério, mas difícil abster-se de olhares, de dar ou receber favores de amor, ou de falar ou ouvir palavras lisonjeiras. É fácil não admitir, visível ou exteriormente, um rival para o marido ou a esposa, mas fácil fazê-lo no coração; é fácil não roubar 
+os bens de outro homem, mas difícil não cobiçá-los; é fácil não dar falso testemunho em julgamento, mas difícil nunca mentir; é fácil não se embriagar, mas difícil manter-se perfeitamente sóbrio; fácil evitar desejar a morte de outro homem, difícil não desejar o que lhe seja inconveniente; fácil abster-se de difamá-lo, difícil não desprezá-lo. Em suma, essas tentações menores de raiva, suspeita, ciúme, inveja, amor vão, leviandade, vaidade, insinceridade, afetação, astúcia e pensamentos impuros atacam continuamente até mesmo aqueles que são os mais devotos e resolutos. Devemos, portanto, preparar-nos diligentemente, minha querida Filoteia, para esta guerra, e ter a certeza de que, por tantas vitórias que obtivermos sobre esses inimigos menores, tantas pedras preciosas serão colocadas na coroa da glória que Deus está preparando para nós no céu. Portanto, digo que, além de estarmos sempre prontos para lutar corajosamente contra as grandes tentações, devemos também defender-nos constante e diligentemente contra aquelas que parecem fracas e triviais.</text>
+        </navLabel>
+        <content src="text/chapter-225.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-229" playOrder="229">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-226.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-230" playOrder="230">
+        <navLabel>
+          <text>CAPÍTULO IX. 
+
+
+Que remédios devemos aplicar contra as pequenas 
+
+
+tentações. 
+
+
+Quanto às tentações menores de vaidade, suspeita, impaciência, ciúme, inveja, amor vão e semelhantes, que, como moscas e mosquitos, pairam continuamente ao nosso redor e às vezes nos picam nas pernas, nas mãos, na bochecha ou no nariz, visto que é impossível estar completamente isento de sermos provocados por elas, a melhor defesa que podemos fazer é não nos preocuparmos muito com elas; pois, embora possam nos provocar, nunca nos farão mal, contanto que continuemos fortemente decididos a nos dedicar com sinceridade ao serviço de Deus 
+
+
+.</text>
+        </navLabel>
+        <content src="text/chapter-227.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-231" playOrder="231">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-228.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-232" playOrder="232">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-229.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-233" playOrder="233">
+        <navLabel>
+          <text>CAPÍTULO X. 
+
+
+Como fortalecer nossos corações contra as tentações. Considere de tempos em tempos quais paixões predominam em sua alma e, tendo-as descoberto, adote um método de pensar, falar e agir que possa neutralizá-las. Se, por exemplo, você se sente inclinado à vaidade, pense frequentemente nas misérias da vida humana, na inquietação que essas vaidades causarão em sua consciência no dia de sua morte, em quão indignas elas são de um coração generoso, sendo nada mais que brinquedos, adequados apenas para o divertimento de crianças. Fale também frequentemente contra a vaidade e, embora isso possa ser prejudicial a você, não cesse de denunciá-la, pois assim você se engajará, até mesmo por uma questão de honra, do lado oposto; pois, ao declamar contra algo, nos levamos a odiá-lo, embora a princípio possamos ter afeição por ele. Exercite obras de abjeção e humildade tanto quanto possível, por maior que seja sua relutância, já que você se acostuma assim à humildade e enfraquece sua vaidade, de modo que, quando a tentação vier, você terá menos inclinação para favorecê-la e mais força para resistir a ela. 
+Se você é inclinado à cobiça, pense frequentemente na loucura de um pecado que nos torna escravos daquilo que foi feito apenas para nos servir, e que na morte devemos nos separar de tudo e deixá-lo nas mãos daqueles que talvez possam desperdiçá-lo, ou para quem possa ser uma causa de condenação. Fale em voz alta contra a avareza e em louvor de um total desprezo pelo mundo. Obrigue-se a dar esmola e a negligenciar algumas ocasiões de ganho. 
+Se você é inclinado a afeições sensuais, pense frequentemente em quão perigosas elas são, tanto para você quanto para os outros; quão indigno é empregar em um passatempo ocioso o mais nobre afeto de nossa alma; e quão digna de censura é tamanha leviandade de espírito. Fala frequentemente em louvor à pureza e à simplicidade de coração, e que tuas ações, na medida do teu poder, sejam sempre conformes às tuas palavras, evitando leviandades nos atos ou na conversa. Em suma, em tempo de paz, ou seja, quando as tentações do pecado ao qual estás mais inclinado não te molestam, pratica vários atos da virtude contrária; e se as ocasiões para praticá-la não se apresentarem, esforça-te por enfrentá-las, pois assim fortalecerás o teu coração contra tentações futuras.</text>
+        </navLabel>
+        <content src="text/chapter-230.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-234" playOrder="234">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-231.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-235" playOrder="235">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-232.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-236" playOrder="236">
+        <navLabel>
+          <text>CAPÍTULO XI. Da Inquietação. 
+
+
+Como a inquietação não é uma tentação única, mas uma fonte de onde muitas tentações fluem sobre nós, é muito necessário que eu diga algo a respeito dela. A inquietação ou tristeza, então, nada mais é do que aquela dor de espírito que concebemos por algum mal que sofremos contra a nossa vontade, seja ele exterior, como pobreza, doença, desprezo; ou interior, como ignorância, secura de coração, repugnância ao que é bom e tentação. Quando a alma, então, percebe que tem algum mal, ela fica triste, desgostosa e, com razão, extremamente ansiosa para se livrar dele; pois todos naturalmente desejam abraçar o bem e fugir daquilo que apreendem ser mau. Se a alma, por amor a Deus, deseja se libertar de seu mal, ela buscará os meios de sua libertação com paciência, mansidão, humildade e tranquilidade, esperando-o mais da providência de Deus do que de sua própria indústria ou diligência; mas se ela procura</text>
+        </navLabel>
+        <content src="text/chapter-233.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-237" playOrder="237">
+        <navLabel>
+          <text>CAPÍTULO XI. Da Inquietação.</text>
+        </navLabel>
+        <content src="text/chapter-234.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-238" playOrder="238">
+        <navLabel>
+          <text>CAPÍTULO XI. Da Inquietação.</text>
+        </navLabel>
+        <content src="text/chapter-235.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-239" playOrder="239">
+        <navLabel>
+          <text>CAPÍTULO XII. 
+Da Tristeza.</text>
+        </navLabel>
+        <content src="text/chapter-236.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-240" playOrder="240">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-237.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-241" playOrder="241">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-238.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-242" playOrder="242">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-239.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-243" playOrder="243">
+        <navLabel>
+          <text>CAPÍTULO XIV. 
+Da aridez espiritual. 
+
+
+Enquanto durarem as consolações, faze como acabo de te ordenar, Filoteia. Mas este tempo bom e agradável nem sempre durará; pois às vezes te encontrarás tão absolutamente destituída de todo sentimento de devoção que tua alma parecerá um deserto selvagem, infrutífero e árido, no qual não há vestígio de um caminho para encontrar seu Deus, nem qualquer água da graça para refrescá-la, por conta da aridez que parece ameaçá-la com desolação total e absoluta. Ai! quanto uma pobre alma em tal estado merece compaixão: mas especialmente quando este mal é veemente; pois então, à imitação de Davi, ela se alimenta de lágrimas noite e dia, enquanto o inimigo, para lançá-la ao desespero, zomba dela com mil sugestões de desânimo, dizendo: Ah, pobre coitada, onde está teu Deus? Por qual caminho poderás encontrar</text>
+        </navLabel>
+        <content src="text/chapter-240.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-244" playOrder="244">
+        <navLabel>
+          <text>CAPÍTULO XIV. 
+Da aridez espiritual.</text>
+        </navLabel>
+        <content src="text/chapter-241.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-245" playOrder="245">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-242.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-246" playOrder="246">
+        <navLabel>
+          <text>CAPÍTULO XV. 
+
+
+Confirmação e ilustração do que foi dito por um exemplo notável. 
+Para tornar toda esta instrução mais evidente, relatarei aqui uma excelente passagem da história de São Bernardo, conforme relatada por um escritor culto e judicioso. É comum, diz ele, a todos os que servem a Deus e ainda não são experientes nas vicissitudes da vida espiritual perder o fôlego e cair na pusilanimidade e na tristeza quando lhes é retirada a doçura da devoção sensível, juntamente com aquela luz agradável que os convida a avançar no caminho de Deus. Pessoas sensatas atribuem a seguinte razão para isso: que a natureza humana não pode resistir por muito tempo sem algum tipo de deleite, seja celestial ou terrestre. Ora, assim como as almas que se elevam acima de si mesmas pela busca do prazer espiritual renunciam facilmente aos objetos visíveis, assim também, quando, pela disposição divina, a alegria espiritual lhes é retirada, enquanto se encontram ao mesmo tempo privadas de consolações corporais e ainda não estão acostumadas a esperar com paciência o retorno do verdadeiro sol, parece-lhes que não estão nem no céu nem na terra, e que permanecerão enterradas em noite perpétua; de modo que, como uma criança pequena privada do seio de sua mãe, elas definham e gemem, e tornam-se inquietas e problemáticas para</text>
+        </navLabel>
+        <content src="text/chapter-243.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-247" playOrder="247">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-244.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-248" playOrder="248">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-245.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-7" playOrder="249">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-246.xhtml"/>
+      <navPoint id="chapter-249" playOrder="249">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-246.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-250" playOrder="250">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-247.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-251" playOrder="251">
+        <navLabel>
+          <text>CAPÍTULO I.</text>
+        </navLabel>
+        <content src="text/chapter-248.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-252" playOrder="252">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-249.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-253" playOrder="253">
+        <navLabel>
+          <text>CAPÍTULO II.</text>
+        </navLabel>
+        <content src="text/chapter-250.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-254" playOrder="254">
+        <navLabel>
+          <text>CAPÍTULO III. 
+
+
+O exame da alma quanto ao progresso 
+
+
+de uma vida devota. 
+
+
+Como o segundo ponto do exercício é um tanto longo, para praticá-lo, devo dizer-lhe que não é necessário que o faça de uma só vez, mas em momentos diferentes, considerando o que diz respeito à sua conduta para com Deus, por um tempo; o que se refere a si mesmo, por outro; o que diz respeito ao seu próximo, por um terceiro; e a consideração de suas paixões, por um quarto. Também não é conveniente que o faça de joelhos, exceto no início e no fim, que compreende as afeições. Os outros pontos do exame você pode realizar proveitosamente enquanto caminha ao ar livre, ou ainda mais proveitosamente na cama, desde que consiga se preservar da sonolência e se mantenha completamente acordado; mas, para fazer isso, você deve ter lido atentamente de antemão. É necessário, no entanto, percorrer todo o segundo ponto em três dias e duas noites, no máximo, dedicando-lhe o máximo de tempo possível em cada dia e noite; pois se este exercício fosse adiado para momentos muito distantes, perderia sua força e causaria apenas impressões fracas. 
+Após cada ponto do exame, você deve observar aqueles em que você pode achar que tem</text>
+        </navLabel>
+        <content src="text/chapter-251.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-255" playOrder="255">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-252.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-256" playOrder="256">
+        <navLabel>
+          <text>CAPÍTULO III.</text>
+        </navLabel>
+        <content src="text/chapter-253.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-257" playOrder="257">
+        <navLabel>
+          <text>CAPÍTULO IV. 
+
+
+Um exame do estado de sua alma em relação a Deus. 
+Como está seu coração em relação ao pecado mortal? Você está firmemente decidido a nunca cometê-lo, sob nenhuma circunstância? Essa resolução continuou com você desde o momento de seu protesto até o momento presente? Nessa resolução consiste o fundamento desta vida espiritual. 
+Como está seu coração em relação aos mandamentos de Deus? Você os acha bons, doces e agradáveis? Ah! meu filho, aquele cujo paladar é bom e cujo estômago é sadio ama as boas comidas e rejeita as ruins. 
+Como está seu coração em relação aos pecados veniais? Não podemos nos manter tão puros a ponto de não cair de vez em quando em tais pecados; mas não há nenhum para o qual você tenha uma inclinação particular, ou, o que seria ainda pior, não há nenhum para o qual você tenha afeição e amor? 
+Como está seu coração em relação aos exercícios espirituais? Você os ama? Você os estima? Eles não o incomodam? Você não se sente enojado com eles? A qual deles você se encontra mais ou menos inclinado? Ouvir a palavra de Deus, lê-la, discursar sobre ela, meditar sobre ela, aspirar a Deus, confessar-se, receber conselho espiritual, preparar-se para a comunhão, comunicar-se, restringir seus afetos; o que há em tudo isso que seja repugnante ao seu coração? E se você encontrar algo para o qual seu coração tenha menos inclinação, examine a causa de onde surge essa aversão e aplique o remédio.</text>
+        </navLabel>
+        <content src="text/chapter-254.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-258" playOrder="258">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-255.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-259" playOrder="259">
+        <navLabel>
+          <text>CAPÍTULO IV.</text>
+        </navLabel>
+        <content src="text/chapter-256.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-260" playOrder="260">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-257.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-261" playOrder="261">
+        <navLabel>
+          <text>CAPÍTULO V.</text>
+        </navLabel>
+        <content src="text/chapter-258.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-262" playOrder="262">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-259.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-263" playOrder="263">
+        <navLabel>
+          <text>CAPÍTULO VI.</text>
+        </navLabel>
+        <content src="text/chapter-260.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-264" playOrder="264">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-261.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-265" playOrder="265">
+        <navLabel>
+          <text>CAPÍTULO VII.</text>
+        </navLabel>
+        <content src="text/chapter-262.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-266" playOrder="266">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-263.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-267" playOrder="267">
+        <navLabel>
+          <text>CAPÍTULO VIII.</text>
+        </navLabel>
+        <content src="text/chapter-264.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-268" playOrder="268">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-265.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-269" playOrder="269">
+        <navLabel>
+          <text>CAPÍTULO IX.</text>
+        </navLabel>
+        <content src="text/chapter-266.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-270" playOrder="270">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-267.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-271" playOrder="271">
+        <navLabel>
+          <text>CAPÍTULO X.</text>
+        </navLabel>
+        <content src="text/chapter-268.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-272" playOrder="272">
+        <navLabel>
+          <text>CAPÍTULO XI.</text>
+        </navLabel>
+        <content src="text/chapter-269.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-273" playOrder="273">
+        <navLabel>
+          <text>CAPÍTULO XI.</text>
+        </navLabel>
+        <content src="text/chapter-270.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-274" playOrder="274">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-271.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-275" playOrder="275">
+        <navLabel>
+          <text>CAPÍTULO XII.</text>
+        </navLabel>
+        <content src="text/chapter-272.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-276" playOrder="276">
+        <navLabel>
+          <text>CAPÍTULO XIII. 
+
+
+A quarta consideração: o amor que Jesus Cristo nos tem. 
+Considerai o amor incomparável pelo qual Jesus Cristo, nosso Senhor, tanto sofreu neste mundo, especialmente no Jardim das Oliveiras e no Monte Calvário, por nós. Por todas essas dores e sofrimentos, Ele obteve de Deus Pai os bons propósitos e protestos que vosso coração fez; e pelos mesmos meios Ele também obteve para vós tudo o que é necessário para os manter, nutrir, fortalecer e cumprir. Ó santos propósitos, quão preciosos sois, visto que sois os frutos da paixão do meu Salvador! Oh, quão ternamente minha alma deve acarinhar-vos, tendo sido tão queridos ao meu doce Jesus! Ai! Ó Salvador da minha alma, Vós morrestes para me comprar estes propósitos. Oh, concedei-me a Vossa graça de antes sofrer a morte do que perdê-los. Observai, Filoteia, que é certo que o Coração de Jesus contemplou o vosso coração do madeiro da cruz, e pelo amor que Ele o teve, obteve para vós todo o bem que já tivestes ou tereis. Sim, Filoteia, podemos todos dizer com o profeta Jeremias: "Ó Senhor, antes que eu existisse, Tu me viste e me chamaste pelo meu nome"; visto que a bondade divina realmente preparou para nós todos os meios gerais e particulares da nossa salvação e, consequentemente, das nossas resoluções. Assim como uma mulher, antes do nascimento de seu filho, prepara o berço, o linho, as faixas e até mesmo uma ama para ele, embora ele ainda não esteja no mundo, assim também nosso Salvador, que planejou te gerar para a salvação e te fazer seu filho, preparou em sua cruz tudo o que era necessário para ti — teu berço espiritual, teu linho, tuas faixas e tua 
+ama, tudo para a tua felicidade; pois tais são todas as graças pelas quais Ele busca atrair a tua alma e levá-la à perfeição.</text>
+        </navLabel>
+        <content src="text/chapter-273.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-277" playOrder="277">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-274.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-278" playOrder="278">
+        <navLabel>
+          <text>CAPÍTULO XIII.</text>
+        </navLabel>
+        <content src="text/chapter-275.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-279" playOrder="279">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-276.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-280" playOrder="280">
+        <navLabel>
+          <text>CAPÍTULO XIV.</text>
+        </navLabel>
+        <content src="text/chapter-277.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-281" playOrder="281">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-278.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-282" playOrder="282">
+        <navLabel>
+          <text>CAPÍTULO XV.</text>
+        </navLabel>
+        <content src="text/chapter-279.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-283" playOrder="283">
+        <navLabel>
+          <text>CAPÍTULO XVI. 
+
+
+Os sentimentos que devemos preservar depois deste exercício. No dia em que fizer esta renovação, e por alguns dias seguintes, você deve repetir frequentemente de coração estas fervorosas palavras de São Paulo, Santo Agostinho e Santa Catarina de Gênova: "Não, eu não sou mais meu; quer eu viva, quer eu morra, eu sou do meu Salvador. Eu não tenho mais nada de mim ou meu; é Jesus que vive em mim, e tudo o que eu posso chamar de meu é ser totalmente dele. Ó mundo, tu és sempre tu mesmo, e eu até agora sempre fui eu mesmo; mas de agora em diante eu não serei mais eu mesmo. Não, nós não seremos mais nós mesmos, pois teremos nossos corações transformados, e o mundo que tantas vezes nos enganou será enganado em nós; pois não percebendo nossa mudança, mas aos poucos, ele pensará que ainda somos Esaús, mas seremos como Jacó. 
+Todos esses exercícios devem repousar no coração, e quando terminarmos nossa consideração e meditação, devemos nos voltar gentil e suavemente para nossos assuntos e conversas comuns, para que o O bálsamo de nossas boas resoluções deve ser derramado repentinamente; pois deve penetrar e penetrar em todas as partes da alma, sem forçar a mente ou o corpo. 
+
+
+CAPÍTULO XVII. 
+
+
+Resposta a duas objeções que podem ser feitas a esta introdução. 
+O mundo talvez lhe diga, Filoteia, que esses exercícios e conselhos são tão numerosos que quem os quiser praticar não deve se dedicar a mais nada. Ai! Filoteia, mesmo que o façamos</text>
+        </navLabel>
+        <content src="text/chapter-280.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-284" playOrder="284">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-281.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-285" playOrder="285">
+        <navLabel>
+          <text>CAPÍTULO XVI.</text>
+        </navLabel>
+        <content src="text/chapter-282.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-286" playOrder="286">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-283.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-287" playOrder="287">
+        <navLabel>
+          <text>CAPÍTULO XVII.</text>
+        </navLabel>
+        <content src="text/chapter-284.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-288" playOrder="288">
+        <navLabel>
+          <text>CAPÍTULO XVIII.</text>
+        </navLabel>
+        <content src="text/chapter-285.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter-289" playOrder="289">
+        <navLabel>
+          <text>CAPÍTULO XVIII.</text>
+        </navLabel>
+        <content src="text/chapter-286.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="part-8" playOrder="290">
+      <navLabel>
+        <text>Introdução à Vida Devota</text>
+      </navLabel>
+      <content src="text/chapter-287.xhtml"/>
+      <navPoint id="chapter-290" playOrder="290">
+        <navLabel>
+          <text>Contente</text>
+        </navLabel>
+        <content src="text/chapter-287.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="license-page" playOrder="291">
+      <navLabel>
+        <text>Licença</text>
+      </navLabel>
+      <content src="license.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>
