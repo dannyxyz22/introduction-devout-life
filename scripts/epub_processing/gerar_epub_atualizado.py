@@ -366,20 +366,43 @@ def generate_epub(json_file, output_epub, lang='en'):
     
     # Verifica se há oração dedicatória no conteúdo
     for part_idx, part in enumerate(book_data):
+        # Verifica no título da parte
+        part_title = part.get('part_title', '').upper()
+        if ('ORAÇÃO' in part_title and 'DEDICATÓRIA' in part_title) or \
+           ('DEDICATORY' in part_title and 'PRAYER' in part_title):
+            has_prayer_in_json = True
+            print(f"   ✅ Oração dedicatória detectada no JSON (título da parte)")
+        
+        if ('PREFÁCIO' in part_title) or ('PREFACE' in part_title):
+            has_preface_in_json = True
+            print(f"   ✅ Prefácio detectado no JSON (título da parte)")
+            
         for chap_idx, chapter in enumerate(part.get('chapters', [])):
+            # Verifica no título do capítulo
+            chapter_title = chapter.get('chapter_title', '').upper()
+            if ('ORAÇÃO' in chapter_title and 'DEDICATÓRIA' in chapter_title) or \
+               ('DEDICATORY' in chapter_title and 'PRAYER' in chapter_title):
+                has_prayer_in_json = True
+                print(f"   ✅ Oração dedicatória detectada no JSON (título do capítulo)")
+                
+            if ('PREFÁCIO' in chapter_title) or ('PREFACE' in chapter_title):
+                has_preface_in_json = True
+                print(f"   ✅ Prefácio detectado no JSON (título do capítulo)")
+                
+            # Verifica no conteúdo dos itens
             for cont_idx, content_item in enumerate(chapter.get('content', [])):
                 content_text = content_item.get('content', '').upper()
                 
                 if ('ORAÇÃO' in content_text and 'DEDICATÓRIA' in content_text) or \
                    ('DEDICATORY' in content_text and 'PRAYER' in content_text):
                     has_prayer_in_json = True
-                    print(f"   ✅ Oração dedicatória detectada no JSON")
+                    print(f"   ✅ Oração dedicatória detectada no JSON (conteúdo)")
                     
                 if ('PREFÁCIO' in content_text) or ('PREFACE' in content_text):
                     # Certifica que não é apenas menção do prefácio em outro contexto
                     if len(content_text.strip()) < 200:  # Se for uma linha curta, provavelmente é um título
                         has_preface_in_json = True
-                        print(f"   ✅ Prefácio detectado no JSON")
+                        print(f"   ✅ Prefácio detectado no JSON (conteúdo)")
                         
                 if has_prayer_in_json and has_preface_in_json:
                     break
