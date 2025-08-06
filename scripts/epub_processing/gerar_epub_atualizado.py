@@ -204,6 +204,7 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
 def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_in_json=False):
     """
     Cria arquivo NCX (Navigation Control for XML)
+    CORRIGIDO: Sincroniza corretamente play_order com numeração de arquivos
     """
     ncx = Element('ncx', 
                   xmlns="http://www.daisy.org/z3986/2005/ncx/",
@@ -228,6 +229,7 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
     nav_map = SubElement(ncx, 'navMap')
     
     play_order = 1
+    chapter_file_counter = 1  # Contador separado para arquivos de capítulo
     
     # Adicionar página de título no índice (primeiro item)
     title_nav = SubElement(nav_map, 'navPoint', 
@@ -293,7 +295,7 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
         
         # Primeiro capítulo da parte como conteúdo
         if part.get('chapters'):
-            first_chapter_file = f"text/chapter-{play_order:03d}.xhtml"
+            first_chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
             SubElement(part_nav, 'content', src=first_chapter_file)
         
         # Capítulos da parte
@@ -308,10 +310,12 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
             chapter_text = SubElement(chapter_label, 'text')
             chapter_text.text = chapter_title
             
-            chapter_file = f"text/chapter-{play_order:03d}.xhtml"
+            # CORREÇÃO: Usar chapter_file_counter para nome do arquivo
+            chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
             SubElement(chapter_nav, 'content', src=chapter_file)
             
             play_order += 1
+            chapter_file_counter += 1  # Incrementar contador de arquivo separadamente
     
     # Adicionar página de licença no final do índice
     license_nav = SubElement(nav_map, 'navPoint', 
