@@ -32,8 +32,6 @@ python gerar_epub_atualizado.py
 - Navegação NCX
 - Metadados adequados
 - **Página de licença CC0 incluída automaticamente**
-- **Capa incluída automaticamente (versão portuguesa)**
-- **Oração dedicatória e prefácio extraídos do JSON**
 
 ### `verify_epub.py`
 Verifica a estrutura e integridade dos arquivos EPUB gerados.

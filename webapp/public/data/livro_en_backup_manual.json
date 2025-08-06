@@ -1,5 +1,60 @@
 [
   {
+    "part_title": "DEDICATORY PRAYER",
+    "chapters": [
+      {
+        "chapter_title": "Dedicatory Prayer of St. Francis de Sales",
+        "content": [
+          {
+            "type": "p",
+            "content": "O SWEET JESUS, my Lord, my Saviour, and my God, behold me here prostrate before thy majesty, devoting and consecrating this book to thy glory; give life to its words by thy blessing, that those souls for which I have written it, may receive from it the sacred inspirations which I desire for them. And particularly that of imploring for me thy immense mercy; to the end that, whilst showing others the way of devotion in this world, I may not myself be eternally rejected and confounded in the other; but that, with them, I may for ever sing, as a canticle of triumph, the words which, with my whole heart I pronounce, in testimony of my fidelity amidst the dangers of this mortal life: LIVE JESUS, LIVE JESUS; yea, Lord Jesus, live and reign in our hearts for ever and ever. Amen.",
+            "word_count": 140
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "part_title": "PREFACE",
+    "chapters": [
+      {
+        "chapter_title": "Preface of St. Francis de Sales",
+        "content": [
+          {
+            "type": "p",
+            "content": "Dear reader, I pray you to read this Preface for your satisfaction and for mine.",
+            "word_count": 16
+          },
+          {
+            "type": "p",
+            "content": "THE bouquet-maker, Glycera, was so skilful in diversifying the arrangement and mixture of the flowers which she used, that with the same flowers she made a great variety of bouquets: so much so that the painter, Pansias, failed when he endeavoured to copy so great a diversity, for he could not change his painting so many ways as Glycera did her bouquets. Thus the Holy Ghost disposes and arranges with such variety the instructions regarding devotion which He gives by the tongues and pens of his servants, that, although the doctrine is always one and the same, the discourses which are held on it are, nevertheless, very different, according to the various methods in which they are composed. I certainly cannot, neither do I wish, nor ought I to write in this Introduction but what has been written by our predecessors on this subject. They are the same flowers which I present to you, my reader; but the bouquet which I have formed from them will be different from theirs, on account of the difference of the method of making it.",
+            "word_count": 157
+          },
+          {
+            "type": "p",
+            "content": "Almost all those who have hitherto treated of devotion have had the instruction of persons wholly retired from the world in view, or have taught a kind of devotion leading to this absolute retirement: whereas my intention is to instruct such as live in towns, in households, or in courts, and who, by their condition, are obliged to lead, as to the exterior, an ordinary life, and who frequently, under the pretext of a pretended impossibility, will not even think of undertaking a devout life, believing, that as no animal dares to taste the seed of the herb called Palma Christi, so no man ought to aspire to the palm of Christian piety so long as he lives in the turmoil of worldly affairs.",
+            "word_count": 111
+          },
+          {
+            "type": "p",
+            "content": "Now, to such persons I shall make it appear that, as the mother-of-pearl oyster lives in the sea without taking in a drop of salt-water; and as, near the Chelidonian islands, springs of fresh water may be found in the midst of the sea; and as the firefly moves through the flames without singeing its wings; even so, a vigorous and resolute soul may live in the world without being infected by any of its contaminations, may discover sweet springs of piety amidst its bitter waters, and may fly through the flames of earthly concupiscences without burning the wings of the holy desires of a devout life. This, it is true, is a difficult task, and therefore I could wish that many would endeavour to accomplish it with more ardour than has been hitherto used; and I, weak as I am, shall endeavour by this treatise to contribute some kind of help to those who, with a generous heart, undertake so worthy an enterprise.",
+            "word_count": 165
+          },
+          {
+            "type": "p",
+            "content": "I address my discourse to Philothea, because, desiring to reduce what I at first had written for one only, to the common advantage of many souls, I make use of a name applicable to all such as aspire to devotion; for the Greek word, Philothea, signifies a soul loving, or in love with, God. Regarding, then, throughout this work, a soul which, by the desire of devotion, aspires to the love of God, I have divided it into five parts.",
+            "word_count": 69
+          },
+          {
+            "type": "p",
+            "content": "At Annecy, this day of St. Mary Magdalen, 1609.",
+            "word_count": 9
+          }
+        ]
+      }
+    ]
+  },
+  {
     "part_title": "PART THE FIRST. INSTRUCTIONS AND EXERCISES FOR CONDUCTING THE SOUL FROM HER FIRST DESIRE FOR A DEVOUT LIFE TILL SHE IS BROUGHT TO A FULL RESOLUTION OF EMBRACING IT.",
     "chapters": [
       {
@@ -77,8 +132,8 @@
           },
           {
             "type": "p",
-            "content": "In the creation God commanded the plants to bring forth their fruits, each one according to its kind; even so He commands all Christians, who are living plantsoftheChurch, to bring forth their fruits of devotion, each one according to his quality and vocation Devotion ought to be differently exercised by the prince, by the gentleman, by the tradesman, by the servant, by the widow, by the maid, and by the married person: and not only so, but the practice also of devotion must be accommodated to the health, the capacity, the employment, and the obligations of each one in particular. For, I pray thee, would it be fit for a bishop to be as retired as a Carthusian ; and if the married people should store up no more than Capuchins, if the tradesman should be all day in the church like a monk, and the religious continually exposed to all exterior exercises of charity for the service of his neighbour as the bishop, would not this devotion be ridiculous, preposterous, and insupportable? This fault, nevertheless, happens very often, and the world, which does not, or will not discern any difference between real devotion and the indiscretion of those who pretend to be devout, blames and murmurs at it, which cannot remedy such disorders.",
-            "word_count": 214
+            "content": "In the creation God commanded the plants to bring forth their fruits, each one according to its kind; even so He commands all Christians, who are living plantsofthe Church, to bring forth their fruits of devotion, each one according to his quality and vocation Devotion ought to be differently exercised by the prince, by the gentleman, by the tradesman, by the servant, by the widow, by the maid, and by the married person: and not only so, but the practice also of devotion must be accommodated to the health, the capacity, the employment, and the obligations of each one in particular. For, I pray thee, would it be fit for a bishop to be as retired as a Carthusian ; and if the married people should store up no more than Capuchins, if the tradesman should be all day in the church like a monk, and the religious continually exposed to all exterior exercises of charity for the service of his neighbour as the bishop, would not this devotion be ridiculous, preposterous, and insupportable? This fault, nevertheless, happens very often, and the world, which does not, or will not discern any difference between real devotion and the indiscretion of those who pretend to be devout, blames and murmurs at it, which cannot remedy such disorders.",
+            "word_count": 215
           },
           {
             "type": "p",
@@ -87,8 +142,8 @@
           },
           {
             "type": "p",
-            "content": "All sorts of precious stones cast into honey become more glittering, each one according to its colour; and all persons become more acceptable in their vocation when they join devotion to it. The care of the family is thereby rendered less burdensome, the loveofthe husband and wife more sincere, the service to the prince more faithful, and all sorts of business more easy and supportable.",
-            "word_count": 65
+            "content": "All sorts of precious stones cast into honey become more glittering, each one according to its colour; and all persons become more acceptable in their vocation when they join devotion to it. The care of the family is thereby rendered less burdensome, the love of the husband and wife more sincere, the service to the prince more faithful, and all sorts of business more easy and supportable.",
+            "word_count": 67
           },
           {
             "type": "p",
@@ -228,7 +283,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IX. First Meditation.—The Creation",
+        "chapter_title": "CHAPTER IX. First Meditation. —The Creation",
         "content": [
           {
             "type": "p",
@@ -323,7 +378,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER X. Second Meditation.—On the end for which we were created",
+        "chapter_title": "CHAPTER X. Second Meditation. —On the end for which we were created",
         "content": [
           {
             "type": "p",
@@ -403,7 +458,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XI. Third Meditation.—On the Benefits of God",
+        "chapter_title": "CHAPTER XI. Third Meditation. —On the Benefits of God",
         "content": [
           {
             "type": "p",
@@ -483,7 +538,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XII. Fourth Meditation.—On Sin",
+        "chapter_title": "CHAPTER XII. Fourth Meditation. —On Sin",
         "content": [
           {
             "type": "p",
@@ -573,7 +628,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIII. Fifth Meditation.—On Death",
+        "chapter_title": "CHAPTER XIII. Fifth Meditation. —On Death",
         "content": [
           {
             "type": "p",
@@ -658,7 +713,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIV. Sixth Meditation.—On Judgment",
+        "chapter_title": "CHAPTER XIV. Sixth Meditation. —On Judgment",
         "content": [
           {
             "type": "p",
@@ -758,7 +813,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XV. Seventh Meditation.—On Hell",
+        "chapter_title": "CHAPTER XV. Seventh Meditation. —On Hell",
         "content": [
           {
             "type": "p",
@@ -828,12 +883,12 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVI. Eighth Meditation.—On Heaven",
+        "chapter_title": "CHAPTER XVI. Eighth Meditation. —On Heaven",
         "content": [
           {
             "type": "p",
-            "content": "EighthMeditation.—OnHeaven.",
-            "word_count": 1
+            "content": "EighthMeditation. —OnHeaven.",
+            "word_count": 2
           },
           {
             "type": "p",
@@ -883,7 +938,7 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVII. Ninth Meditation.—On the choice of Heaven",
+        "chapter_title": "CHAPTER XVII. Ninth Meditation. —On the choice of Heaven",
         "content": [
           {
             "type": "p",
@@ -932,8 +987,8 @@
           },
           {
             "type": "p",
-            "content": "4. Consider that Jesus Christ beholds you from above in his clemency, and graciously invites you, saying: \"Come, dear soul, to everlasting rest, within the arms of my goodness, where I have prepared everlasting delights for thee in the abundance of my love.\" Behold likewise, within your inward eye, the holy Virgin, who with a motherly love exhorts you, saying: \"Courage, my child, despise not the voice and the blood of my Son, nor the prayers which I have offered to Him for thee, trusting with Him for thy eternal salvation. Behold the saints also, who exhort thee, and millions of blessed souls, sweetly inviting thee, and wishing nothing more than to see thy heart united with theirs, to praise God for ever, assuring thee that the way to heaven is not so difficult as the world thinks. Courage, dear friend, they say, he that shall diligently consider the way of devotion, by which we ascend thither, shall see that we arrive at those delights by pleasures incomparably sweeter than those of the world.",
-            "word_count": 174
+            "content": "4. Consider that Jesus Christ beholds you from above in his clemency, and graciously invites you, saying: \"Come, dear soul, to everlasting rest, within the arms of my goodness, where I have prepared everlasting delights for thee in the abundance of my love.\" Behold likewise, within your inward eye, the holy Virgin, who with a motherly love exhorts you, saying: \"Courage, my child, despise not the voice and the blood of my Son, nor the prayers which I have offered to Him for thee, trust ing with Him for thy eternal salvation. Behold the saints also, who exhort thee, and millions of blessed souls, sweetly inviting thee, and wishing nothing more than to see thy heart united with theirs, to praise God for ever, assuring thee that the way to heaven is not so difficult as the world thinks. Courage, dear friend, they say, he that shall diligently consider the way of devotion, by which we ascend thither, shall see that we arrive at those delights by pleasures incomparably sweeter than those of the world.",
+            "word_count": 175
           },
           {
             "type": "p",
@@ -948,12 +1003,12 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVIII. Tenth Meditation.—Choice between the life of the World and the Devout Life",
+        "chapter_title": "CHAPTER XVIII. Tenth Meditation. —Choice between the life of the World and the Devout Life",
         "content": [
           {
             "type": "p",
-            "content": "Tenth Meditation.—Choicebetweenthelifeofthe World and the Devout Life.",
-            "word_count": 7
+            "content": "Tenth Meditation. —Choicebetweenthelifeofthe World and the Devout Life.",
+            "word_count": 8
           },
           {
             "type": "p",
@@ -1047,8 +1102,8 @@
         "content": [
           {
             "type": "p",
-            "content": "Protestation fromthesoultoGod to strengthen it in afirmresolutionto serve Him, and to conclude theActsofPenance.",
-            "word_count": 13
+            "content": "Protestation fromthesoulto God to strengthen it in afirmresolutionto serve Him, and to conclude theActsofPenance.",
+            "word_count": 14
           },
           {
             "type": "p",
@@ -1227,8 +1282,8 @@
           },
           {
             "type": "p",
-            "content": "Would you be advised by me, Philothea, say your Pater,Ave, andCredoin Latin; but, at the same time, learn perfectly to comprehend the meaning of the words in your own native tongue, so that whilst you unite with the faithful in prayer, in the language of the Church, you may, at the same time, relish the delicious sense of those holy and admirable prayers. Pray with your attention fixed, and your affections excited by what the words signify; pray deliberately, and from your heart; for, believe me, one Our Father said with feeling and affection is of infinitely more value than ever so many repetitions of it run over in haste.",
-            "word_count": 110
+            "content": "Would you be advised by me, Philothea, say your Pater,Ave, and Credo in Latin; but, at the same time, learn perfectly to comprehend the meaning of the words in your own native tongue, so that whilst you unite with the faithful in prayer, in the language of the Church, you may, at the same time, relish the delicious sense of those holy and admirable prayers. Pray with your attention fixed, and your affections excited by what the words signify; pray deliberately, and from your heart; for, believe me, one Our Father said with feeling and affection is of infinitely more value than ever so many repetitions of it run over in haste.",
+            "word_count": 112
           },
           {
             "type": "p",
@@ -1707,8 +1762,8 @@
           },
           {
             "type": "p",
-            "content": "There are others, again, which contain more subjects for admiration than imitation, such as the life of St. Mary of Egypt, of St. Simon Stylites, of St. Catherine of Sienna, and of St. Catherine of Genoa, of St. Angela, and others; which, nevertheless, do not fail in general to give us a great relish for the holy loveofGod.",
-            "word_count": 58
+            "content": "There are others, again, which contain more subjects for admiration than imitation, such as the life of St. Mary of Egypt, of St. Simon Stylites, of St. Catherine of Sienna, and of St. Catherine of Genoa, of St. Angela, and others; which, nevertheless, do not fail in general to give us a great relish for the holy love of God.",
+            "word_count": 60
           }
         ]
       },
@@ -2257,8 +2312,8 @@
         "content": [
           {
             "type": "p",
-            "content": "Of MeeknesstowardsOurselves.",
-            "word_count": 2
+            "content": "Of Meekness towards Ourselves.",
+            "word_count": 4
           },
           {
             "type": "p",
@@ -2277,8 +2332,8 @@
           },
           {
             "type": "p",
-            "content": "However, if anyone should find his heart not sufficiently moved with this mild manner of reprehension, he may use one more sharp and severe, to excite it to deeper confusion, provided that he afterwards closes up all his grief and anger with a sweet and consoling confidence in God, in imitation of that illustrious penitent, who, seeing his soul afflicted, raised it up in this manner: \"Why art thou so sad, O my soul, and why dost thou disquiet me? Hope in God, for I will still give praise to Him, who is the salvation of my countenance, and my God\" (Ps. xlii. 5). Raise up your heart, then, again whenever it falls, but tranquilly and softly; humbling yourself beforeGod, through the knowledge of your own misery, but without being surprised at your fall; for it is no wonder that weakness should be weak, or misery wretched; detest, nevertheless, with all your power, the offence God has received from you, and return to the way of virtue which you had forsaken, with a great courage and confidence in his mercy.",
-            "word_count": 180
+            "content": "However, if anyone should find his heart not sufficiently moved with this mild manner of reprehension, he may use one more sharp and severe, to excite it to deeper confusion, provided that he afterwards closes up all his grief and anger with a sweet and consoling confidence in God, in imitation of that illustrious penitent, who, seeing his soul afflicted, raised it up in this manner: \"Why art thou so sad, O my soul, and why dost thou disquiet me? Hope in God, for I will still give praise to Him, who is the salvation of my countenance, and my God\" (Ps. xlii. 5). Raise up your heart, then, again whenever it falls, but tranquilly and softly; humbling yourself before God, through the knowledge of your own misery, but without being surprised at your fall; for it is no wonder that weakness should be weak, or misery wretched; detest, nevertheless, with all your power, the offence God has received from you, and return to the way of virtue which you had forsaken, with a great courage and confidence in his mercy.",
+            "word_count": 181
           }
         ]
       },
@@ -2932,8 +2987,8 @@
         "content": [
           {
             "type": "p",
-            "content": "Conversation;and,first, how we must speakofGod.",
-            "word_count": 5
+            "content": "Conversation;and,first, how we must speakof God.",
+            "word_count": 6
           },
           {
             "type": "p",
@@ -4532,8 +4587,8 @@
           },
           {
             "type": "p",
-            "content": "Make an open profession, not that you are devout, but that you desire to become devout. Do not be ashamed to practise those necessary actions which conduct the soultotheloveof God. Acknowledge frankly that you would rather die than commit a mortal sin; that you are resolved to frequent the sacraments, and to follow the counsels of your",
-            "word_count": 57
+            "content": "Make an open profession, not that you are devout, but that you desire to become devout. Do not be ashamed to practise those necessary actions which conduct the soultothelove of God. Acknowledge frankly that you would rather die than commit a mortal sin; that you are resolved to frequent the sacraments, and to follow the counsels of your",
+            "word_count": 58
           },
           {
             "type": "p",
