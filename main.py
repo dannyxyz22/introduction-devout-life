@@ -54,6 +54,7 @@ def main():
     
     scripts = {
         'epub_process': os.path.join('scripts', 'epub_processing', 'process_epub.py'),
+        'epub_process_new': os.path.join('scripts', 'epub_processing', 'epub_to_json_processor.py'),
         'epub_generate': os.path.join('scripts', 'epub_processing', 'gerar_epub_atualizado.py'),
         'ocr_fix': os.path.join('scripts', 'ocr_fixes', 'fix_ocr_manual.py'),
         'docx_clean': os.path.join('scripts', 'translation', 'tradutor_docx_clean.py'),
@@ -81,7 +82,7 @@ def main():
     
     while True:
         print(f"\n📋 MENU PRINCIPAL:")
-        print(f"1. 📖 Processar EPUB → JSON")
+        print(f"1. 📖 Processar EPUB → JSON (com word_count automático)")
         print(f"2. 🔧 Corrigir OCR no JSON inglês")
         print(f"3. 📄 Gerar DOCX para tradução")
         print(f"4. 🌐 Reconstruir JSON português (após tradução)")
@@ -94,10 +95,14 @@ def main():
         choice = input(f"\nEscolha uma opção (1-9): ").strip()
         
         if choice == '1':
-            if 'epub_process' not in missing_scripts:
-                run_script(scripts['epub_process'], "Processamento de EPUB")
+            # Prioriza o novo processador com word_count automático
+            if 'epub_process_new' not in missing_scripts:
+                run_script(scripts['epub_process_new'], "Processamento de EPUB (com word_count automático)")
+            elif 'epub_process' not in missing_scripts:
+                print("⚠️  Usando processador antigo - recomenda-se usar o novo com word_count automático")
+                run_script(scripts['epub_process'], "Processamento de EPUB (versão antiga)")
             else:
-                print("❌ Script de processamento não encontrado!")
+                print("❌ Nenhum script de processamento encontrado!")
                 
         elif choice == '2':
             if 'ocr_fix' not in missing_scripts:

@@ -12,6 +12,27 @@ import tempfile
 import shutil
 from bs4 import BeautifulSoup
 
+def count_words(text):
+    """
+    Conta palavras em um texto, removendo espaços extras e caracteres especiais.
+    
+    Args:
+        text (str): Texto para contar palavras
+        
+    Returns:
+        int: Número de palavras
+    """
+    if not text or not isinstance(text, str):
+        return 0
+    
+    # Remove espaços extras e quebras de linha
+    cleaned_text = ' '.join(text.strip().split())
+    
+    # Conta palavras (divide por espaços)
+    if cleaned_text:
+        return len(cleaned_text.split())
+    return 0
+
 def extract_epub(epub_path, extract_dir):
     """Extrai conteúdo do EPUB para diretório temporário"""
     with zipfile.ZipFile(epub_path, 'r') as epub:
@@ -37,10 +58,10 @@ def find_content_files(extract_dir):
 
 def process_epub_to_json(epub_path, output_json_path=None):
     """
-    Converte arquivo EPUB para JSON estruturado
+    Converte arquivo EPUB para JSON estruturado com word_count automático
     """
     if not output_json_path:
-        output_json_path = 'webapp/public/data/livro_extracted.json'
+        output_json_path = 'webapp/public/data/livro_en.json'  # Gera diretamente livro_en.json
     
     print(f"📚 Processando EPUB: {epub_path}")
     
@@ -122,9 +143,13 @@ def process_epub_to_json(epub_path, output_json_path=None):
                         # Limpa e adiciona texto
                         cleaned_text = re.sub(r'\s+', ' ', text_content).strip()
                         if cleaned_text and len(cleaned_text) > 10:  # Ignora textos muito curtos
+                            # Conta palavras no texto
+                            word_count = count_words(cleaned_text)
+                            
                             current_chapter["content"].append({
                                 "type": "p",
-                                "content": cleaned_text
+                                "content": cleaned_text,
+                                "word_count": word_count
                             })
                 
                 # Só adiciona a parte se tiver conteúdo
@@ -135,7 +160,7 @@ def process_epub_to_json(epub_path, output_json_path=None):
                 print(f"   ⚠️ Erro ao processar {file_path}: {e}")
                 continue
         
-        # Salva JSON
+        # Salva JSON com word_count incluído
         os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
         with open(output_json_path, 'w', encoding='utf-8') as f:
             json.dump(book_structure, f, indent=2, ensure_ascii=False)
@@ -146,14 +171,29 @@ def process_epub_to_json(epub_path, output_json_path=None):
         
         # Estatísticas
         total_chapters = sum(len(part["chapters"]) for part in book_structure)
+        total_content_items = sum(
+            len(chapter["content"]) 
+            for part in book_structure 
+            for chapter in part["chapters"]
+        )
+        total_words = sum(
+            item.get("word_count", 0) 
+            for part in book_structure 
+            for chapter in part["chapters"] 
+            for item in chapter["content"]
+        )
+        
         print(f"   📖 Total de capítulos: {total_chapters}")
+        print(f"   📝 Total de itens de conteúdo: {total_content_items}")
+        print(f"   📊 Total de palavras: {total_words:,}")
+        print(f"   ✅ Arquivo compatível com todos os scripts (inclui word_count)")
         
         return True
 
 def main():
     """Função principal"""
-    print("📚 CONVERSOR EPUB → JSON")
-    print("=" * 40)
+    print("📚 CONVERSOR EPUB → JSON (com word_count automático)")
+    print("=" * 55)
     
     # Procura arquivo EPUB
     epub_files = []
