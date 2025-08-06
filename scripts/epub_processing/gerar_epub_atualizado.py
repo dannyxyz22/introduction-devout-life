@@ -74,7 +74,7 @@ def create_xhtml_content(chapter_data, chapter_num, part_num, lang='en'):
     
     return prettify_xml(html)
 
-def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, has_preface_in_json=False):
+def create_opf_file(book_data, output_dir, lang='en'):
     """
     Cria arquivo OPF (Open Packaging Format)
     """
@@ -148,20 +148,6 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
                   href="cover.png",
                   attrib={'media-type': 'image/png'})
     
-    # Oração Dedicatória (só se não estiver no JSON)
-    if not has_prayer_in_json:
-        SubElement(manifest, 'item',
-                  id="dedicatory-prayer",
-                  href="dedicatory_prayer.xhtml",
-                  attrib={'media-type': 'application/xhtml+xml'})
-    
-    # Prefácio (só se não estiver no JSON)
-    if not has_preface_in_json:
-        SubElement(manifest, 'item',
-                  id="preface",
-                  href="preface.xhtml",
-                  attrib={'media-type': 'application/xhtml+xml'})
-    
     # Arquivos de conteúdo
     file_counter = 1
     file_list = []
@@ -184,14 +170,6 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
     # Adicionar página de título primeiro
     SubElement(spine, 'itemref', idref="title-page")
     
-    # Adicionar oração dedicatória (só se não estiver no JSON)
-    if not has_prayer_in_json:
-        SubElement(spine, 'itemref', idref="dedicatory-prayer")
-    
-    # Adicionar prefácio (só se não estiver no JSON)
-    if not has_preface_in_json:
-        SubElement(spine, 'itemref', idref="preface")
-    
     # Depois todos os capítulos
     for file_id, _ in file_list:
         SubElement(spine, 'itemref', idref=file_id)
@@ -201,7 +179,7 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
     
     return prettify_xml(package), file_list
 
-def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_in_json=False):
+def create_ncx_file(book_data, lang='en'):
     """
     Cria arquivo NCX (Navigation Control for XML)
     """
@@ -245,39 +223,8 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
     
     play_order += 1
     
-    # Adicionar oração dedicatória no índice (só se não estiver no JSON)
-    if not has_prayer_in_json:
-        prayer_nav = SubElement(nav_map, 'navPoint', 
-                               id="dedicatory-prayer",
-                               playOrder=str(play_order))
-        
-        prayer_label = SubElement(prayer_nav, 'navLabel')
-        prayer_text = SubElement(prayer_label, 'text')
-        if lang == 'pt':
-            prayer_text.text = "Oração Dedicatória"
-        else:
-            prayer_text.text = "Dedicatory Prayer"
-        
-        SubElement(prayer_nav, 'content', src="dedicatory_prayer.xhtml")
-        
-        play_order += 1
-    
-    # Adicionar prefácio no índice (só se não estiver no JSON)
-    if not has_preface_in_json:
-        preface_nav = SubElement(nav_map, 'navPoint', 
-                                id="preface",
-                                playOrder=str(play_order))
-        
-        preface_label = SubElement(preface_nav, 'navLabel')
-        preface_text = SubElement(preface_label, 'text')
-        if lang == 'pt':
-            preface_text.text = "Prefácio"
-        else:
-            preface_text.text = "Preface"
-        
-        SubElement(preface_nav, 'content', src="preface.xhtml")
-        
-        play_order += 1
+    # Contador para os arquivos de capítulos
+    chapter_file_counter = 1
     
     for part_idx, part in enumerate(book_data):
         part_title = part.get('part_title', f'Part {part_idx + 1}')
@@ -293,7 +240,7 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
         
         # Primeiro capítulo da parte como conteúdo
         if part.get('chapters'):
-            first_chapter_file = f"text/chapter-{play_order:03d}.xhtml"
+            first_chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
             SubElement(part_nav, 'content', src=first_chapter_file)
         
         # Capítulos da parte
@@ -301,17 +248,18 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
             chapter_title = chapter.get('chapter_title', f'Chapter {chapter_idx + 1}')
             
             chapter_nav = SubElement(part_nav, 'navPoint',
-                                   id=f"chapter-{play_order}",
+                                   id=f"chapter-{chapter_file_counter}",
                                    playOrder=str(play_order))
             
             chapter_label = SubElement(chapter_nav, 'navLabel')
             chapter_text = SubElement(chapter_label, 'text')
             chapter_text.text = chapter_title
             
-            chapter_file = f"text/chapter-{play_order:03d}.xhtml"
+            chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
             SubElement(chapter_nav, 'content', src=chapter_file)
             
             play_order += 1
+            chapter_file_counter += 1
     
     # Adicionar página de licença no final do índice
     license_nav = SubElement(nav_map, 'navPoint', 
@@ -356,22 +304,6 @@ def generate_epub(json_file, output_epub, lang='en'):
     with open(json_file, 'r', encoding='utf-8') as f:
         book_data = json.load(f)
     
-    # Detecta se o JSON já contém oração dedicatória e prefácio
-    has_prayer_in_json = False
-    has_preface_in_json = False
-    
-    if len(book_data) > 0:
-        first_part = book_data[0].get('part_title', '').upper()
-        if 'ORAÇÃO' in first_part or 'DEDICATÓRIA' in first_part or 'DEDICATORY' in first_part or 'PRAYER' in first_part:
-            has_prayer_in_json = True
-            print(f"   ✅ Oração dedicatória detectada no JSON")
-    
-    if len(book_data) > 1:
-        second_part = book_data[1].get('part_title', '').upper()
-        if 'PREFÁCIO' in second_part or 'PREFACE' in second_part:
-            has_preface_in_json = True
-            print(f"   ✅ Prefácio detectado no JSON")
-    
     # Diretório temporário
     temp_dir = f"temp_epub_{lang}"
     if os.path.exists(temp_dir):
@@ -393,12 +325,12 @@ def generate_epub(json_file, output_epub, lang='en'):
             f.write(container_xml)
         
         # 3. Cria arquivo OPF
-        opf_content, file_list = create_opf_file(book_data, temp_dir, lang, has_prayer_in_json, has_preface_in_json)
+        opf_content, file_list = create_opf_file(book_data, temp_dir, lang)
         with open(os.path.join(temp_dir, 'OEBPS', 'content.opf'), 'w', encoding='utf-8') as f:
             f.write(opf_content)
         
         # 4. Cria arquivo NCX
-        ncx_content = create_ncx_file(book_data, lang, has_prayer_in_json, has_preface_in_json)
+        ncx_content = create_ncx_file(book_data, lang)
         with open(os.path.join(temp_dir, 'OEBPS', 'toc.ncx'), 'w', encoding='utf-8') as f:
             f.write(ncx_content)
         
@@ -440,41 +372,7 @@ def generate_epub(json_file, output_epub, lang='en'):
             else:
                 print(f"   ⚠️ Arquivo de capa não encontrado: {cover_source}")
         
-        # 7. Copia arquivo de oração dedicatória (apenas se não estiver no JSON)
-        if not has_prayer_in_json:
-            if lang == 'pt':
-                prayer_source = os.path.join(script_dir, 'dedicatory_prayer_pt-BR.xhtml')  # Usar versão portuguesa
-            else:
-                prayer_source = os.path.join(script_dir, 'dedicatory_prayer_en.xhtml')
-            
-            prayer_dest = os.path.join(temp_dir, 'OEBPS', 'dedicatory_prayer.xhtml')
-            
-            if os.path.exists(prayer_source):
-                shutil.copy2(prayer_source, prayer_dest)
-                print(f"   🙏 Oração dedicatória adicionada: dedicatory_prayer.xhtml")
-            else:
-                print(f"   ⚠️ Arquivo de oração dedicatória não encontrado: {prayer_source}")
-        else:
-            print(f"   ✅ Oração dedicatória já está incluída no JSON")
-
-        # 8. Copia arquivo de prefácio (apenas se não estiver no JSON)
-        if not has_preface_in_json:
-            if lang == 'pt':
-                preface_source = os.path.join(script_dir, 'preface_pt-BR.xhtml')  # Usar versão portuguesa
-            else:
-                preface_source = os.path.join(script_dir, 'preface_en.xhtml')
-            
-            preface_dest = os.path.join(temp_dir, 'OEBPS', 'preface.xhtml')
-            
-            if os.path.exists(preface_source):
-                shutil.copy2(preface_source, preface_dest)
-                print(f"   📄 Prefácio adicionado: preface.xhtml")
-            else:
-                print(f"   ⚠️ Arquivo de prefácio não encontrado: {preface_source}")
-        else:
-            print(f"   ✅ Prefácio já está incluído no JSON")
-        
-        # 9. Cria arquivos XHTML para cada capítulo
+        # 7. Cria arquivos XHTML para cada capítulo
         file_counter = 1
         chapters_created = 0
         
@@ -493,7 +391,7 @@ def generate_epub(json_file, output_epub, lang='en'):
         
         print(f"   📝 Capítulos criados: {chapters_created}")
         
-        # 10. Cria arquivo EPUB (ZIP)
+        # 8. Cria arquivo EPUB (ZIP)
         if os.path.exists(output_epub):
             os.remove(output_epub)
         
@@ -511,7 +409,7 @@ def generate_epub(json_file, output_epub, lang='en'):
                     arcname = os.path.relpath(file_path, temp_dir)
                     epub.write(file_path, arcname)
         
-        # 11. Limpa diretório temporário
+        # 9. Limpa diretório temporário
         shutil.rmtree(temp_dir)
         
         # Verifica arquivo criado
