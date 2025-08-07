@@ -254,6 +254,11 @@ def main():
     print("🏗️  Organizando estrutura...")
     final_structure, parts_stats = create_organized_structure(csv_chapters, unique_chapters, special_sections)
     
+    # Remover TITLE PAGE da estrutura final antes de salvar
+    print("�️  Removendo TITLE PAGE...")
+    final_structure = [section for section in final_structure if section.get('part_title') != 'TITLE PAGE']
+    print(f"   TITLE PAGE removida. Seções restantes: {len(final_structure)}")
+    
     # Mostrar estatísticas
     print("📊 Estatísticas:")
     for part in ['I', 'II', 'III', 'IV', 'V']:

@@ -1,20 +1,5 @@
 [
   {
-    "part_title": "TITLE PAGE",
-    "chapters": [
-      {
-        "chapter_title": "TITLE PAGE",
-        "content": [
-          {
-            "type": "p",
-            "content": "This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online. See the back of the book for detailed information.",
-            "word_count": 44
-          }
-        ]
-      }
-    ]
-  },
-  {
     "part_title": "DEDICATORY PRAYER",
     "chapters": [
       {
