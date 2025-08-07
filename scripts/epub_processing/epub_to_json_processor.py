@@ -107,10 +107,15 @@ class EpubToJsonProcessor:
             bool: True se sucesso, False se erro
         """
         if not output_json_path:
-            output_json_path = 'webapp/public/data/livro_en.json'
+            output_json_path = 'output/livro_en.json'
         
         print(f"📚 Processando EPUB: {epub_path}")
         print(f"   🎯 Arquivo de saída: {output_json_path}")
+        
+        # Garantir que o diretório de saída existe
+        output_dir = os.path.dirname(output_json_path)
+        if output_dir and not os.path.exists(output_dir):
+            os.makedirs(output_dir)
         
         # Reset de estatísticas
         self.total_words = 0

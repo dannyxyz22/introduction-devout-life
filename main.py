@@ -7,6 +7,7 @@ Oferece menu interativo para executar diferentes operações.
 import os
 import sys
 import subprocess
+import shutil
 
 def run_script(script_path, description):
     """
@@ -66,6 +67,31 @@ def check_file_exists(file_path, description="arquivo"):
         print(f"❌ {description} não encontrado: {file_path}")
         return False
 
+def ensure_output_directory():
+    """
+    Garante que a pasta output existe
+    """
+    if not os.path.exists('output'):
+        os.makedirs('output')
+        print("📁 Pasta 'output' criada")
+
+def copy_to_webapp(source_file, target_file, description="arquivo"):
+    """
+    Copia arquivo da pasta output para webapp/public/data
+    """
+    if os.path.exists(source_file):
+        # Garantir que o diretório de destino existe
+        target_dir = os.path.dirname(target_file)
+        if not os.path.exists(target_dir):
+            os.makedirs(target_dir)
+        
+        shutil.copy2(source_file, target_file)
+        print(f"📋 {description} copiado para webapp: {target_file}")
+        return True
+    else:
+        print(f"⚠️ {description} não encontrado para cópia: {source_file}")
+        return False
+
 def main():
     """
     Menu principal
@@ -75,6 +101,9 @@ def main():
     
     # Verificar estrutura do projeto
     print("\n📂 VERIFICANDO ESTRUTURA DO PROJETO:")
+    
+    # Garantir que a pasta output existe
+    ensure_output_directory()
     
     scripts = {
         'epub_process': os.path.join('scripts', 'epub_processing', 'process_epub.py'),
@@ -87,8 +116,10 @@ def main():
     }
     
     data_files = {
-        'json_en': os.path.join('webapp', 'public', 'data', 'livro_en.json'),
-        'json_pt': os.path.join('webapp', 'public', 'data', 'livro_pt-BR.json'),
+        'json_en_output': os.path.join('output', 'livro_en.json'),
+        'json_pt_output': os.path.join('output', 'livro_pt-BR.json'),
+        'json_en_webapp': os.path.join('webapp', 'public', 'data', 'livro_en.json'),
+        'json_pt_webapp': os.path.join('webapp', 'public', 'data', 'livro_pt-BR.json'),
         'epub_source': os.path.join('data', 'Introduction_to_the_Devout_Life.epub')
     }
     
@@ -132,12 +163,16 @@ def main():
             else:
                 # Prioriza o novo processador com word_count automático
                 if 'epub_process_new' not in missing_scripts:
-                    run_script_with_args(scripts['epub_process_new'], [data_files['epub_source']], 
+                    success = run_script_with_args(scripts['epub_process_new'], [data_files['epub_source']], 
                                         "Processamento de EPUB (com word_count automático)")
+                    if success:
+                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
                 elif 'epub_process' not in missing_scripts:
                     print("⚠️  Usando processador antigo - recomenda-se usar o novo com word_count automático")
-                    run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
+                    success = run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
                                        "Processamento de EPUB (versão antiga)")
+                    if success:
+                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
                 else:
                     print("❌ Nenhum script de processamento encontrado!")
                 
@@ -161,7 +196,9 @@ def main():
                 
         elif choice == '5':
             if 'json_reconstruct' not in missing_scripts:
-                run_script(scripts['json_reconstruct'], "Reconstrução de JSON português")
+                success = run_script(scripts['json_reconstruct'], "Reconstrução de JSON português")
+                if success:
+                    copy_to_webapp(data_files['json_pt_output'], data_files['json_pt_webapp'], "JSON português")
             else:
                 print("❌ Script de reconstrução não encontrado!")
                 
@@ -182,9 +219,13 @@ def main():
                 if 'epub_process_new' not in missing_scripts:
                     success = run_script_with_args(scripts['epub_process_new'], [data_files['epub_source']], 
                                                  "Processamento de EPUB") and success
+                    if success:
+                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
                 elif 'epub_process' not in missing_scripts and success:
                     success = run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
                                                  "Processamento de EPUB (versão antiga)") and success
+                    if success:
+                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
             
             # 2. Reorganizar JSON
             if 'reorganize_json' not in missing_scripts and success:
@@ -200,7 +241,7 @@ def main():
             
             # 5. Gerar EPUBs (se JSON português existir)
             if 'epub_generate' not in missing_scripts and success:
-                if os.path.exists(data_files['json_pt']):
+                if os.path.exists(data_files['json_pt_webapp']):  # Verificar na webapp onde o script busca
                     run_script(scripts['epub_generate'], "Geração de EPUBs")
                 else:
                     print(f"\n⚠️  JSON português não encontrado.")
@@ -215,12 +256,18 @@ def main():
             print(f"\n📊 STATUS DO PROJETO:")
             print("=" * 30)
             
-            # Verificar arquivos de dados
-            en_size = os.path.getsize(data_files['json_en']) / 1024 if os.path.exists(data_files['json_en']) else 0
-            pt_size = os.path.getsize(data_files['json_pt']) / 1024 if os.path.exists(data_files['json_pt']) else 0
+            # Verificar arquivos de dados na pasta output
+            en_size_output = os.path.getsize(data_files['json_en_output']) / 1024 if os.path.exists(data_files['json_en_output']) else 0
+            pt_size_output = os.path.getsize(data_files['json_pt_output']) / 1024 if os.path.exists(data_files['json_pt_output']) else 0
             
-            print(f"📂 JSON Inglês: {'✅' if en_size > 0 else '❌'} ({en_size:.1f} KB)")
-            print(f"📂 JSON Português: {'✅' if pt_size > 0 else '❌'} ({pt_size:.1f} KB)")
+            # Verificar arquivos de dados na webapp
+            en_size_webapp = os.path.getsize(data_files['json_en_webapp']) / 1024 if os.path.exists(data_files['json_en_webapp']) else 0
+            pt_size_webapp = os.path.getsize(data_files['json_pt_webapp']) / 1024 if os.path.exists(data_files['json_pt_webapp']) else 0
+            
+            print(f"📂 JSON Inglês (output): {'✅' if en_size_output > 0 else '❌'} ({en_size_output:.1f} KB)")
+            print(f"📂 JSON Português (output): {'✅' if pt_size_output > 0 else '❌'} ({pt_size_output:.1f} KB)")
+            print(f"📋 JSON Inglês (webapp): {'✅' if en_size_webapp > 0 else '❌'} ({en_size_webapp:.1f} KB)")
+            print(f"📋 JSON Português (webapp): {'✅' if pt_size_webapp > 0 else '❌'} ({pt_size_webapp:.1f} KB)")
             
             # Verificar outputs
             output_dir = 'output'

@@ -23,7 +23,7 @@ def main():
     
     # Arquivos esperados
     original_json = os.path.join(project_root, 'webapp', 'public', 'data', 'livro_en.json')
-    output_json = os.path.join(project_root, 'webapp', 'public', 'data', 'livro_pt-BR.json')
+    output_json = os.path.join(project_root, 'output', 'livro_pt-BR.json')
     
     # Verificar se arquivo original existe
     if not os.path.exists(original_json):

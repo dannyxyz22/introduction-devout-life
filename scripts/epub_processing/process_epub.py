@@ -61,7 +61,7 @@ def process_epub_to_json(epub_path, output_json_path=None):
     Converte arquivo EPUB para JSON estruturado com word_count automático
     """
     if not output_json_path:
-        output_json_path = 'webapp/public/data/livro_en.json'  # Gera diretamente livro_en.json
+        output_json_path = 'output/livro_en.json'  # Gera na pasta output
     
     print(f"📚 Processando EPUB: {epub_path}")
     
