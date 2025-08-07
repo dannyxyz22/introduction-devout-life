@@ -148,19 +148,6 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
                   href="cover.png",
                   attrib={'media-type': 'image/png'})
     
-    # Oração Dedicatória (só se não estiver no JSON)
-    if not has_prayer_in_json:
-        SubElement(manifest, 'item',
-                  id="dedicatory-prayer",
-                  href="dedicatory_prayer.xhtml",
-                  attrib={'media-type': 'application/xhtml+xml'})
-    
-    # Prefácio (só se não estiver no JSON)
-    if not has_preface_in_json:
-        SubElement(manifest, 'item',
-                  id="preface",
-                  href="preface.xhtml",
-                  attrib={'media-type': 'application/xhtml+xml'})
     
     # Arquivos de conteúdo
     file_counter = 1
@@ -184,14 +171,7 @@ def create_opf_file(book_data, output_dir, lang='en', has_prayer_in_json=False, 
     # Adicionar página de título primeiro
     SubElement(spine, 'itemref', idref="title-page")
     
-    # Adicionar oração dedicatória (só se não estiver no JSON)
-    if not has_prayer_in_json:
-        SubElement(spine, 'itemref', idref="dedicatory-prayer")
-    
-    # Adicionar prefácio (só se não estiver no JSON)
-    if not has_preface_in_json:
-        SubElement(spine, 'itemref', idref="preface")
-    
+  
     # Depois todos os capítulos
     for file_id, _ in file_list:
         SubElement(spine, 'itemref', idref=file_id)
@@ -247,39 +227,6 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
     
     play_order += 1
     
-    # Adicionar oração dedicatória no índice (só se não estiver no JSON)
-    if not has_prayer_in_json:
-        prayer_nav = SubElement(nav_map, 'navPoint', 
-                               id="dedicatory-prayer",
-                               playOrder=str(play_order))
-        
-        prayer_label = SubElement(prayer_nav, 'navLabel')
-        prayer_text = SubElement(prayer_label, 'text')
-        if lang == 'pt':
-            prayer_text.text = "Oração Dedicatória"
-        else:
-            prayer_text.text = "Dedicatory Prayer"
-        
-        SubElement(prayer_nav, 'content', src="dedicatory_prayer.xhtml")
-        
-        play_order += 1
-    
-    # Adicionar prefácio no índice (só se não estiver no JSON)
-    if not has_preface_in_json:
-        preface_nav = SubElement(nav_map, 'navPoint', 
-                                id="preface",
-                                playOrder=str(play_order))
-        
-        preface_label = SubElement(preface_nav, 'navLabel')
-        preface_text = SubElement(preface_label, 'text')
-        if lang == 'pt':
-            preface_text.text = "Prefácio"
-        else:
-            preface_text.text = "Preface"
-        
-        SubElement(preface_nav, 'content', src="preface.xhtml")
-        
-        play_order += 1
     
     for part_idx, part in enumerate(book_data):
         part_title = part.get('part_title', f'Part {part_idx + 1}')
@@ -466,7 +413,7 @@ def generate_epub(json_file, output_epub, lang='en'):
         else:
             print(f"   ⚠️ Arquivo de página de título não encontrado: {title_source}")
         
-        # 6.5. Copia arquivo de capa (apenas para português)
+        # 7. Copia arquivo de capa (apenas para português)
         if lang == 'pt':
             # Localizar o arquivo de capa
             covers_dir = os.path.join(os.path.dirname(os.path.dirname(script_dir)), 'covers')
@@ -479,41 +426,7 @@ def generate_epub(json_file, output_epub, lang='en'):
             else:
                 print(f"   ⚠️ Arquivo de capa não encontrado: {cover_source}")
         
-        # 7. Copia arquivo de oração dedicatória (apenas se não estiver no JSON)
-        if not has_prayer_in_json:
-            if lang == 'pt':
-                prayer_source = os.path.join(script_dir, 'dedicatory_prayer_pt-BR.xhtml')  # Usar versão portuguesa
-            else:
-                prayer_source = os.path.join(script_dir, 'dedicatory_prayer_en.xhtml')
-            
-            prayer_dest = os.path.join(temp_dir, 'OEBPS', 'dedicatory_prayer.xhtml')
-            
-            if os.path.exists(prayer_source):
-                shutil.copy2(prayer_source, prayer_dest)
-                print(f"   🙏 Oração dedicatória adicionada: dedicatory_prayer.xhtml")
-            else:
-                print(f"   ⚠️ Arquivo de oração dedicatória não encontrado: {prayer_source}")
-        else:
-            print(f"   ✅ Oração dedicatória já está incluída no JSON")
-
-        # 8. Copia arquivo de prefácio (apenas se não estiver no JSON)
-        if not has_preface_in_json:
-            if lang == 'pt':
-                preface_source = os.path.join(script_dir, 'preface_pt-BR.xhtml')  # Usar versão portuguesa
-            else:
-                preface_source = os.path.join(script_dir, 'preface_en.xhtml')
-            
-            preface_dest = os.path.join(temp_dir, 'OEBPS', 'preface.xhtml')
-            
-            if os.path.exists(preface_source):
-                shutil.copy2(preface_source, preface_dest)
-                print(f"   📄 Prefácio adicionado: preface.xhtml")
-            else:
-                print(f"   ⚠️ Arquivo de prefácio não encontrado: {preface_source}")
-        else:
-            print(f"   ✅ Prefácio já está incluído no JSON")
-        
-        # 9. Cria arquivos XHTML para cada capítulo
+        # 8. Cria arquivos XHTML para cada capítulo
         file_counter = 1
         chapters_created = 0
         
@@ -532,7 +445,7 @@ def generate_epub(json_file, output_epub, lang='en'):
         
         print(f"   📝 Capítulos criados: {chapters_created}")
         
-        # 10. Cria arquivo EPUB (ZIP)
+        # 9. Cria arquivo EPUB (ZIP)
         if os.path.exists(output_epub):
             os.remove(output_epub)
         
@@ -550,7 +463,7 @@ def generate_epub(json_file, output_epub, lang='en'):
                     arcname = os.path.relpath(file_path, temp_dir)
                     epub.write(file_path, arcname)
         
-        # 11. Limpa diretório temporário
+        # 10. Limpa diretório temporário
         shutil.rmtree(temp_dir)
         
         # Verifica arquivo criado
