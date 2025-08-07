@@ -31,6 +31,30 @@ def run_script(script_path, description):
         print(f"\n❌ Erro ao executar {description}: {str(e)}")
         return False
 
+def run_script_with_args(script_path, args, description):
+    """
+    Executa um script Python com argumentos e exibe o resultado
+    """
+    print(f"\n🔄 Executando: {description}")
+    print("=" * 50)
+    
+    try:
+        cmd = [sys.executable, script_path] + args
+        result = subprocess.run(cmd, 
+                              capture_output=False, 
+                              cwd=os.getcwd())
+        
+        if result.returncode == 0:
+            print(f"\n✅ {description} - Concluído com sucesso!")
+        else:
+            print(f"\n❌ {description} - Erro na execução!")
+            
+        return result.returncode == 0
+        
+    except Exception as e:
+        print(f"\n❌ Erro ao executar {description}: {str(e)}")
+        return False
+
 def check_file_exists(file_path, description="arquivo"):
     """
     Verifica se um arquivo existe
@@ -64,7 +88,8 @@ def main():
     
     data_files = {
         'json_en': os.path.join('webapp', 'public', 'data', 'livro_en.json'),
-        'json_pt': os.path.join('webapp', 'public', 'data', 'livro_pt-BR.json')
+        'json_pt': os.path.join('webapp', 'public', 'data', 'livro_pt-BR.json'),
+        'epub_source': os.path.join('data', 'Introduction_to_the_Devout_Life.epub')
     }
     
     # Verificar scripts
@@ -76,6 +101,9 @@ def main():
     # Verificar dados
     for name, path in data_files.items():
         check_file_exists(path, f"Dados {name}")
+    
+    # Verificar arquivo EPUB fonte
+    epub_source_exists = check_file_exists(data_files['epub_source'], "EPUB fonte")
     
     if missing_scripts:
         print(f"\n⚠️  Alguns scripts não foram encontrados: {', '.join(missing_scripts)}")
@@ -99,14 +127,19 @@ def main():
         choice = input(f"\nEscolha uma opção (1-12): ").strip()
         
         if choice == '1':
-            # Prioriza o novo processador com word_count automático
-            if 'epub_process_new' not in missing_scripts:
-                run_script(scripts['epub_process_new'], "Processamento de EPUB (com word_count automático)")
-            elif 'epub_process' not in missing_scripts:
-                print("⚠️  Usando processador antigo - recomenda-se usar o novo com word_count automático")
-                run_script(scripts['epub_process'], "Processamento de EPUB (versão antiga)")
+            if not epub_source_exists:
+                print("❌ Arquivo EPUB fonte não encontrado! Verifique se 'Introduction_to_the_Devout_Life.epub' está na pasta 'data'.")
             else:
-                print("❌ Nenhum script de processamento encontrado!")
+                # Prioriza o novo processador com word_count automático
+                if 'epub_process_new' not in missing_scripts:
+                    run_script_with_args(scripts['epub_process_new'], [data_files['epub_source']], 
+                                        "Processamento de EPUB (com word_count automático)")
+                elif 'epub_process' not in missing_scripts:
+                    print("⚠️  Usando processador antigo - recomenda-se usar o novo com word_count automático")
+                    run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
+                                       "Processamento de EPUB (versão antiga)")
+                else:
+                    print("❌ Nenhum script de processamento encontrado!")
                 
         elif choice == '2':
             if 'reorganize_json' not in missing_scripts:
@@ -139,14 +172,19 @@ def main():
                 print("❌ Script de geração de EPUB não encontrado!")
                 
         elif choice == '7':
-            print(f"\n🔄 EXECUTANDO PIPELINE COMPLETO...")
-            success = True
-            
-            # 1. Processar EPUB
-            if 'epub_process_new' not in missing_scripts:
-                success = run_script(scripts['epub_process_new'], "Processamento de EPUB") and success
-            elif 'epub_process' not in missing_scripts and success:
-                success = run_script(scripts['epub_process'], "Processamento de EPUB (versão antiga)") and success
+            if not epub_source_exists:
+                print("❌ Arquivo EPUB fonte não encontrado! Verifique se 'Introduction_to_the_Devout_Life.epub' está na pasta 'data'.")
+            else:
+                print(f"\n🔄 EXECUTANDO PIPELINE COMPLETO...")
+                success = True
+                
+                # 1. Processar EPUB
+                if 'epub_process_new' not in missing_scripts:
+                    success = run_script_with_args(scripts['epub_process_new'], [data_files['epub_source']], 
+                                                 "Processamento de EPUB") and success
+                elif 'epub_process' not in missing_scripts and success:
+                    success = run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
+                                                 "Processamento de EPUB (versão antiga)") and success
             
             # 2. Reorganizar JSON
             if 'reorganize_json' not in missing_scripts and success:

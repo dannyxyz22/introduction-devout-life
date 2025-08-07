@@ -192,33 +192,45 @@ def process_epub_to_json(epub_path, output_json_path=None):
 
 def main():
     """Função principal"""
+    import sys
+    
     print("📚 CONVERSOR EPUB → JSON (com word_count automático)")
     print("=" * 55)
     
-    # Procura arquivo EPUB
-    epub_files = []
-    for file in os.listdir('.'):
-        if file.endswith('.epub'):
-            epub_files.append(file)
-    
-    if not epub_files:
-        print("❌ Nenhum arquivo EPUB encontrado na pasta atual!")
-        return
-    
-    if len(epub_files) == 1:
-        epub_file = epub_files[0]
-        print(f"📖 Arquivo EPUB encontrado: {epub_file}")
-    else:
-        print("📖 Arquivos EPUB encontrados:")
-        for i, file in enumerate(epub_files):
-            print(f"   {i+1}. {file}")
+    # Verifica se foi passado um arquivo EPUB como argumento
+    if len(sys.argv) > 1:
+        epub_file = sys.argv[1]
         
-        try:
-            choice = int(input("\nEscolha o arquivo (número): ")) - 1
-            epub_file = epub_files[choice]
-        except (ValueError, IndexError):
-            print("❌ Escolha inválida!")
+        if not os.path.exists(epub_file):
+            print(f"❌ Arquivo EPUB não encontrado: {epub_file}")
+            sys.exit(1)
+            
+        print(f"📖 Processando arquivo especificado: {epub_file}")
+    else:
+        # Procura arquivo EPUB na pasta atual
+        epub_files = []
+        for file in os.listdir('.'):
+            if file.endswith('.epub'):
+                epub_files.append(file)
+        
+        if not epub_files:
+            print("❌ Nenhum arquivo EPUB encontrado na pasta atual!")
             return
+        
+        if len(epub_files) == 1:
+            epub_file = epub_files[0]
+            print(f"📖 Arquivo EPUB encontrado: {epub_file}")
+        else:
+            print("📖 Arquivos EPUB encontrados:")
+            for i, file in enumerate(epub_files):
+                print(f"   {i+1}. {file}")
+            
+            try:
+                choice = int(input("\nEscolha o arquivo (número): ")) - 1
+                epub_file = epub_files[choice]
+            except (ValueError, IndexError):
+                print("❌ Escolha inválida!")
+                return
     
     # Processa o arquivo
     success = process_epub_to_json(epub_file)
@@ -227,6 +239,8 @@ def main():
         print("\n🎉 Conversão concluída com sucesso!")
     else:
         print("\n❌ Erro na conversão!")
+        if len(sys.argv) > 1:  # Se foi chamado com argumentos, retorna código de erro
+            sys.exit(1)
 
 if __name__ == "__main__":
     main()

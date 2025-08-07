@@ -292,8 +292,32 @@ class EpubToJsonProcessor:
 
 def main():
     """Função principal para uso direto do script"""
+    import sys
+    
     processor = EpubToJsonProcessor()
-    processor.process_from_file()
+    
+    # Verifica se foi passado um arquivo EPUB como argumento
+    if len(sys.argv) > 1:
+        epub_file = sys.argv[1]
+        output_path = sys.argv[2] if len(sys.argv) > 2 else None
+        
+        if not os.path.exists(epub_file):
+            print(f"❌ Arquivo EPUB não encontrado: {epub_file}")
+            sys.exit(1)
+            
+        print(f"📚 Processando arquivo especificado: {epub_file}")
+        success = processor.process_epub_to_json(epub_file, output_path)
+        
+        if success:
+            print("\n🎉 Conversão concluída com sucesso!")
+            print("   ✅ Arquivo livro_en.json gerado com word_count automático")
+            print("   ✅ Compatível com todos os scripts existentes")
+        else:
+            print("\n❌ Erro na conversão!")
+            sys.exit(1)
+    else:
+        # Usa o método original de busca automática
+        processor.process_from_file()
 
 
 if __name__ == "__main__":
