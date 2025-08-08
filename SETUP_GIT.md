@@ -112,7 +112,6 @@ introduction-devout-life/
 ├── requirements.txt          # Dependências Python
 ├── .gitignore               # Arquivos ignorados
 ├── main.py                  # Script principal com menu interativo (12 opções)
-├── reorganize_final.py      # Reorganização baseada em summary.csv
 ├── compare_epub_text.py     # Análise de caracteres dos EPUBs
 ├── analyze_added_content.py # Análise de conteúdo adicionado
 ├── scripts/                 # Scripts organizados por categoria
@@ -120,6 +119,8 @@ introduction-devout-life/
 │   │   ├── epub_to_json_processor.py  # Processador principal
 │   │   ├── process_epub.py            # Processador alternativo
 │   │   └── gerar_epub_atualizado.py   # Gerador de EPUB
+│   ├── json_processing/     # Processamento e reorganização JSON
+│   │   └── reorganize_final.py        # Reorganização baseada em summary.csv
 │   ├── translation/         # Sistema de tradução
 │   │   ├── tradutor_docx_clean.py     # Gerador DOCX
 │   │   └── reconstruir_json_portugues.py  # Reconstrutor JSON

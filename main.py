@@ -108,7 +108,7 @@ def main():
     scripts = {
         'epub_process': os.path.join('scripts', 'epub_processing', 'process_epub.py'),
         'epub_process_new': os.path.join('scripts', 'epub_processing', 'epub_to_json_processor.py'),
-        'reorganize_json': 'reorganize_final.py',
+        'reorganize_json': os.path.join('scripts', 'json_processing', 'reorganize_final.py'),
         'epub_generate': os.path.join('scripts', 'epub_processing', 'gerar_epub_atualizado.py'),
         'ocr_fix': os.path.join('scripts', 'ocr_fixes', 'fix_ocr_manual.py'),
         'docx_clean': os.path.join('scripts', 'translation', 'tradutor_docx_clean.py'),

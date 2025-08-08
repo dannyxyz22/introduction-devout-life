@@ -62,7 +62,7 @@ python main.py
 python scripts/epub_processing/epub_to_json_processor.py data/arquivo.epub
 
 # Reorganização JSON
-python reorganize_final.py
+python scripts/json_processing/reorganize_final.py
 
 # Correção de OCR
 python scripts/ocr_fixes/fix_ocr_manual.py

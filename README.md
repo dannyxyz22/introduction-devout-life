@@ -113,7 +113,7 @@ npm start
 python scripts/epub_processing/epub_to_json_processor.py data/arquivo.epub
 
 # 2. Reorganizar baseado no summary.csv
-python reorganize_final.py
+python scripts/json_processing/reorganize_final.py
 
 # 3. Corrigir OCR (se necessário)
 python scripts/ocr_fixes/fix_ocr_manual.py
@@ -145,11 +145,13 @@ python scripts/epub_processing/gerar_epub_atualizado.py --auto
 ### 🌐 Sistema de Tradução
 - `tradutor_docx_clean.py` - Gera DOCX limpo para tradução (sem metadados)
 - `reconstruir_json_portugues.py` - Reconstrói JSON a partir da tradução
-- `reorganize_final.py` - Reorganiza JSON baseado no summary.csv
 
 ### 📊 Análise e Comparação
 - `compare_epub_text.py` - Compara contagem de caracteres entre EPUBs
 - `analyze_added_content.py` - Analisa conteúdo adicionado nas versões geradas
+
+### 🗂️ Processamento JSON
+- `reorganize_final.py` - Reorganiza JSON baseado no summary.csv (localizado em `scripts/json_processing/`)
 
 ## 🌐 Tradução
 
