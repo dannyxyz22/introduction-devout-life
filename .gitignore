@@ -63,7 +63,7 @@ yarn-error.log*
 webapp/build/
 
 # Arquivos grandes
-*.epub
+#*.epub
 *.zip
 *.rar
 

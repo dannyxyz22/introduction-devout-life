@@ -1,10 +1,20 @@
 [
   {
-    "part_title": "DEDICATORY PRAYER",
+    "part_title": "Introduction to the Devout Life",
     "chapters": [
       {
-        "chapter_title": "DEDICATORY PRAYER",
+        "chapter_title": "Content",
         "content": [
+          {
+            "type": "p",
+            "content": "This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online. See the back of the book for detailed information.",
+            "word_count": 44
+          },
+          {
+            "type": "p",
+            "content": "DEDICATORY PRAYER.",
+            "word_count": 2
+          },
           {
             "type": "p",
             "content": "O SWEET JESUS, my Lord, my Saviour, and my God, behold me here prostrate before thy majesty, devoting and consecrating this book to thy glory; give life to its words by thy blessing, that those souls for which I have written it, may receive from it the sacred inspirations which I desire for them. And particularly that of imploring for me thy immense mercy; to the end that, whilst showing others the way of devotion in this world, I may not myself be eternally rejected and confounded in the other; but that, with them, I may for ever sing, as a canticle of triumph, the words which, with my whole heart I pronounce, in testimony of my fidelity amidst the dangers of this mortal life: LIVE JESUS, LIVE JESUS; yea, Lord Jesus, live and reign in our hearts for ever and ever. Amen.",
@@ -14,17 +24,7 @@
             "type": "p",
             "content": "St. Francis de Sales.",
             "word_count": 4
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "part_title": "PREFACE",
-    "chapters": [
-      {
-        "chapter_title": "PREFACE",
-        "content": [
+          },
           {
             "type": "p",
             "content": "Dear reader, I pray you to read this Preface for your satisfaction and for mine.",
@@ -95,10 +95,34 @@
     ]
   },
   {
-    "part_title": "PART THE FIRST - INSTRUCTIONS AND EXERCISES FOR CONDUCTING THE SOUL FROM HER FIRST DESIRE FOR A DEVOUT LIFE TILL SHE IS BROUGHT TO A FULL RESOLUTION OF EMBRACING IT",
+    "part_title": "Introduction to the Devout Life",
     "chapters": [
       {
-        "chapter_title": "CHAPTER I. Description of True Devotion",
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "PART THE FIRST.",
+            "word_count": 3
+          },
+          {
+            "type": "p",
+            "content": "INSTRUCTIONS AND EXERCISES FOR CONDUCTING",
+            "word_count": 5
+          },
+          {
+            "type": "p",
+            "content": "SOUL FROM HER FIRST DESIRE FOR A DEVOUT LIFE TILL SHE IS BROUGHT TO A FULL RESOLUTION OF EMBRACING IT.",
+            "word_count": 20
+          }
+        ]
+      },
+      {
+        "chapter_title": "CHAPTER I.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER I.",
         "content": [
           {
             "type": "p",
@@ -153,7 +177,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER II. The Properties and Excellence of Devotion",
+        "chapter_title": "CHAPTER II.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER II.",
         "content": [
           {
             "type": "p",
@@ -183,7 +211,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER III. Devotion is suitable to all sorts of vocations and professions",
+        "chapter_title": "CHAPTER III.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
         "content": [
           {
             "type": "p",
@@ -223,7 +255,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IV. The necessity of a Guide to conduct us on the way of Devotion",
+        "chapter_title": "CHAPTER IV.\n\n\nThe necessity of a Guide to conduct us on the way of Devotion.\nYoung Tobias, being commanded to go to Rages, answered: \"I know not the way.\" \"Go, then,\" replied his father, \"and seek some man to conduct thee.\" I say the same to you, Philothea; if you would, in good earnest, walk towards devotion, seek some good man who may guide and conduct you: this is the advice of advices. Though you search, says the devout Avila, you shall never so assuredly find the will of God as by means of this humble obedience, so much recommended and practised by the ancient saints. The blessed mother Teresa, seeing the lady Catherine of Cordova perform such great penances, desired much to imitate her, against the advice of her confessor, who had forbidden her. She was much tempted to disobey in that particular; but God said to her: \"Daughter, thou art in a good and secure way: thou esteemest much her penances; but I value more thy obedience.\" And hence she so highly es. teemed this virtue, that besides the obedience due to her superiors, she vowed a particular one to a man of excellent perfection, obliging herself to follow his direction and conduct, by which she was infinitely comforted, as well as many devout souls before and after her, who, for the more entire resignation of themselves to God, have submitted their will to that of their servants, which St. Catherine of Sienna highly applauds in her dialogues. The devout princess, St. Elizabeth, submitted herself with an exemplary obedience to Conradus. And one of the\nadvices given by the great St. Louis to his son, a little before his death, was this: \"Confess often, choose an able and upright confessor who can instruct thee to do those things which are necessary.\"",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
         "content": [
           {
             "type": "p",
@@ -263,7 +303,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER V. We must begin by purifying our Souls",
+        "chapter_title": "CHAPTER V.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
         "content": [
           {
             "type": "p",
@@ -303,7 +347,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VI. The first Purification, which is from mortal sin",
+        "chapter_title": "CHAPTER VI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
         "content": [
           {
             "type": "p",
@@ -328,7 +376,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VII. The second Purification, which is that from affection to sin",
+        "chapter_title": "CHAPTER VII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VII.",
         "content": [
           {
             "type": "p",
@@ -358,7 +410,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VIII. The means to arrive at this second Purification",
+        "chapter_title": "CHAPTER VIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.",
         "content": [
           {
             "type": "p",
@@ -383,7 +439,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IX. First Meditation.—The Creation",
+        "chapter_title": "CHAPTER IX.\nFirst Meditation. - The Creation.\n\n\nPREPARATION.\n\n\n1. Place yourself in the presence of God. 2. Beseech Him to inspire you. \n\n\nCONSIDERATIONS.\n\n\n1. Consider that not many years ago you were not yet in the world, and that your being was a mere nothing. Where were we, O my soul, at that time?-the world had then lasted so many ages, and yet we existed not.\n2. God has formed you out of nothing, to make you what you are: purely of his own goodness, having no need whatsoever of you.\n3. Consider the being that God has given you, for it is the highest in the visible world, capable of eternal life, and of being perfectly united to his Divine Majesty.\nAFFECTIONS AND RESOLUTIONS.\n1. Humble yourself exceedingly in the presence of God, saying in your heart with the Psalmist : O Lord, I am in thy sight as a mere nothing, and how hast Thou thought of me to create me? Alas! my soul, thou wert lost in that ancient nothing, and hadst yet been there had not God drawn thee from thence: and what couldst thou have done remaining there?\n2. Give thanks to God: O my great and good Creator, how am I indebted to Thee, since Thou hast vouchsafed to make me out of nothing, and by thy great mercy to make me what I am. What can I do to bless thy holy name as I ought, and to render due thanks to thy inestimable goodness?\n3. Confound yourself: But, alas! my Creator, instead of uniting myself to Thee, by love and service,",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.\nFirst Meditation. - The Creation.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.",
         "content": [
           {
             "type": "p",
@@ -483,7 +547,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER X. Second Meditation.—On the end for which we were created",
+        "chapter_title": "CHAPTER X.\n\n\nSecond Meditation. On the end for which we were\n\n\ncreated.\n\n\nPREPARATION.\n1. Place yourself before God. 2. Beseech Him to inspire you. \nCONSIDERATIONS.\n\n\n1. God has not placed us in this world for any need He has of us, who are altogether unprofitable to Him, but only in order to exercise his goodness in us, by giving us his grace and glory. And to that end He has enriched us with an understanding to know Him, with a memory to be mindful of Him, a will to love Him, an imagination to represent to ourselves his benefits, eyes to behold his wonderful works, a tongue to praise Him, and so of our other faculties,\n2. Being created, and put into the world with this intention, all actions contrary to it are to be avoided and rejected; and those which do not conduce to this end should be despised as vain and superfluous.\n3. Consider the wretchedness of worldlings who never think of this, but live as though they believed themselves created to no other end but to build houses, plant trees, hoard up riches, and such like follies!\nAFFECTIONS AND RESOLUTIONS.\n1. Confound yourself, reproaching your soul with her misery, and for having forgotten these truths: Alas! you shall say, how did I employ my thoughts, O God, when I placed them not upon Thee? What did I remember when I forgot Thee? What did I love, when I loved not Thee? Alas! I ought to have nourished myself upon truth, and I have glutted",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
         "content": [
           {
             "type": "p",
@@ -573,7 +645,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XI. Third Meditation.—On the Benefits of God",
+        "chapter_title": "CHAPTER XI.\n\n\nThird Meditation. On the Benefits of God.\n\n\nPREPARATION.\n\n\n1. Place yourself in the presence of God. 2. Beseech Him to inspire you. \n\n\nCONSIDERATIONS.\n\n\n1. Consider the bodily advantages which God has\ngiven you: what a perfect body, and what means to maintain it; what health and lawful recreations to entertain it; what friends and assistances. But consider all this with respect to many other persons, much more worthy than yourself, who are destitute of all these blessings: some defective in their bodies, health, and members; others abandoned to the stings of reproaches, contempt, and dishonour; others oppressed with poverty, and God has not suffered you to become so miserable.\n2. Consider the gifts of mind: How many are there in the world stupid, frantic, and mad-and why are not you of this number? God has favoured you. How many are there who have been brought up in coarse habits and extreme ignorance? And by God's providence you have been educated well and honourably.\n3. Consider the spiritual graces: You are a child of the Catholic Church. God has taught you to know Him even from your youth. How often has He given you his sacraments? How many inspirations, interior illuminations, and reproaches of conscience for your amendment? How frequently has He pardoned you your faults? How often has He delivered you from the occasions of losing your soul, to which you are exposed? And was there not for years given you leisure and opportunity to advance the good of your soul? Consider in particular how good and gracious God has been to you.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.",
         "content": [
           {
             "type": "p",
@@ -663,7 +743,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XII. Fourth Meditation.—On Sin",
+        "chapter_title": "CHAPTER XII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XII.",
         "content": [
           {
             "type": "p",
@@ -763,7 +847,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIII. Fifth Meditation.—On Death",
+        "chapter_title": "CHAPTER XIII.\nFifth Meditation.-On Death.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
         "content": [
           {
             "type": "p",
@@ -853,7 +941,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIV. Sixth Meditation.—On Judgment",
+        "chapter_title": "CHAPTER XIV.\nSixth Meditation. On Judgment.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.",
         "content": [
           {
             "type": "p",
@@ -963,7 +1055,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XV. Seventh Meditation.—On Hell",
+        "chapter_title": "CHAPTER XV.\nSeventh Meditation.---On Hell.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XV.",
         "content": [
           {
             "type": "p",
@@ -1033,7 +1129,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVI. Eighth Meditation.—On Heaven",
+        "chapter_title": "CHAPTER XVI.\nEighth Meditation.—On Heaven.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVI.",
         "content": [
           {
             "type": "p",
@@ -1093,7 +1193,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVII. Ninth Meditation.—On the choice of Heaven",
+        "chapter_title": "CHAPTER XVII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVII.",
         "content": [
           {
             "type": "p",
@@ -1168,7 +1272,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVIII. Tenth Meditation.—Choice between the life of the World and the Devout Life",
+        "chapter_title": "CHAPTER XVIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVIII.",
         "content": [
           {
             "type": "p",
@@ -1243,7 +1351,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIX. How to make a General Confession",
+        "chapter_title": "CHAPTER XIX.\nHow to make a General Confession.\n1. Behold here, Philothea, the meditations most requisite for our purpose, which, when you have made, go on courageously, in the spirit of humility, to make your general confession; but, I beseech you,",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIX.",
         "content": [
           {
             "type": "p",
@@ -1278,7 +1390,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XX. Protestation from the soul to God to strengthen it in a firm resolution to serve Him",
+        "chapter_title": "CHAPTER XX.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XX.",
         "content": [
           {
             "type": "p",
@@ -1313,7 +1429,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXI. Conclusions drawn from the foregoing Protestation",
+        "chapter_title": "CHAPTER XXI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXI.",
         "content": [
           {
             "type": "p",
@@ -1338,7 +1458,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXII. We must purify ourselves from all affection to venial sins",
+        "chapter_title": "CHAPTER XXII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXII.",
         "content": [
           {
             "type": "p",
@@ -1383,7 +1507,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXIII. We ought to purify ourselves from an affection for useless and dangerous things",
+        "chapter_title": "CHAPTER XXIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIII.",
         "content": [
           {
             "type": "p",
@@ -1408,7 +1536,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXIV. We must purify ourselves from our natural imperfections",
+        "chapter_title": "CHAPTER XXIV.\n\n\nWe must purify ourselves from our natural imper\n\n\nfections.\n\n\nWe have besides, Philothea, certain natural inclinations, which, because they do not proceed from our particular sins, are not properly sins, neither mortal nor venial, but are called imperfections, and their acts are termed faults or omissions. For example, St. Paula, as St. Jerome relates, had a great natural tendency to grief and sadness; so that, at the death of her children and husband, she ran a risk of dying of sorrow; this was a great imperfection, but not a sin, since she had it against her will.\nThere are some naturally cheerful, others moody; some annoyed at being given advice, others inclined to indignation and anger; others to human affections: and, in fine, there are few persons in whom some such imperfections may not be observed. Now, although they are, as it were, common and natural to everyone, yet, by care and contrary affections, they may be corrected and moderated, and we may even purify and free our souls from them. And I tell thee, Philothea, we ought to do so. Men have succeeded in changing the bitter almond-tree into the sweet by piercing it near the root, so as to let out the juice; and why may not we let out our perverse inclinations and become better? There is no nature so good that it may not be corrupted by vicious customs; nor so perverse that it may not, first by the grace of God, and next by proper diligence, be reduced and overcome.\nI will, therefore, now give you the instructions, and propose the exercises, by which you may purge your soul from dangerous affections to venial sins, and secure your conscience also, more and more, against all mortal sin. May God give you the grace to practise them well!",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIV.",
         "content": [
           {
             "type": "p",
@@ -1435,10 +1571,24 @@
     ]
   },
   {
-    "part_title": "PART THE SECOND - INSTRUCTIONS FOR ELEVATING THE SOUL TO GOD BY PRAYER AND BY THE SACRAMENTS",
+    "part_title": "Introduction to the Devout Life",
     "chapters": [
       {
-        "chapter_title": "CHAPTER I. The Necessity of Prayer",
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "INSTRUCTIONS FOR ELEVATING THE SOUL TO GOD BY PRAYER AND BY THE SACRAMENTS.",
+            "word_count": 13
+          }
+        ]
+      },
+      {
+        "chapter_title": "CHAPTER I.\nThe Necessity of Prayer.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER I.",
         "content": [
           {
             "type": "p",
@@ -1508,7 +1658,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER II. Short Method of Meditation",
+        "chapter_title": "CHAPTER II.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER II.",
         "content": [
           {
             "type": "p",
@@ -1543,7 +1697,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER III. Invocation, the second point of the Preparation",
+        "chapter_title": "CHAPTER III.\n\n\nInvocation, the second point of the Preparation. Being sensible that you are in the presence of God, prostrate yourself with the most profound reverence, acknowledging yourself unworthy to appear before so sovereign a Majesty; yet, knowing that his goodness so wills it, humbly beg the grace to serve and worship Him in this meditation. To this end you may use these short and inflamed words of David: \"Cast me not, O God, away from thy face, and take not thy holy spirit from me. Make thy face to shine upon thy servant, and I will consider the wondrous things of thy law. Give me understanding, and I will search out thy law, and I will keep it with all my heart. I am thy servant; give me understanding.\" (Ps. cxvii.) It would also be advisable to invoke your gardian angel, as well as the saints who had some part in the mysteries my on which you meditate; as, for example, in meditating on the death of our Lord, you may invoke our Blossed Lady, St. John, St. Mary Magdalen, and other saints, begging that the inward affections and emotions which they at that time conceived, may be communicated to you. Also, in meditating on your own death, you may invoke your good angel, who will then be present with you, beseeching him to inspire you with proper considerations; and so of other mysteries.\n\n\nCHAPTER IV.\n\n\nThe third point of Preparation, consisting in the proposition of the Mystery.\nAfter these two general points of the meditation, there remains a third, not common to all sorts of meditation, which some call the arrangement of the \nplace, or the interior representation. This consists in representing to your imagination the whole of the mystery on which you desire to meditate, as if it really passed in your presence. For example, if you wish to meditate on the crucifixion of our Lord, imagine yourself on Mount Calvary, and that you there behold and hear all that was done or said at the time of our Lord's passion; or, which will be equally to the purpose, imagine that they are crucifying our Saviour in the very place where you are, in such a manner as is described by the holy Evangelists. The same rule is to be observed when you meditate on death, or hell, or any mystery where visible and sensible objects form a part of the subject; but as to other mysteries, such, for example, as relate to the greatness of God, the excellence of virtue, the end for which we were created, &c., as they are invisible things we must not think to make use of the imagination; we may, it is true, use some similitude or comparison to assist us in the consideration of them, but this is attended with some difficulty: therefore, I intend to instruct you in so plain and easy a manner that your spirit may not be wearied by the study of inventions. By these means we confine our spirit to the mystery we mean to meditate on, that it may not ramble to and fro, just as we shut up a bird in a cage, or tie a hawk by its leash, that it may rest on the hand.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
         "content": [
           {
             "type": "p",
@@ -1553,7 +1715,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IV. The third point of Preparation, consisting in the proposition of the Mystery",
+        "chapter_title": "CHAPTER IV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
         "content": [
           {
             "type": "p",
@@ -1573,7 +1739,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER V. On Considerations: the second part of the Meditation",
+        "chapter_title": "CHAPTER V.\n\n\nOn Considerations : the second part of the Meditation. After the exercise of the imagination, follows meditation, or the work of the understanding, which consists in nothing else but in framing one or more considerations in order to raise up our affections to God and heavenly things. Hence it appears that meditation must not be confounded with any of those studious thoughts or serious reflections which have not the love of God or our spiritual welfare for their object, and which require learning and knowledge to dispute. Having, then, as I have already said, confined your spirit within the bounds of the subject on which you desire to meditate, begin to form considerations on it, according to the models I have set before you in the foregoing meditations; and should you relish the fruits, or any of them, stop without going further, like the bees, who never quit the flower as long as they can suck any honey from it; but if, upon trial, you do not succeed according to your wishes, proceed to another consideration with a calm and tranquil mind, without hurrying yourself or fatiguing your soul. \n\n\nCHAPTER VI.\n\n\nAffections and Resolutions: the third part of the Meditation.\nMeditation produces pious emotions in the will, or affective part of our soul, such as the love of God and our neighbour; a desire of heavenly and eternal glory; zeal for the salvation of souls; imitation of the life of our Lord; compassion, admiration, joy; fear of God's displeasure; of judgment and of hell; hatred of sin; confidence in the goodness and mercy\nof God; and sincere sorrow for the sins of our past life. In these affections your spirit should extend itself as much as possible, and if you desire to aid yourself with books of devotion, read the preface to the first volume of the Meditations of Dom Andrew Capigha, Capiglia, where he shows the manner of exercising yourself in this practice, as Father Arias does more at large in the second part of his treatise on prayer.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
         "content": [
           {
             "type": "p",
@@ -1583,7 +1757,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VI. Affections and Resolutions: the third part of the Meditation",
+        "chapter_title": "CHAPTER VI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
         "content": [
           {
             "type": "p",
@@ -1603,7 +1781,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VII. The conclusion, and the Spiritual Nosegay",
+        "chapter_title": "CHAPTER VII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VII.",
         "content": [
           {
             "type": "p",
@@ -1618,7 +1800,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VIII. Profitable advice on the practice of Meditation",
+        "chapter_title": "CHAPTER VIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.",
         "content": [
           {
             "type": "p",
@@ -1653,7 +1839,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IX. The dryness which we sometimes experience in Meditation",
+        "chapter_title": "CHAPTER IX.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.",
         "content": [
           {
             "type": "p",
@@ -1673,7 +1863,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER X. On Morning Exercise",
+        "chapter_title": "CHAPTER X.\nOn Morning Exercise.\n\n\nBesides mental and vocal prayer there are other kinds, which are, as it were, slips and twigs of the principal prayer: the first is morning prayer, intended as a general preparation to all the actions of the day, and it may be made in the following\n\n\nmanner:\n\n\n1. Adore God most profoundly, and return Him thanks for having preserved you from the dangers of the past night; and if, during the course thereof, you have committed any sin, beseech his pardon.\n2. Consider that the present day is given you in order that you may gain the future day of eternity: make a firm resolution, therefore, to employ it well, and with that intention.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.\nOn Morning Exercise.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
         "content": [
           {
             "type": "p",
@@ -1713,7 +1911,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XI. The Evening Exercise and Examination of Conscience",
+        "chapter_title": "CHAPTER XI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.",
         "content": [
           {
             "type": "p",
@@ -1738,7 +1940,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XII. Spiritual Recollection",
+        "chapter_title": "CHAPTER XII.\nSpiritual Recollection.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XII.",
         "content": [
           {
             "type": "p",
@@ -1793,7 +1999,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIII. Aspirations, ejaculatory prayers, and good thoughts",
+        "chapter_title": "CHAPTER XIII.\n\n\nAspirations, ejaculatory prayers, and good thoughts.\nWe retire into God, because we aspire to Him; and we aspire to Him that we may retire into Him: so that the aspiring to God, and the spiritual retiring into Him, are the mutual supports of each other, and both proceed from the same source, namely, from devout and pious thoughts. Aspire then frequently frequently to God, Philothea, by short but ardent dartings of your heart; admire his beauty, invoke his assistance; cast yourself in spirit at the foot of the cross; adore his goodness; converse with Him frequently on the business of your salvation; give your soul to Him a thousand times a day; contemplate his clemency and his sweetness; stretch out your hand to Him as a little child does to his father, that He may conduct you; place Him in your bosom like a delicious nosegay; plant him in your soul like a standard; and move your heart a thousand times to enkindle and excite within you a passionate and tender affection for your Divine Spouse. The making of ejaculatory prayer was strongly recommended by the great St. Augustin to the devout Lady Proba. Our spiri. Philothea, by habituating itself thus privately to the company and familiarity of God, will be altogether perfumed with his perfections. Now, there is no difficulty in this exercise, as it is not incompatible with our occupations, without any inconvenience whatever, since, in these spiritual and interior aspirations, we only take short diversions, which, instead of preventing, rather assist us in the pursuit of what we are seeking. The pilgrim, though he may stop to take a little wine to strengthen his heart and cool his mouth, does not delay his journey by so doing, but rather acquires strength to finish it with more ease and expedition, resting only that he may afterwards proceed with greater speed.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
         "content": [
           {
             "type": "p",
@@ -1878,7 +2092,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIV. The most Holy Mass, and how we ought to hear it",
+        "chapter_title": "CHAPTER XIV.\n\n\nThe most Holy Mass, and how we ought to hear it. Hitherto I have said nothing of the most holy, sacred, and august sacrifice and sacrament of the Altar, the sun of spiritual exercises, the centre of the Christian religion, the heart of devotion, and the soul of piety; a mystery so ineffable as to comprise within itself that abyss of divine charity from whence God communicates Himself really to us; and, in a special manner, replenishes our souls with spiritual graces and favours.\nWhen prayer, Philothea, is united with this divine sacrifice, it becomes so efficacious as to cause the soul to overflow, as it were, with heavenly consolations. Here she reclines upon her Well-beloved, who fills her with so much spiritual sweetness that she resembles, as is said in the Canticles, a pillar of smoke proceeding from a fire of aromatic wood, from myrrh and frankincense, and from all the most exquisite perfumes.\nEndeavour therefore to assist at Mass every day, that you may, jointly with the priest, offer up the holy sacrifice of your Redeemer to God his Father, for yourself and for the whole Church. The angels, says St. John Chrysostom, always attend in great numbers to honour this adorable mystery; and we, by associating ourselves with them, having one and the same intention, cannot but receive many favourable influences from such a holy society. The choirs of the triumphant church, and those of the church militant, unite themselves to our Lord in this divine action, that with Him, in Him, and through Him, they may gain the heart of God the Father, and make his mercy all our own. Oh. what a happiness is",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.",
         "content": [
           {
             "type": "p",
@@ -1918,7 +2140,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XV. Other public and common exercises of Devotion",
+        "chapter_title": "CHAPTER XV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XV.",
         "content": [
           {
             "type": "p",
@@ -1938,7 +2164,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVI. We must honour and invoke the Saints",
+        "chapter_title": "CHAPTER XVI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVI.",
         "content": [
           {
             "type": "p",
@@ -1978,7 +2208,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVII. How we ought to hear and read the Word of God",
+        "chapter_title": "CHAPTER XVII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVII.",
         "content": [
           {
             "type": "p",
@@ -1998,7 +2232,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVIII. How we ought to receive Inspirations",
+        "chapter_title": "CHAPTER XVIII.\nHow we ought to receive Inspirations.\nBy inspirations are meant all attractions of grace, good movements of our hearts, reproaches and remorses of conscience, lights and conceptions which God excites in us, presenting our souls with his blessings, through his fatherly care and love, in order to awaken, stimulate, urge, and attract us to the practice of every virtue, to heavenly love, to good\nresolutions, and in a word, to everything that may help us on our way to eternal happiness. This is what the Spouse of the Canticles calls, in mysterious language, knocking at the door, and speaking to the heart of his Spouse, awaking her when she sleeps, calling after her when she is absent, inviting her to gather fruits and flowers in his garden, to sing, and cause her sweet voice to sound in his ears.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVIII.",
         "content": [
           {
             "type": "p",
@@ -2043,7 +2281,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIX. On Holy Confession",
+        "chapter_title": "CHAPTER XIX.\nOn Holy Confession.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIX.",
         "content": [
           {
             "type": "p",
@@ -2103,7 +2345,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XX. Of frequent Communion",
+        "chapter_title": "CHAPTER XX.\nOf frequent Communion.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XX.",
         "content": [
           {
             "type": "p",
@@ -2158,7 +2404,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXI. How we ought to communicate",
+        "chapter_title": "CHAPTER XXI.\nHow we ought to communicate.\nPrepare yourself for the holy Communion the evening before, by many ejaculations of love, retiring earlier, that you may rise sooner in the morning. Should you awake in the night, sanctify your heart and mouth with some devout aspirations, in order to prepare your soul for the reception of her spouse, who being awake whilst you were asleep, prepares a thousand graces and favours for you, if on your part you are disposed to receive them. In the morning,",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXI.",
         "content": [
           {
             "type": "p",
@@ -2210,10 +2460,24 @@
     ]
   },
   {
-    "part_title": "PART THE THIRD - INSTRUCTIONS CONCERNING THE PRACTICE OF THE VIRTUES",
+    "part_title": "Introduction to the Devout Life",
     "chapters": [
       {
-        "chapter_title": "CHAPTER I. The choice we ought to make as to the practice of the Virtues",
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "INSTRUCTIONS CONCERNING THE PRACTICE OF THE",
+            "word_count": 6
+          }
+        ]
+      },
+      {
+        "chapter_title": "CHAPTER I.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER I.",
         "content": [
           {
             "type": "p",
@@ -2263,7 +2527,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER II. Continuation of the former discourse on the choice of Virtues",
+        "chapter_title": "CHAPTER II.\n\n\nContinuation of the former discourse on the choice of virtues.\nYoung beginners in devotion, says St. Augustine, commit certain faults, which, according to the rigour of the laws of perfection, are blameable and yet commendable, on account of the foreshadowing they give of the future excellence in piety, to which they serve as a disposition. That low and servile fear which begets excessive scruples in the souls of new converts from a course of sin, is commendable in beginners, and a certain foreboding of a future purity of conscience; but the same fear would be blamable in those who are far advanced and in whose heart love ought to reign, which, by imperceptible degrees, chases away this servile fear.\nSt. Bernard, in the beginning, was full of rigour towards those who put themselves under his direction; he told them that they must leave the body behind, and come to him only with the spirit. When he heard their confessions, he severely rebuked their most trivial faults, and urged them on to perfection with such vehemence, that, instead of making them advance forward, he drove them back; for they lost heart when they saw themselves so earnestly pressed up so steep and high an ascent. Observe, Philothea, it was an ardent zeal for perfect purity that induced this great saint to adopt that manner of proceeding. This zeal of the saint was a great virtue, but a virtue nevertheless reprehensible; of which, God Himself in a holy vision made him sensible, pouring at the same time into his soul so meet, amiable, and tender a spirit, that, being totally changed, he repented of his former rigour and severity, and became so gracious and condescending to everyone as to make himself all to all, that he might gain all. St. Jerome\nnaving related how his dear daughter, St. Paula, was not only excessive, but obstinate, in the exercise of bodily mortification, to such a degree, that she would not yield to the contrary advice of Epiphanius, her bishop; ; and moreover, that she suffered herself to be carried away with such excessive grief for the death of her husband and children, as to be herself frequently in danger of death, concludes at length with these words: \"Some will say, that instead of writing the praises of this holy woman, I blame her imperfections and faults; but I call Jesus to witness whom she served, and whom I desire to serve, that, I do not depart from the truth, either on the one side or the other, but set down sincerely what related to her, as one Christian should do of another; that is to say, I write her history, not her panegyric; and that her vices would have been virtues in many others:\" meaning that the failings and defects of St. Paula would have been esteemed virtues in a soul less perfect; and that there are actions esteemed imperfections in the perfect, which would be held great perfections in those who are imperfect.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER II.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER II.",
         "content": [
           {
             "type": "p",
@@ -2303,7 +2575,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER III. On Patience",
+        "chapter_title": "CHAPTER III.   On Patience. \n\n\n\"Patience is necessary for you, that in doing the will of God, you may receive the promise\" (Heb. x. 36). If our Saviour Himself has declared: \"In your patience you shall possess your souls\" (Luke, xxi. 19), should it not b ea man's great happiness, Philothea, to possess his soul? and the more perfect our patience, the more absolutely do we possess it. Let us frequently call to mind that as our Lord has saved us by patient suffering, so we also ought to",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.   On Patience.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.   On Patience.",
         "content": [
           {
             "type": "p",
@@ -2383,7 +2663,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IV. Exterior Humility",
+        "chapter_title": "CHAPTER IV.\nExterior Humility.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
         "content": [
           {
             "type": "p",
@@ -2428,7 +2712,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER V. Internal Humility",
+        "chapter_title": "CHAPTER V.\nInternal Humility.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
         "content": [
           {
             "type": "p",
@@ -2483,7 +2771,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VI. Humility makes us like our own abjection",
+        "chapter_title": "CHAPTER VI.\n\n\nHumility makes us like our own abjection.\nI pass on further, and tell you, Philothea, that in all, and through all, you should love your own abjection. But you will ask me, what is it to love your own abjection? In Latin abjection signifies humility, and humility signifies abjection; so that when Our Lady, in her sacred canticle, says that all generations shall call her blessed, because our Lord had regarded the humility of his handmaid, her meaning is, that our Lord had graciously looked down on her abjection and lowliness in order to heap his graces and favours upon her. Nevertheless, there is a difference between the virtue of humility and our abjection, for our abjection is the lowliness,\nmeanness, and baseness that is in us without our being aware of it; whereas the virtue of humility is a true knowledge, and a voluntary acknowledgment of our abjection. Now, the main point of this humility consists in being willing, not only to acknowledge our abjection, but in loving and delighting in it; and this, not through want of courage and generosity, but for the greater exaltation of the Divine Majesty, and that we may hold our neighbour in greater estimation than ourselves. To this I exhort you; and that you may comprehend me the better, I tell you that among the evils which we suffer, some are abject, and others honourable; many can easily accommodate themselves to such evils as are honourable, but scarcely anyone to such as are abject. You see a devout old hermit covered with rags and shivering with cold; everyone honours his tattered clothes and compassionates his sufferings; but if a poor tradesman or a gentleman is in a similar condition, the world despises and scoffs at him; and thus you see that their poverty is abject. A religious man receives a sharp reproof from his superior, or a child from his father with meekness, and everyone calls this mortification, obedience, and wisdom; but should a gentleman or lady suffer the like from another, although it were for the love of God, it is then called cowardice and want of spirit. Behold, then, here another evil that is abject. One has a canker in his arm, another in his face; the first has only the disease, but the other, together with the disease, has contempt, disgrace, and abjection. I say, then, that we must not only love the evil, which is the business of patience, but also embrace the abjection by virtue of humility. There are, moreover, virtues which are abject and virtues which are honourable. Patience, meekness, simplicity, and even humility itself, are\nvirtues which worldlings consider as mean and abject; whilst, on the contrary, they hold prudence, fortitude, and liberality in the highest estimation. There are also actions of one and the same virtue, some of which are despised, and others are honoured; to give alms and forgive injuries are botu of them acts of charity; yet the first is honoured whilst the latter is despised, in the eyes of the world. A young lady or gentleman who refuses to join in the disorders of a frivolous company, or to talk, play, dance, drink, or dress as the rest do, incurs their scorn and censure, and their modesty is termed bigotry and affectation to love this is to love our own abjection.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
         "content": [
           {
             "type": "p",
@@ -2518,7 +2814,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VII. How we are to preserve our good name in the practice of humility",
+        "chapter_title": "CHAPTER VII.\n\n\nHow we are to preserve our good name in the practice \n\n\nof humility.\n\n\nPraise, honour, and glory are not given to men for every degree of virtue, but for an excellence of virtue; for by praise we endeavour to persuade others to esteem the excellency of those whom we praise; by honour we testify that we ourselves esteem them; and glory, in my opinion, is nothing else but a certain lustre of reputation that arises from the concurrence of praise and honour; so that honour and praise are like precious stones, from a collection of which glory proceeds, like a certain enamelling. Now, humility, forbidding us to have any esteem for our own excellence, or think ourselves worthy to be preferred before others, consequently cannot permit that we should hunt after praise, honour, or glory, which are only due to excellence; yet it consents to the counsel of the wise man, who admonishes us to be careful of our good name (Ecclus. xli. 15), because a good name is an esteem, not of excellence, but of ordinary honesty\nand integrity of life, which humility does not forbid us to acknowledge in ourselves, nor, by consequence, to desire the reputation of it. It is true, humility would despise a good name if charity stood not in need of it; but because it is one of the foundations of human society, and because without it we are not only unprofitable but prejudicial to the public, on account of the scandal it would receive-charity requires and humility consents that we should desire it, and carefully preserve it.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VII.",
         "content": [
           {
             "type": "p",
@@ -2578,7 +2882,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VIII. On meekness towards our neighbour and on remedies against anger",
+        "chapter_title": "CHAPTER VIII.\n\n\nOn meekness towards our neighbour and on remedies against anger.\nThe holy chrism, which by apostolical tradition we use in the Church of God for confirmations and consecrations, is composed of oil of olives mingled with balm, which, amongst other things, represent to us the two favourite and well-beloved virtues which shone forth in the sacred person of our Lord, and which He has strenuously recommended to us; as by them our heart ought to be in a particular manner consecrated to his service, and dedicated to his imitation. \"Learn of me,\" says he, \"for I am meek and humble of heart\" (Matt. xii. 29). Humility perfects us with respect to God, and meekness with regard to our neighbour. The balm which, as I have\nbefore observed, ever sinks beneath all other liquors, represents humility; and the oil of olives, which swims always above represents meekness and mildness, which surmounts all things, and excel amongst virtues, as being the flower of charity, which, according to St. Bernard, is in its perfection, when it is not only patient, but also meek and mild. But take care, Philothea, that this mystical chrism, compounded of meekness and humility, be within your heart: for it is one of the great artifices of the enemy to make many deceive themselves with the expressions and exterior appearances of these virtues, who, not examining thoroughly their interior affections, think themselves humble and meek, whereas, in reality, there are no virtues to which they have less pretensions; and this may be easily discovered, for, notwithstanding all their ceremonious mildness and humility, at the least cross word, or smallest injury, they puff themselves up with unparalleled arrogance.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.",
         "content": [
           {
             "type": "p",
@@ -2613,7 +2925,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IX. Of meekness towards ourselves",
+        "chapter_title": "CHAPTER IX.\nOf Meekness towards Ourselves. \nOne of the best exercises of meekness we can perform is that of which the subject is within ourselves, in never fretting at our imperfections; for, though reason requires that we should be sorry when we commit a fault, yet we must refrain from that bitter, gloomy, spiteful, and passionate displeasure for which many are greatly to blame, who being overcome by anger, are angry for having been angry, and vexed to see themselves vexed, for by this means they keep their hearts perpetually steeped in passion; and though it seems as if the second anger destroyed the\nfirst, it serves nevertheless to open a passage for fresh anger on the first occasion that may present itself. Besides, this anger and vexation against ourselves tends to pride, and flows from no other source than self-love, which is troubled and disquieted when we see ourselves imperfect. We must then be displeased with our faults, but in a tranquil, settled, and firm manner; for, as a judge punishes malefactors much better, when he is guided in his sentences by reason and proceeds with a tranquil spirit, than when he acts with violence and passion (because, judging in passion, he does not punish the faults according as they are, but according as he is himself), so we correct ourselves much better by a calm and steady repentance than by that which is harsh, hasty, and passionate; for repentance exercised with violence proceeds not according to the quality of our faults, but according to our inclinations. For example, he that effects chastity will vex himself beyond all bounds at the least fault he commits against that virtue, and will, on the other hand, think nothing of a gross detraction which he has been guilty of; whilst he who hates detraction torments himself for a slight murmur of it, and makes no account of a gross fault committed against chastity; and so of others. Now, all this springs from no other fountain but that in the judgment of their consciences, these men are not guided by reason, but by passion.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.",
         "content": [
           {
             "type": "p",
@@ -2643,7 +2959,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER X. We must treat of our affairs with diligence, but without eagerness or solicitude",
+        "chapter_title": "CHAPTER X.\n\n\nWe must treat of our affairs with diligence, but without eagerness or solicitude.\nThat care and diligence wherewith we ought to attend to our affairs must never be confounded with anxiety and solicitude. The angels are careful of our salvation, and procure it with diligence, yet they are never agitated either by anxiety or solicitude; for care and diligence naturally result from their charity, whereas solicitude and anxiety are utterly incompatible with their felicity; because the former may be accompanied by a calm and tranquil state of mind, whereas the latter never can.\nBe careful and attentive then, Philothea, to all those affairs which God has committed to your care, for such a disposition in you is agreeable to the will of his Divine Majesty, without suffering your care and attention to degenerate into inquietude and anxiety; do not worry your spirits about them, for an over-solicitude disturbs the reason and judgment, and prevents us from doing that properly, for the execution of which we are so eager and anxious.\nWhen our Lord reproached Martha, He said: \"Martha, Martha, thou art solicitous and art troubled about many things!\" You must here observe that she would not have been troubled had she been but merely diligent; but being over-concerned and disquieted, she hurried and troubled herself, and therefore received this reprehension from our Lord.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
         "content": [
           {
             "type": "p",
@@ -2683,7 +3007,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XI. Obedience",
+        "chapter_title": "CHAPTER XI.    Obedience. \n\n\nCharity alone can place us in perfection, but obedience, chastity, and poverty, are the three principal means by which to attain to it. Obedience consecrates our heart, chastity our body, and poverty our means to the love and service of God. These three branches of the spiritual cross are grounded on a fourth, viz., humility. I shall say nothing of these three virtues, when they are solemnly vowed,\nbecause this subject concerns religious orders only; nor even when they are simply vowed; for though a vow may add many graces and merits to virtues, yet, to make us perfect, it is not necessary that vows should be made, provided they be observed. For though being vowed, and especially solemnly, they place a man in the state of perfection; yet, to arrive at perfection itself, they must be observed, there being a very great difference between the state of perfection and perfection itself; since all bishops and religious are in a state of perfection; and yet, alas, all have not arrived at perfection itself, as is too plainly to be seen. Let us endeavour then, Philothea, to practise well these virtues, each one according to his vocation; for though they do not place us in the state of perfection, yet they will make us perfect: and, indeed, everyone is obliged to practise them, though not all after the same manner.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.    Obedience.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.    Obedience.",
         "content": [
           {
             "type": "p",
@@ -2718,7 +3050,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XII. The necessity of Chastity",
+        "chapter_title": "CHAPTER XII.\nThe Necessity of Chastity.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XII.",
         "content": [
           {
             "type": "p",
@@ -2758,7 +3094,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIII. How to preserve Chastity",
+        "chapter_title": "CHAPTER XIII.\nHow to preserve Chastity.\n\n\nKeep always a great guard over yourself in order to drive away promptly everything which might tempt to impurity; for it is an evil which develops itself by insensible degrees, weak in the beginning, but their progress very rapid. In a word, it is more easy to fly from it than to cure it.\nChastity is a treasure which, according to St. Paul, \"we keep in fragile vessels; and in truth it has much of the fragility of those vases which break by knocking against each other.\" The freshest water, when we try to preserve it in a vessel, quickly loses its freshness if any animal touches it. Never permit yourself, Philothea, to practise, and preserve yourself from, those external liberties, equally contrary to Christian modesty and to the respect you owe yourself; for, although one may preserve an absolutely chaste heart in spite of actions which arise rather from want of thought than from malice, and which are not usually practised, nevertheless, chastity always receives from them some lamentable injury. You sufficiently understand that I do not speak here of what virtually ruins chastity.\nChastity takes its origin in the heart, and its exterior practice consists in regulating and purifying the senses; this is why it is lost by means of all the external senses, as well as by the thoughts of the mind, and the desires of the heart. Thus, every sensation which we allow ourselves regarding an immodest object, or with a spirit of immodesty, is\nreally an unchaste act, and the Apostle recom. mended the first Christians not even to mention the vice amongst them. Bees not only do not touch a body in a state of putrefaction, but they fly from the bad smell which it exhales. Remark, I beseech you, what holy Scripture tells us of the Spouse of the Canticles. Everything is mysterious in them. Myrrh distils from her hands, and you know that this liquor preserves from corruption; her lips are bordered by a red riband, and that teaches us that modesty blushes at words, even when they are ever so little indecent; her eyes are compared to the eyes of the dove, on account of their purity; she wears earrings of gold, and that metal is also a symbol of purity; her nose is compared to a cedar of Lebanon, the odour of which is exquisite, and its wood incorruptible. What does all that mean? That the soul should be, in all its senses, devout, chaste, open, pure, and honourable.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.\nHow to preserve Chastity.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
         "content": [
           {
             "type": "p",
@@ -2803,7 +3147,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIV. Poverty of spirit to be observed by the rich",
+        "chapter_title": "CHAPTER XIV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.",
         "content": [
           {
             "type": "p",
@@ -2858,7 +3206,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XV. How to practise true and real Poverty, being notwithstanding really rich",
+        "chapter_title": "CHAPTER XV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XV.",
         "content": [
           {
             "type": "p",
@@ -2918,7 +3270,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVI. How to practise richness of spirit in real Poverty",
+        "chapter_title": "CHAPTER XVI.\n\n\nHow to practise Richness of Spirit in real Poverty.\nBut if you are really poor, Philothea, be likewise, for God's sake, actually poor in spirit; make a virtue of necessity, and value this precious jewel of poverty at the high rate it deserves; its lustre is not discovered in this world, and, nevertheless, it is exceedingly rich and beautiful.\nBe patient; you are in good company; our Lord Himself, his Blessed Mother, the Apostles, and innumerable saints, both men and women, have been poor, and even when they might have been rich they have scorned to be so. How many great personages have there been who, in spite of contradictions from the world, have gone to search after holy poverty in cloisters and hospitals, and who took indefatigable pains to find it! Witness St. Alexius, St. Paula, St. Paulinus, St. Angela, and so many others; and behold, Philothea, this holy poverty more gracious in your own lodging; you have met her without being at the trouble of seeking her; embrace her, then, as the dear friend of Jesus Christ, who was born, who lived, and who died in poverty: poverty was his nurse during the whole course of his life.\nYour poverty, Philothea, enjoys two great privileges, by means of which you may considerably enhance its merits. The first is that it did not come to you by your choice, but by the will of God, who has made you poor without any concurrence of your own will. Now that which we receive entirely from the will of God is always very agreeable to Him, provided that we receive it with a good heart, and through love of his holy will: where there is least of our own, there is most of God's; the simple\nand pure acceptance of God's will makes our offerings extremely pure.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVI.",
         "content": [
           {
             "type": "p",
@@ -2963,7 +3323,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVII. Friendship: and, first, concerning that which is evil and frivolous",
+        "chapter_title": "CHAPTER XVII.\n\n\nFriendship: and, first, concerning that which is\n\n\nevil and frivolous.\n\n\nLove holds the first place among the several passions of the soul; it is the sovereign of all the emotions of the heart, and directs all the rest towards it, and makes us such as are the objects of its love. Be careful then, Philothea, to entertain no evil love, for if you do you will presently become evil. Now friendship is the most dangerous love of all; because other loves may be without communication, but friendship, being wholly grounded upon it, we can hardly have close friendship for any person without partaking of his qualities.\nAll love is not friendship; for when one loves without being again beloved, then there is love but not friendship; because friendship is intercommunication of love, therefore where love is not mutual there can be no friendship. Nor is it enough that it be mutual, the parties that love each other must besides know of their mutual affection; for if they know it not they have love but not friendship. There must be also some kind of communication between them, so as to form the ground of friendship. Now, according to the diversity of the communications, the friendship also differs, and the communications are different according to the variety of the good things they communicate to each other; if they are false and vain, the friendship is also false and vain; if they are true the friendship is likewise true; and the more excellent the goods may be, the more excellent also is the friendship. For as that honey is best which is gathered from the most exquisite flowers, so also that friendship is best which is founded upon the most exquisite communication. And as there is honey in Heraclea which is poisonous, and makes those mad that eat it, because it is gathered from poisonous plants which abound in that country; even so, friendship grounded upon false and vicious communications is also false and vicious.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVII.",
         "content": [
           {
             "type": "p",
@@ -2998,7 +3366,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVIII. Sensual Friendship",
+        "chapter_title": "CHAPTER XVIII.\nSensual Friendship.\n\n\nWhen these foolish friendships are kept up between persons of different sex, without intention of marriage, being but phantoms of friendship, they deserve not the name either of true friendship or true love by reason of their excessive vanity and imperfection, Now, by means of these fondnesses the hearts of men and of women are caught and entangled with each other in vain and foolish affections, founded upon these frivolous communications, and wretched complacencies, of which I have been just speaking.\nAnd although these dangerous loves, commonly speaking, terminate at last in downright immorality, yet that is not the first design or intention of the persons between whom they are carried on, otherwise they would not be merely sensual friendships, butabsolute impurity. Sometimes even many years pass before anything directly contrary to chastity happens between them, whilst they content themselves by giving to their hearts the pleasures of wishes, siglıs, and such like foolish vanities.\nSome have no other design than to satisfy a natural desire of affection; and these regard nothing in the choice of the objects of their love but their own taste and instinct; so that, at the first meeting with an agreeable person, without examining his interior or comportment, they begin this fond communica",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVIII.\nSensual Friendship.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVIII.",
         "content": [
           {
             "type": "p",
@@ -3053,7 +3429,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIX. True Friendship",
+        "chapter_title": "CHAPTER XIX.\nTrue Friendship.\n\n\nLove everyone, Philothea, with a great love of charity, but have no friendship except for those that communicate unto you the things of virtue; and the more exquisite the virtues are, which shall be the matter of your communications, the more perfect shall your friendship also be. If this communication be in the sciences, the friendship is certainly very commendable, but still more so if it be in the moral virtues-in prudence, discretion, fortitude, and justice. But should your reciprocal communication relate to charity, devotion, and Christian perfection, how precious will friendship be! It will be excellent, because it comes from God, excellent because it shall last eternally in God. Oh, how good it is to love on earth as they love in heaven, to learn to cherish each other in this world as we shall do eternally in the next.\nI speak not here of that simple love of charity which we must have for all men, but of that spiritual friendship by which two, three, or more souls communicate one to another their devotion and spiritual affections, and make themselves all but one spirit. Such happy souls may justly sing: \"Behold how good and pleasant it is for brethren to dwell together in unity\" (Ps. cxxxi. 1); for the delicious balm of devotion distils out of one heart into another by so continual a participation, that it may be said that God has poured out upon this friendship his blessing and life everlasting. I consider all other friendships as but so many shadows in comparison with this, and that their bonds are but chains of glass or of jet in comparison with that bond of holy devotion which is more precious than gold.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIX.\nTrue Friendship.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIX.",
         "content": [
           {
             "type": "p",
@@ -3088,7 +3472,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XX. The difference between true and vain Friendships",
+        "chapter_title": "CHAPTER XX.\n\n\nThe difference between true and vain Friendships.\nObserve, Philothea, this important admonition. As the poisonous honey of Heraclea is so like the other that is wholesome, that there is great danger of mistaking the one for the other, or of taking them mixed together (for the goodness of the one cannot destroy the poison of the other), so he must stand upon his guard, who would not be deceived in friendships, particularly when contracted between persons of different sexes, under any pretext whatsoever. The devil often effects a change in those that love: they begin with virtuous love, which if not attended by the utmost discretion, sensual love will begin to mingle, and afterwards carnal love; yes, there is even danger in spiritual love, if we are not extremely upon our guard: though in this it is more difficult to be imposed upon, because its purity and whiteness make the spots and stains which Satan seeks to mingle with it more apparent, and, therefore, when he takes this in hand he does it more craftily, and endeavours to slip in impurities by almost insensible degrees.\nYou may distinguish worldly friendship from that which is holy and virtuous as the poisonous honey of Heraclea is known from the other; for, as the honey of Heraclea is sweeter to the tongue than the ordinary honey, because of the juice of the deadly nightshade which gives it additional sweetness, so worldly friendship ordinarily produces a great profusion of sweet words, passionate expressions, together with admiration of beauty, behaviour, and other sensual qualities, whereas, holy friendship speaks a plain and sincere language, and commends nothing but virtue and the grace of God, the only foundations or\nwhich it subsists. As the honey of Heracler when swallowed occasions a giddiness, so false friendship breeds a vertigo in the mind, which makes persons stagger in chastity and devotion, hurrying them on to affected and immodest looks and caresses, inordinate sighs, and ridiculous complaints of not being beloved; to a studied and enticing demeanour, to gallantries, to kisses, and other familiarities, the certain and unquestionable signs of the approaching ruin of chastity. But holy friendship has no looks but what are simple and modest, no caresses but pure and sincere ones, no sighs but for heaven, no familiarities but spiritual, no complaints but when Godis not belovedinfallible marks of purity. As the honey of Heraclea is troublesome to the sight, so this worldly friendship dazzles the judgment to such a degree that they who are infected therewith think they do well when they do ill, and believe their excuses and pretexts for two reasons: they fear the light and love darkness. But holy friendship is clear-sighted and never hides itself, but appears willingly before such as are good. In fine, the honey of Heraclea leaves a great bitterness in the mouth; so false friendships change into lewd and carnal words and demands; or, in case of refusal, into injuries, slanders, impostures, sadness, confusion, and jealousies, which often terminate in downright madness. But chaste friendship is always equally honest, civil, and amiable, and never changes except into a more perfect and pure union of spirits a lively image of the blessed friendship which exists in heaven.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XX.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XX.",
         "content": [
           {
             "type": "p",
@@ -3118,7 +3510,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXI. Advice and remedies against evil Friendships",
+        "chapter_title": "CHAPTER XXI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXI.",
         "content": [
           {
             "type": "p",
@@ -3173,7 +3569,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXII. More advice on Friendship",
+        "chapter_title": "CHAPTER XXII.\nMore Advice on Friendship.\nI have another important piece of advice to give you on this subject. Friendship requires great communication between friends, otherwise it can neither grow nor subsist. Therefore it often happens that,",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXII.\nMore Advice on Friendship.\nI have another important piece of advice to give you on this subject. Friendship requires great communication between friends, otherwise it can neither grow nor subsist. Therefore it often happens that,",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXII.",
         "content": [
           {
             "type": "p",
@@ -3203,7 +3607,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXIII. The exercise of Exterior Mortification",
+        "chapter_title": "CHAPTER XXIII.\nThe exercise of Exterior Mortification.\nOld writers on agriculture and country affairs tell us that if any word be written upon a sound almond, and it is again enclosed in the shell and planted, all the fruit upon the tree growing from it will have the same word engraven upon it. For my part, Philothea, I could never approve of the method of those who, to reform a man begin with his exterior, such as his gestures, his dress, or his hair. On the contrary, I think we ought to begin with his interior: \"Be converted to me, with your whole heart\" (Joel, ii.) \"Son, give me thine heart.\" (Prov. xxiii.) For the heart being the genuine source of our actions, our works will be always such as our heart is. The Divine Spouse inviting the soul : \"Put me as a seal upon thy heart, as a seal upon thy arm.\" (Cantic. v.) Yes, truly; for whosoever has Jesus Christin his heart will quickly show Him in all his exterior actions. I desire, therefore, dear Philothea, above all things to engrave upon your heart this sacred motto, \"Live Jesus; \" being assured that your life, which proceeds from the heart, as an almond-tree from an almond, will afterwards bring forth the same words of salvation written upon all your actions; for, as this sweet Jesus lives within your heart, so will He also live in your exterior, in your eyes, your mouth, your hands, and even the hair on your head; so that you will be able to say with St. Paul: \"I live, no, not I, but Christ liveth in me.\" In a word, he that has gained the heart has gained the whole man; but even this heart, by which we would begin, requires to be instructed how it ought to frame its outward behaviour, to the end that men may not only behold holy devotion therein, but also wisdom and discretion; for this reason I crave your serious attention to the following short admonitions :",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIII.",
         "content": [
           {
             "type": "p",
@@ -3263,7 +3671,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXIV. Conversation and Solicitude",
+        "chapter_title": "CHAPTER XXIV.\nConversation and Solitude.\n\n\nTo seek and to avoid conversation are two blameable extremes in the devotion of those that live in the world, which is that of which we are now treating. To shun all conversation savours of disdain and contempt of our neighbours; and to be fond of it is a mark of sloth and idleness. We must love our neighbours as ourselves, and to show that we love them we must not fly their company: and to testify that we love ourselves, we must stay with ourselves, when we are only by ourselves. \"Think first of thyself,\" says St. Bernard, \"and then of others.\" If, then, nothing presses you to go abroad into company, or to receive company at home, stay in yourself, and entertain yourself with your own heart; but if company visit you, or any just cause invite you into company, go, in God's name, Philothea, and see your neighbour with a benevolent heart and a kindly eye.\nWe call those conversations evil which are carried",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIV.\nConversation and Solitude.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIV.",
         "content": [
           {
             "type": "p",
@@ -3313,7 +3729,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXV. Decency in Attire",
+        "chapter_title": "CHAPTER XXV.\nDecency in Attire.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXV.",
         "content": [
           {
             "type": "p",
@@ -3353,7 +3773,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXVI. Conversation; and, first, how we must speak of God",
+        "chapter_title": "CHAPTER XXVI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXVI.",
         "content": [
           {
             "type": "p",
@@ -3393,7 +3817,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXVII. Modesty in our words, and the respect we owe to persons",
+        "chapter_title": "CHAPTER XXVII.\n\n\nModesty in our words, and the respect we owe\n\n\nto persons.\n\n\n\n\n\"If any offend not in words he is a perfect man (James, iii. 2). Be careful, then, never to let slip an indecent word: for although you do not speak it with an ill intention, yet it may be hurtful to those that hear it. An evil word falling into a weak heart spreads itself like a drop of oil falling on linen: nay, it sometimes seizes on the heart in such a manner as to fill it with a thousand impure thoughts and temptations to sin, for as the poison of the body enters by the mouth, so the poison of the soul enters by the ear, and the tongue that utters it is a murderer. For although perhaps the poison which it has poured in has not worked its effect, because it found the souls of the hearers guarded with some preservative, nevertheless the malice was in the tongue to occasion their death. Let no man therefore tell me that he has no such thought; for our Lord, the searcher of hearts, has said: \"That out of the abundance of the heart the mouth speaketh.\" But if we think no evil on such occasions, yet the enemy, who is of a contrary opinion, always secretly makes use of immodest words to pierce the soul of some one. As they that have eaten the herb angelica have always sweet and agreeable breaths, so they that have honesty and chastity, which is an angelic virtue, in their hearts, have their words always pure, modest, and chaste. As for indecentand obscene things, the Apostle will not have them even named amongst us, assuring us, \"That nothing so much corrupts good manners as wicked discourse.\" When immodest words are uttered under a disguise, cleverly and craftily, they become infinitely",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXVII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXVII.",
         "content": [
           {
             "type": "p",
@@ -3428,7 +3860,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXVIII. Rash Judgments",
+        "chapter_title": "CHAPTER XXVIII.\nRash judgments.\n\n\n\"Judge not, and you shall not be judged,\" says the Saviour of our souls; \"condemn not, and you shall not be condemned\" (Luke, vi. 37). \"No,\" says the holy apostle, \"judge not before the time, until the Lord come, who both will bring to light the hidden things of darkness, and will make manifest the counsels of the heart\" (2 Cor. iv. 5). Oh, how displeasing are rash judgments to God! The judgments of the children of men are rash, because they are not the judges of one another, and therefore usurp to themselves the office of our Lord. They are rash, because the principal malice of sin depends on the intention of the heart, which is an impenetrable secret to us. They are not only rash, but also impertinent, because everyone has enough to do to judge himself, without taking upon him to judge his neighbour. In order that we may not be hereafter judged, it is equally necessary to refrain from judging others, and to be careful to judge ourselves. For, as our Lord forbids the one, so the apostle en.\njoins the other, saying, that \"if we judge ourselves, we should not be judged.\" But, O good God' we do quite the contrary; for by judging our neighbour on every occasion we do that which is forbidden; and by not judging ourselves, we neglect to put into practice that which we are strictly commanded to do.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXVIII.\nRash judgments.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXVIII.",
         "content": [
           {
             "type": "p",
@@ -3488,7 +3928,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXIX. Of Detraction",
+        "chapter_title": "CHAPTER XXIX.   Of Detraction.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXIX.   Of Detraction.",
         "content": [
           {
             "type": "p",
@@ -3563,7 +4007,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXX. Other counsels touching Discourse",
+        "chapter_title": "CHAPTER XXX.\nOther counsels touching Discourse.\nLet your speech be meek, frank, open, and sincere, without the least mixture of equivocation, artifice, or dissimulation; for, although it may not be advisable to tell all that is true, yet it is never allowable to speak against the truth. Accustom yourself, therefore, never to tell a deliberate lie, either by way of excuse or otherwise; remembering always that God is the God of truth. Should you tell a lie unawares, fail not to correct it on the spot by some explanation or reparation: an honest excuse has always more grace and force to bear one harmless than a lie.\nThough one may sometimes prudently disguise the truth by some artifice of words, yet it must never be done but when the glory and service of God manifestly require it; in any other case such artifices are dangerous. \"Thy Holy Spirit will have nothing to do with the deceitful.\" (Wisd. i.) No artifice is so good and desirable as plain dealing: worldly prudence or artifice belongs to the children of the world, but the children of God walk uprightly and their hearts are without guile. \"He that walketh sincerely,\" says the wise man, “walketh confidently (Prov. x. 9). Lying, double-dealing, and dissimulation are always signs of a weak and mean spirit. St. Augustine has said, in the Fourth Book of his Confessions: \"That his soul and that of his friend",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXX.",
         "content": [
           {
             "type": "p",
@@ -3593,7 +4041,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXI. Pastimes and Recreations; and, first, of such as are lawful and commendable",
+        "chapter_title": "CHAPTER XXXI.\n\n\nPastimes and Recreations: and first, of such as\nare lawful and commendable.\nIt is necessary sometimes to relax our minds as well as our bodies by some kind of recreation. St. John the Evangelist, as Cassian relates, amusing himself one day with a partridge on his hand, was asked by a huntsman: How such a man as he could spend his time in so unprofitable a manner? St. John said to him: Why do you not carry your bow always bent? Because, answered the huntsman, if it were always bent I fear it would lose its spring and become useless. Be not surprised, then, replied the apostle, that I should sometimes remit somewhat of my close application and attention of spirit in order to enjoy a little recreation, that I may afterwards employ myself more fervently in divine contemplation. It is doubtless a vice to be so rigorous and austere, as neither to be willing to take any recreation ourselves, nor allow it to others.\nTo take the air, to walk, to entertain ourselves with cheerful and friendly conversations, to play on musical instruments, tosing, or to hunt, are recreations so innocent, that in a proper use of them there needs but that common prudence, which gives to everything its due order, time, place, and measures. Those games in which the gain serves as a recompense for the dexterity and industry of the body or",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXI.",
         "content": [
           {
             "type": "p",
@@ -3616,9 +4072,33 @@
             "word_count": 70
           }
         ]
+      }
+    ]
+  },
+  {
+    "part_title": "Introduction to the Devout Life",
+    "chapters": [
+      {
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "Prohibited Games.",
+            "word_count": 2
+          },
+          {
+            "type": "p",
+            "content": "of the mind, such as tennis, ball-playing, chess, backgammon, &c., are recreations in themselves good and lawful: provided that excess, either in the time employed in them, or in stakes played for, is avoided, because if too much time is spent in them, they are no longer an amusement, but an occupation, in which neither the mind nor the body is refreshed, but, on the contrary, stupefied and oppressed. After playing five or six hours at chess the mind is quite fatigued and exhausted. To play long at tennis is not to recreate but to fatigue the body; and if the sum played for is too great the passion for gambling is excited; besides, it is unjust to hazard so much upon abilities of so little importance as those which are exercised at play. But above all, Philothea, take especial care not to set your affections upon these amusements; for how innocent soever any amusements may be, when we set our hearts upon them they become vicious. I do not say that you must take no pleasure whilst at play, for then it would not be recreation; but I say, you must not fix your affection on it, nor amuse yourself too long with it, nor be too eager after it.",
+            "word_count": 211
+          }
+        ]
       },
       {
-        "chapter_title": "CHAPTER XXXII. Prohibited Games",
+        "chapter_title": "CHAPTER XXXII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXII.",
         "content": [
           {
             "type": "p",
@@ -3638,7 +4118,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXIII. Balls and Pastimes which are lawful, but dangerous",
+        "chapter_title": "CHAPTER XXXIII.\nBalls and Pastimes which are lawful, but                dangerous. \n\n\nAlthough balls and dancing are recreations in their natureindifferent, yet according to the ordinary manner in which they are conducted they preponderate very much on the side of evil, and are consequently extremely dangerous. Being generally carried on at night, it is by no means surprising that several vicious circumstances should obtain easy admittance, since the subject is of itself so susceptible of evil. The lovers of these diversions, by sitting up late at night, disable themselves from discharging their duty to God on the morning of the day following. Is it not, then, a kind of madness to turn day into night, light into darkness, and good works into criminal fooleries? Everyone strives who shall carry most vanity to the ball; and vanity is so congenial, as well to evil affections as to dangerous familiarities, that both are easily engendered by dancing.\nI have the same opinion of dancing, Philothea, as physicians have of mushrooms, that the best of them, in their opinion, are good for nothing; so I tell you the best ordered balls are good for nothing. If, nevertheless, you must eat mushrooms, be sure they are well cooked. If, upon some occasions which you cannot well avoid, you must go to a ball, see that your dancing is properly guarded. But you will ask me how must it be guarded? I answer, by modesty, dignity, and a good intention. Eat but sparingly and seldom of mushrooms, physicians say, for, be they ever so well cooked, the quantity makes them poisonous; dance but little, and very seldom, I say, lest otherwise you put yourself in danger of contracting an affection for it.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXIII.\nBalls and Pastimes which are lawful, but                dangerous.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXIII.",
         "content": [
           {
             "type": "p",
@@ -3683,7 +4171,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXIV. At what time we may play or dance",
+        "chapter_title": "CHAPTER XXXIV.\nAt what time we may play or dance.\nIn order that playing and dancing may be lawful, we must use them by way of recreation, without having any affection for them; we may use them for a short time, but not till we are wearied or stupefied by them; and we must use them but seldom, lest we should otherwise turn a recreation into an occupation. But on what occasions may we lawfully play and dance? Lawful occasions for innocent games are frequent, whilst those for games of chance are rare, on account of their being more blamable and dangerous; therefore, in one word, dance and play as your own prudence and discretion may direct you to comply with the requests of the company in which you are; for condescension, as a branch of charity, makes indifferent things good, and even dangerous things allowable; it even takes away the harm from those things that are, in some measure, evil; and therefore games of hazard, which otherwise would be reprehensible, are not so, if we use them sometimes by a just condescension.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXIV.",
         "content": [
           {
             "type": "p",
@@ -3703,7 +4195,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXV. We must be faithful both on great and small occasions",
+        "chapter_title": "CHAPTER XXXV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXV.",
         "content": [
           {
             "type": "p",
@@ -3738,7 +4234,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXVI. How to keep your mind just and reasonable",
+        "chapter_title": "CHAPTER XXXVI.\nHow to keep your mind just and reasonable.\nIt is reason that makes us men, and yet it is a rare thing to find men truly reasonable, because self-love turns us away from the paths of reason, leading us insensibly to a thousand small, yet dangerous injustices and partialities, which, like the little foxes spoken of in the Canticles, destroy the vines; for, because they are little we take no notice of them; but, because they are great in number, they fail not to hurt us very much.\nAre not those things of which I am about to speak unjust and unreasonable? We condemn",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXVI.",
         "content": [
           {
             "type": "p",
@@ -3773,7 +4273,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXVII. Desires",
+        "chapter_title": "CHAPTER XXXVII.\n\n\nDesires.\n\n\nEveryone knows that we are obliged to refrain from the desires of vicious things, since even the desire of evil is of itself criminal; but I tell you, moreover, Philothea, you must not be anxious about balls, plays, or such like diversions, nor covet honours and offices, nor yet visions and ecstasies, for there is a great deal of danger and deceit in such vanities. Desire not that which is at a great distance, nor that which cannot happen for a long time, as many do, who by this means weary and distract their hearts unprofitably. If a young man earnestly desires to be settled in some office before the proper time, what does all his anxiety avail him? If a married woman desires to be a nun, to what purpose? If I desire to buy my neighbour's goods before he is willing to sell them, is it not loss of time to entertain such a desire? If, while sick, I desire to preach, to celebrate Mass, to visit others that are sick, and perform the exercises of those who are in health; are not all these desires vain, since it is out_of my power to put them in execution? Yet, in the meantime, these unprofitable desires occupy the place of the virtues of patience, resignation, mortification, obedience, and meekness under sufferings, which are what God would have me practise at that time. I can by no means approve of persons desiring to amuse themselves in any other kind of life than that in which they are already engaged; nor in any exercises that are incompatible with their present conditions; for this distracts the heart, and makes it unfit for its necessary occupations. If I desire to practise the solitude of a Carthusian, I lose my time;",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXVII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXVII.",
         "content": [
           {
             "type": "p",
@@ -3803,7 +4311,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXVIII. Instructions for Married People",
+        "chapter_title": "CHAPTER XXXVIII.\nInstructions for Married People.\n\"Matrimony is a great sacrament, but I speak in Christ, and in the Church.\" (Eph. v. 32). It is honourable to all, in all, and through all: that is, in all its parts to all; because even virgins ought to honour it with humility; in all, because it is equally holy in the rich and poor; through all, because its origin, its end, its advantages, its form, and its matter, are all holy. It is the nursery of Christianity, that supplies the earth with fruitful souls, to complete the number of the elect in heaven; in a word, the conservation of marriage is of the last importance to the\ncommonwealth, for it is the origin and source of all its streams.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXVIII.",
         "content": [
           {
             "type": "p",
@@ -3898,7 +4410,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XXXIX. Instructions for Widows",
+        "chapter_title": "CHAPTER XXXIX.\nInstructions for Widows.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XXXIX.",
         "content": [
           {
             "type": "p",
@@ -3973,7 +4489,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XL. A Word to Virgins",
+        "chapter_title": "CHAPTER XL.\nA Word to Virgins.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XL.",
         "content": [
           {
             "type": "p",
@@ -3990,10 +4510,29 @@
     ]
   },
   {
-    "part_title": "PART THE FOURTH - NECESSARY ADVICE AGAINST THE MOST ORDINARY TEMPTATIONS",
+    "part_title": "Introduction to the Devout Life",
     "chapters": [
       {
-        "chapter_title": "CHAPTER I. We must not concern ourselves about what the children of the world may say",
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "PART THE FOURTH.",
+            "word_count": 3
+          },
+          {
+            "type": "p",
+            "content": "NECESSARY ADVICE AGAINST THE MOST ORDINARY TEMPTATIONS.",
+            "word_count": 7
+          }
+        ]
+      },
+      {
+        "chapter_title": "CHAPTER I.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER I.",
         "content": [
           {
             "type": "p",
@@ -4038,7 +4577,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER II. We must always have courage",
+        "chapter_title": "CHAPTER II.\nWe must always have courage.\nLight, though it is beautiful and lovely to our eyes, nevertheless dazzles then after we have been long in the dark. Before we become familiar with the inhabitants of any country, be they ever so courteous and gracious, we find ourselves somewhat strange amongst them. It may probably happen, Philothea, that this general farewell which you have bid to the follies and vanities of the world may make some impressions of sadness and discouragement on your mind. If this should be the case, have a little patience, I beg of you, for it will come to nothing. It is but a little strangeness, occasioned by novelty; when it has passed away you will feel ten thousand consolations.\nIt may perhaps be painful to you at first to relinquish that praise which your vanities extorted from foolish worldlings; but would you for the sake of that forfeit the eternal glory with which God will assuredly recompense you? The vain amusements and pastimes in which you have hitherto employed your time will again present themselves to allure\nyour heart, and cause it to turn towards them; but will you resolve to renounce eternal happiness for such deceitful fooleries? Believe me, if you persevere, you will quickly receive consolations so delicious and agreeable as shall oblige you to confess that the world has nothing but gall in comparison with this honey, and that one day of devotion is preferable to a thousand years expended in all the pleasures it can afford.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER II.",
         "content": [
           {
             "type": "p",
@@ -4063,7 +4606,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER III. The nature of temptations, and the difference between the feeling of temptation and the consenting to it",
+        "chapter_title": "CHAPTER III.\n\n\nThe nature of Temptations, and the difference between the feeling of temptation and the consenting\n\n\nto it.\n\n\nImagine to yourself, Philothea, a young princess extremely beloved by her spouse, and that some wicked man, in order to corrupt her fidelity, sends an infamous messenger to treat with her concerning his design: First, the messenger proposes the intention of his master; secondly, the princess is pleased or displeased with the proposition; thirdly, she either consents or refuses. It is in the same manner that Satan, the world, and the flesh, seeing a soul espoused to the Son of God, send her temptations and suggestions by which, 1, sin is proposed to her; 2, she is either pleased or displeased with the proposal; 3, she either consents or refuses. These are the three steps which lead to iniquity-temptation, delectation, and consent. But though these three things are not so manifestly discerned in all other kinds of sins, they are nevertheless palpably seen in great sins.\nThough the temptation to any sin whatsoever should last during life, it could never render us displeasing to the Divine Majesty, provided we were not pleased with it, and did not yield our consent to it; the reason is, because we do not act, but suffer in temptation, and as in this we take no pleasure, so we cannot incur any guilt. St. Paul suffered for a long time the temptations of the flesh, and yet so far from being displeasing to God on that account, that, on the contrary, God was glorified on account of them. The blessed Angela de Foligny felt such cruel temptations of the flesh, that she moves us to compassion when she relates them. St. Francis\nand St. Benoit also suffered such violent temptations as obliged the one to cast himself naked into thorns and the other into snow, in order to combat them, and yet they lost nothing of God's favour, but increased very much in grace.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
         "content": [
           {
             "type": "p",
@@ -4103,7 +4654,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IV. Two remarkable examples on this subject",
+        "chapter_title": "CHAPTER IV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
         "content": [
           {
             "type": "p",
@@ -4133,7 +4688,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER V. An encouragement to a soul that is under temptation",
+        "chapter_title": "CHAPTER V.\n\n\nAn Encouragement to a soul that is under temptation Those violent assaults and extraordinary temptations, Philothea, are only permitted by God against those souls which He desires to elevate to the highest degree of Divine love, yet it does not follow that they shall afterwards attain it, for it has often happened that those who have been constant under these assaults, have, for want of faithfully corresponding with the Divine favour, been afterwards overcome by very small temptations. This I tell you, in order that, if you should happen hereafter to be assailed by great temptations you may know that God confers an extraordinary favour on you, when He thus declares his will to make you great in his sight: and that, nevertheless, you must be always humble and fearful, not being able to assure yourself that you can conquer small temptations, even after you have overcome great ones, by any other means than by constant fidelity towards his Divine Majesty.\nTherefore, whatever temptation may hereafter assail you, or with whatever delectation they may be accompanied, as long as you refuse your consent, not only to the temptation, but also to the delectation, do not give yourself the trouble, for God is not offended. As, when a man is so far gone in a fit as to show no sign of life, people lay their hands on his heart, and if they feel the least palpitation, judge him to be still alive, and that, by the application of some restorative, he may again recover his strength and senses; so it sometimes happens that, by the violence of a temptation, our soul seems to have fallen into a fit, so as to have no longer any spiritual life or motion; but if we desire to know how it is with her, let us lay our hand upon our heart, and\nconsider whether it and our will still retain some palpitation of the spiritual life that is to say, whether they have done their duty in refusing to consent and yield to the temptation and delectation; for as long as this motion remains, we may rest assured that charity, the life of the soul, remains in us, and that Jesus Christ our Saviour, although concealed, is there present; so by means of the continual exercise of prayer, the sacraments, and confidence in God, we shall again return to a strong, sound, and healthy spiritual life.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
         "content": [
           {
             "type": "p",
@@ -4148,7 +4711,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VI. How temptation and delectation may become sinful",
+        "chapter_title": "CHAPTER VI.\n\n\nHow temptation and delectation may become sinful.\nThe princess of whom we have before spoken, could not prevent the proposition which was made to her, because, as was assumed, it was made against her will; but had she, on the contrary, given it the least encouragement, or betrayed a willingness to grant her love to him who courted her, doubtless she would then have been guilty in the sight of God, and however she might dissemble it, would certainly deserve both blanie and punishment. Thus it sometimes happens that the temptation alone involves us in sin, because we ourselves are the cause of it. For example: I know that when I play I fall easily into violent passion and blasphemy, and that gaming serves me as a temptation to those sins; I sin, therefore, as often as I play, and I am accountable for all the temptations which may come upon me. In like manner, if I know that certain conversations will expose me to the danger of falling into sin, and yet willingly take part in them, I am doubtless guilty for all the temptations I may meet with on such occasions.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
         "content": [
           {
             "type": "p",
@@ -4183,7 +4754,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VII. Remedies against great temptations",
+        "chapter_title": "CHAPTER VII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VII.",
         "content": [
           {
             "type": "p",
@@ -4218,7 +4793,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VIII. We must resist small temptations",
+        "chapter_title": "CHAPTER VIII.\nWe must resist small temptations.\nAlthough we must fight against great temptations with an invincible courage, and the victory we gain over them may be extremely advantageous, it may happen, nevertheless, that we gain more in fighting manfully against small ones; for, as great temptations exceed in quality, so the small ones exceed in quantity, for which reason the victory over them may be comparable to that over the greatest. Wolves and bears are without doubt more dangerous than flies, yet the former neither give us so much trouble, nor exercise our patience so much as the latter. It is an easy thing to abstain from murder, but it is extremely difficult to curb all our little bursts of passion, the occasions of which are every moment presenting themselves. It is very easy for a man or a woman to refrain from adultery, but difficult to refrain from glances of the eyes, from giving or receiving favours of love, or from speaking or hearkening to flattering words. It is easy not to admit, visibly or exteriorly, a rival to one's husband or wife, but easy to do so in the heart; it is easy not to steal another\nman's goods, but difficult not to covet them; it is easy not to bear false witness in judgment, but difficult never to tell a lie; it is easy not to get drunk, but difficult to keep one's self perfectly sober; easy to keep from wishing another man's death, difficult not to desire what may be inconvenient to him; easy to forbear from defaming him, difficult not to despise him. In a word, these lesser temptations of anger, suspicion, jealousy, envy, vain love, levity, vanity, insincerity, affectation, craftiness, and impure thoughts, are continually assailing even those who are the most devout and resolute. We must, therefore, diligently prepare ourselves, my dear Philothea, for this warfare, and rest assured that, for as many victories as we shall gain over these lesser enemies, so many precious stones shall be put into the crown of glory, which God is preparing for us in heaven. Therefore, I say that, in addition to be ever ready to fight courageously against great temptations, we must also constantly and diligently defend ourselves against those that seem weak and trivial.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.\nWe must resist small temptations.\nAlthough we must fight against great temptations with an invincible courage, and the victory we gain over them may be extremely advantageous, it may happen, nevertheless, that we gain more in fighting manfully against small ones; for, as great temptations exceed in quality, so the small ones exceed in quantity, for which reason the victory over them may be comparable to that over the greatest. Wolves and bears are without doubt more dangerous than flies, yet the former neither give us so much trouble, nor exercise our patience so much as the latter. It is an easy thing to abstain from murder, but it is extremely difficult to curb all our little bursts of passion, the occasions of which are every moment presenting themselves. It is very easy for a man or a woman to refrain from adultery, but difficult to refrain from glances of the eyes, from giving or receiving favours of love, or from speaking or hearkening to flattering words. It is easy not to admit, visibly or exteriorly, a rival to one's husband or wife, but easy to do so in the heart; it is easy not to steal another\nman's goods, but difficult not to covet them; it is easy not to bear false witness in judgment, but difficult never to tell a lie; it is easy not to get drunk, but difficult to keep one's self perfectly sober; easy to keep from wishing another man's death, difficult not to desire what may be inconvenient to him; easy to forbear from defaming him, difficult not to despise him. In a word, these lesser temptations of anger, suspicion, jealousy, envy, vain love, levity, vanity, insincerity, affectation, craftiness, and impure thoughts, are continually assailing even those who are the most devout and resolute. We must, therefore, diligently prepare ourselves, my dear Philothea, for this warfare, and rest assured that, for as many victories as we shall gain over these lesser enemies, so many precious stones shall be put into the crown of glory, which God is preparing for us in heaven. Therefore, I say that, in addition to be ever ready to fight courageously against great temptations, we must also constantly and diligently defend ourselves against those that seem weak and trivial.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.",
         "content": [
           {
             "type": "p",
@@ -4233,7 +4816,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IX. What remedies we are to apply against small temptations",
+        "chapter_title": "CHAPTER IX.\n\n\nWhat remedies we are to apply against small\n\n\ntemptations.\n\n\nNow as to those lesser temptations of vanity, suspicion, impatience, jealousy, envy, vain love, and such like, which, like flies and gnats, continually hover about us, and sometimes sting us upon the legs, the hands, the cheek, or the nose, as it is impossible to be altogether exempt from being teased by them, the best defence we can make is not to give ourselves much trouble about them; for, although they may tease us, yet they can never hurt us, as long as we continue strongly resolved to dedicate ourselves in earnest to the service of God.\n\n\n1",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.",
         "content": [
           {
             "type": "p",
@@ -4258,7 +4849,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER X. How to fortify our hearts against temptations",
+        "chapter_title": "CHAPTER X.\n\n\nHow to fortify our hearts against temptations. Consider from time to time what passions are most predominant in your soul, and, having discovered them, adopt such a method of thinking, speaking, and acting, as may counteract them. If, for example, you find yourself inclined to vanity, think often on the miseries of human life, what inquietude these vanities will raise in your conscience at the day of your death, how unworthy they are of a generous heart, being nothing but toys, fit only for the amusement of children. Speak also often against vanity, and although it may be to your own prejudice, do not cease to cry it down, for by these means you will engage yourself, even as a matter of honour, to the opposite side; for by declaiming against a thing we bring ourselves to hate it, though at first we may have an affection for it. Exercise works of abjection and humility as much as possible, however great your reluctance may be, since you accustom yourself thus to humility, and weaken your vanity, so that when the temptation comes, you will have less inclination to favour it, and more strength to resist it.\nIf you are inclined to covetousness, think frequently on the folly of a sin which makes us slaves to that which was only made to serve us, and that at death we must part with all, and leave it in the hands of those who perhaps may squander it, or to whom it may be a cause of damnation. Speak aloud against avarice, and in praise of an utter contempt of the world. Force yourself to give alms, and to neglect some occasions of gain.\nShould you be inclined to sensual affections, often think how very dangerous they are, as well to yourself as to others; how unworthy a thing it is to employ in an idle pastime the noblest affection of our soul; and how worthy of blame issuch extreme levity of mind. Speak often in praise of purity and simplicity of heart, and let your actions, to the utmost of your power, be always conformable to your words, by avoiding levities in acts or in conversation. In short, in time of peace, namely, when temptations to the sin to which you are most inclined, do not molest you, make several acts of the contrary virtue; and if the occasions to practise it do not present themselves, endeavour to meet them, for by this means you will strengthen your heart against future temptations.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
         "content": [
           {
             "type": "p",
@@ -4278,7 +4877,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XI. Of Inquietude",
+        "chapter_title": "CHAPTER XI.  Of Inquietude. \n\n\nAs inquietude is not a single temptation, but a source from whence many temptations flow upon us, it is very necessary that I should say something concerning it. Inquietude or sadness, then, is nothing else but that grief of mind which we conceive for some evil which we suffer from against our will, whether it be exterior, as poverty, sickness, contempt; or interior, as ignorance, dryness of heart, repugnance to what is good, and temptation. When the soul, then, perceives that she has some evil, she becomes sad, is displeased, and with good reason extremely anxious to rid herself of it; for everyone naturally desires to embrace good, and fly from what he apprehends to be evil. If the soul, for the love of God, wishes to be freed from her evil, she will seek the means of her deliverance with patience, meekness, humility, and tranquillity, expecting it more from the providence of God than from her own industry or diligence; but if she seeks",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.  Of Inquietude.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.  Of Inquietude.",
         "content": [
           {
             "type": "p",
@@ -4323,7 +4930,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XII. Of Sadness",
+        "chapter_title": "CHAPTER XII.\nOf Sadness.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XII.",
         "content": [
           {
             "type": "p",
@@ -4373,7 +4984,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIII. Of Spiritual and sensible consolations, and how we must behave with regard to them",
+        "chapter_title": "CHAPTER XIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
         "content": [
           {
             "type": "p",
@@ -4433,7 +5048,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIV. Of Spiritual dryness",
+        "chapter_title": "CHAPTER XIV.\nOf spiritual dryness.\n\n\nAs long as consolations may last, do as I have just now directed you, Philothea. But this fine and agreeable weather will not always continue; for sometimes you shall find yourself so absolutely destitute of all feeling of devotion that your soul shall seem to be a wild, fruitless, barren desert, in which there is no trace of a pathway to find her God, nor any water of grace to refresh her, on account of the dryness which seems to threaten her with total and absolute desolation. Alas! how much does a poor soul in such a state deserve compassion: but especially when this evil is vehement; for then, in imitation of David, she feeds herself with tears night and day, while the enemy, to cast her into despair, mocks her by a thousand suggestions of despondency, saying, Ah, poor wretch, where is thy God? By what path shall thou be able to find",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.\nOf spiritual dryness.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.",
         "content": [
           {
             "type": "p",
@@ -4533,7 +5156,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XV. A confirmation and illustration of what has been said by a remarkable example",
+        "chapter_title": "CHAPTER XV.\n\n\nA confirmation and illustration of what has been said by a remarkable example.\nTo make the whole of this instruction the more evident, I will here relate an excellent passage from the history of St. Bernard, as it has been related by a learned and judicious writer. It is an ordinary thing, he says, with all that serve God, and are not as yet experienced in the vicissitudes of spiritual life, to lose breath and fall into pusillanimity and sadness when the sweetness of sensible devotion, together with that agreeable light which invites them to run forward in the way of God, is withdrawn from them. Persons of understanding assign the following reason for this, that man's nature cannot hold out for any length of time without some kind of delight, either heavenly or earthly. Now, as souls that are elevated above themselves by striving after spiritual pleasure easily renounce visible objects, so when, by the divine disposition, spiritual joy is withdrawn from them, whilst they find themselves at the same time deprived of corporal consolations, and are not as yet accustoined to wait with patience for the return of the true sun, it seems to them as if they were neither in heaven nor on earth, and that they shall remain buried in perpetual night; so that like a little infant deprived of its mother's breast, they languish and moan, and become uneasy and troublesome to",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XV.",
         "content": [
           {
             "type": "p",
@@ -4580,10 +5211,29 @@
     ]
   },
   {
-    "part_title": "PART THE FIFTH - INSTRUCTIONS AND EXERCISES NECESSARY FOR RENEWING THE SOUL, AND CONFIRMING HER IN DEVOTION",
+    "part_title": "Introduction to the Devout Life",
     "chapters": [
       {
-        "chapter_title": "CHAPTER I. We ought every year to renew our good resolutions by the following exercises",
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "PART THE FIFTH.",
+            "word_count": 3
+          },
+          {
+            "type": "p",
+            "content": "INSTRUCTIONS AND EXERCISES NECESSARY FOR RENEWING THE SOUL, AND CONFIRMING HER IN DEVOTION.",
+            "word_count": 13
+          }
+        ]
+      },
+      {
+        "chapter_title": "CHAPTER I.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER I.",
         "content": [
           {
             "type": "p",
@@ -4608,7 +5258,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER II. Consideration on the favour which God does us in calling us to his service, according to the protestation indicated in the First Part",
+        "chapter_title": "CHAPTER II.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER II.",
         "content": [
           {
             "type": "p",
@@ -4653,7 +5307,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER III. The examination of the soul concerning the advancement of a devout life",
+        "chapter_title": "CHAPTER III.\n\n\nThe examination of the soul concerning the advance\n\n\nment of a devout life.\n\n\nAs the second point of the exercise is somewhat long, in order to practise it, I must tell you that it is not necessary you should perform it all at once, but at different times, taking what regards your conduct towards God, for one time; what relates to yourself, for another; what concerns your neighbour, for a third; and the consideration of your passions, for the fourth. Neither is it expedient that you should perform it on your knees, except at the beginning and the end, which comprises the affections. The other points of the examination you may perform profitably whilst walking abroad, or still more profitably in bed, provided you can preserve yourself against drowsiness, and keep thoroughly awake: but then, to do this, you must have read attentively beforehand. It is necessary, however, to go through the whole of the second point in three days and two nights at furthest, dedicating as much time to it on each day and night as you possibly can; for if this exercise should be deferred to times far distant from each other, it would lose its force and make but weak impressions.\nAfter every point of the examination, you must. remark those in which you may find that you have",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER III.",
         "content": [
           {
             "type": "p",
@@ -4688,7 +5350,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IV. An examination of the state of your soul towards God",
+        "chapter_title": "CHAPTER IV.\n\n\nAn examination of the state of your soul towards God.\nHow stands your heart with respect to mortal sin ? Are you firmly resolved never to commit it, on any account whatsoever? Has this resolution continued with you from the time of your protestation till the present moment? In this resolution consists the foundation of this spiritual life.\nHow is your heart disposed with regard to the commandments of God? Do you find them good, sweet, and agreeable? Ah! my child, he whose taste is in good order and whose stomach is sound, loves good meats, and rejects the bad.\nHow is your heart affected with regard to venial sins? We cannot keep ourselves so pure as not to fall now and then into such sins; but are there none to which you have a particular inclination, or, which would be still worse, are there none to which you bear an affection and love?\nHow is your heart affected with relation to spiritual exercises? Do you love them? Do you esteem them? Do they not make you uneasy? Are you not disgusted with them? To which of them do you find yourself more or less inclined? To hear the word of God, to read it, to discourse of it, to meditate on it, to aspire to God, to go to confession, to receive spiritual advice, to prepare yourself for communion, to communicate, to restrain your affections; what is there in all this that is repugnant to your heart? and if you find anything to which your heart has less inclination, examine the cause from whence this dislike arises and apply the remedy.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IV.",
         "content": [
           {
             "type": "p",
@@ -4758,7 +5428,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER V. An examination of our state with regard to ourselves",
+        "chapter_title": "CHAPTER V.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER V.",
         "content": [
           {
             "type": "p",
@@ -4793,7 +5467,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VI. An examination of the state of our soul towards our neighbour",
+        "chapter_title": "CHAPTER VI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VI.",
         "content": [
           {
             "type": "p",
@@ -4823,7 +5501,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VII. An examination of the affections of your soul",
+        "chapter_title": "CHAPTER VII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VII.",
         "content": [
           {
             "type": "p",
@@ -4858,7 +5540,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER VIII. Affections to be exercised after this examination",
+        "chapter_title": "CHAPTER VIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER VIII.",
         "content": [
           {
             "type": "p",
@@ -4903,7 +5589,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER IX. Considerations suitable for renewing our good purposes",
+        "chapter_title": "CHAPTER IX.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER IX.",
         "content": [
           {
             "type": "p",
@@ -4918,7 +5608,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER X. The first consideration: the excellence of our soul",
+        "chapter_title": "CHAPTER X.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER X.",
         "content": [
           {
             "type": "p",
@@ -4948,7 +5642,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XI. The second consideration: the excellence of virtue",
+        "chapter_title": "CHAPTER XI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XI.",
         "content": [
           {
             "type": "p",
@@ -4968,7 +5666,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XII. The third consideration: the example of the Saints",
+        "chapter_title": "CHAPTER XII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XII.",
         "content": [
           {
             "type": "p",
@@ -4983,7 +5685,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIII. The fourth consideration: the love that Jesus Christ bears us",
+        "chapter_title": "CHAPTER XIII.\n\n\nThe fourth consideration: the love that Jesus Christ bears us.\nConsider the incomparable love on account of which Jesus Christ our Lord suffered so much in this world, especially in the garden of Olivet and upon Mount Calvary, for our sake. By all these pains and sufferings He obtained of God the Father the good resolutions and protestations which your heart has made; and by the same means He also obtained for you whatever is necessary to maintain, nourish, strengthen, and fulfil them. O holy resolutions, how precious are ye, since ye are the fruits of the passion of my Saviour! Oh, how tenderly ought my soul cherish ye, having been so dear to my sweet Jesus! Alas! O Saviour of my soul, Thou didst die to purchase for me these resolutions, Oh, grant me thy grace rather to suffer death than to lose them. Observe, Philothea, that it is certain that the Heart of Jesus beheld your heart from the tree of the cross, and by the love which He bore it, obtained for you all the good you ever had or shall ever have. Yes, Philothea, we may all say with the prophet Jeremias: \"O Lord, before I had a being, Thou didst behold me, and didst call me by my name;\" since the divine goodness did actually prepare for us all the general and particular means of our salvation, and consequently of our resolutions. As a woman before the birth of her infant prepares the cradle, the linen, the swathing clothes, and even a nurse for it, although it is not yet in the world, so our Saviour, who designed to bring you forth to salvation, and make you his child, prepared on his cross all that was necessary for you-your spiritual cradle, your linen, your swathing clothes, and your\nnurse, all for your happiness; for such are all those graces whereby He seeks to attract your soul and bring it to perfection.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIII.",
         "content": [
           {
             "type": "p",
@@ -5003,7 +5713,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XIV. The fifth consideration: the eternal love of God towards us",
+        "chapter_title": "CHAPTER XIV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XIV.",
         "content": [
           {
             "type": "p",
@@ -5023,7 +5737,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XV. General affections on the preceding considerations and conclusion of these exercises",
+        "chapter_title": "CHAPTER XV.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XV.",
         "content": [
           {
             "type": "p",
@@ -5073,7 +5791,15 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVI. The sentiments we must preserve after this exercise",
+        "chapter_title": "CHAPTER XVI.\n\n\nThe sentiments we must preserre after this exercise. On the day you have made this renovation, and for some days following, you ought frequently to repeat from your heart these fervent words of St. Paul, St. Augustin, and St. Catherine of Genoa: \"No, I am no more my own; whether I live, or whether I die, I am my Saviour's. I have no longer anything of me or mine; it is Jesus who lives in me, and all that I can call mine is to be wholly his. O world, thou art always thyself, and I have hitherto been always myself; but from henceforth I will be myself no more. No, we shall be no more ourselves, for we shall have our hearts changed, and the world which has O often deceived us shall be deceived in us; for not perceiving our change but by little and little, it will think that we are still Esaus, but we shall be like unto Jacob.\nAll these exercises ought to rest in the heart, and when we finish our consideration and meditation, we must turn gently and softly to our ordinary affairs and conversations, lest the balm of our good resolutions should be suddenly spilt; for it must soak and penetrate into all parts of the soul, without either straining the mind or the body.\n\n\nCHAPTER XVII.\n\n\nAnswer to two objections which may be made to this introduction.\nThe world perhaps will tell you, Philothea, that these exercises and advices are so numerous, that he who would practise them must apply himself to nothing else. Alas! Philothea, even should we do",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVI.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVI.",
         "content": [
           {
             "type": "p",
@@ -5088,7 +5814,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVII. Answer to two objections which may be made to this introduction",
+        "chapter_title": "CHAPTER XVII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVII.",
         "content": [
           {
             "type": "p",
@@ -5118,7 +5848,11 @@
         ]
       },
       {
-        "chapter_title": "CHAPTER XVIII. The three last and principal counsels for this introduction",
+        "chapter_title": "CHAPTER XVIII.",
+        "content": []
+      },
+      {
+        "chapter_title": "CHAPTER XVIII.",
         "content": [
           {
             "type": "p",
@@ -5159,6 +5893,66 @@
             "type": "p",
             "content": "M. H. Gill & Son, Printers, Dublin.",
             "word_count": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "part_title": "Introduction to the Devout Life",
+    "chapters": [
+      {
+        "chapter_title": "Content",
+        "content": [
+          {
+            "type": "p",
+            "content": "About this Book - From Google",
+            "word_count": 6
+          },
+          {
+            "type": "p",
+            "content": "This is a digital copy of a book that was preserved for generations on library shelves before it was carefully scanned by Google as part of a project to make the world's books discoverable online. It has survived long enough for the copyright to expire and the book to enter the public domain. A public domain book is one that was never subject to copyright or whose legal copyright term has expired. Whether a book is in the public domain may vary country to country. Public domain books are our gateways to the past, representing a wealth of history, culture and knowledge that's often difficult to discover. Marks, notations and other marginalia present in the original volume may appear in this file - a reminder of this book's long journey from the publisher to a library and finally to you.",
+            "word_count": 140
+          },
+          {
+            "type": "p",
+            "content": "Google Book Search has digitized millions of physical books and made them available online at the Google Books web site. The digitization at the most basic level is based on page images of the physical books. To make this book available as an ePub formated file we have taken those page images and extracted the text using Optical Character Recognition (or OCR for short) technology. The extraction of text from page images is a difficult engineering task. Smudges on the physical books' pages, fancy fonts, old fonts, torn pages, etc. can all lead to errors in the extracted text. Imperfect OCR is only the first challenge in the ultimate goal of moving from collections of page images to extracted-text based books. Our computer algorithms also have to automatically determine the structure of the book (what are the headers and footers, where images are placed, whether text is verse or prose, and so forth). Getting this right allows us to render the book in a way that follows the format of the original book.",
+            "word_count": 173
+          },
+          {
+            "type": "p",
+            "content": "Despite our best efforts you may see spelling mistakes, garbage characters, extraneous images, or missing pages in this book. Based on our estimates, these errors should not prevent you from enjoying the content of the book. The technical challenges of automatically constructing a perfect book are daunting, but we continue to make enhancements to our OCR and book structure extraction technologies.",
+            "word_count": 61
+          },
+          {
+            "type": "p",
+            "content": "We hope you'll enjoy these books as much as we do.",
+            "word_count": 11
+          },
+          {
+            "type": "p",
+            "content": "Usage guidelines",
+            "word_count": 2
+          },
+          {
+            "type": "p",
+            "content": "Google is proud to partner with libraries to digitize public domain materials and make them widely accessible. Public domain books belong to the public and we are merely their custodians. Nevertheless, this work is expensive, so in order to keep providing this resource, we have taken steps to prevent abuse by commercial parties, including placing technical restrictions on automated querying.",
+            "word_count": 60
+          },
+          {
+            "type": "p",
+            "content": "We also ask that you:",
+            "word_count": 5
+          },
+          {
+            "type": "p",
+            "content": "About Google Book Search",
+            "word_count": 4
+          },
+          {
+            "type": "p",
+            "content": "Google's mission is to organize the world's information and to make it universally accessible and useful. Google Book Search helps readers discover the world's books while helping authors and publishers reach new audiences.",
+            "word_count": 33
           }
         ]
       }

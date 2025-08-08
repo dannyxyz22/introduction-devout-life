@@ -200,7 +200,7 @@ def main():
     # Detectar diretório base do projeto
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
-    file_path = os.path.join(project_root, 'webapp', 'public', 'data', 'livro_en.json')
+    file_path = os.path.join(project_root, 'output', 'livro_en.json')
     
     if os.path.exists(file_path):
         print(f"\n📖 Arquivo: {os.path.basename(file_path)}")

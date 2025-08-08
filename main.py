@@ -178,13 +178,17 @@ def main():
                 
         elif choice == '2':
             if 'reorganize_json' not in missing_scripts:
-                run_script(scripts['reorganize_json'], "Reorganização do JSON baseado no summary.csv")
+                success = run_script(scripts['reorganize_json'], "Reorganização do JSON baseado no summary.csv")
+                if success:
+                    copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês reorganizado")
             else:
                 print("❌ Script de reorganização não encontrado!")
                 
         elif choice == '3':
             if 'ocr_fix' not in missing_scripts:
-                run_script(scripts['ocr_fix'], "Correção de OCR")
+                success = run_script(scripts['ocr_fix'], "Correção de OCR")
+                if success:
+                    copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês corrigido")
             else:
                 print("❌ Script de correção de OCR não encontrado!")
                 
@@ -230,10 +234,14 @@ def main():
             # 2. Reorganizar JSON
             if 'reorganize_json' not in missing_scripts and success:
                 success = run_script(scripts['reorganize_json'], "Reorganização do JSON") and success
+                if success:
+                    copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês reorganizado")
             
             # 3. Corrigir OCR
             if 'ocr_fix' not in missing_scripts and success:
                 success = run_script(scripts['ocr_fix'], "Correção de OCR") and success
+                if success:
+                    copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês corrigido")
             
             # 4. Gerar DOCX
             if 'docx_clean' not in missing_scripts and success:

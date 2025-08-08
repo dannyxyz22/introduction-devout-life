@@ -227,13 +227,13 @@ def main():
     
     # Backup
     import shutil
-    shutil.copy2('webapp/public/data/livro_en.json', 'webapp/public/data/livro_en_original.json')
+    shutil.copy2('output/livro_en.json', 'output/livro_en_original.json')
     
     # Carregar dados
     print("📖 Carregando dados...")
     csv_chapters = load_csv_chapters()
     
-    with open('webapp/public/data/livro_en.json', 'r', encoding='utf-8') as f:
+    with open('output/livro_en.json', 'r', encoding='utf-8') as f:
         json_data = json.load(f)
     
     # Extrair seções especiais
@@ -266,7 +266,7 @@ def main():
     
     # Salvar
     print("💾 Salvando...")
-    with open('webapp/public/data/livro_en.json', 'w', encoding='utf-8') as f:
+    with open('output/livro_en.json', 'w', encoding='utf-8') as f:
         json.dump(final_structure, f, indent=2, ensure_ascii=False)
     
     print("✅ Concluído!")
