@@ -186,13 +186,20 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
     Cria arquivo NCX (Navigation Control for XML)
     CORRIGIDO: Sincroniza corretamente play_order com numeração de arquivos
     """
+    
+    # Define o identificador baseado no idioma
+    if lang == 'pt':
+        identifier_text = "devout-life-pt-br"
+    else:
+        identifier_text = "devout-life-en"
+    
     ncx = Element('ncx', 
                   xmlns="http://www.daisy.org/z3986/2005/ncx/",
                   version="2005-1")
     
     # Cabeçalho
     head = SubElement(ncx, 'head')
-    SubElement(head, 'meta', name="dtb:uid", content="devout-life")
+    SubElement(head, 'meta', name="dtb:uid", content=identifier_text)
     SubElement(head, 'meta', name="dtb:depth", content="2")
     SubElement(head, 'meta', name="dtb:totalPageCount", content="0")
     SubElement(head, 'meta', name="dtb:maxPageNumber", content="0")
