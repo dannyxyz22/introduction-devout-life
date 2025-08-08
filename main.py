@@ -148,7 +148,7 @@ def main():
         print(f"4. 📄 Gerar DOCX para tradução")
         print(f"5. 🌐 Reconstruir JSON português (após tradução)")
         print(f"6. 📚 Gerar EPUBs atualizados")
-        print(f"7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → EPUBs)")
+        print(f"7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → Reconstruir → EPUBs)")
         print(f"8. ℹ️  Mostrar status do projeto")
         print(f"9. 🚀 Iniciar aplicação web")
         print(f"10. 📊 Comparar contagem de caracteres dos EPUBs")
@@ -247,7 +247,23 @@ def main():
             if 'docx_clean' not in missing_scripts and success:
                 success = run_script(scripts['docx_clean'], "Geração de DOCX") and success
             
-            # 5. Gerar EPUBs (se JSON português existir)
+            # 5. Reconstruir JSON português (se existir tradução)
+            if 'json_reconstruct' not in missing_scripts and success:
+                # Verificar se existe arquivo de tradução para reconstruir
+                output_dir = 'output'
+                docx_files = []
+                if os.path.exists(output_dir):
+                    docx_files = [f for f in os.listdir(output_dir) if f.endswith('.docx') and 'traduzido' in f.lower()]
+                
+                if docx_files:
+                    success = run_script(scripts['json_reconstruct'], "Reconstrução de JSON português") and success
+                    if success:
+                        copy_to_webapp(data_files['json_pt_output'], data_files['json_pt_webapp'], "JSON português")
+                else:
+                    print(f"\n⚠️  Arquivo de tradução não encontrado.")
+                    print(f"   Para completar o pipeline, traduza o DOCX gerado e salve com 'traduzido' no nome.")
+            
+            # 6. Gerar EPUBs (se JSON português existir)
             if 'epub_generate' not in missing_scripts and success:
                 if os.path.exists(data_files['json_pt_output']):  # Verificar na pasta output
                     run_script_with_args(scripts['epub_generate'], ['--auto'], "Geração de EPUBs")

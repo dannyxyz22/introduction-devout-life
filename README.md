@@ -93,7 +93,7 @@ python main.py
 4. 📄 Gerar DOCX para tradução
 5. 🌐 Reconstruir JSON português (após tradução)
 6. 📚 Gerar EPUBs atualizados
-7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → EPUBs)
+7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → Reconstruir → EPUBs)
 8. ℹ️ Mostrar status do projeto
 9. 🚀 Iniciar aplicação web
 10. 📊 Comparar contagem de caracteres dos EPUBs
