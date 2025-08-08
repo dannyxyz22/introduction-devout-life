@@ -2,6 +2,111 @@ import json
 import re
 import os
 
+def is_paragraph_continuation(text1, text2):
+    """
+    Detecta se o segundo parágrafo é uma continuação do primeiro.
+    Critérios:
+    1. Primeiro parágrafo termina sem pontuação final (. ! ? :)
+    2. Segundo parágrafo não começa com maiúscula ou palavra de início de parágrafo
+    3. Primeiro parágrafo não é muito curto (evitar títulos)
+    4. Contexto semântico indica continuação
+    """
+    if not text1 or not text2:
+        return False
+    
+    text1 = text1.strip()
+    text2 = text2.strip()
+    
+    # Verifica se o primeiro parágrafo é muito curto (provável título)
+    if len(text1.split()) < 8:
+        return False
+    
+    # Verifica se o primeiro parágrafo termina sem pontuação final
+    if text1[-1] in '.!?:':
+        return False
+    
+    # Verifica se o segundo parágrafo começa com minúscula (indicação de continuação)
+    if text2[0].islower():
+        return True
+    
+    # Palavras que indicam continuação quando em maiúscula
+    continuation_words = {
+        'And', 'But', 'For', 'Or', 'Nor', 'So', 'Yet', 'However', 'Therefore',
+        'Thus', 'Hence', 'Moreover', 'Furthermore', 'Nevertheless', 'Nonetheless',
+        'Another', 'Others', 'These', 'Those', 'Such', 'Many', 'Some', 'All',
+        'Both', 'Either', 'Neither', 'Each', 'Every', 'Any', 'No', 'None'
+    }
+    
+    first_word = text2.split()[0] if text2.split() else ""
+    
+    # Se começa com palavra de continuação, provavelmente é continuação
+    if first_word in continuation_words:
+        return True
+    
+    # Verifica se termina com vírgula, ponto e vírgula, ou outros indicadores de continuação
+    if text1[-1] in ',;-':
+        return True
+    
+    # Verifica padrões específicos de quebra mid-sentence
+    # Como no exemplo: "though he" seguido de "immediately afterwards"
+    mid_sentence_endings = ['though', 'although', 'while', 'when', 'where', 'which', 'that', 'who', 'whom', 'whose', 'if', 'unless', 'until', 'since', 'because', 'as', 'before', 'after']
+    last_word = text1.split()[-1].lower() if text1.split() else ""
+    
+    if last_word in mid_sentence_endings:
+        return True
+    
+    return False
+
+def merge_broken_paragraphs(chapters):
+    """
+    Mescla parágrafos que foram quebrados incorretamente pelo OCR.
+    Retorna número de mesclagens realizadas.
+    """
+    merges_count = 0
+    
+    for chapter in chapters:
+        if 'content' not in chapter:
+            continue
+            
+        content = chapter['content']
+        if len(content) < 2:
+            continue
+        
+        # Processar de trás para frente para não afetar índices
+        i = len(content) - 1
+        while i > 0:
+            # Verificar se ainda existe conteúdo suficiente
+            if i >= len(content) or i-1 < 0:
+                break
+                
+            current = content[i]
+            previous = content[i-1]
+            
+            # Apenas processar parágrafos de texto
+            if (current.get('type') == 'p' and previous.get('type') == 'p' and 
+                'content' in current and 'content' in previous):
+                
+                prev_text = previous['content']
+                curr_text = current['content']
+                
+                if is_paragraph_continuation(prev_text, curr_text):
+                    # Mesclar os parágrafos
+                    merged_text = prev_text + " " + curr_text
+                    previous['content'] = merged_text
+                    previous['word_count'] = len(merged_text.split())
+                    
+                    # Remover o parágrafo atual
+                    content.pop(i)
+                    merges_count += 1
+                    
+                    # Continue verificando o mesmo índice (agora com novo conteúdo)
+                    # Mas precisamos ajustar o índice porque removemos um item
+                    continue
+            
+            i -= 1
+    
+    return merges_count
+
 def fix_ocr_manual_only(text):
     """
     Corrige APENAS problemas de OCR através de correções manuais específicas.
@@ -116,7 +221,7 @@ def fix_ocr_manual_only(text):
 
 def fix_json_manual_only(input_file, output_file=None):
     """
-    Aplica correções APENAS manuais ao JSON
+    Aplica correções APENAS manuais ao JSON e mescla parágrafos quebrados
     """
     if output_file is None:
         output_file = input_file
@@ -133,6 +238,20 @@ def fix_json_manual_only(input_file, output_file=None):
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
+    # ETAPA 1: Mesclar parágrafos quebrados ANTES das correções de OCR
+    print("🔗 Mesclando parágrafos quebrados...")
+    all_chapters = []
+    for part in data:
+        all_chapters.extend(part.get('chapters', []))
+    
+    merges_count = merge_broken_paragraphs(all_chapters)
+    if merges_count > 0:
+        print(f"   ✅ {merges_count} parágrafos mesclados")
+    else:
+        print("   ℹ️ Nenhum parágrafo quebrado detectado")
+    
+    # ETAPA 2: Correções manuais de OCR
+    print("🔧 Aplicando correções manuais de OCR...")
     total_corrections = 0
     total_items = 0
     examples_shown = 0
@@ -183,18 +302,20 @@ def fix_json_manual_only(input_file, output_file=None):
         json.dump(data, f, indent=2, ensure_ascii=False)
     
     print(f"\n📊 RESULTADO MANUAL:")
+    print(f"   Parágrafos mesclados: {merges_count}")
     print(f"   Itens processados: {total_items}")
-    print(f"   Correções aplicadas: {total_corrections}")
+    print(f"   Correções OCR aplicadas: {total_corrections}")
     print(f"   Arquivo: {output_file}")
     
-    return total_corrections
+    return total_corrections + merges_count
 
 def main():
-    """Função principal - APENAS correções manuais"""
+    """Função principal - Correções manuais e mesclagem de parágrafos"""
     print("✋ CORRETOR MANUAL DE OCR")
     print("Aplica SOMENTE correções manuais específicas")
+    print("Mescla parágrafos quebrados incorretamente pelo OCR")
     print("Não quebra palavras válidas como 'Description' ou 'Devotion'")
-    print("=" * 60)
+    print("=" * 70)
     
     # Processar apenas o arquivo em inglês (fonte original com problemas de OCR)
     # Detectar diretório base do projeto
@@ -209,13 +330,14 @@ def main():
         corrections = fix_json_manual_only(file_path)
         
         if corrections > 0:
-            print(f"✅ {corrections} correções específicas aplicadas")
+            print(f"✅ {corrections} correções totais aplicadas")
         else:
-            print("✅ Nenhuma correção manual necessária")
+            print("✅ Nenhuma correção necessária")
     else:
         print(f"❌ Não encontrado: {file_path}")
     
     print(f"\n✋ Correção manual concluída!")
+    print("Parágrafos quebrados foram mesclados automaticamente.")
     print("Palavras válidas como 'Description' e 'Devotion' foram preservadas.")
 
 if __name__ == "__main__":
