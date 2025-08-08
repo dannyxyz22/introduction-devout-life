@@ -106,7 +106,6 @@ def main():
     ensure_output_directory()
     
     scripts = {
-        'epub_process': os.path.join('scripts', 'epub_processing', 'process_epub.py'),
         'epub_process_new': os.path.join('scripts', 'epub_processing', 'epub_to_json_processor.py'),
         'reorganize_json': os.path.join('scripts', 'json_processing', 'reorganize_final.py'),
         'epub_generate': os.path.join('scripts', 'epub_processing', 'gerar_epub_atualizado.py'),
@@ -167,12 +166,6 @@ def main():
                                         "Processamento de EPUB (com word_count automático)")
                     if success:
                         copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
-                elif 'epub_process' not in missing_scripts:
-                    print("⚠️  Usando processador antigo - recomenda-se usar o novo com word_count automático")
-                    success = run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
-                                       "Processamento de EPUB (versão antiga)")
-                    if success:
-                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
                 else:
                     print("❌ Nenhum script de processamento encontrado!")
                 
@@ -225,12 +218,7 @@ def main():
                                                  "Processamento de EPUB") and success
                     if success:
                         copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
-                elif 'epub_process' not in missing_scripts and success:
-                    success = run_script_with_args(scripts['epub_process'], [data_files['epub_source']], 
-                                                 "Processamento de EPUB (versão antiga)") and success
-                    if success:
-                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
-            
+               
             # 2. Reorganizar JSON
             if 'reorganize_json' not in missing_scripts and success:
                 success = run_script(scripts['reorganize_json'], "Reorganização do JSON") and success

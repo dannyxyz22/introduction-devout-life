@@ -99,6 +99,102 @@ def deduplicate_by_content(chapters):
     
     return unique
 
+def _normalize_label(text: str) -> str:
+    """Normaliza texto para comparação tolerante (minúsculas, sem pontuação extra)."""
+    if text is None:
+        return ""
+    # Normalizar travessões e hífens para espaço
+    t = text.replace('—', ' ').replace('–', ' ').replace('-', ' ')
+    # Lowercase
+    t = t.lower()
+    # Remover pontuação comum mantendo letras/números e espaços
+    t = re.sub(r"[^\w\s]", " ", t, flags=re.UNICODE)
+    # Colapsar espaços
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+def clean_repeated_chapter_title(structure):
+    """
+    Remove duplicação do título do capítulo no primeiro parágrafo de conteúdo.
+    Para cada capítulo, extrai o label após "Chapter ROMAN. " do chapter_title e
+    - se o primeiro parágrafo (type='p') for igual (ou quase igual) ao label, remove-o;
+    - se o parágrafo começar com o label e tiver mais texto, remove apenas o label do início.
+    Retorna (removidos, ajustados).
+    """
+    removed = 0
+    trimmed = 0
+    # Regex para extrair label: CHAPTER/Chapter <ROMAN>. <LABEL>
+    title_re = re.compile(r"^\s*CHAPTER\s+([IVXLCDM]+)\.\s*(.+)$", re.IGNORECASE)
+    
+    for section in structure:
+        for ch in section.get('chapters', []):
+            title = ch.get('chapter_title', '') or ''
+            m = title_re.match(title)
+            if not m:
+                continue
+            label = m.group(2).strip()
+            if not label:
+                continue
+            norm_label = _normalize_label(label)
+            content_list = ch.get('content', []) or []
+            # Encontrar o primeiro item type 'p'
+            p_index = None
+            for idx, item in enumerate(content_list):
+                if isinstance(item, dict) and item.get('type') == 'p' and item.get('content'):
+                    p_index = idx
+                    break
+            if p_index is None:
+                continue
+            para = content_list[p_index]
+            para_text = para.get('content', '') or ''
+            if not para_text.strip():
+                continue
+            norm_para = _normalize_label(para_text)
+            # Se igual após normalização → remover o parágrafo
+            if norm_para == norm_label:
+                content_list.pop(p_index)
+                removed += 1
+                continue
+            # Se começa com o label (tolerante) → remover label do início
+            # Tentar match case-insensitive no texto original, permitindo pontuação após o label
+            prefix_re = re.compile(r"^\s*" + re.escape(label) + r"[\s\.:;,_\-—]*", flags=re.IGNORECASE)
+            m2 = prefix_re.match(para_text)
+            if m2:
+                rest = para_text[m2.end():].lstrip(" .,:;-—_")
+                if not rest.strip():
+                    # Não sobrou conteúdo útil – remover o parágrafo
+                    content_list.pop(p_index)
+                    removed += 1
+                else:
+                    para['content'] = rest
+                    # Atualizar word_count se existir
+                    if 'word_count' in para:
+                        para['word_count'] = len(rest.split())
+                    trimmed += 1
+                continue
+            # Alternativa: comparação normalizada de prefixo
+            if norm_para.startswith(norm_label + " ") or norm_para.startswith(norm_label + ":"):
+                # Remover prefixo baseado no tamanho original aproximando pelo label original
+                # Preferir retirar label exato (case-insensitive) no começo, senão cair para split por palavras
+                start_ci = para_text[:len(label)]
+                if start_ci.lower() == label.lower():
+                    rest = para_text[len(label):].lstrip(" .,:;-—_")
+                else:
+                    # Fallback: remover pelas palavras do label
+                    label_words = label.split()
+                    rest_words = para_text.split()
+                    k = len(label_words)
+                    rest = " ".join(rest_words[k:])
+                if not rest.strip():
+                    content_list.pop(p_index)
+                    removed += 1
+                else:
+                    para['content'] = rest
+                    if 'word_count' in para:
+                        para['word_count'] = len(rest.split())
+                    trimmed += 1
+    return removed, trimmed
+
 def match_content_to_chapters(json_chapters, csv_chapters):
     """Tenta fazer correspondência inteligente entre conteúdo JSON e títulos CSV"""
     matched_chapters = []
@@ -118,17 +214,20 @@ def match_content_to_chapters(json_chapters, csv_chapters):
             first_content = ""
             if json_ch['content'] and len(json_ch['content']) > 0:
                 first_content = json_ch['content'][0].get('content', '')[:100].lower()
+            # Normalizar conteúdo para tolerar pontuação/espaços
+            first_content_norm = _normalize_label(first_content)
             
             # Calcular score de correspondência baseado no título do CSV
-            csv_title_words = csv_ch['title'].lower().split()[:3]  # Primeiras 3 palavras
+            csv_title_norm = _normalize_label(csv_ch['title'])
+            csv_title_words = csv_title_norm.split()[:4]  # Primeiras 3-4 palavras após normalização
             score = 0
             
             for word in csv_title_words:
-                if len(word) > 3 and word in first_content:  # Palavras com mais de 3 caracteres
+                if len(word) > 3 and word in first_content_norm:  # Palavras com mais de 3 caracteres
                     score += 1
             
             # Bonus se o título está no início do conteúdo
-            if csv_ch['title'].lower()[:20] in first_content:
+            if csv_title_norm[:20] in first_content_norm:
                 score += 2
                 
             if score > best_score:
@@ -258,6 +357,11 @@ def main():
     print("�️  Removendo TITLE PAGE...")
     final_structure = [section for section in final_structure if section.get('part_title') != 'TITLE PAGE']
     print(f"   TITLE PAGE removida. Seções restantes: {len(final_structure)}")
+    
+    # Limpar duplicação de chapter label no primeiro parágrafo
+    print("🧼 Limpando labels de capítulos duplicados no conteúdo...")
+    removed, trimmed = clean_repeated_chapter_title(final_structure)
+    print(f"   Removidos: {removed}, Ajustados: {trimmed}")
     
     # Mostrar estatísticas
     print("📊 Estatísticas:")

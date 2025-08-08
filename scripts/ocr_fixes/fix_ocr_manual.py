@@ -75,8 +75,12 @@ def merge_broken_paragraphs(chapters):
         # Processar de trás para frente para não afetar índices
         i = len(content) - 1
         while i > 0:
-            # Verificar se ainda existe conteúdo suficiente
-            if i >= len(content) or i-1 < 0:
+            # Ajustar i caso a lista tenha encolhido (por remoção anterior)
+            if i >= len(content):
+                i = len(content) - 1
+                if i <= 0:
+                    break
+            if i - 1 < 0:
                 break
                 
             current = content[i]
@@ -99,8 +103,8 @@ def merge_broken_paragraphs(chapters):
                     content.pop(i)
                     merges_count += 1
                     
-                    # Continue verificando o mesmo índice (agora com novo conteúdo)
-                    # Mas precisamos ajustar o índice porque removemos um item
+                    # Continue verificando a mesma posição i (agora apontando para o próximo elemento)
+                    # Se removemos o último elemento, o ajuste de i no topo do laço cuidará do limite
                     continue
             
             i -= 1
