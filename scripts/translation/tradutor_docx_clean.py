@@ -428,8 +428,12 @@ def main():
     # Detectar diretório base do projeto
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
-    input_json = os.path.join(project_root, 'webapp', 'public', 'data', 'livro_en.json')
-    output_docx = 'livro_en_CLEAN_for_translation.docx'
+    input_json = os.path.join(project_root, 'output', 'livro_en.json')
+    output_dir = os.path.join(project_root, 'output')
+    output_docx = os.path.join(output_dir, 'livro_en_CLEAN_for_translation.docx')
+    
+    # Garantir que o diretório output existe
+    os.makedirs(output_dir, exist_ok=True)
     
     if not os.path.exists(input_json):
         print(f"❌ Arquivo não encontrado: {input_json}")

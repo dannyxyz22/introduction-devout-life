@@ -289,9 +289,16 @@ def main():
             else:
                 print(f"📚 EPUBs gerados: 0")
             
-            # Verificar DOCX
-            docx_files = [f for f in os.listdir('.') if f.endswith('.docx')]
+            # Verificar DOCX na pasta output
+            docx_files = []
+            if os.path.exists(output_dir):
+                docx_files = [f for f in os.listdir(output_dir) if f.endswith('.docx')]
             print(f"📄 Arquivos DOCX: {len(docx_files)}")
+            if docx_files:
+                for docx in docx_files:
+                    docx_path = os.path.join(output_dir, docx)
+                    docx_size = os.path.getsize(docx_path) / (1024 * 1024)
+                    print(f"   📄 {docx} ({docx_size:.2f} MB)")
             
         elif choice == '9':
             webapp_dir = os.path.join('webapp')

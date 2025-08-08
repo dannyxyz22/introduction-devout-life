@@ -12,8 +12,8 @@ Gera arquivo DOCX limpo para tradução no Google Translate.
 python tradutor_docx_clean.py
 ```
 
-**Entrada:** JSON em inglês (`webapp/public/data/livro_en.json`)
-**Saída:** `livro_en_CLEAN_for_translation.docx`
+**Entrada:** JSON em inglês (`output/livro_en.json`)
+**Saída:** `output/livro_en_CLEAN_for_translation.docx`
 
 **Características:**
 - Remove metadados que contaminam a tradução
@@ -45,9 +45,9 @@ python reconstruir_json_portugues.py
 
 2. **Traduzir no Google Translate:**
    - Acesse [Google Translate](https://translate.google.com)
-   - Faça upload do arquivo `livro_en_CLEAN_for_translation.docx`
+   - Faça upload do arquivo `output/livro_en_CLEAN_for_translation.docx`
    - Traduza de Inglês para Português
-   - Baixe o arquivo traduzido
+   - Baixe o arquivo traduzido na pasta `output/`
 
 3. **Reconstruir JSON:**
    ```bash

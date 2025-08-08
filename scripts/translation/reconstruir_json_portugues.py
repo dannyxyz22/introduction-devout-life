@@ -22,54 +22,55 @@ def main():
     project_root = os.path.dirname(os.path.dirname(script_dir))
     
     # Arquivos esperados
-    original_json = os.path.join(project_root, 'webapp', 'public', 'data', 'livro_en.json')
+    original_json = os.path.join(project_root, 'output', 'livro_en.json')
     output_json = os.path.join(project_root, 'output', 'livro_pt-BR.json')
+    output_dir = os.path.join(project_root, 'output')
     
     # Verificar se arquivo original existe
     if not os.path.exists(original_json):
         print(f"❌ Arquivo original não encontrado: {original_json}")
         return
     
-    # Procurar arquivo traduzido
-    docx_files = [f for f in os.listdir('.') if f.endswith('.docx') and 'traduzido' in f.lower()]
+    # Procurar arquivo traduzido no diretório output
+    docx_files = [f for f in os.listdir(output_dir) if f.endswith('.docx') and 'traduzido' in f.lower()]
     
     if not docx_files:
         # Procurar arquivo específico
-        expected_file = 'livro_en_CLEAN_for_translation.docx'
+        expected_file = os.path.join(output_dir, 'livro_en_CLEAN_for_translation.docx')
         if os.path.exists(expected_file):
             print(f"⚠️  Encontrado arquivo original: {expected_file}")
             print(f"   Este parece ser o arquivo original, não o traduzido.")
             print(f"   Você deve primeiro:")
             print(f"   1. 📤 Fazer upload em https://translate.google.com")
             print(f"   2. 🇧🇷 Traduzir de Inglês para Português")
-            print(f"   3. 📥 Baixar o arquivo traduzido")
+            print(f"   3. 📥 Baixar o arquivo traduzido na pasta output/")
             print(f"   4. 🔄 Executar este script novamente")
             return
         
-        print(f"❌ Nenhum arquivo .docx traduzido encontrado!")
+        print(f"❌ Nenhum arquivo .docx traduzido encontrado no diretório output/!")
         print(f"   Procurando por arquivos que contenham 'traduzido' no nome.")
-        print(f"   Certifique-se de que o arquivo baixado do Google Translate está na pasta atual.")
+        print(f"   Certifique-se de que o arquivo baixado do Google Translate está na pasta output/.")
         
-        # Mostrar arquivos .docx disponíveis
-        all_docx = [f for f in os.listdir('.') if f.endswith('.docx')]
+        # Mostrar arquivos .docx disponíveis no diretório output
+        all_docx = [f for f in os.listdir(output_dir) if f.endswith('.docx')]
         if all_docx:
-            print(f"\n📂 Arquivos .docx encontrados:")
+            print(f"\n📂 Arquivos .docx encontrados em output/:")
             for i, file in enumerate(all_docx, 1):
                 print(f"   {i}. {file}")
             
             choice = input(f"\nEscolha um arquivo (1-{len(all_docx)}) ou ENTER para cancelar: ").strip()
             
             if choice.isdigit() and 1 <= int(choice) <= len(all_docx):
-                translated_docx = all_docx[int(choice) - 1]
+                translated_docx = os.path.join(output_dir, all_docx[int(choice) - 1])
             else:
                 print("❌ Operação cancelada.")
                 return
         else:
-            print(f"❌ Nenhum arquivo .docx encontrado na pasta atual.")
+            print(f"❌ Nenhum arquivo .docx encontrado na pasta output/.")
             return
     else:
         # Usar o primeiro arquivo encontrado
-        translated_docx = docx_files[0]
+        translated_docx = os.path.join(output_dir, docx_files[0])
         print(f"📂 Arquivo traduzido encontrado: {translated_docx}")
     
     # Verificar se arquivo traduzido existe
