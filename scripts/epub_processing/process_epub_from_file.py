@@ -161,9 +161,21 @@ def process_epub_to_json(epub_path, output_json_path=None):
                 continue
         
         # Salva JSON com word_count incluído
+        # Final recomputation of word_count to guarantee consistency
+        def _recompute_counts(struct):
+            items = 0
+            for part in struct:
+                for ch in part.get('chapters', []):
+                    for it in ch.get('content', []):
+                        if isinstance(it, dict) and 'content' in it:
+                            it['word_count'] = count_words(it.get('content', ''))
+                            items += 1
+            return items
+        items_recomputed = _recompute_counts(book_structure)
         os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
         with open(output_json_path, 'w', encoding='utf-8') as f:
             json.dump(book_structure, f, indent=2, ensure_ascii=False)
+        print(f"   🔢 word_count recalculado em {items_recomputed} itens")
         
         print(f"\n✅ JSON criado com sucesso!")
         print(f"   📂 Arquivo: {output_json_path}")

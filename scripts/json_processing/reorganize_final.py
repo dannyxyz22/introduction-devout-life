@@ -10,6 +10,18 @@ import csv
 import re
 import hashlib
 
+def _recompute_all_word_counts(structure):
+    """Recompute word_count for every content item just before saving."""
+    total = 0
+    for section in structure or []:
+        for ch in section.get('chapters', []) or []:
+            for item in ch.get('content', []) or []:
+                if isinstance(item, dict) and 'content' in item:
+                    text = item.get('content') or ''
+                    item['word_count'] = len(str(text).split())
+                    total += 1
+    return total
+
 def load_csv_chapters():
     """Carrega capítulos do CSV em ordem sequencial"""
     chapters = []
@@ -370,6 +382,9 @@ def main():
     
     # Salvar
     print("💾 Salvando...")
+    # Recompute word counts as the final step before saving
+    recomputed = _recompute_all_word_counts(final_structure)
+    print(f"   🔢 word_count recalculado em {recomputed} itens")
     with open('output/livro_en.json', 'w', encoding='utf-8') as f:
         json.dump(final_structure, f, indent=2, ensure_ascii=False)
     

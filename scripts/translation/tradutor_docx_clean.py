@@ -397,6 +397,17 @@ def reconstruct_from_clean_docx(docx_file: str, output_json: str, original_json:
                         content_item['word_count'] = len(translated_texts[marker].split())
                     id_counter += 1
     
+    # Recompute word_count for every content item as the last step before saving
+    def _recompute_counts(struct):
+        items = 0
+        for part in struct:
+            for ch in part.get('chapters', []):
+                for it in ch.get('content', []):
+                    if isinstance(it, dict) and 'content' in it:
+                        it['word_count'] = len((it.get('content') or '').split())
+                        items += 1
+        return items
+    recomputed_items = _recompute_counts(original_data)
     # Salva arquivo JSON traduzido
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(original_data, f, indent=2, ensure_ascii=False)
@@ -417,6 +428,7 @@ def reconstruct_from_clean_docx(docx_file: str, output_json: str, original_json:
     print(f"   📖 Capítulos: {total_chapters}")
     print(f"   📝 Itens de conteúdo: {total_content}")
     print(f"   🔄 Textos traduzidos aplicados: {len(translated_texts)}")
+    print(f"   🔢 word_count recalculado em {recomputed_items} itens")
 
 def main():
     """Função principal"""

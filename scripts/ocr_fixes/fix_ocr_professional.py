@@ -302,6 +302,17 @@ def fix_ocr_in_json_professional(input_file: str, output_file: str = None) -> in
                         corrections_made += 1
     
     # Salvar arquivo corrigido
+    # Recompute word_count for every content item as the last step before saving
+    def _recompute_counts(struct):
+        items = 0
+        for part in struct:
+            for ch in part.get('chapters', []):
+                for it in ch.get('content', []):
+                    if isinstance(it, dict) and 'content' in it:
+                        it['word_count'] = len((it.get('content') or '').split())
+                        items += 1
+        return items
+    recomputed_items = _recompute_counts(book_data)
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(book_data, f, indent=2, ensure_ascii=False)
     
@@ -310,6 +321,7 @@ def fix_ocr_in_json_professional(input_file: str, output_file: str = None) -> in
     print(f"   Correções aplicadas: {corrections_made}")
     print(f"   Taxa de correção: {corrections_made/total_items*100:.1f}%")
     print(f"   Arquivo salvo: {output_file}")
+    print(f"   🔢 word_count recalculado em {recomputed_items} itens")
     
     return corrections_made
 

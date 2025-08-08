@@ -166,6 +166,17 @@ def fix_json_conservative(input_file, output_file=None):
                         total_corrections += changes
     
     # Salvar
+    # Recompute word_count for every content item as the last step before saving
+    def _recompute_counts(struct):
+        items = 0
+        for part in struct:
+            for ch in part.get('chapters', []):
+                for it in ch.get('content', []):
+                    if isinstance(it, dict) and 'content' in it:
+                        it['word_count'] = len((it.get('content') or '').split())
+                        items += 1
+        return items
+    recomputed_items = _recompute_counts(data)
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     
@@ -173,6 +184,7 @@ def fix_json_conservative(input_file, output_file=None):
     print(f"   Itens processados: {total_items}")
     print(f"   Correções aplicadas: {total_corrections}")
     print(f"   Arquivo: {output_file}")
+    print(f"   🔢 word_count recalculado em {recomputed_items} itens")
     
     return total_corrections
 

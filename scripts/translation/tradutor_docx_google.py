@@ -229,6 +229,17 @@ def reconstruct_from_docx(docx_file: str, output_json: str, original_json: str):
         
         translated_book.append(translated_part)
     
+    # Recompute word_count for every content item as the last step before saving
+    def _recompute_counts(struct):
+        items = 0
+        for part in struct:
+            for ch in part.get('chapters', []):
+                for it in ch.get('content', []):
+                    if isinstance(it, dict) and 'content' in it:
+                        it['word_count'] = len((it.get('content') or '').split())
+                        items += 1
+        return items
+    recomputed_items = _recompute_counts(translated_book)
     # Salva arquivo JSON traduzido
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(translated_book, f, ensure_ascii=False, indent=2)
@@ -236,6 +247,7 @@ def reconstruct_from_docx(docx_file: str, output_json: str, original_json: str):
     print(f"✅ Reconstrução concluída!")
     print(f"   📂 Arquivo salvo: {output_json}")
     
+    print(f"   🔢 word_count recalculado em {recomputed_items} itens")
     if missing_translations:
         print(f"\n⚠️  {len(missing_translations)} traduções não encontradas (mantido texto original)")
     else:
