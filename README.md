@@ -2,26 +2,37 @@
 
 ## 📚 Sobre o Projeto
 
-Este projeto é uma edição digital do clássico "Introduction to the Devout Life" (Introdução à Vida Devota) de São Francisco de Sales. O projeto inclui:
+Este projeto é uma edição digital completa do clássico "Introduction to the Devout Life" (Introdução à Vida Devota) de São Francisco de Sales, originalmente publicado em 1609. O projeto inclui:
 
-- 📖 **Aplicação web** para leitura interativa
-- 🔧 **Scripts de processamento** para conversão de EPUB para JSON
-- 🌐 **Sistema de tradução** automatizado
-- 📱 **Interface responsiva** com React
+- 📖 **Aplicação web React** para leitura interativa bilíngue
+- 🔧 **Pipeline completo** de processamento EPUB → JSON → EPUB
+- 🌐 **Sistema de tradução** automático via Google Translate
+- 📱 **Interface responsiva** otimizada para dispositivos móveis
+- 📊 **Ferramentas de análise** de conteúdo e comparação
+- 📚 **EPUBs gerados** com estrutura completa e licença CC0
 
 ## 🚀 Recursos
 
-### Aplicação Web
-- Interface limpa e responsiva
-- Navegação por capítulos e partes
-- Suporte a português e inglês
-- Design otimizado para leitura
+### 📱 Aplicação Web
+- Interface limpa e responsiva com React
+- Navegação por capítulos e partes (118 capítulos + conteúdo introdutório)
+- Suporte bilíngue completo (português e inglês)
+- Design otimizado para leitura em todos os dispositivos
+- Dados JSON estruturados com metadados completos
 
-### Pipeline de Processamento
-- Extração de conteúdo de arquivos EPUB
-- Correção de erros de OCR
-- Sistema de tradução via Google Translate
-- Geração de EPUBs atualizados
+### 🔧 Pipeline de Processamento Completo
+- Extração inteligente de conteúdo de arquivos EPUB
+- Correção conservativa de erros de OCR
+- Sistema de tradução via Google Translate com workflow DOCX
+- Geração de EPUBs atualizados com estrutura completa
+- **Menu interativo central** com 12 funcionalidades integradas
+- **Análise de conteúdo** e comparação entre versões
+
+### 📊 Ferramentas de Análise
+- Comparação de contagem de caracteres entre EPUBs
+- Análise detalhada de conteúdo adicionado nas versões
+- Relatórios automáticos de status do projeto
+- Verificação de integridade de arquivos
 
 ## 📁 Estrutura do Projeto
 
@@ -69,56 +80,114 @@ npm start
 
 ## 📖 Como Usar
 
-### Executar a Aplicação Web
+### 🎯 Script Principal (Recomendado)
+```bash
+# Execute o menu interativo central
+python main.py
+```
+
+**Menu disponível:**
+1. 📖 Processar EPUB → JSON (com word_count automático)
+2. 🔄 Reorganizar JSON baseado no summary.csv
+3. 🔧 Corrigir OCR no JSON inglês
+4. 📄 Gerar DOCX para tradução
+5. 🌐 Reconstruir JSON português (após tradução)
+6. 📚 Gerar EPUBs atualizados
+7. 🔄 Pipeline completo (EPUB → Reorganizar → OCR → DOCX → EPUBs)
+8. ℹ️ Mostrar status do projeto
+9. 🚀 Iniciar aplicação web
+10. 📊 Comparar contagem de caracteres dos EPUBs
+11. 🔍 Analisar conteúdo adicionado nas versões geradas
+12. ❌ Sair
+
+### 🌐 Executar a Aplicação Web
 ```bash
 cd webapp
+npm install
 npm start
 ```
 
-### Processar um Novo EPUB
+### 📚 Processar um Novo EPUB (Pipeline Manual)
 ```bash
 # 1. Processar EPUB original
-python scripts/epub_processing/process_epub.py
+python scripts/epub_processing/epub_to_json_processor.py data/arquivo.epub
 
-# 2. Corrigir OCR (se necessário)
+# 2. Reorganizar baseado no summary.csv
+python reorganize_final.py
+
+# 3. Corrigir OCR (se necessário)
 python scripts/ocr_fixes/fix_ocr_manual.py
 
-# 3. Gerar DOCX para tradução
+# 4. Gerar DOCX para tradução
 python scripts/translation/tradutor_docx_clean.py
 
-# 4. Após traduzir no Google Translate
+# 5. Após traduzir no Google Translate
 python scripts/translation/reconstruir_json_portugues.py
 
-# 5. Gerar EPUB atualizado
-python scripts/epub_processing/gerar_epub_atualizado.py
+# 6. Gerar EPUBs atualizados
+python scripts/epub_processing/gerar_epub_atualizado.py --auto
 ```
 
 ## 🔧 Scripts Disponíveis
 
-### Processamento de EPUB
-- `process_epub.py` - Converte EPUB para JSON estruturado
-- `gerar_epub_atualizado.py` - Gera EPUB a partir de JSON
+### 🎯 Script Principal
+- `main.py` - **Menu interativo central** com todas as funcionalidades integradas
 
-### Correção de OCR
+### 📚 Processamento de EPUB
+- `epub_to_json_processor.py` - Converte EPUB para JSON estruturado (com word_count automático)
+- `process_epub.py` - Processador EPUB alternativo (versão antiga)
+- `gerar_epub_atualizado.py` - Gera EPUB a partir de JSON com estrutura completa
+
+### 🔍 Correção de OCR
 - `fix_ocr_manual.py` - Correções conservativas de OCR
-- `fix_ocr_issues.py` - Correções automáticas de OCR
+- `fix_ocr_professional.py` - Correções avançadas com bibliotecas especializadas
 
-### Sistema de Tradução
-- `tradutor_docx_clean.py` - Gera DOCX limpo para tradução
+### 🌐 Sistema de Tradução
+- `tradutor_docx_clean.py` - Gera DOCX limpo para tradução (sem metadados)
 - `reconstruir_json_portugues.py` - Reconstrói JSON a partir da tradução
+- `reorganize_final.py` - Reorganiza JSON baseado no summary.csv
+
+### 📊 Análise e Comparação
+- `compare_epub_text.py` - Compara contagem de caracteres entre EPUBs
+- `analyze_added_content.py` - Analisa conteúdo adicionado nas versões geradas
 
 ## 🌐 Tradução
 
-O projeto suporta tradução automatizada via Google Translate:
+O projeto suporta tradução automatizada via Google Translate com workflow otimizado:
 
-1. Execute `tradutor_docx_clean.py` para gerar arquivo DOCX limpo
-2. Faça upload em [Google Translate](https://translate.google.com)
-3. Baixe o arquivo traduzido
-4. Execute `reconstruir_json_portugues.py` para reintegrar a tradução
+1. Execute `python main.py` → opção 4 para gerar arquivo DOCX limpo (sem metadados)
+2. Faça upload em [Google Translate](https://translate.google.com) para tradução automática
+3. Baixe o arquivo traduzido como `livro_traducao_google.docx`
+4. Execute `python main.py` → opção 5 para reintegrar a tradução ao JSON
+5. Execute `python main.py` → opção 6 para gerar EPUBs com ambas as versões
+
+**Ou use o pipeline completo:** `python main.py` → opção 7
 
 ## 📱 Demo Online
 
-Acesse a aplicação em: [Link para GitHub Pages]
+Acesse a aplicação em: [GitHub Pages](https://dannyxyz22.github.io/introduction-devout-life)
+
+## 📊 Status do Projeto
+
+- ✅ **Pipeline 100% funcional** com menu interativo central
+- ✅ **Aplicação web bilíngue** com interface otimizada
+- ✅ **Sistema de tradução completo** via Google Translate
+- ✅ **Geração de EPUB** com estrutura completa (122 capítulos)
+- ✅ **Correção de OCR** conservativa e profissional
+- ✅ **Ferramentas de análise** e comparação de conteúdo
+- ✅ **Documentação completa** e organizada
+- ✅ **Estrutura de arquivos** totalmente organizada
+- ✅ **Licença Creative Commons CC0** integrada
+
+### � Métricas do Projeto
+| Item | Quantidade | Tamanho |
+|------|------------|---------|
+| **Scripts Python** | 12 principais | ~80KB código |
+| **Capítulos processados** | 118 + introdução | Ambos idiomas |
+| **JSON dados** | 2 arquivos | ~1.2MB total |
+| **EPUBs gerados** | 2 arquivos | ~0.6MB total |
+| **Componentes React** | Interface completa | ~150KB |
+| **Funcionalidades integradas** | 12 no menu principal | 100% funcionais |
 
 ## 🤝 Contribuindo
 
@@ -131,26 +200,20 @@ Acesse a aplicação em: [Link para GitHub Pages]
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+O conteúdo do livro está em domínio público e foi dedicado também ao domínio público via Creative Commons CC0.
 
 ## 👨‍💻 Autor
 
-- **Nome** - [GitHub](https://github.com/seu-usuario)
+- **Daniel Lélis Baggio** - [GitHub](https://github.com/dannyxyz22)
 
 ## 🙏 Reconhecimentos
 
-- São Francisco de Sales - Autor original
-- Projeto baseado em domínio público
-- Interface inspirada em aplicações modernas de leitura
-
-## 📊 Status do Projeto
-
-- ✅ Aplicação web funcional
-- ✅ Sistema de tradução automática
-- ✅ Geração de EPUB
-- ✅ Correção de OCR
-- 🔄 Em desenvolvimento: Melhorias na interface
-- 📋 Planejado: Mais idiomas de tradução
+- **São Francisco de Sales** - Autor original (1567-1622)
+- **Texto base**: Edição inglesa de 1885, digitalizada pelo Google Books
+- **Nihil Obstat**: P. MacCabe, Arcebispo de Dublin (aprovação histórica)
+- **Tecnologias**: React, Python, Google Translate
+- **Inspiração**: Aplicações modernas de leitura digital
 
 ---
 
-**Nota**: Este é um projeto educacional e de preservação cultural. O texto original está em domínio público.
+**Nota**: Este é um projeto educacional e de preservação cultural. O texto original de 1609 está em domínio público e esta edição digital foi dedicada ao domínio público via licença CC0.
