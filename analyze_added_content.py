@@ -178,20 +178,18 @@ def main():
     
     # Extrai texto completo dos EPUBs
     print("📖 Extraindo texto do EPUB original...")
-    original_text, status = extract_full_text_from_epub('Introduction_to_the_Devout_Life.epub')
+    original_text, status = extract_full_text_from_epub('data/Introduction_to_the_Devout_Life.epub')
     if not original_text:
         print(f"❌ Erro: {status}")
         return
     print(f"✅ Original extraído: {len(original_text):,} caracteres")
-    
+
     print("\n📖 Extraindo texto do EPUB em inglês...")
-    english_text, status = extract_full_text_from_epub('Introduction_to_the_Devout_Life_EN.epub')
+    english_text, status = extract_full_text_from_epub('output/Introduction_to_the_Devout_Life_EN.epub')
     if not english_text:
         print(f"❌ Erro: {status}")
         return
-    print(f"✅ Inglês extraído: {len(english_text):,} caracteres")
-    
-    # Encontra segmentos únicos
+    print(f"✅ Inglês extraído: {len(english_text):,} caracteres")    # Encontra segmentos únicos
     print("\n🔍 Analisando diferenças...")
     unique_segments, unique_words = find_segments_in_english_not_in_original(original_text, english_text)
     

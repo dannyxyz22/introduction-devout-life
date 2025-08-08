@@ -131,11 +131,11 @@ def main():
     print("📊 COMPARAÇÃO DE TEXTO DOS EPUBs")
     print("=" * 50)
     
-    # Arquivos para analisar
+    # Arquivos para analisar com suas localizações
     epub_files = {
-        'Original': 'Introduction_to_the_Devout_Life.epub',
-        'Inglês (Gerado)': 'Introduction_to_the_Devout_Life_EN.epub',
-        'Português (Gerado)': 'Filotéia - Introdução à vida devota pt-BR.epub'
+        'Original': 'data/Introduction_to_the_Devout_Life.epub',
+        'Inglês (Gerado)': 'output/Introduction_to_the_Devout_Life_EN.epub',
+        'Português (Gerado)': 'output/Filotéia - Introdução à vida devota pt-BR.epub'
     }
     
     results = {}
