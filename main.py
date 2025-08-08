@@ -208,7 +208,7 @@ def main():
                 
         elif choice == '6':
             if 'epub_generate' not in missing_scripts:
-                run_script(scripts['epub_generate'], "Geração de EPUBs")
+                run_script_with_args(scripts['epub_generate'], ['--auto'], "Geração de EPUBs")
             else:
                 print("❌ Script de geração de EPUB não encontrado!")
                 
@@ -249,8 +249,8 @@ def main():
             
             # 5. Gerar EPUBs (se JSON português existir)
             if 'epub_generate' not in missing_scripts and success:
-                if os.path.exists(data_files['json_pt_webapp']):  # Verificar na webapp onde o script busca
-                    run_script(scripts['epub_generate'], "Geração de EPUBs")
+                if os.path.exists(data_files['json_pt_output']):  # Verificar na pasta output
+                    run_script_with_args(scripts['epub_generate'], ['--auto'], "Geração de EPUBs")
                 else:
                     print(f"\n⚠️  JSON português não encontrado.")
                     print(f"   Execute a tradução no Google Translate e depois a reconstrução (opção 5).")

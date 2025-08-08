@@ -491,17 +491,23 @@ def main():
     """
     Função principal
     """
+    import sys
+    
     print("📚 GERADOR DE EPUB ATUALIZADO")
     print("=" * 40)
     
     # Detectar diretório base do projeto
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
+    output_dir = os.path.join(project_root, 'output')
+    
+    # Garantir que o diretório output existe
+    os.makedirs(output_dir, exist_ok=True)
     
     # Arquivos disponíveis
     json_files = {
-        'en': os.path.join(project_root, 'webapp', 'public', 'data', 'livro_en.json'),
-        'pt': os.path.join(project_root, 'webapp', 'public', 'data', 'livro_pt-BR.json')
+        'en': os.path.join(output_dir, 'livro_en.json'),
+        'pt': os.path.join(output_dir, 'livro_pt-BR.json')
     }
     
     # Verificar arquivos disponíveis
@@ -519,6 +525,23 @@ def main():
         print(f"\n❌ Nenhum arquivo JSON encontrado!")
         return
     
+    # Se executado com argumento --auto, gera automaticamente ambos os EPUBs disponíveis
+    if len(sys.argv) > 1 and sys.argv[1] == '--auto':
+        print(f"\n🔄 Gerando EPUBs automaticamente...")
+        success_count = 0
+        
+        if 'en' in available_files:
+            if generate_epub(available_files['en'], os.path.join(output_dir, 'Introduction_to_the_Devout_Life_EN.epub'), 'en'):
+                success_count += 1
+        
+        if 'pt' in available_files:
+            if generate_epub(available_files['pt'], os.path.join(output_dir, 'Filotéia - Introdução à vida devota pt-BR.epub'), 'pt'):
+                success_count += 1
+        
+        print(f"\n🎉 {success_count} arquivo(s) EPUB gerado(s) com sucesso!")
+        return
+    
+    # Modo interativo
     print(f"\n📋 OPÇÕES:")
     print(f"1. Gerar EPUB em inglês")
     print(f"2. Gerar EPUB em português") 
@@ -528,22 +551,22 @@ def main():
     choice = input(f"\nEscolha uma opção (1-4): ").strip()
     
     if choice == '1' and 'en' in available_files:
-        output_file = 'Introduction_to_the_Devout_Life_EN.epub'
+        output_file = os.path.join(output_dir, 'Introduction_to_the_Devout_Life_EN.epub')
         generate_epub(available_files['en'], output_file, 'en')
         
     elif choice == '2' and 'pt' in available_files:
-        output_file = 'Filotéia - Introdução à vida devota pt-BR.epub'
+        output_file = os.path.join(output_dir, 'Filotéia - Introdução à vida devota pt-BR.epub')
         generate_epub(available_files['pt'], output_file, 'pt')
         
     elif choice == '3':
         success_count = 0
         
         if 'en' in available_files:
-            if generate_epub(available_files['en'], 'Introduction_to_the_Devout_Life_EN.epub', 'en'):
+            if generate_epub(available_files['en'], os.path.join(output_dir, 'Introduction_to_the_Devout_Life_EN.epub'), 'en'):
                 success_count += 1
         
         if 'pt' in available_files:
-            if generate_epub(available_files['pt'], 'Filotéia - Introdução à vida devota pt-BR.epub', 'pt'):
+            if generate_epub(available_files['pt'], os.path.join(output_dir, 'Filotéia - Introdução à vida devota pt-BR.epub'), 'pt'):
                 success_count += 1
         
         print(f"\n🎉 {success_count} arquivo(s) EPUB gerado(s) com sucesso!")
