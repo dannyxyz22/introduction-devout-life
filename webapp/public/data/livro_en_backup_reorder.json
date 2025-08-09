@@ -96,7 +96,6 @@
   },
   {
     "part_title": "PART I",
-    "part_subtitle": "Instructions and exercises for conducting the soul from her first desire for a devout life till she is brought to a full resolution of embracing it",
     "chapters": [
       {
         "chapter_title": "CHAPTER I. Description of True Devotion",
@@ -1188,11 +1187,11 @@
           }
         ]
       }
-    ]
+    ],
+    "part_subtitle": "Instructions and exercises for conducting the soul from her first desire for a devout life till she is brought to a full resolution of embracing it"
   },
   {
     "part_title": "PART II",
-    "part_subtitle": "Instructions for elevating the soul to God by prayer and by the sacraments",
     "chapters": [
       {
         "chapter_title": "CHAPTER I. The Necessity of Prayer",
@@ -1834,11 +1833,11 @@
           }
         ]
       }
-    ]
+    ],
+    "part_subtitle": "Instructions for elevating the soul to God by prayer and by the sacraments"
   },
   {
     "part_title": "PART III",
-    "part_subtitle": "Instructions concerning the practice of the virtues",
     "chapters": [
       {
         "chapter_title": "CHAPTER I. The choice we ought to make as to the practice of the Virtues",
@@ -3235,11 +3234,11 @@
           }
         ]
       }
-    ]
+    ],
+    "part_subtitle": "Instructions concerning the practice of the virtues"
   },
   {
     "part_title": "PART IV",
-    "part_subtitle": "Necessary advice against the most ordinary temptations",
     "chapters": [
       {
         "chapter_title": "CHAPTER I. We must not concern ourselves about what the children of the world may say",
@@ -3696,11 +3695,11 @@
           }
         ]
       }
-    ]
+    ],
+    "part_subtitle": "Necessary advice against the most ordinary temptations"
   },
   {
     "part_title": "PART V",
-    "part_subtitle": "Instructions and exercises necessary for renewing the soul, and confirming her in devotion",
     "chapters": [
       {
         "chapter_title": "CHAPTER I. We ought every year to renew our good resolutions by the following exercises",
@@ -4192,6 +4191,7 @@
           }
         ]
       }
-    ]
+    ],
+    "part_subtitle": "Instructions and exercises necessary for renewing the soul, and confirming her in devotion"
   }
 ]
