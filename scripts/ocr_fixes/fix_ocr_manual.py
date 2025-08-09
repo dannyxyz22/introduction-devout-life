@@ -2,6 +2,93 @@ import json
 import re
 import os
 
+# === Funções utilitárias para limpeza de duplicação de título de capítulo ===
+def _normalize_label(text: str) -> str:
+    """Normaliza texto para comparação tolerante (minúsculas, sem pontuação extra)."""
+    if text is None:
+        return ""
+    ZW_CHARS = [
+        '\u200b', '\u200c', '\u200d', '\ufeff',  # zero-width + BOM
+    ]
+    NBSP_CHARS = [
+        '\u00a0', '\u202f', '\u2009', '\u200a'  # non-breaking / narrow / thin spaces
+    ]
+    t = text
+    for ch in ZW_CHARS:
+        t = t.replace(ch, '')
+    for ch in NBSP_CHARS:
+        t = t.replace(ch, ' ')
+    t = t.replace('—', ' ').replace('–', ' ').replace('-', ' ')
+    t = t.lower()
+    import re as _re
+    t = _re.sub(r"[^\w\s]", " ", t, flags=_re.UNICODE)
+    t = _re.sub(r"\s+", " ", t).strip()
+    return t
+
+import re as _re
+def clean_repeated_chapter_title(structure):
+    removed = 0
+    trimmed = 0
+    title_re = _re.compile(r"^\s*CHAPTER\s+([IVXLCDM]+)\.\s*(.+)$", _re.IGNORECASE)
+    for section in structure:
+        for ch in section.get('chapters', []):
+            title = ch.get('chapter_title', '') or ''
+            m = title_re.match(title)
+            if not m:
+                continue
+            label = m.group(2).strip()
+            if not label:
+                continue
+            norm_label = _normalize_label(label)
+            content_list = ch.get('content', []) or []
+            p_index = None
+            for idx, item in enumerate(content_list):
+                if isinstance(item, dict) and item.get('type') == 'p' and item.get('content'):
+                    p_index = idx
+                    break
+            if p_index is None:
+                continue
+            para = content_list[p_index]
+            para_text = para.get('content', '') or ''
+            if not para_text.strip():
+                continue
+            norm_para = _normalize_label(para_text)
+            if norm_para == norm_label:
+                content_list.pop(p_index)
+                removed += 1
+                continue
+            prefix_re = _re.compile(r"^\s*" + _re.escape(label) + r"[\s\.:;,_\-—]*", flags=_re.IGNORECASE)
+            m2 = prefix_re.match(para_text)
+            if m2:
+                rest = para_text[m2.end():].lstrip(" .,:;-—_")
+                if not rest.strip():
+                    content_list.pop(p_index)
+                    removed += 1
+                else:
+                    para['content'] = rest
+                    if 'word_count' in para:
+                        para['word_count'] = len(rest.split())
+                    trimmed += 1
+                continue
+            if norm_para.startswith(norm_label + " ") or norm_para.startswith(norm_label + ":"):
+                start_ci = para_text[:len(label)]
+                if start_ci.lower() == label.lower():
+                    rest = para_text[len(label):].lstrip(" .,:;-—_")
+                else:
+                    label_words = label.split()
+                    rest_words = para_text.split()
+                    k = len(label_words)
+                    rest = " ".join(rest_words[k:])
+                if not rest.strip():
+                    content_list.pop(p_index)
+                    removed += 1
+                else:
+                    para['content'] = rest
+                    if 'word_count' in para:
+                        para['word_count'] = len(rest.split())
+                    trimmed += 1
+    return removed, trimmed
+
 def is_paragraph_continuation(text1, text2):
     """
     Detecta se o segundo parágrafo é uma continuação do primeiro.
@@ -247,12 +334,15 @@ def fix_json_manual_only(input_file, output_file=None):
     all_chapters = []
     for part in data:
         all_chapters.extend(part.get('chapters', []))
-    
     merges_count = merge_broken_paragraphs(all_chapters)
     if merges_count > 0:
         print(f"   ✅ {merges_count} parágrafos mesclados")
     else:
         print("   ℹ️ Nenhum parágrafo quebrado detectado")
+
+    # ETAPA 1.5: Remover duplicação de título de capítulo após mesclagem
+    removed, trimmed = clean_repeated_chapter_title(data)
+    print(f"🧼 clean_repeated_chapter_title: Removidos: {removed}, Ajustados: {trimmed}")
     
     # ETAPA 2: Correções manuais de OCR
     print("🔧 Aplicando correções manuais de OCR...")
