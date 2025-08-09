@@ -34,7 +34,18 @@ def create_xhtml_content(chapter_data, chapter_num, part_num, part_data=None, la
         title.text = f"Parte {part_num} - Capítulo {chapter_num}"
     else:
         title.text = f"Part {part_num} - Chapter {chapter_num}"
-    
+
+
+    if(part_data):
+        # Título da parte
+        part_title = part_data.get('part_title', '')
+
+        if lang == 'pt':
+            title.text = f"{part_title} - Capítulo {chapter_num}"
+        else:
+            title.text = f"{part_title} - Chapter {chapter_num}"
+
+
     # CSS básico
     style = SubElement(head, 'style', type="text/css")
     style.text = """
@@ -43,8 +54,8 @@ def create_xhtml_content(chapter_data, chapter_num, part_num, part_data=None, la
         h2 { text-align: center; font-size: 1.4em; margin: 1.5em 0 1em 0; }
         p { text-align: justify; margin: 1em 0; }
         .chapter-title { font-weight: bold; text-align: center; margin: 2em 0; }
-        .part-title { font-weight: bold; text-align: center; font-size: 1.6em; color: #800000; margin: 1.5em 0 0.5em 0; }
-        .part-subtitle { font-style: italic; text-align: center; font-size: 1.2em; color: #600000; margin: 0 0 2em 0; }
+        .part-title { font-weight: bold; text-align: center; font-size: 2.2em; margin: 1.5em 0 0.5em 0; }
+        .part-subtitle { font-style: italic; text-align: center; font-size: 2em; }
     """
     
     # Corpo do documento
@@ -251,46 +262,73 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
     
     
     for part_idx, part in enumerate(book_data):
-        part_title = part.get('part_title', f'Part {part_idx + 1}')
+        part_title = part.get('part_title')
         part_subtitle = part.get('part_subtitle', '')
         
-        # Combinar título e subtítulo para o índice
-        display_title = part_title
-        if part_subtitle:
-            display_title = f"{part_title} - {part_subtitle}"
-        
-        # Navpoint para a parte
-        part_nav = SubElement(nav_map, 'navPoint', 
-                             id=f"part-{part_idx + 1}",
-                             playOrder=str(play_order))
-        
-        part_label = SubElement(part_nav, 'navLabel')
-        part_text = SubElement(part_label, 'text')
-        part_text.text = display_title
-        
-        # Primeiro capítulo da parte como conteúdo
+        # Verificar se é uma seção especial (DEDICATORY PRAYER/PREFACE) pelos títulos dos capítulos
+        is_special_section = False
         if part.get('chapters'):
-            first_chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
-            SubElement(part_nav, 'content', src=first_chapter_file)
+            first_chapter_title = part['chapters'][0].get('chapter_title', '').upper()
+            special_titles = ['DEDICATORY PRAYER', 'ORAÇÃO DEDICATÓRIA', 'PREFACE', 'PREFÁCIO']
+            is_special_section = any(title in first_chapter_title for title in special_titles)
         
-        # Capítulos da parte
-        for chapter_idx, chapter in enumerate(part.get('chapters', [])):
-            chapter_title = chapter.get('chapter_title', f'Chapter {chapter_idx + 1}')
+        # Se é seção especial, trata os capítulos como itens independentes
+        if is_special_section:
+            # Capítulos independentes (sem agrupamento por parte)
+            for chapter_idx, chapter in enumerate(part.get('chapters', [])):
+                chapter_title = chapter.get('chapter_title', f'Chapter {chapter_idx + 1}')
+                
+                chapter_nav = SubElement(nav_map, 'navPoint',
+                                       id=f"chapter-{play_order}",
+                                       playOrder=str(play_order))
+                
+                chapter_label = SubElement(chapter_nav, 'navLabel')
+                chapter_text = SubElement(chapter_label, 'text')
+                chapter_text.text = chapter_title
+                
+                chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
+                SubElement(chapter_nav, 'content', src=chapter_file)
+                
+                play_order += 1
+                chapter_file_counter += 1
+        else:
+            # Combinar título e subtítulo para o índice
+            display_title = part_title if part_title else f'Part {part_idx + 1}'
+            if part_subtitle:
+                display_title = f"{display_title} - {part_subtitle}"
             
-            chapter_nav = SubElement(part_nav, 'navPoint',
-                                   id=f"chapter-{play_order}",
-                                   playOrder=str(play_order))
+            # Navpoint para a parte
+            part_nav = SubElement(nav_map, 'navPoint', 
+                                 id=f"part-{part_idx + 1}",
+                                 playOrder=str(play_order))
             
-            chapter_label = SubElement(chapter_nav, 'navLabel')
-            chapter_text = SubElement(chapter_label, 'text')
-            chapter_text.text = chapter_title
+            part_label = SubElement(part_nav, 'navLabel')
+            part_text = SubElement(part_label, 'text')
+            part_text.text = display_title
             
-            # CORREÇÃO: Usar chapter_file_counter para nome do arquivo
-            chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
-            SubElement(chapter_nav, 'content', src=chapter_file)
+            # Primeiro capítulo da parte como conteúdo
+            if part.get('chapters'):
+                first_chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
+                SubElement(part_nav, 'content', src=first_chapter_file)
             
-            play_order += 1
-            chapter_file_counter += 1  # Incrementar contador de arquivo separadamente
+            # Capítulos da parte
+            for chapter_idx, chapter in enumerate(part.get('chapters', [])):
+                chapter_title = chapter.get('chapter_title', f'Chapter {chapter_idx + 1}')
+                
+                chapter_nav = SubElement(part_nav, 'navPoint',
+                                       id=f"chapter-{play_order}",
+                                       playOrder=str(play_order))
+                
+                chapter_label = SubElement(chapter_nav, 'navLabel')
+                chapter_text = SubElement(chapter_label, 'text')
+                chapter_text.text = chapter_title
+                
+                # CORREÇÃO: Usar chapter_file_counter para nome do arquivo
+                chapter_file = f"text/chapter-{chapter_file_counter:03d}.xhtml"
+                SubElement(chapter_nav, 'content', src=chapter_file)
+                
+                play_order += 1
+                chapter_file_counter += 1  # Incrementar contador de arquivo separadamente
     
     # Adicionar página de licença no final do índice
     license_nav = SubElement(nav_map, 'navPoint', 
@@ -464,7 +502,11 @@ def generate_epub(json_file, output_epub, lang='en'):
                 file_path = os.path.join(temp_dir, 'OEBPS', 'text', file_name)
                 
                 # Passar dados da parte para o primeiro capítulo
-                part_data = part if chapter_idx == 0 else None
+                if part_idx ==0 or part_idx ==1 : #não passa Part para Dedicatory Prayer e Preface
+                    part_data = None
+                else:
+                    part_data = part 
+         
                 xhtml_content = create_xhtml_content(chapter, chapter_idx + 1, part_idx + 1, part_data, lang)
                 
                 with open(file_path, 'w', encoding='utf-8') as f:
