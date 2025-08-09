@@ -115,8 +115,21 @@ def _normalize_label(text: str) -> str:
     """Normaliza texto para comparação tolerante (minúsculas, sem pontuação extra)."""
     if text is None:
         return ""
+    # Remover caracteres invisíveis e normalizar espaços Unicode → espaço normal
+    # Zero-width & NBSP family
+    ZW_CHARS = [
+        '\u200b', '\u200c', '\u200d', '\ufeff',  # zero-width + BOM
+    ]
+    NBSP_CHARS = [
+        '\u00a0', '\u202f', '\u2009', '\u200a'  # non-breaking / narrow / thin spaces
+    ]
+    t = text
+    for ch in ZW_CHARS:
+        t = t.replace(ch, '')
+    for ch in NBSP_CHARS:
+        t = t.replace(ch, ' ')
     # Normalizar travessões e hífens para espaço
-    t = text.replace('—', ' ').replace('–', ' ').replace('-', ' ')
+    t = t.replace('—', ' ').replace('–', ' ').replace('-', ' ')
     # Lowercase
     t = t.lower()
     # Remover pontuação comum mantendo letras/números e espaços
@@ -396,3 +409,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def test_clean_repeated_chapter_title():
+    # Estrutura simulando o problema
+    structure = [
+        {
+            "part_title": "PART THE FIRST",
+            "chapters": [
+                {
+                    "chapter_title": "CHAPTER III. Devotion is suitable to all sorts of vocations and professions",
+                    "content": [
+                        {"type": "p", "content": "Devotion is suitable to all sorts of vocations and professions."},
+                        {"type": "p", "content": "In the creation God commanded the plants to bring forth their fruits..."}
+                    ]
+                }
+            ]
+        }
+    ]
+    removed, trimmed = clean_repeated_chapter_title(structure)
+    assert removed == 1, f"Esperado 1 removido, obtido {removed}"
+    assert trimmed == 0, f"Esperado 0 ajustado, obtido {trimmed}"
+    assert len(structure[0]["chapters"][0]["content"]) == 1, "O parágrafo duplicado não foi removido"
+    print("Teste passou: duplicata removida corretamente.")
+
+test_clean_repeated_chapter_title()
