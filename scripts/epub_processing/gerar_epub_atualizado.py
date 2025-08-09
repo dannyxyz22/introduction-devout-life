@@ -20,7 +20,7 @@ def prettify_xml(elem):
     reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
 
-def create_xhtml_content(chapter_data, chapter_num, part_num, lang='en'):
+def create_xhtml_content(chapter_data, chapter_num, part_num, part_data=None, lang='en'):
     """
     Cria conteúdo XHTML para um capítulo
     """
@@ -43,10 +43,25 @@ def create_xhtml_content(chapter_data, chapter_num, part_num, lang='en'):
         h2 { text-align: center; font-size: 1.4em; margin: 1.5em 0 1em 0; }
         p { text-align: justify; margin: 1em 0; }
         .chapter-title { font-weight: bold; text-align: center; margin: 2em 0; }
+        .part-title { font-weight: bold; text-align: center; font-size: 1.6em; color: #800000; margin: 1.5em 0 0.5em 0; }
+        .part-subtitle { font-style: italic; text-align: center; font-size: 1.2em; color: #600000; margin: 0 0 2em 0; }
     """
     
     # Corpo do documento
     body = SubElement(html, 'body')
+    
+    # Se é o primeiro capítulo de uma parte, exibir título e subtítulo da parte
+    if chapter_num == 1 and part_data:
+        part_title = part_data.get('part_title', '')
+        part_subtitle = part_data.get('part_subtitle', '')
+        
+        if part_title:
+            part_title_elem = SubElement(body, 'h1', {'class': 'part-title'})
+            part_title_elem.text = part_title
+            
+        if part_subtitle:
+            part_subtitle_elem = SubElement(body, 'h2', {'class': 'part-subtitle'})
+            part_subtitle_elem.text = part_subtitle
     
     # Título do capítulo
     if chapter_data.get('chapter_title'):
@@ -237,6 +252,12 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
     
     for part_idx, part in enumerate(book_data):
         part_title = part.get('part_title', f'Part {part_idx + 1}')
+        part_subtitle = part.get('part_subtitle', '')
+        
+        # Combinar título e subtítulo para o índice
+        display_title = part_title
+        if part_subtitle:
+            display_title = f"{part_title} - {part_subtitle}"
         
         # Navpoint para a parte
         part_nav = SubElement(nav_map, 'navPoint', 
@@ -245,7 +266,7 @@ def create_ncx_file(book_data, lang='en', has_prayer_in_json=False, has_preface_
         
         part_label = SubElement(part_nav, 'navLabel')
         part_text = SubElement(part_label, 'text')
-        part_text.text = part_title
+        part_text.text = display_title
         
         # Primeiro capítulo da parte como conteúdo
         if part.get('chapters'):
@@ -442,7 +463,9 @@ def generate_epub(json_file, output_epub, lang='en'):
                 file_name = f"chapter-{file_counter:03d}.xhtml"
                 file_path = os.path.join(temp_dir, 'OEBPS', 'text', file_name)
                 
-                xhtml_content = create_xhtml_content(chapter, chapter_idx + 1, part_idx + 1, lang)
+                # Passar dados da parte para o primeiro capítulo
+                part_data = part if chapter_idx == 0 else None
+                xhtml_content = create_xhtml_content(chapter, chapter_idx + 1, part_idx + 1, part_data, lang)
                 
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(xhtml_content)
