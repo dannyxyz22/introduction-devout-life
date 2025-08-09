@@ -105,8 +105,18 @@ def is_paragraph_continuation(text1, text2):
     text2 = text2.strip()
     
     # Verifica se o primeiro parágrafo é muito curto (provável título)
-    if len(text1.split()) < 8:
+    # Mas permite exceções se há indicadores claros de continuação
+    words1 = text1.split()
+    if len(words1) < 4:  # Muito curto mesmo
         return False
+    elif len(words1) < 8:  # Curto, mas verifica indicadores de continuação
+        # Se começa com minúscula ou termina com palavra mid-sentence, pode ser continuação
+        if text2 and text2[0].islower():
+            pass  # Continua verificação
+        elif words1 and words1[-1].lower() in ['though', 'although', 'while', 'when', 'where', 'which', 'that', 'who', 'whom', 'whose', 'if', 'unless', 'until', 'since', 'because', 'as', 'before', 'after']:
+            pass  # Continua verificação
+        else:
+            return False  # Muito curto sem indicadores de continuação
     
     # Verifica se o primeiro parágrafo termina sem pontuação final
     if text1[-1] in '.!?:':
