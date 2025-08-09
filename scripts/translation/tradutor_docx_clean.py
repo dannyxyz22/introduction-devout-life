@@ -162,6 +162,18 @@ def create_clean_docx_for_translation(input_file: str, output_file: str):
             para.alignment = WD_PARAGRAPH_ALIGNMENT.JUSTIFY
             doc.add_paragraph()  # Linha em branco
         
+        # Adicionar part_subtitle se existir
+        part_subtitle = part.get('part_subtitle', '')
+        if part_subtitle:
+            marker = f"###ID{id_counter:04d}###"
+            id_counter += 1
+            total_texts += 1
+            
+            doc.add_paragraph(marker)
+            para = doc.add_paragraph(part_subtitle)
+            para.alignment = WD_PARAGRAPH_ALIGNMENT.JUSTIFY
+            doc.add_paragraph()  # Linha em branco
+        
         # Processa capítulos
         for chapter_idx, chapter in enumerate(part.get('chapters', [])):
             chapter_title = chapter.get('chapter_title', '')
@@ -376,6 +388,13 @@ def reconstruct_from_clean_docx(docx_file: str, output_json: str, original_json:
             marker = f"###ID{id_counter:04d}###"
             if marker in translated_texts:
                 part['part_title'] = translated_texts[marker]
+            id_counter += 1
+        
+        # Traduz subtítulo da parte
+        if 'part_subtitle' in part:
+            marker = f"###ID{id_counter:04d}###"
+            if marker in translated_texts:
+                part['part_subtitle'] = translated_texts[marker]
             id_counter += 1
         
         # Traduz capítulos
