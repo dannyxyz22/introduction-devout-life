@@ -324,6 +324,67 @@ def create_translated_xhtml_files(translated_texts: dict):
         print(f"   ✅ Prefácio criado: {preface_file}")
 
 
+def apply_portuguese_ad_hoc_fixes(json_data):
+    """
+    Aplica correções ad hoc específicas para o português
+    Corrige "Filotéia" para "Filoteia" em todo o JSON
+    """
+    fixes_applied = 0
+    
+    # Correções específicas para português
+    corrections = {
+        "Filotéia": "Filoteia",
+        "filotéia": "filoteia",
+        # Adicione outras correções portuguesas aqui se necessário
+    }
+    
+    print("🔧 Aplicando correções ad hoc para português...")
+    
+    for part in json_data:
+        # Corrigir títulos de partes
+        if 'part_title' in part:
+            original = part['part_title']
+            for wrong, correct in corrections.items():
+                if wrong in original:
+                    part['part_title'] = original.replace(wrong, correct)
+                    fixes_applied += 1
+                    print(f"   ✏️  Parte: '{wrong}' → '{correct}'")
+        
+        # Corrigir subtítulos de partes
+        if 'part_subtitle' in part:
+            original = part['part_subtitle']
+            for wrong, correct in corrections.items():
+                if wrong in original:
+                    part['part_subtitle'] = original.replace(wrong, correct)
+                    fixes_applied += 1
+                    print(f"   ✏️  Subtítulo: '{wrong}' → '{correct}'")
+        
+        # Corrigir capítulos
+        for chapter in part.get('chapters', []):
+            if 'chapter_title' in chapter:
+                original = chapter['chapter_title']
+                for wrong, correct in corrections.items():
+                    if wrong in original:
+                        chapter['chapter_title'] = original.replace(wrong, correct)
+                        fixes_applied += 1
+                        print(f"   ✏️  Capítulo: '{wrong}' → '{correct}'")
+            
+            # Corrigir conteúdo
+            for paragraph in chapter.get('content', []):
+                if 'content' in paragraph:
+                    original = paragraph['content']
+                    for wrong, correct in corrections.items():
+                        if wrong in original:
+                            paragraph['content'] = original.replace(wrong, correct)
+                            # Recalcular word_count
+                            paragraph['word_count'] = len(paragraph['content'].split())
+                            fixes_applied += 1
+                            # Mostrar apenas primeiras palavras para não poluir o log
+                            preview = original[:50] + "..." if len(original) > 50 else original
+                            print(f"   ✏️  Texto: '{wrong}' em '{preview}'")
+    
+    return fixes_applied
+
 def reconstruct_from_clean_docx(docx_file: str, output_json: str, original_json: str):
     """
     Reconstrói o arquivo JSON a partir do .docx traduzido LIMPO.
@@ -427,6 +488,17 @@ def reconstruct_from_clean_docx(docx_file: str, output_json: str, original_json:
                         items += 1
         return items
     recomputed_items = _recompute_counts(original_data)
+    
+    # Aplicar correções ad hoc para português (antes de salvar)
+    print(f"\n🔧 Aplicando correções ad hoc para português...")
+    fixes_applied = apply_portuguese_ad_hoc_fixes(original_data)
+    
+    # Recalcular word_count novamente após as correções
+    if fixes_applied > 0:
+        final_recomputed = _recompute_counts(original_data)
+        print(f"   📊 Correções aplicadas: {fixes_applied}")
+        print(f"   🔢 word_count recalculado novamente em {final_recomputed} itens")
+    
     # Salva arquivo JSON traduzido
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(original_data, f, indent=2, ensure_ascii=False)
@@ -448,6 +520,9 @@ def reconstruct_from_clean_docx(docx_file: str, output_json: str, original_json:
     print(f"   📝 Itens de conteúdo: {total_content}")
     print(f"   🔄 Textos traduzidos aplicados: {len(translated_texts)}")
     print(f"   🔢 word_count recalculado em {recomputed_items} itens")
+    if fixes_applied > 0:
+        print(f"   🔧 Correções ad hoc aplicadas: {fixes_applied}")
+        print(f"   ✨ Filotéia → Filoteia corrigido em todo o texto")
 
 def main():
     """Função principal"""
