@@ -77,7 +77,24 @@ def create_xhtml_content(chapter_data, chapter_num, part_num, part_data=None, la
     # Título do capítulo
     if chapter_data.get('chapter_title'):
         h1 = SubElement(body, 'h1', {'class': 'chapter-title'})
-        h1.text = chapter_data['chapter_title']
+        
+        # Quebrar título no ponto para criar quebra de linha
+        chapter_title = chapter_data['chapter_title']
+        if '.' in chapter_title:
+            # Dividir no primeiro ponto
+            parts = chapter_title.split('.', 1)
+            if len(parts) == 2 and parts[1].strip():
+                # Primeira parte (antes do ponto)
+                h1.text = parts[0].strip() + '.'
+                # Quebra de linha
+                br = SubElement(h1, 'br')
+                br.tail = parts[1].strip()
+            else:
+                # Se não há texto após o ponto, usar título original
+                h1.text = chapter_title
+        else:
+            # Se não há ponto, usar título original
+            h1.text = chapter_title
     
     # Conteúdo do capítulo
     for content_item in chapter_data.get('content', []):
