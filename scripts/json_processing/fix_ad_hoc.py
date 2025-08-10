@@ -18,6 +18,7 @@ def apply_ad_hoc_fixes(json_data):
     corrections = {
         "We must purify ourselves from our natural imper": "We must purify ourselves from our natural imperfections.",
         "Introduction to the Devout Life.": "",  # Remove duplicate book title from PREFACE
+        "The choice we ought to make as to the practice":"The choice we ought to make as to the practice of the Virtues.",
         # Adicione mais correções aqui conforme necessário
         "theChurch": "the Church",
         "theGospel": "the Gospel", 
