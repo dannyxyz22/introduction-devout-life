@@ -1,21 +1,7 @@
 #!/usr/bin/env python3
 """
 Script principal para gerenciar o pipeline completo do projeto.
-Oferece menu     scripts = {
-        'epub_process': os.pat        print(f"1. 📖 Processar EPUB → JSON (com word_count automático)")
-        print(f"2. 🔧 Aplicar correções ad hoc")
-        print(f"3. 📋 Reorganizar JSON baseado no summary.csv")
-        print(f"4. 🩹 Corrigir OCR no JSON inglês")
-        print(f"5. 🔄 Split part titles into title and subtitle")
-        print(f"6. 📄 Gerar DOCX para tradução")      print(f"5. 🔄 Split part titles into title and subtitle")       print(f"5. 🔄 Split part titles into title and subtitle")       print(f"5. 🔄 Split part titles into title and subtitle")n('scripts', 'epub_processing', 'process_epub.py'),
-        'fix_ad_hoc': os.path.join('scripts', 'json_processing', 'fix_ad_hoc.py'),
-        'reorganize_json': os.path.join('scripts', 'json_processing', 'reorganize_final.py'),
-        'epub_generate': os.path.join('scripts', 'epub_processing', 'gerar_epub_atualizado.py'),
-        'ocr_fix': os.path.join('scripts', 'ocr_fixes', 'fix_ocr_manual.py'),
-        'split_part_titles': os.path.join('scripts', 'json_processing', 'split_part_titles.py'),
-        'docx_clean': os.path.join('scripts', 'translation', 'tradutor_docx_clean.py'),
-        'json_reconstruct': os.path.join('scripts', 'translation', 'reconstruir_json_portugues.py')
-    } para executar diferentes operações.
+Oferece menu para executar diferentes operações.
 """
 
 import os
@@ -246,20 +232,6 @@ def main():
                 print("❌ Script de geração de EPUB não encontrado!")
                 
         elif choice == '9':
-            if not epub_source_exists:
-                print("❌ Arquivo EPUB fonte não encontrado! Verifique se 'Introduction_to_the_Devout_Life.epub' está na pasta 'data'.")
-            else:
-                print(f"\n🔄 EXECUTANDO PIPELINE COMPLETO...")
-                success = True
-                
-                # 1. Processar EPUB
-                if 'epub_process_new' not in missing_scripts:
-                    success = run_script_with_args(scripts['epub_process_new'], [data_files['epub_source']], 
-                                                 "Processamento de EPUB") and success
-                    if success:
-                        copy_to_webapp(data_files['json_en_output'], data_files['json_en_webapp'], "JSON inglês")
-               
-        elif choice == '8':
             if not epub_source_exists:
                 print("❌ Arquivo EPUB fonte não encontrado! Verifique se 'Introduction_to_the_Devout_Life.epub' está na pasta 'data'.")
             else:

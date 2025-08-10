@@ -2,9 +2,9 @@
 
 Esta pasta contém scripts para traduzir o livro via Google Translate.
 
-## Scripts Disponíveis
+## Scripts Principais
 
-### `tradutor_docx_clean.py`
+### `tradutor_docx_clean.py` ⭐ **PRINCIPAL**
 Gera arquivo DOCX limpo para tradução no Google Translate.
 
 **Uso:**
@@ -19,8 +19,9 @@ python tradutor_docx_clean.py
 - Remove metadados que contaminam a tradução
 - Preserva marcadores de ID para reconstrução
 - Formato otimizado para Google Translate
+- ✅ **Usado no pipeline principal**
 
-### `reconstruir_json_portugues.py`
+### `reconstruir_json_portugues.py` ⭐ **PRINCIPAL**
 Reconstrói JSON em português a partir do arquivo traduzido.
 
 **Uso:**
@@ -29,12 +30,14 @@ python reconstruir_json_portugues.py
 ```
 
 **Entrada:** Arquivo DOCX traduzido do Google Translate
-**Saída:** JSON em português (`webapp/public/data/livro_pt-BR.json`)
+**Saída:** JSON em português (`output/livro_pt-BR.json`)
 
 **Processo:**
 - Detecta automaticamente arquivo traduzido
 - Preserva estrutura original
 - Cria backup antes de sobrescrever
+- **Aplica correções ad hoc para português** (Filotéia → Filoteia)
+- ✅ **Usado no pipeline principal**
 
 ## Fluxo de Tradução
 
@@ -64,3 +67,10 @@ Os scripts usam marcadores especiais para preservar a estrutura:
 ```
 
 **Importante:** Não remova estes marcadores durante a tradução!
+
+## Correções Automáticas
+
+O processo de reconstrução aplica automaticamente:
+- ✅ **Filotéia → Filoteia** (correção ortográfica)
+- ✅ Recálculo de word_count
+- ✅ Preservação da estrutura JSON original
